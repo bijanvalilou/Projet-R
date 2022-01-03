@@ -965,7 +965,9 @@ ggplot() +
 ```
 
 
-## B. Emploi
+## B. Emploi - Report shock 
+Peu concluant, pas beaucoup de variation (même en relatif) à part pour la transformation d'énergie (voir peut-être les missing data pour avoir plus de secteurs)
+
 ```{r, echo=FALSE}
 
 z <- c(Baseline[,"f_l_ind_0"],Baseline[,"f_l_trsp_0"],Baseline[,"f_l_ser_0"],Baseline[,"f_l_trsf_0"],Baseline[,"f_l_ele_0"])
@@ -1015,3 +1017,47 @@ ggplot(
 
 
 
+```{r, echo=FALSE}
+
+z <- c(S3[,"f_l_ind_2"],S3[,"f_l_trsp_2"],S3[,"f_l_ser_2"],S3[,"f_l_trsf_2"],S3[,"f_l_ele_2"])
+x <- rep(S3[,"year"], times = 5)
+y <- rep(c("Industrie et agriculture","Transports","Services","Transformation d'énergie","Electricité"), each = 36)
+
+
+brks <- c(0, 0.25, 0.5, 0.75, 1)
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Emploi (en %)", title = "Production nette d'énergie par type d'énergies - Scénario de référence") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+  scale_y_continuous(breaks = brks,labels = scales::percent(brks))
+
+```
+
+
+```{r, echo=FALSE}
+
+z <- c(S6[,"f_l_ind_2"],S6[,"f_l_trsp_2"],S6[,"f_l_ser_2"],S6[,"f_l_trsf_2"],S6[,"f_l_ele_2"])
+x <- rep(S6[,"year"], times = 5)
+y <- rep(c("Industrie et agriculture","Transports","Services","Transformation d'énergie","Electricité"), each = 36)
+
+
+brks <- c(0, 0.25, 0.5, 0.75, 1)
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Emploi (en %)", title = "Production nette d'énergie par type d'énergies - Scénario de référence") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+  scale_y_continuous(breaks = brks,labels = scales::percent(brks))
+
+```
