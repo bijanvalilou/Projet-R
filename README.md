@@ -22,4 +22,5 @@ Procédure actuelle à suivre : Pour utiliser R Studio et Github et modifier le 
 
 Synthaxe Markdown : 
 https://bookdown.org/yihui/rmarkdown/markdown-syntax.html
+
 Certaines commandes Latex peuvent être intégrées grâce l'usage du compilateur Lualuatex. 
