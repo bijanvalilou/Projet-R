@@ -3,7 +3,7 @@
 
 Github pour avoir un fichier R Markdown collaboratif
 
-La connection entre Github et RMarkdwon peut être assez intéressante. Overleaf pose le problème de la limitation des collaborateurs (1 seul). RMarkdwon peut créer un fichier .tex, comprenant les graphiques et du texte. 
+La connection entre Github et RMarkdwon peut être assez intéressante pour créer un fichier PDF final comprenant une partie texte et une partie graphique (potentiellement certains lignes de code) de manière harmonieuse. Overleaf pose le problème de la limitation des collaborateurs (1 seul). Si la question se pose un moment de reformater le document final sous Latex, RMarkdwon peut créer un fichier .tex, comprenant les graphiques et du texte. 
 
 Pour utiliser R Studio et Github, vous devez :
  - envoyer à Bijan votre mail git pour être ajouté en tant que collaborateur
