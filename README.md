@@ -1,4 +1,4 @@
-# Projet-R
+# Projet-R : Modele ThreeMe
 
 
 Github pour avoir un fichier R Markdown collaboratif
