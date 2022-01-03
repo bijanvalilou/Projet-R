@@ -5,10 +5,10 @@ Github pour avoir un fichier R Markdown collaboratif
 
 La connection entre Github et RMarkdwon peut être assez intéressante pour créer un fichier PDF final comprenant une partie texte et une partie graphique (potentiellement certains lignes de code) de manière harmonieuse. Overleaf pose le problème de la limitation des collaborateurs (1 seul). Si la question se pose un moment de reformater le document final sous Latex, RMarkdwon peut créer un fichier .tex, comprenant les graphiques et du texte. 
 
-Voici la documentation que j'ai utilisée pour connecter RMarkdwon et Github : 
+Voici la documentation que j'ai utilisée pour connecter RMarkdwon et ce requisitory Github (pour une utilisation ultérieure) : 
 https://andrewmaclachlan.github.io/CASA0005repo/git-github-and-rmarkdown.html
 
-Pour utiliser R Studio et Github et modifier le requisitory présent, vous devez :
+Procédure actuelle à suivre : Pour utiliser R Studio et Github et modifier le requisitory présent, vous devez :
  - envoyer à Bijan votre mail git pour être ajouté en tant que collaborateur
  -  Installer Github Desktop
  -  Sur le requisitory présent (site web), cliquez sur le bouton Code > Open with Github Desktop
