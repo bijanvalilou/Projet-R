@@ -1,0 +1,779 @@
+---
+title: "Projet ThreeME"
+output: html_document
+---
+
+```{r, echo=FALSE}
+
+library(readxl)
+library(tibble)
+library(ggplot2)
+
+sheet_names <- excel_sheets("Page Reporting_shock des scénarios.xlsx")
+nb_sheets <- length(sheet_names)
+for (i in 1:nb_sheets){  
+        name <- sheet_names[i] 
+        name2 <- paste0(name) 
+        data <- read_excel("Page Reporting_shock des scénarios.xlsx", sheet = i) 
+        data <- column_to_rownames(data, var = '_date_')
+        colnames(data) <- c(2015:2050)
+        data <- data.frame(t(data))
+        data$year <- c(2015:2050)
+        assign(name2,data)
+        rm(name,name2,data)
+} 
+
+Sc1 <- (S1/Baseline-1)*100
+Sc2 <- (S2/Baseline-1)*100
+Sc3 <- (S3/Baseline-1)*100
+Sc4 <- (S4/Baseline-1)*100
+Sc5 <- (S5/Baseline-1)*100
+Sc6 <- (S6/Baseline-1)*100
+Sc1$year <- c(2015:2050)
+Sc2$year <- c(2015:2050)
+Sc3$year <- c(2015:2050)
+Sc4$year <- c(2015:2050)
+Sc5$year <- c(2015:2050)
+Sc6$year <- c(2015:2050)
+```
+
+
+# Générale
+
+```{r, echo=FALSE}
+#faut qjouter l'unite 
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
+  geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Tax_AvecDis")) + 
+  geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
+  geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Sub_AvecDis")) + 
+  geom_line( data = Sc5, aes(x = year,y = gdp_2, group = 1, color = "ENR")) + 
+  geom_line( data = Sc6, aes(x = year,y = gdp_2, group = 1, color = "Mélange")) +
+  labs(y = "Variation de GDP en %", title = "Evolution de variation de GDP") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+```{r, echo=FALSE}
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_SansDis")) + 
+  geom_line( data = Sc2, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_AvecDis")) + 
+  geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_SansDis")) + 
+  geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_AvecDis")) + 
+  geom_line( data = Sc5, aes(x = year,y = ems_co2_2, group = 1, color = "ENR")) + 
+  geom_line( data = Sc6, aes(x = year,y = ems_co2_2, group = 1, color = "Mélange")) +
+  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+```
+
+# Consommation énergétique par secteurs
+
+
+```{r, echo=FALSE}
+z <- c(Baseline[,"ci_toe_ind_0"],Baseline[,"ci_toe_trsp_0"],Baseline[,"ci_toe_ser_0"],Baseline[,"ch_toe_0"])
+x <- rep(Baseline[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Baseline") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+z <- c(S1[,"ci_toe_ind_2"],S1[,"ci_toe_trsp_2"],S1[,"ci_toe_ser_2"],S1[,"ch_toe_2"])
+x <- rep(S1[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Taxe sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+z <- c(S2[,"ci_toe_ind_2"],S2[,"ci_toe_trsp_2"],S2[,"ci_toe_ser_2"],S2[,"ch_toe_2"])
+x <- rep(S2[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Taxe sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+z <- c(S3[,"ci_toe_ind_2"],S3[,"ci_toe_trsp_2"],S3[,"ci_toe_ser_2"],S3[,"ch_toe_2"])
+x <- rep(S3[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Subvention sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+z <- c(S4[,"ci_toe_ind_2"],S4[,"ci_toe_trsp_2"],S4[,"ci_toe_ser_2"],S4[,"ch_toe_2"])
+x <- rep(S4[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Subvention avec distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+z <- c(S5[,"ci_toe_ind_2"],S5[,"ci_toe_trsp_2"],S5[,"ci_toe_ser_2"],S5[,"ch_toe_2"])
+x <- rep(S5[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Energie renouvelable") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+z <- c(S6[,"ci_toe_ind_2"],S6[,"ci_toe_trsp_2"],S6[,"ci_toe_ser_2"],S6[,"ch_toe_2"])
+x <- rep(S6[,"year"], times = 4)
+y <- rep(c("Industrie et agriculture","Transports","Services","Ménages"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. énergétique par secteurs - Mélange des politiques") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+
+# Production énergétique par énergies
+
+
+
+```{r, echo=FALSE}
+
+z <- c(Baseline[,"y_toe_coil_trsf_0"],Baseline[,"y_toe_cfut_trsf_0"],Baseline[,"y_toe_cfuh_trsf_0"],Baseline[,"y_toe_cgas_trsf_0"],Baseline[,"y_toe_cele_ele_0"])
+x <- rep(Baseline[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Baseline") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+
+z <- c(S1[,"y_toe_coil_trsf_2"],S1[,"y_toe_cfut_trsf_2"],S1[,"y_toe_cfuh_trsf_2"],S1[,"y_toe_cgas_trsf_2"],S1[,"y_toe_cele_ele_2"])
+x <- rep(S1[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = FALSE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Taxe sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+
+z <- c(S2[,"y_toe_coil_trsf_2"],S2[,"y_toe_cfut_trsf_2"],S2[,"y_toe_cfuh_trsf_2"],S2[,"y_toe_cgas_trsf_2"],S2[,"y_toe_cele_ele_2"])
+x <- rep(S2[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = FALSE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Taxe avec distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+
+z <- c(S3[,"y_toe_coil_trsf_2"],S3[,"y_toe_cfut_trsf_2"],S3[,"y_toe_cfuh_trsf_2"],S3[,"y_toe_cgas_trsf_2"],S3[,"y_toe_cele_ele_2"])
+x <- rep(S3[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = FALSE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Subvention sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+
+z <- c(S4[,"y_toe_coil_trsf_2"],S4[,"y_toe_cfut_trsf_2"],S4[,"y_toe_cfuh_trsf_2"],S4[,"y_toe_cgas_trsf_2"],S4[,"y_toe_cele_ele_2"])
+x <- rep(S4[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = FALSE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Subvention avec distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+
+z <- c(S5[,"y_toe_coil_trsf_2"],S5[,"y_toe_cfut_trsf_2"],S5[,"y_toe_cfuh_trsf_2"],S5[,"y_toe_cgas_trsf_2"],S5[,"y_toe_cele_ele_2"])
+x <- rep(S5[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = FALSE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Energie renouvelable") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+
+z <- c(S6[,"y_toe_coil_trsf_2"],S6[,"y_toe_cfut_trsf_2"],S6[,"y_toe_cfuh_trsf_2"],S6[,"y_toe_cgas_trsf_2"],S6[,"y_toe_cele_ele_2"])
+x <- rep(S6[,"year"], times = 5)
+y <- rep(c("Pétrole brut","Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = FALSE)) + 
+  labs(x = "year", y = "Prod. énergétique", title = "Prouction énergétique par type d'énergies - Mélange des politiques") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+# Consommation finale énergétique par énergies
+
+
+```{r, echo=FALSE}
+
+
+z <- c(Baseline[,"ci_toe_cfut_ind_0"] + Baseline[,"ci_toe_cfut_trsp_0"]+ Baseline[,"ci_toe_cfut_ser_0"]+ Baseline[,"ch_toe_cfut_0"],        Baseline[,"ci_toe_cfuh_ind_0"] + Baseline[,"ci_toe_cfuh_trsp_0"]+ Baseline[,"ci_toe_cfuh_ser_0"]+ Baseline[,"ch_toe_cfuh_0"], 
+       Baseline[,"ci_toe_cgas_ind_0"] + Baseline[,"ci_toe_cgas_trsp_0"]+ Baseline[,"ci_toe_cgas_ser_0"]+ Baseline[,"ch_toe_cgas_0"],
+       Baseline[,"ci_toe_cele_ind_0"] + Baseline[,"ci_toe_cele_trsp_0"]+ Baseline[,"ci_toe_cele_ser_0"]+ Baseline[,"ch_toe_cele_0"] )
+x <- rep(Baseline[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique en %", title = "Cons. finale énergétique par type d'énergies - Baseline") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+```{r, echo=FALSE}
+
+
+z <- c(S1[,"ci_toe_cfut_ind_2"] + S1[,"ci_toe_cfut_trsp_2"]+ S1[,"ci_toe_cfut_ser_2"]+ S1[,"ch_toe_cfut_2"],
+       S1[,"ci_toe_cfuh_ind_2"] + S1[,"ci_toe_cfuh_trsp_2"]+ S1[,"ci_toe_cfuh_ser_2"]+ S1[,"ch_toe_cfuh_2"], 
+       S1[,"ci_toe_cgas_ind_2"] + S1[,"ci_toe_cgas_trsp_2"]+ S1[,"ci_toe_cgas_ser_2"]+ S1[,"ch_toe_cgas_2"],
+       S1[,"ci_toe_cele_ind_2"] + S1[,"ci_toe_cele_trsp_2"]+ S1[,"ci_toe_cele_ser_2"]+ S1[,"ch_toe_cele_2"] )
+x <- rep(S1[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. finale énergétique par type d'énergies - Taxe sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+```{r, echo=FALSE}
+
+
+z <- c(S2[,"ci_toe_cfut_ind_2"] + S2[,"ci_toe_cfut_trsp_2"]+ S2[,"ci_toe_cfut_ser_2"]+ S2[,"ch_toe_cfut_2"],
+       S2[,"ci_toe_cfuh_ind_2"] + S2[,"ci_toe_cfuh_trsp_2"]+ S2[,"ci_toe_cfuh_ser_2"]+ S2[,"ch_toe_cfuh_2"], 
+       S2[,"ci_toe_cgas_ind_2"] + S2[,"ci_toe_cgas_trsp_2"]+ S2[,"ci_toe_cgas_ser_2"]+ S2[,"ch_toe_cgas_2"],
+       S2[,"ci_toe_cele_ind_2"] + S2[,"ci_toe_cele_trsp_2"]+ S2[,"ci_toe_cele_ser_2"]+ S2[,"ch_toe_cele_2"] )
+x <- rep(S2[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. finale énergétique par type d'énergies - Taxe avec distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+
+
+```{r, echo=FALSE}
+
+
+z <- c(S3[,"ci_toe_cfut_ind_2"] + S3[,"ci_toe_cfut_trsp_2"]+ S3[,"ci_toe_cfut_ser_2"]+ S3[,"ch_toe_cfut_2"],
+       S3[,"ci_toe_cfuh_ind_2"] + S3[,"ci_toe_cfuh_trsp_2"]+ S3[,"ci_toe_cfuh_ser_2"]+ S3[,"ch_toe_cfuh_2"], 
+       S3[,"ci_toe_cgas_ind_2"] + S3[,"ci_toe_cgas_trsp_2"]+ S3[,"ci_toe_cgas_ser_2"]+ S3[,"ch_toe_cgas_2"],
+       S3[,"ci_toe_cele_ind_2"] + S3[,"ci_toe_cele_trsp_2"]+ S3[,"ci_toe_cele_ser_2"]+ S3[,"ch_toe_cele_2"] )
+x <- rep(S1[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. finale énergétique par type d'énergies - Subvention sans distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+
+```{r, echo=FALSE}
+
+
+z <- c(S4[,"ci_toe_cfut_ind_2"] + S4[,"ci_toe_cfut_trsp_2"]+ S4[,"ci_toe_cfut_ser_2"]+ S4[,"ch_toe_cfut_2"],
+       S4[,"ci_toe_cfuh_ind_2"] + S4[,"ci_toe_cfuh_trsp_2"]+ S4[,"ci_toe_cfuh_ser_2"]+ S4[,"ch_toe_cfuh_2"], 
+       S4[,"ci_toe_cgas_ind_2"] + S4[,"ci_toe_cgas_trsp_2"]+ S4[,"ci_toe_cgas_ser_2"]+ S4[,"ch_toe_cgas_2"],
+       S4[,"ci_toe_cele_ind_2"] + S4[,"ci_toe_cele_trsp_2"]+ S4[,"ci_toe_cele_ser_2"]+ S4[,"ch_toe_cele_2"] )
+x <- rep(S4[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. finale énergétique par type d'énergies - Subvention avec distribution") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+
+```{r, echo=FALSE}
+
+
+z <- c(S5[,"ci_toe_cfut_ind_2"] + S5[,"ci_toe_cfut_trsp_2"]+ S5[,"ci_toe_cfut_ser_2"]+ S5[,"ch_toe_cfut_2"],
+       S5[,"ci_toe_cfuh_ind_2"] + S5[,"ci_toe_cfuh_trsp_2"]+ S5[,"ci_toe_cfuh_ser_2"]+ S5[,"ch_toe_cfuh_2"], 
+       S5[,"ci_toe_cgas_ind_2"] + S5[,"ci_toe_cgas_trsp_2"]+ S5[,"ci_toe_cgas_ser_2"]+ S5[,"ch_toe_cgas_2"],
+       S5[,"ci_toe_cele_ind_2"] + S5[,"ci_toe_cele_trsp_2"]+ S5[,"ci_toe_cele_ser_2"]+ S5[,"ch_toe_cele_2"] )
+x <- rep(S5[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. finale énergétique par type d'énergies - Energie Renouvelable") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+
+```{r, echo=FALSE}
+
+
+z <- c(S6[,"ci_toe_cfut_ind_2"] + S6[,"ci_toe_cfut_trsp_2"]+ S6[,"ci_toe_cfut_ser_2"]+ S6[,"ch_toe_cfut_2"],
+       S6[,"ci_toe_cfuh_ind_2"] + S6[,"ci_toe_cfuh_trsp_2"]+ S6[,"ci_toe_cfuh_ser_2"]+ S6[,"ch_toe_cfuh_2"], 
+       S6[,"ci_toe_cgas_ind_2"] + S6[,"ci_toe_cgas_trsp_2"]+ S6[,"ci_toe_cgas_ser_2"]+ S6[,"ch_toe_cgas_2"],
+       S6[,"ci_toe_cele_ind_2"] + S6[,"ci_toe_cele_trsp_2"]+ S6[,"ci_toe_cele_ser_2"]+ S6[,"ch_toe_cele_2"] )
+x <- rep(S6[,"year"], times = 4)
+y <- rep(c("Carburants pourle transport","Carburants pour d'autres usages","Gaz naturel","Electricité"), each = 36)
+
+ggplot(
+  mapping = aes(
+                x = x, 
+                y = z, 
+                fill = y,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'fill') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Cons. énergétique", title = "Cons. finale énergétique par type d'énergies - Mélange des politiques") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+# Analyse basant sur décomposition d'identité Kaya
+
+
+```{r, echo=FALSE}
+
+Ind_Ene_0 <- (Baseline[,"ci_toe_ind_0"]+Baseline[,"ci_toe_trsp_0"]+Baseline[,"ci_toe_ser_0"]+Baseline[,"ch_toe_0"])/Baseline[,"gdp_0"]
+Ind_car_0 <- Baseline[,"ems_co2_0"]/((Baseline[,"ci_toe_ind_0"]+Baseline[,"ci_toe_trsp_0"]+Baseline[,"ci_toe_ser_0"]+Baseline[,"ch_toe_0"]))
+Pib_cap_0 <- Baseline[,"gdp_0"]/Baseline[,"pop"]
+
+
+Ind_Ene_1 <- (S1[,"ci_toe_ind_2"]+S1[,"ci_toe_trsp_2"]+S1[,"ci_toe_ser_2"]+S1[,"ch_toe_2"])/S1[,"gdp_2"]
+Ind_car_1 <- S1[,"ems_co2_2"]/((S1[,"ci_toe_ind_2"]+S1[,"ci_toe_trsp_2"]+S1[,"ci_toe_ser_2"]+S1[,"ch_toe_2"]))
+Pib_cap_1 <- S1[,"gdp_2"]/S1[,"pop"]
+
+Ind_Ene_2 <- (S2[,"ci_toe_ind_2"]+S2[,"ci_toe_trsp_2"]+S2[,"ci_toe_ser_2"]+S2[,"ch_toe_2"])/S2[,"gdp_2"]
+Ind_car_2 <- S2[,"ems_co2_2"]/((S2[,"ci_toe_ind_2"]+S2[,"ci_toe_trsp_2"]+S2[,"ci_toe_ser_2"]+S2[,"ch_toe_2"]))
+Pib_cap_2 <- S2[,"gdp_2"]/S2[,"pop"]
+
+Ind_Ene_3 <- (S3[,"ci_toe_ind_2"]+S3[,"ci_toe_trsp_2"]+S3[,"ci_toe_ser_2"]+S3[,"ch_toe_2"])/S3[,"gdp_2"]
+Ind_car_3 <- S3[,"ems_co2_2"]/((S3[,"ci_toe_ind_2"]+S3[,"ci_toe_trsp_2"]+S3[,"ci_toe_ser_2"]+S3[,"ch_toe_2"]))
+Pib_cap_3 <- S3[,"gdp_2"]/S3[,"pop"]
+
+Ind_Ene_4 <- (S4[,"ci_toe_ind_2"]+S4[,"ci_toe_trsp_2"]+S4[,"ci_toe_ser_2"]+S4[,"ch_toe_2"])/S4[,"gdp_2"]
+Ind_car_4 <- S4[,"ems_co2_2"]/((S4[,"ci_toe_ind_2"]+S4[,"ci_toe_trsp_2"]+S4[,"ci_toe_ser_2"]+S4[,"ch_toe_2"]))
+Pib_cap_4 <- S4[,"gdp_2"]/S4[,"pop"]
+
+Ind_Ene_5 <- (S5[,"ci_toe_ind_2"]+S5[,"ci_toe_trsp_2"]+S5[,"ci_toe_ser_2"]+S5[,"ch_toe_2"])/S5[,"gdp_2"]
+Ind_car_5 <- S5[,"ems_co2_2"]/((S5[,"ci_toe_ind_2"]+S5[,"ci_toe_trsp_2"]+S5[,"ci_toe_ser_2"]+S5[,"ch_toe_2"]))
+Pib_cap_5 <- S5[,"gdp_2"]/S5[,"pop"]
+
+Ind_Ene_6 <- (S6[,"ci_toe_ind_2"]+S6[,"ci_toe_trsp_2"]+S6[,"ci_toe_ser_2"]+S6[,"ch_toe_2"])/S6[,"gdp_2"]
+Ind_car_6 <- S6[,"ems_co2_2"]/((S6[,"ci_toe_ind_2"]+S6[,"ci_toe_trsp_2"]+S6[,"ci_toe_ser_2"]+S6[,"ch_toe_2"]))
+Pib_cap_6 <- S6[,"gdp_2"]/S6[,"pop"]
+
+```
+
+```{r, echo=FALSE}
+
+
+ggplot() + 
+  geom_line( data = Sc1, aes(x = Sc1[,"year"],y = ems_co2_2, group = 1, color = "Tax_sansdis")) + 
+  geom_line( data = Sc2, aes(x = Sc2[,"year"],y = ems_co2_2, group = 1, color = "Tax_avecdis")) + 
+  geom_line( data = Sc3, aes(x = Sc3[,"year"],y = ems_co2_2, group = 1, color = "Sub_sansdis")) + 
+  geom_line( data = Sc4, aes(x = Sc4[,"year"],y = ems_co2_2, group = 1, color = "Sub_avecdis")) + 
+  geom_line( data = Sc5, aes(x = Sc5[,"year"],y = ems_co2_2, group = 1, color = "ENR")) + 
+  geom_line( data = Sc6, aes(x = Sc6[,"year"],y = ems_co2_2, group = 1, color = "melange")) +
+  labs(x = "year", y = "Variation d'émission CO2 en%", title = "L'évolution de la variation d'emission") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+```{r, echo=FALSE}
+
+ln_indene_1 <- (Ind_Ene_1/Ind_Ene_0 - 1)*100
+ln_indene_2 <- (Ind_Ene_2/Ind_Ene_0 - 1)*100
+ln_indene_3 <- (Ind_Ene_3/Ind_Ene_0 - 1)*100
+ln_indene_4 <- (Ind_Ene_4/Ind_Ene_0 - 1)*100
+ln_indene_5 <- (Ind_Ene_5/Ind_Ene_0 - 1)*100
+ln_indene_6 <- (Ind_Ene_6/Ind_Ene_0 - 1)*100
+
+
+ggplot() + 
+  geom_line( aes(x = S1[,"year"],y = ln_indene_1, group = 1, color = "Tax_sansdis")) + 
+  geom_line( aes(x = S2[,"year"],y = ln_indene_2, group = 1, color = "Tax_avecdis")) + 
+  geom_line( aes(x = S3[,"year"],y = ln_indene_3, group = 1, color = "Sub_sansdis")) + 
+  geom_line( aes(x = S4[,"year"],y = ln_indene_4, group = 1, color = "Sub_avecdis")) + 
+  geom_line( aes(x = S5[,"year"],y = ln_indene_5, group = 1, color = "ENR")) + 
+  geom_line( aes(x = S6[,"year"],y = ln_indene_6, group = 1, color = "melange")) +
+  labs(x = "year", y = "Variation d'Intensite d'energie en%", title = "L'impact sur le variation d'émission - Intensite d'energie par PIB ") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+```{r, echo=FALSE}
+
+ln_pibcar_1 <- (Pib_cap_1/Pib_cap_0 - 1)*100
+ln_pibcar_2 <- (Pib_cap_2/Pib_cap_0 - 1)*100
+ln_pibcar_3 <- (Pib_cap_3/Pib_cap_0 - 1)*100
+ln_pibcar_4 <- (Pib_cap_4/Pib_cap_0 - 1)*100
+ln_pibcar_5 <- (Pib_cap_5/Pib_cap_0 - 1)*100
+ln_pibcar_6 <- (Pib_cap_6/Pib_cap_0 - 1)*100
+
+
+
+ggplot() + 
+  geom_line( aes(x = S1[,"year"],y = ln_pibcar_1, group = 1, color = "Tax_sansdis")) + 
+  geom_line( aes(x = S2[,"year"],y = ln_pibcar_2, group = 1, color = "Tax_avecdis")) + 
+  geom_line( aes(x = S3[,"year"],y = ln_pibcar_3, group = 1, color = "Sub_sansdis")) + 
+  geom_line( aes(x = S4[,"year"],y = ln_pibcar_4, group = 1, color = "Sub_avecdis")) + 
+  geom_line( aes(x = S5[,"year"],y = ln_pibcar_5, group = 1, color = "ENR")) + 
+  geom_line( aes(x = S6[,"year"],y = ln_pibcar_6, group = 1, color = "melange")) +
+  labs(x = "year", y = "Variation de PIB par tete en%", title = "L'impact sur le variation d'émission - PIB par tete") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+```{r, echo=FALSE}
+
+ln_ind_car_1 <- (Ind_car_1/Ind_car_0 - 1)*100
+ln_ind_car_2 <- (Ind_car_2/Ind_car_0 - 1)*100
+ln_ind_car_3 <- (Ind_car_3/Ind_car_0 - 1)*100
+ln_ind_car_4 <- (Ind_car_4/Ind_car_0 - 1)*100
+ln_ind_car_5 <- (Ind_car_5/Ind_car_0 - 1)*100
+ln_ind_car_6 <- (Ind_car_6/Ind_car_0 - 1)*100
+
+
+ggplot() + 
+  geom_line( aes(x = rownames(S1),y = ln_ind_car_1, group = 1, color = "Tax_sansdis")) + 
+  geom_line( aes(x = rownames(S2),y = ln_ind_car_2, group = 1, color = "Tax_avecdis")) + 
+  geom_line( aes(x = rownames(S3),y = ln_ind_car_3, group = 1, color = "Sub_sansdis")) + 
+  geom_line( aes(x = rownames(S4),y = ln_ind_car_4, group = 1, color = "Sub_avecdis")) + 
+  geom_line( aes(x = rownames(S5),y = ln_ind_car_5, group = 1, color = "ENR")) + 
+  geom_line( aes(x = rownames(S6),y = ln_ind_car_6, group = 1, color = "melange")) +
+  labs(x = "year", y = "Variation d'Intensite de carbon en%", title = "L'impact sur le variation d'emission - intensite de carbon par cons. énergétique ") + 
+  theme(axis.text.x =  element_text(angle=45, hjust=1, vjust=1))
+```
+
+
+
+
+```{r, echo=FALSE}
+
+w <- (S1[,"ems_co2_2"]-Baseline[,"ems_co2_0"])/(log(S1[,"ems_co2_2"])-log(Baseline[,"ems_co2_0"]))
+w[1:6] = 0
+delta_pibcap_1 <- w*log(Pib_cap_1/Pib_cap_0)
+delta_intene_1 <- w*log(Ind_Ene_1/Ind_Ene_0)
+delta_intcar_1 <- w*log(Ind_car_1/Ind_car_0)
+
+
+z <- c(delta_pibcap_1, delta_intene_1, delta_intcar_1)
+x <- rep(S1[,"year"], times = 3)
+y <- rep(c("PIB par tête","Indensité énergétique","Indensité carbone"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = y,group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Différence absolue de l'émission", title = "Evolution de part de variation de l'émission - Taxe sans redistribution") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+
+w <- (S2[,"ems_co2_2"]-Baseline[,"ems_co2_0"])/(log(S2[,"ems_co2_2"])-log(Baseline[,"ems_co2_0"]))
+w[1:6] = 0
+delta_pibcap_2 <- w*log(Pib_cap_2/Pib_cap_0)
+delta_intene_2 <- w*log(Ind_Ene_2/Ind_Ene_0)
+delta_intcar_2 <- w*log(Ind_car_2/Ind_car_0)
+
+
+z <- c(delta_pibcap_2, delta_intene_2, delta_intcar_2)
+x <- rep(S2[,"year"], times = 3)
+y <- rep(c("PIB par tête","Indensité énergétique","Indensité carbone"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = y,group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Différence absolue de l'émission", title = "Evolution de part de variation de l'émission - Taxe avec redistribution") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+
+w <- (S3[,"ems_co2_2"]-Baseline[,"ems_co2_0"])/(log(S3[,"ems_co2_2"])-log(Baseline[,"ems_co2_0"]))
+w[1:6] = 0
+delta_pibcap_3 <- w*log(Pib_cap_3/Pib_cap_0)
+delta_intene_3 <- w*log(Ind_Ene_3/Ind_Ene_0)
+delta_intcar_3 <- w*log(Ind_car_3/Ind_car_0)
+
+
+z <- c(delta_pibcap_3, delta_intene_3, delta_intcar_3)
+x <- rep(S1[,"year"], times = 3)
+y <- rep(c("PIB par tête","Indensité énergétique","Indensité carbone"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = y,group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Différence absolue de l'émission", title = "Evolution de part de variation de l'émission - Subvention sans redistribution") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+
+w <- (S4[,"ems_co2_2"]-Baseline[,"ems_co2_0"])/(log(S4[,"ems_co2_2"])-log(Baseline[,"ems_co2_0"]))
+w[1:6] = 0
+delta_pibcap_4 <- w*log(Pib_cap_4/Pib_cap_0)
+delta_intene_4 <- w*log(Ind_Ene_4/Ind_Ene_0)
+delta_intcar_4 <- w*log(Ind_car_4/Ind_car_0)
+
+
+z <- c(delta_pibcap_4, delta_intene_4, delta_intcar_4)
+x <- rep(S4[,"year"], times = 3)
+y <- rep(c("PIB par tête","Indensité énergétique","Indensité carbone"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = y,group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Différence absolue de l'émission", title = "Evolution de part de variation de l'émission - Subvention avec redistribution") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+
+w <- (S5[,"ems_co2_2"]-Baseline[,"ems_co2_0"])/(log(S5[,"ems_co2_2"])-log(Baseline[,"ems_co2_0"]))
+w[1] = 0
+delta_pibcap_5 <- w*log(Pib_cap_5/Pib_cap_0)
+delta_intene_5 <- w*log(Ind_Ene_5/Ind_Ene_0)
+delta_intcar_5 <- w*log(Ind_car_5/Ind_car_0)
+
+
+z <- c(delta_pibcap_5, delta_intene_5, delta_intcar_5)
+x <- rep(S5[,"year"], times = 3)
+y <- rep(c("PIB par tête","Indensité énergétique","Indensité carbone"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = y,group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Différence absolue de l'émission", title = "Evolution de part de variation de l'émission - Energie renouvelable") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+
+
+```{r, echo=FALSE}
+w <- (S6[,"ems_co2_2"]-Baseline[,"ems_co2_0"])/(log(S6[,"ems_co2_2"])-log(Baseline[,"ems_co2_0"]))
+w[1] = 0
+delta_pibcap_6 <- w*log(Pib_cap_6/Pib_cap_0)
+delta_intene_6 <- w*log(Ind_Ene_6/Ind_Ene_0)
+delta_intcar_6 <- w*log(Ind_car_6/Ind_car_0)
+
+
+z <- c(delta_pibcap_6, delta_intene_6, delta_intcar_6)
+x <- rep(S6[,"year"], times = 3)
+y <- rep(c("PIB par tête","Indensité énergétique","Indensité carbone"), each = 36)
+
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = y,group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) +
+  labs(x = "year", y = "Différence absolue de l'émission", title = "Evolution de part de variation de l'émission - Mélange des politiques") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+  
+```
+
+
+
