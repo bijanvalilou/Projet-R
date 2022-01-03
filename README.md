@@ -15,4 +15,4 @@ Pour utiliser R Studio et Github, vous devez :
      -  Enregistrer le changement sur Rstudio (fichier+projet) et fermer Rstudio 
      -  Cliquer dans la copie locale de Github Desktop, sur "Commit to Master" 
      -  Cliquer dans la copie locale de Github Desktop, sur "Push Origin" pour envoyer le changement sur le requisitory GitHub 
- -  Vous pouvez Pull sur Github Desktop les changements faits par autres utilisateurs. Si Github Desktop ne vous le propose pas automatique, vous pouvez cliquer sur le bouton refresh "Flesh"
+ -  Vous pouvez Pull sur Github Desktop les changements faits par autres utilisateurs. Si Github Desktop ne vous le propose pas automatique, vous pouvez cliquer sur le bouton refresh "Fetch Origin"
