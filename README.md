@@ -18,9 +18,9 @@ Procédure actuelle à suivre : Pour utiliser R Studio et Github et modifier le 
      -  Enregistrer le changement sur Rstudio (fichier+projet) et fermer Rstudio 
      -  Cliquer dans la copie locale de Github Desktop, sur "Commit to Master" 
      -  Cliquer dans la copie locale de Github Desktop, sur "Push Origin" pour envoyer le changement sur le requisitory commun GitHub 
- -  Vous pouvez Pull sur Github Desktop les changements faits par autres utilisateurs. Si Github Desktop ne vous le propose pas automatiquement, vous pouvez cliquer sur le bouton refresh "Fetch Origin", puis "Pull origin"
+ -  Vous pouvez Pull sur Github Desktop les changements faits par d'autres utilisateurs. Si Github Desktop ne vous le propose pas automatiquement, vous pouvez cliquer sur le bouton refresh "Fetch Origin", puis "Pull origin"
 
 Synthaxe Markdown : 
 https://bookdown.org/yihui/rmarkdown/markdown-syntax.html
 
-Certaines commandes Latex peuvent être intégrées grâce l'usage du compilateur Lualuatex. 
+Certaines commandes Latex peuvent être intégrées grâce à l'usage du compilateur Lualuatex. 
