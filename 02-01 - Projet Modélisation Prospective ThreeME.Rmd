@@ -6,6 +6,8 @@ output:
   word_document: default
 ---
 
+# Importation des données et package
+
 ```{r, echo=FALSE}
 library(knitr) 
 library(rmarkdown) 
@@ -44,6 +46,27 @@ Sc5$year <- c(2015:2050)
 Sc6$year <- c(2015:2050)
 ```
 
+```{r}
+
+sheet_names <- excel_sheets("Page Macro.xlsx")
+nb_sheets <- length(sheet_names)
+for (i in 1:nb_sheets){  
+        name <- sheet_names[i] 
+        name2 <- paste0(name,"_Macro") 
+        data <- read_excel("Page Macro.xlsx", sheet = i) 
+        data <- column_to_rownames(data, var = '_date_')
+        colnames(data) <- c(2015:2050)
+        data <- data.frame(t(data))
+        data$year <- c(2015:2050)
+        assign(name2,data)
+        rm(name,name2,data)
+} 
+
+
+
+
+
+```
 
 # I. Générale
 
@@ -768,29 +791,8 @@ y <- rep(c("Intensité carbone","Activité économique","Intensité énergétiqu
 
 # IV. Economie
 
-```{r}
 
-sheet_names <- excel_sheets("Page Macro.xlsx")
-nb_sheets <- length(sheet_names)
-for (i in 1:nb_sheets){  
-        name <- sheet_names[i] 
-        name2 <- paste0(name,"_Macro") 
-        data <- read_excel("Page Macro.xlsx", sheet = i) 
-        data <- column_to_rownames(data, var = '_date_')
-        colnames(data) <- c(2015:2050)
-        data <- data.frame(t(data))
-        data$year <- c(2015:2050)
-        assign(name2,data)
-        rm(name,name2,data)
-} 
-
-
-
-
-
-```
-
-
+## A. Prix
 
 ```{r, echo=FALSE}
 
@@ -892,6 +894,8 @@ ggplot() +
 
 ```
 
+
+## B. Politiques publiques - Taxe carbone et levée des subventions 
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -928,24 +932,7 @@ ggplot() +
 
 
 
-
-
-```{r, echo=FALSE}
-            
-ggplot() + 
-    geom_line( data = Baseline, aes(x = year,y = unr_0*100, group = 1, color = "Scénario de référence"), size=0.8) + 
-  geom_line( data = S1, aes(x = year,y = unr_2*100, group = 1, color = "Taxe_SansRedis")) + 
-  geom_line( data = S2, aes(x = year,y = unr_2*100, group = 1, color = "Taxe_AvecRedis")) + 
-  geom_line( data = S3, aes(x = year,y = unr_2*100, group = 1, color = "Subvention_SansRedis")) + 
-  geom_line( data = S4, aes(x = year,y = unr_2*100, group = 1, color = ("Subvention_AvecRedis"))) + 
-  geom_line( data = S5, aes(x = year,y = unr_2*100, group = 1, color = "ENR"), size=0.8) + 
-  geom_line( data = S6, aes(x = year,y = unr_2*100, group = 1, color = "SNBC"), size=0.8) +
-  labs(x= "Temps (en année)", y = "Chômage (en % de la population active)", title = "Taux de chômage en fonction des scénarii", color="Scénarii") +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-
-```
-
+## C. Commerce extérieur
 
 
 ```{r, echo=FALSE}
@@ -966,6 +953,26 @@ ggplot() +
 
 
 ## B. Emploi - Report shock 
+
+### 1. Emploi - Niveau agrégé
+
+```{r, echo=FALSE}
+            
+ggplot() + 
+    geom_line( data = Baseline, aes(x = year,y = unr_0*100, group = 1, color = "Scénario de référence"), size=0.8) + 
+  geom_line( data = S1, aes(x = year,y = unr_2*100, group = 1, color = "Taxe_SansRedis")) + 
+  geom_line( data = S2, aes(x = year,y = unr_2*100, group = 1, color = "Taxe_AvecRedis")) + 
+  geom_line( data = S3, aes(x = year,y = unr_2*100, group = 1, color = "Subvention_SansRedis")) + 
+  geom_line( data = S4, aes(x = year,y = unr_2*100, group = 1, color = ("Subvention_AvecRedis"))) + 
+  geom_line( data = S5, aes(x = year,y = unr_2*100, group = 1, color = "ENR"), size=0.8) + 
+  geom_line( data = S6, aes(x = year,y = unr_2*100, group = 1, color = "SNBC"), size=0.8) +
+  labs(x= "Temps (en année)", y = "Chômage (en % de la population active)", title = "Taux de chômage en fonction des scénarii", color="Scénarii") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+```
+
+### 2. Emploi - Niveau sectoriel
 Peu concluant, pas beaucoup de variation (même en relatif) à part pour la transformation d'énergie (voir peut-être les missing data pour avoir plus de secteurs)
 
 ```{r, echo=FALSE}
