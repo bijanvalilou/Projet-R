@@ -7,7 +7,7 @@ La connection entre Github et RMarkdwon peut être assez intéressante. Overleaf
 
 Pour utiliser R Studio et Github, vous devez : 
  -  Installer Github Desktop
- -  Sur le requisitory présent, cliquez sur le bouton Code > Open with Github Desktop
+ -  Sur le requisitory présent (site web), cliquez sur le bouton Code > Open with Github Desktop
  -  Une fois ouvert dans Github Desktop, vous cliquez sur "Clone". Vous avez une copie locale du requisitory sur votre ordinateur. 
  -  Une fois la copie locale effectuée, à partir de github desktop, vous pouvez ouvrir le projet R grâce à "Open in R Studio". 
      -  Vous pouvez, par exemple, ouvrir le test_file, puis écrire une nouvelle ligne "test_yourName" 
