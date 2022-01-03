@@ -9,7 +9,7 @@ Pour utiliser R Studio et Github, vous devez :
  -  Installer Github Desktop
  -  Sur le requisitory présent, cliquez sur le bouton Code > Open with Github Desktop
  -  Une fois ouvert dans Github Desktop, vous cliquez sur "Clone". Vous avez une copie locale du requisitory sur votre ordinateur. 
- -  Une fois la copie locale effectuée, à partir de github desktop, vous pouvez ouvrir le fichier grâce à "Open in R Studio". 
+ -  Une fois la copie locale effectuée, à partir de github desktop, vous pouvez ouvrir le projet R grâce à "Open in R Studio". 
      -  Vous pouvez, par exemple, ouvrir le test_file, puis écrire une nouvelle ligne "test_yourName" 
      -  Enregistrer le changement sur Rstudio (fichier+projet) et fermer Rstudio 
      -  Cliquer dans la copie locale de Github Desktop, sur "Commit to Master" 
