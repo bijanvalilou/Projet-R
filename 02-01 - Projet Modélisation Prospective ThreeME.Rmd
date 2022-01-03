@@ -960,9 +960,9 @@ ggplot() +
             
 ggplot() + 
     geom_line( data = Baseline, aes(x = year,y = unr_0*100, group = 1, color = "Scénario de référence"), size=0.8) + 
-  geom_line( data = S1, aes(x = year,y = unr_2*100, group = 1, color = "Taxe_SansRedis")) + 
-  geom_line( data = S2, aes(x = year,y = unr_2*100, group = 1, color = "Taxe_AvecRedis")) + 
-  geom_line( data = S3, aes(x = year,y = unr_2*100, group = 1, color = "Subvention_SansRedis")) + 
+  geom_line( data = S1, aes(x = year,y = unr_2*100, group = 1, color = "Taxe sans redistribution")) + 
+  geom_line( data = S2, aes(x = year,y = unr_2*100, group = 1, color = "Taxe avec redistribution")) + 
+  geom_line( data = S3, aes(x = year,y = unr_2*100, group = 1, color = "Subvention sans redistribution")) + 
   geom_line( data = S4, aes(x = year,y = unr_2*100, group = 1, color = ("Subvention_AvecRedis"))) + 
   geom_line( data = S5, aes(x = year,y = unr_2*100, group = 1, color = "ENR"), size=0.8) + 
   geom_line( data = S6, aes(x = year,y = unr_2*100, group = 1, color = "SNBC"), size=0.8) +
