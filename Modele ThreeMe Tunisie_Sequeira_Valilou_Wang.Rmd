@@ -1,14 +1,48 @@
 ---
-title: "Modele ThreeMe Tunisie Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour un petit pays en développement"
-
+title: "Modèle ThreeMe Tunisie" 
+subtitle : "Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour un petit pays en développement : le cas de la Tunisie"
+author : "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
+date : "Janvier 2021"
+    
 output:
   pdf_document: 
     citation_package: biblatex
-    fig_caption: yes
-    fig_height: 2.95
-    fig_width: 3.1
-  word_document: default
-  html_document: 
-    fig_height: 4
-    fig_width: 6
+    toc: yes
+    number_sections: yes
+    toc_depth: 2
+    highlight: tango
+    latex_engine: lualatex
+
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
+  - \fancyfoot[LE,RO]{\thepage}
 ---
+
+\newpage
+
+
+
+
+# Introduction
+
+# Cadre énergétique et économique en Tunisie
+
+# Modèle ThreeME
+
+## Modèle ThreeME
+
+## Adaptation au cas de Tunisie
+
+# Scénarios à analyser
+
+## Descriptifs des scénarios à analyser
+
+## Choix des indicateurs d'évaluation
+
+# Interprétations des analyses
+
+# D'autres leviers pour analyser (ouverture)
+
+# Conclusion

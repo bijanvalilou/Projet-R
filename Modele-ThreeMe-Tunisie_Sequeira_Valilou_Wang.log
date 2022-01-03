@@ -1,28 +1,133 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.3)  3 JAN 2022 19:53
-entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
-(Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12.10) (format=lualatex 2022.1.3)  3 JAN 2022 21:12
+ restricted system commands enabled.
+**Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
+(./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22> (C:\Users\bijan\AppData\Local\Programs\MiKTeX
-\tex/latex/base\article.cls
+Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
+Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/bijan/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2021-05-20.lua" from kpse-res
+olved path "C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/f
+ontloader-2021-05-20.lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 3.116
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 3
+luaotfload | conf : Root cache directory is "C:/Users/bijan/AppData/Local/MiKTeX
+/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
+er'.
+Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 4
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2021-11-22>
+Inserting `tracingstacklevels' at position 1 in `input_level_string'. (C:/Users
+/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
-)
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+luaotfload | db : Font names database loaded from C:/Users/bijan/AppData/Local/M
+iKTeX/luatex-cache/generic/names/luaotfload-names.luc)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+\bibindent=\dimen137
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count189
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen138
+)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen139
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen140
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip16
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks17
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks18
+\eqnshift@=\dimen141
+\alignsep@=\dimen142
+\tagshift@=\dimen143
+\tagwidth@=\dimen144
+\totwidth@=\dimen145
+\lineht@=\dimen146
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -56,141 +161,133 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip49
-For additional information on amsmath, use the `?' option.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen139
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen140
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
-)
-\inf@bad=\count191
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count192
-\leftroot@=\count193
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count194
-\DOTSCASE@=\count195
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box50
-\strutbox@=\box51
-\big@size=\dimen141
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count196
-\c@MaxMatrixCols=\count197
-\dotsspace@=\muskip16
-\c@parentequation=\count198
-\dspbrk@lvl=\count199
-\tag@help=\toks17
-\row@=\count266
-\column@=\count267
-\maxfields@=\count268
-\andhelp@=\toks18
-\eqnshift@=\dimen142
-\alignsep@=\dimen143
-\tagshift@=\dimen144
-\tagwidth@=\dimen145
-\totwidth@=\dimen146
-\lineht@=\dimen147
-\@envbody=\toks19
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+)
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-ma
+th.sty (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.s
+ty
+Package: expl3 2021-11-22 L3 programming layer (loader) 
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lua
+tex.def
+File: l3backend-luatex.def 2021-12-14 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box52
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-ma
+th-luatex.sty
+Package: unicode-math-luatex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaL
+aTeX
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xpars
+e.sty
+Package: xparse 2021-11-12 L3 Experimental document command parser
+)
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/l3keys2e/l3k
+eys2e.sty
+Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec-luate
+x.sty
+Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count269
+\l__fontspec_language_int=\count270
+\l__fontspec_strnum_int=\count271
+\l__fontspec_tmp_int=\count272
+\l__fontspec_tmpa_int=\count273
+\l__fontspec_tmpb_int=\count274
+\l__fontspec_tmpc_int=\count275
+\l__fontspec_em_int=\count276
+\l__fontspec_emdef_int=\count277
+\l__fontspec_strong_int=\count278
+\l__fontspec_strongdef_int=\count279
+\l__fontspec_tmpa_dim=\dimen147
+\l__fontspec_tmpb_dim=\dimen148
+\l__fontspec_tmpc_dim=\dimen149
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-2.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.cfg
+))) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/lualatex/lualatex-math/lualat
+ex-math.sty
+Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
+h LuaLaTeX
+Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
+h LuaLaTeX)
+\g__um_fam_int=\count280
+\g__um_fonts_used_int=\count281
+\l__um_primecount_int=\count282
+\g__um_primekern_muskip=\muskip17
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-ma
+th-table.tex))) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/upquote
+/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
-)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.sty
 Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count269
+\KV@toks@=\toks21
 )
-\MT@toks=\toks24
-\MT@count=\count270
-\MT@tempbox=\box52
+\MT@toks=\toks22
+\MT@count=\count283
+\MT@tempbox=\box53
 LaTeX Info: Redefining \leftprotrusion on input line 1010.
 LaTeX Info: Redefining \rightprotrusion on input line 1018.
 LaTeX Info: Redefining \textls on input line 1173.
-\MT@outer@kern=\dimen148
+\MT@outer@kern=\dimen150
 LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
-\MT@listname@count=\count271
+\MT@listname@count=\count284
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype-lua
 tex.def
-File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+File: microtype-luatex.def 2021/12/10 v3.0b Definitions specific to luatex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 897.
-LaTeX Info: Redefining \lslig on input line 897.
+Lua module: microtype 2021/12/10 3.0b microtype module.
+Module microtype Info: overwriting function `keepligature' on input line 63
+LaTeX Info: Redefining \lsstyle on input line 685.
+LaTeX Info: Redefining \lslig on input line 685.
 \MT@outer@space=\skip52
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/kvsetkeys/kvsetkeys.s
 ty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+))) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Driver file: luatex.def on input line 227.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
+File: luatex.def 2021/06/01 v1.2c Graphics/color driver for luatex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
@@ -201,69 +298,66 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty
 Package: xurl 2020/12/30 v 0.09a modify URL breaks
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.st
+)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/bookmark/bookmark.st
 y
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.s
 ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks23
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefine
 keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.s
 ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/letltxmacro/letltxmacro
 .sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen149
-\Hy@linkcounter=\count272
-\Hy@pagecounter=\count273
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+\@linkdim=\dimen151
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref-langp
 atches.def
 File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
 nguages
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count274
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+\Hy@SavedSpaceFactor=\count287
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4073.
 Package hyperref Info: Hyper figures OFF on input line 4192.
@@ -273,20 +367,20 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count275
+\c@Hy@tempcnt=\count288
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen150
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+\XeTeXLinkMargin=\dimen152
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc
 .sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count276
-\Field@Width=\dimen151
-\Fld@charsize=\dimen152
+\Fld@menulength=\count289
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -296,30 +390,36 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count277
-\c@Item=\count278
-\c@Hfootnote=\count279
+\Hy@abspage=\count290
+\c@Item=\count291
+\c@Hfootnote=\count292
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package hyperref Info: Driver (autodetected): hluatex.
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2021-06-07 v7.00m Hyperref driver for luaTeX
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.st
+y
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count280
-\c@bookmark@seq@number=\count281
+\Fld@listcount=\count293
+\c@bookmark@seq@number=\count294
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfil
 echeck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniquec
 ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -328,297 +428,287 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip53
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count282
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
+\BKM@id=\count295
+)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.st
 y
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count283
-\Gm@cntv=\count284
-\c@Gm@tempcnt=\count285
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks25
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
-Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip54
-\LTright=\skip55
-\LTpre=\skip56
-\LTpost=\skip57
-\LTchunksize=\count286
-\LTcapwidth=\dimen161
-\LT@head=\box53
-\LT@firsthead=\box54
-\LT@foot=\box55
-\LT@lastfoot=\box56
-\LT@gbox=\box57
-\LT@cols=\count287
-\LT@rows=\count288
-\c@LT@tables=\count289
-\c@LT@chunks=\count290
-\LT@p@ftn=\toks26
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen162
-\lightrulewidth=\dimen163
-\cmidrulewidth=\dimen164
-\belowrulesep=\dimen165
-\belowbottomsep=\dimen166
-\aboverulesep=\dimen167
-\abovetopsep=\dimen168
-\cmidrulesep=\dimen169
-\cmidrulekern=\dimen170
-\defaultaddspace=\dimen171
-\@cmidla=\count291
-\@cmidlb=\count292
-\@aboverulesep=\dimen172
-\@belowrulesep=\dimen173
-\@thisruleclass=\count293
-\@lastruleclass=\count294
-\@thisrulewidth=\dimen174
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count295
-\calc@Bcount=\count296
-\calc@Adimen=\dimen175
-\calc@Bdimen=\dimen176
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count297
-\calc@Cskip=\skip60
-)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/footnotehyper\footnoteh
-yper.sty
-Package: footnotehyper 2021/08/13 v1.1e hyperref aware footnote.sty (JFB)
-\FNH@notes=\box58
-\FNH@width=\dimen177
-\FNH@toks=\toks27
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks24
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.c
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: luatex.def on input line 107.
 )
-\Gin@req@height=\dimen178
-\Gin@req@width=\dimen179
-) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+)
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 76.
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 77.
+
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/lualatex/selnolig/selnolig.st
+y
+=== Package selnolig, Version 0.302, Date 2015/10/26 ===
+Package: selnolig 2015/10/26
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/luatex/luatexbase/luatexbase.
+sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/luatex/ctablestack/ctablestac
+k.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count299
+)
+\CatcodeTableOther=\catcodetable12
+\CatcodeTableExpl=\catcodetable13
+)
+Inserting `Suppress ligatures selectively' at position 1 in `ligaturing'.) (C:/
+Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count298
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+\lrq@indent=\count300
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+)) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count299
-\c@listtotal=\count300
-\c@listcount=\count301
-\c@liststart=\count302
-\c@liststop=\count303
-\c@citecount=\count304
-\c@citetotal=\count305
-\c@multicitecount=\count306
-\c@multicitetotal=\count307
-\c@instcount=\count308
-\c@maxnames=\count309
-\c@minnames=\count310
-\c@maxitems=\count311
-\c@minitems=\count312
-\c@citecounter=\count313
-\c@maxcitecounter=\count314
-\c@savedcitecounter=\count315
-\c@uniquelist=\count316
-\c@uniquename=\count317
-\c@refsection=\count318
-\c@refsegment=\count319
-\c@maxextratitle=\count320
-\c@maxextratitleyear=\count321
-\c@maxextraname=\count322
-\c@maxextradate=\count323
-\c@maxextraalpha=\count324
-\c@abbrvpenalty=\count325
-\c@highnamepenalty=\count326
-\c@lownamepenalty=\count327
-\c@maxparens=\count328
-\c@parenlevel=\count329
-\blx@tempcnta=\count330
-\blx@tempcntb=\count331
-\blx@tempcntc=\count332
-\blx@maxsection=\count333
-\blx@maxsegment@0=\count334
-\blx@notetype=\count335
-\blx@parenlevel@text=\count336
-\blx@parenlevel@foot=\count337
-\blx@sectionciteorder@0=\count338
-\blx@entrysetcounter=\count339
-\blx@biblioinstance=\count340
-\labelnumberwidth=\skip61
-\labelalphawidth=\skip62
-\biblabelsep=\skip63
-\bibitemsep=\skip64
-\bibnamesep=\skip65
-\bibinitsep=\skip66
-\bibparsep=\skip67
-\bibhang=\skip68
+\c@tabx@nest=\count301
+\c@listtotal=\count302
+\c@listcount=\count303
+\c@liststart=\count304
+\c@liststop=\count305
+\c@citecount=\count306
+\c@citetotal=\count307
+\c@multicitecount=\count308
+\c@multicitetotal=\count309
+\c@instcount=\count310
+\c@maxnames=\count311
+\c@minnames=\count312
+\c@maxitems=\count313
+\c@minitems=\count314
+\c@citecounter=\count315
+\c@maxcitecounter=\count316
+\c@savedcitecounter=\count317
+\c@uniquelist=\count318
+\c@uniquename=\count319
+\c@refsection=\count320
+\c@refsegment=\count321
+\c@maxextratitle=\count322
+\c@maxextratitleyear=\count323
+\c@maxextraname=\count324
+\c@maxextradate=\count325
+\c@maxextraalpha=\count326
+\c@abbrvpenalty=\count327
+\c@highnamepenalty=\count328
+\c@lownamepenalty=\count329
+\c@maxparens=\count330
+\c@parenlevel=\count331
+\blx@tempcnta=\count332
+\blx@tempcntb=\count333
+\blx@tempcntc=\count334
+\blx@maxsection=\count335
+\blx@maxsegment@0=\count336
+\blx@notetype=\count337
+\blx@parenlevel@text=\count338
+\blx@parenlevel@foot=\count339
+\blx@sectionciteorder@0=\count340
+\blx@entrysetcounter=\count341
+\blx@biblioinstance=\count342
+\labelnumberwidth=\skip63
+\labelalphawidth=\skip64
+\biblabelsep=\skip65
+\bibitemsep=\skip66
+\bibnamesep=\skip67
+\bibinitsep=\skip68
+\bibparsep=\skip69
+\bibhang=\skip70
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\blx@langwohyphens=\language84
-\c@mincomprange=\count341
-\c@maxcomprange=\count342
-\c@mincompwidth=\count343
+\blx@langwohyphens=\language2
+\c@mincomprange=\count343
+\c@maxcomprange=\count344
+\c@mincompwidth=\count345
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count344
-\c@savedafterword=\count345
-\c@annotator=\count346
-\c@savedannotator=\count347
-\c@author=\count348
-\c@savedauthor=\count349
-\c@bookauthor=\count350
-\c@savedbookauthor=\count351
-\c@commentator=\count352
-\c@savedcommentator=\count353
-\c@editor=\count354
-\c@savededitor=\count355
-\c@editora=\count356
-\c@savededitora=\count357
-\c@editorb=\count358
-\c@savededitorb=\count359
-\c@editorc=\count360
-\c@savededitorc=\count361
-\c@foreword=\count362
-\c@savedforeword=\count363
-\c@holder=\count364
-\c@savedholder=\count365
-\c@introduction=\count366
-\c@savedintroduction=\count367
-\c@namea=\count368
-\c@savednamea=\count369
-\c@nameb=\count370
-\c@savednameb=\count371
-\c@namec=\count372
-\c@savednamec=\count373
-\c@translator=\count374
-\c@savedtranslator=\count375
-\c@shortauthor=\count376
-\c@savedshortauthor=\count377
-\c@shorteditor=\count378
-\c@savedshorteditor=\count379
-\c@labelname=\count380
-\c@savedlabelname=\count381
-\c@institution=\count382
-\c@savedinstitution=\count383
-\c@lista=\count384
-\c@savedlista=\count385
-\c@listb=\count386
-\c@savedlistb=\count387
-\c@listc=\count388
-\c@savedlistc=\count389
-\c@listd=\count390
-\c@savedlistd=\count391
-\c@liste=\count392
-\c@savedliste=\count393
-\c@listf=\count394
-\c@savedlistf=\count395
-\c@location=\count396
-\c@savedlocation=\count397
-\c@organization=\count398
-\c@savedorganization=\count399
-\c@origlocation=\count400
-\c@savedoriglocation=\count401
-\c@origpublisher=\count402
-\c@savedorigpublisher=\count403
-\c@publisher=\count404
-\c@savedpublisher=\count405
-\c@language=\count406
-\c@savedlanguage=\count407
-\c@origlanguage=\count408
-\c@savedoriglanguage=\count409
-\c@pageref=\count410
-\c@savedpageref=\count411
-\shorthandwidth=\skip69
-\shortjournalwidth=\skip70
-\shortserieswidth=\skip71
-\shorttitlewidth=\skip72
-\shortauthorwidth=\skip73
-\shorteditorwidth=\skip74
-\locallabelnumberwidth=\skip75
-\locallabelalphawidth=\skip76
-\localshorthandwidth=\skip77
-\localshortjournalwidth=\skip78
-\localshortserieswidth=\skip79
-\localshorttitlewidth=\skip80
-\localshortauthorwidth=\skip81
-\localshorteditorwidth=\skip82
+\c@afterword=\count346
+\c@savedafterword=\count347
+\c@annotator=\count348
+\c@savedannotator=\count349
+\c@author=\count350
+\c@savedauthor=\count351
+\c@bookauthor=\count352
+\c@savedbookauthor=\count353
+\c@commentator=\count354
+\c@savedcommentator=\count355
+\c@editor=\count356
+\c@savededitor=\count357
+\c@editora=\count358
+\c@savededitora=\count359
+\c@editorb=\count360
+\c@savededitorb=\count361
+\c@editorc=\count362
+\c@savededitorc=\count363
+\c@foreword=\count364
+\c@savedforeword=\count365
+\c@holder=\count366
+\c@savedholder=\count367
+\c@introduction=\count368
+\c@savedintroduction=\count369
+\c@namea=\count370
+\c@savednamea=\count371
+\c@nameb=\count372
+\c@savednameb=\count373
+\c@namec=\count374
+\c@savednamec=\count375
+\c@translator=\count376
+\c@savedtranslator=\count377
+\c@shortauthor=\count378
+\c@savedshortauthor=\count379
+\c@shorteditor=\count380
+\c@savedshorteditor=\count381
+\c@labelname=\count382
+\c@savedlabelname=\count383
+\c@institution=\count384
+\c@savedinstitution=\count385
+\c@lista=\count386
+\c@savedlista=\count387
+\c@listb=\count388
+\c@savedlistb=\count389
+\c@listc=\count390
+\c@savedlistc=\count391
+\c@listd=\count392
+\c@savedlistd=\count393
+\c@liste=\count394
+\c@savedliste=\count395
+\c@listf=\count396
+\c@savedlistf=\count397
+\c@location=\count398
+\c@savedlocation=\count399
+\c@organization=\count400
+\c@savedorganization=\count401
+\c@origlocation=\count402
+\c@savedoriglocation=\count403
+\c@origpublisher=\count404
+\c@savedorigpublisher=\count405
+\c@publisher=\count406
+\c@savedpublisher=\count407
+\c@language=\count408
+\c@savedlanguage=\count409
+\c@origlanguage=\count410
+\c@savedoriglanguage=\count411
+\c@pageref=\count412
+\c@savedpageref=\count413
+\shorthandwidth=\skip71
+\shortjournalwidth=\skip72
+\shortserieswidth=\skip73
+\shorttitlewidth=\skip74
+\shortauthorwidth=\skip75
+\shorteditorwidth=\skip76
+\locallabelnumberwidth=\skip77
+\locallabelalphawidth=\skip78
+\localshorthandwidth=\skip79
+\localshortjournalwidth=\skip80
+\localshortserieswidth=\skip81
+\localshorttitlewidth=\skip82
+\localshortauthorwidth=\skip83
+\localshorteditorwidth=\skip84
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-unicode.de
+f)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count412
-\c@textcitetotal=\count413
-\c@textcitemaxnames=\count414
-\c@biburlbigbreakpenalty=\count415
-\c@biburlbreakpenalty=\count416
-\c@biburlnumpenalty=\count417
-\c@biburlucpenalty=\count418
-\c@biburllcpenalty=\count419
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count420
+\c@textcitecount=\count414
+\c@textcitetotal=\count415
+\c@textcitemaxnames=\count416
+\c@biburlbigbreakpenalty=\count417
+\c@biburlbreakpenalty=\count418
+\c@biburlnumpenalty=\count419
+\c@biburlucpenalty=\count420
+\c@biburllcpenalty=\count421
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count422
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/numeric.bb
 x
 File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.b
 bx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count421
-\c@bbx:relatedtotal=\count422
+\c@bbx:relatedcount=\count423
+\c@bbx:relatedtotal=\count424
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cb
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/cbx/numeric.cb
 x
 File: numeric.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
@@ -635,101 +725,413 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-\@quotelevel=\count423
-\@quotereset=\count424
+\@quotelevel=\count425
+\@quotereset=\count426
+(./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
+\openout1 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count425
-\l__pdf_internal_box=\box59
-) (Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
-\openout1 = `Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux'.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 83.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Info: Redefining \microtypecontext on input line 79.
-Package microtype Info: Applying patch `item' on input line 79.
-Package microtype Info: Applying patch `toc' on input line 79.
-Package microtype Info: Applying patch `eqnum' on input line 79.
-Package microtype Info: Applying patch `footnote' on input line 79.
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},I
+talicFont={},SmallCapsFont={},Script=Math,FontAdjustment={\__um_luatex_copy_fon
+tdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]:mode=ba
+se;script=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]:mode=ba
+se;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 83.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},I
+talicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5
+,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf
+,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9999964596882403]"[latinmodern-math.otf]:mode
+=base;script=math;language=dflt;"<6-8.5>s*[0.9999964596882403]"[latinmodern-mat
+h.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-6>s*[0.9999964596882403]"
+[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]:mode=ba
+se;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 83.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 83.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 83.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 83.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
+t line 83.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},I
+talicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5
+,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf
+,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,Font
+Adjustment={\fontdimen
+(fontspec)             8\font =6.76999pt\relax \fontdimen 9\font
+(fontspec)             =3.93999pt\relax \fontdimen 10\font =4.43999pt\relax
+(fontspec)             \fontdimen 11\font =6.85999pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.62999pt\relax
+(fontspec)             \fontdimen 14\font =3.62999pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.46999pt\relax
+(fontspec)             \fontdimen 17\font =2.46999pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.000096459334209]"[latinmodern-math.otf]:mode=
+base;script=math;language=dflt;"<6-8.5>s*[1.000096459334209]"[latinmodern-math.
+otf]:mode=base;script=math;language=dflt;+ssty=0;"<-6>s*[1.000096459334209]"[la
+tinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =6.76999pt\relax \fontdimen 9\font =3.93999pt\relax
+(fontspec)             \fontdimen 10\font =4.43999pt\relax \fontdimen 11\font
+(fontspec)             =6.85999pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.62999pt\relax \fontdimen 14\font
+(fontspec)             =3.62999pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.46999pt\relax \fontdimen 17\font
+(fontspec)             =2.46999pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]:mode=bas
+e;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =6.76999pt\relax \fontdimen 9\font =3.93999pt\relax
+(fontspec)             \fontdimen 10\font =4.43999pt\relax \fontdimen 11\font
+(fontspec)             =6.85999pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.62999pt\relax \fontdimen 14\font
+(fontspec)             =3.62999pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.46999pt\relax \fontdimen 17\font
+(fontspec)             =2.46999pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 83.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 83.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 83.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 83.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},I
+talicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5
+,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf
+,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,Font
+Adjustment={\fontdimen
+(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.10999pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9998964600422715]"[latinmodern-math.otf]:mode
+=base;script=math;language=dflt;"<6-8.5>s*[0.9998964600422715]"[latinmodern-mat
+h.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-6>s*[0.9998964600422715]"
+[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =0.4pt\relax \fontdimen 9\font =2.0pt\relax \fontdimen
+(fontspec)             10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.10999pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]:mode=ba
+se;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =0.4pt\relax \fontdimen 9\font =2.0pt\relax \fontdimen
+(fontspec)             10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.10999pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 8
+3.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 83.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 83.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 83.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+3.
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 83.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Info: Redefining \microtypecontext on input line 83.
+Package microtype Info: Applying patch `item' on input line 83.
+Package microtype Info: Applying patch `toc' on input line 83.
+Package microtype Info: Applying patch `eqnum' on input line 83.
+Package microtype Info: Applying patch `footnote' on input line 83.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 79.
+LaTeX Info: Redefining \showhyphens on input line 83.
 Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-LatinModer
+nRoman.cfg
+File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Mod
+ern Roman (RS)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count426
-\scratchdimen=\dimen180
-\scratchbox=\box60
-\nofMPsegments=\count427
-\nofMParguments=\count428
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count429
-\MPscratchDim=\dimen181
-\MPnumerator=\count430
-\makeMPintoPDFobject=\count431
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count427
+\scratchdimen=\dimen165
+\scratchbox=\box54
+\nofMPsegments=\count428
+\nofMParguments=\count429
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count430
+\MPscratchDim=\dimen166
+\MPnumerator=\count431
+\makeMPintoPDFobject=\count432
+\everyMPtoPDFconversion=\toks26
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 79.
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package hyperref Info: Link coloring OFF on input line 83.
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/gettit
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count432
+\c@section@level=\count433
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: luatex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -763,154 +1165,93 @@ LaTeX Info: Redefining \nameref on input line 79.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/lbx/english.lb
 x
 File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-11-22 L3 programming layer (loader) 
-)
 Package biblatex Info: ... and expl3
 (biblatex)             2021-11-22 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-case-expl3
 .sty
-(C:\Users\bijan\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-Package: xparse 2021-11-12 L3 Experimental document command parser
-)
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout3 = `Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bcf'.
+\openout3 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bcf
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.b
 bl' found.
-(Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl)
-Package biblatex Info: Reference section=0 on input line 79.
-Package biblatex Info: Reference segment=0 on input line 79.
+(./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl)
+Package biblatex Info: Reference section=0 on input line 83.
+Package biblatex Info: Reference segment=0 on input line 83.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00073pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 85.
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc)
+\tf@toc=\write4
 
-Overfull \hbox (9.86665pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) ThreeMe 
- []
-
-
-Overfull \hbox (2.25446pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) Tunisie 
- []
-
-
-Overfull \hbox (4.2062pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) macroé- 
- []
-
-
-Overfull \hbox (21.14241pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) conomiques 
- []
-
-
-Overfull \hbox (9.95447pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) Stratégie 
- []
-
-
-Overfull \hbox (0.67148pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) tionale 
- []
-
-
-Overfull \hbox (15.60715pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) développe- 
- []
-
-
-Overfull \hbox (6.88005pt too wide) in paragraph at lines 85--88
-\T1/lmr/m/n/10 (-20) Tunisie''|  
- []
-
-
-Overfull \hbox (2.00366pt too wide) in paragraph at lines 90--93
-[]\T1/lmr/m/n/10 (-20) output: 
- []
-
-
-Overfull \hbox (36.58095pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) pdf_document: 
- []
-
-
-Overfull \hbox (31.12611pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) tion_package: 
- []
-
-
-Overfull \hbox (22.42024pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) fig_caption: 
- []
-
-
-Overfull \hbox (17.24246pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) fig_height: 
- []
-
-
-Overfull \hbox (15.3422pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) fig_width: 
- []
-
-
-Overfull \hbox (43.0425pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) word_document: 
- []
-
-
-Overfull \hbox (42.28638pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) html_document: 
- []
-
-
-Overfull \hbox (17.24246pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) fig_height: 
- []
-
-
-Overfull \hbox (15.3422pt too wide) in paragraph at lines 90--93
-\T1/lmr/m/n/10 (-20) fig_width: 
- []
-
-
-LaTeX Warning: Empty bibliography on input line 97.
-
+\openout4 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc
 [1
 
-{C:/Users/bijan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Modele-Thre
-eMe-Tunisie_Sequeira_Valilou_Wang.aux)
+{C:/Users/bijan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: Empty bibliography on input line 128.
+
+[2] (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
 Package logreq Info: Writing requests to 'Modele-ThreeMe-Tunisie_Sequeira_Valil
 ou_Wang.run.xml'.
-\openout1 = `Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.run.xml'.
 
- ) 
-Here is how much of TeX's memory you used:
- 20111 strings out of 478621
- 351992 string characters out of 2844220
- 1088659 words of memory out of 3000000
- 38006 multiletter control sequences out of 15000+600000
- 406586 words of font info for 30 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 74i,5n,77p,1043b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/bijan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
-:/Users/bijan/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-Output written on Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.pdf (1 page, 352
-22 bytes).
-PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 2049 words of extra memory for PDF output out of 10000 (max. 10000000)
+\openout1 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 26982 strings out of 477867
+ 125086,1648299 words of node,token memory allocated
+ 613 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 3 glyph, 9 
+attribute, 64 glue_spec, 9 attribute_list, 1 write, 1 user_defined nodes
+   avail lists: 2:357,3:226,4:53,5:215,6:55,7:2319,8:42,9:262,10:16,11:141
+ 46769 multiletter control sequences out of 65536+600000
+ 61 fonts using 18924295 bytes
+ 86i,11n,121p,1040b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
+<//?/c:/users/bijan/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
+anslant10-regular.otf><//?/c:/users/bijan/appdata/local/programs/miktex/fonts/op
+entype/public/lm/lmroman10-regular.otf><//?/c:/users/bijan/appdata/local/program
+s/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/bijan/appdata
+/local/programs/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/users
+/bijan/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.
+otf><//?/c:/users/bijan/appdata/local/programs/miktex/fonts/opentype/public/lm/l
+mroman17-regular.otf>
+Output written on Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.pdf (2 pages, 43
+747 bytes).
+
+PDF statistics: 120 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 131072)
+ 81 words of extra memory for PDF output out of 10000 (max. 100000000)
 
