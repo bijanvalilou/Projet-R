@@ -8,7 +8,7 @@ La connection entre Github et RMarkdwon peut être assez intéressante pour cré
 Voici la documentation que j'ai utilisé pour connecter RMarkdwon et Github : 
 https://andrewmaclachlan.github.io/CASA0005repo/git-github-and-rmarkdown.html
 
-Pour utiliser R Studio et Github, vous devez :
+Pour utiliser R Studio et Github et modifier le requisitory présent, vous devez :
  - envoyer à Bijan votre mail git pour être ajouté en tant que collaborateur
  -  Installer Github Desktop
  -  Sur le requisitory présent (site web), cliquez sur le bouton Code > Open with Github Desktop
