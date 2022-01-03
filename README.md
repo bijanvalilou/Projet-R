@@ -5,7 +5,8 @@ Github pour avoir un fichier R Markdown collaboratif
 
 La connection entre Github et RMarkdwon peut être assez intéressante. Overleaf pose le problème de la limitation des collaborateurs (1 seul). RMarkdwon peut créer un fichier .tex, comprenant les graphiques et du texte. 
 
-Pour utiliser R Studio et Github, vous devez : 
+Pour utiliser R Studio et Github, vous devez :
+ - envoyer à Bijan votre mail git pour être ajouté en tant que collaborateur
  -  Installer Github Desktop
  -  Sur le requisitory présent (site web), cliquez sur le bouton Code > Open with Github Desktop
  -  Une fois ouvert dans Github Desktop, vous cliquez sur "Clone". Vous avez une copie locale du requisitory sur votre ordinateur. 
