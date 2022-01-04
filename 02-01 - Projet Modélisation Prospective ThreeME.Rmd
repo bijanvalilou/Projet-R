@@ -8,7 +8,8 @@ output:
 
 # Importation des données et package
 
-```{r, echo=FALSE}
+
+```{r}
 library(knitr) 
 library(rmarkdown) 
 library(markdown) 
@@ -17,6 +18,9 @@ library(tibble)
 library(ggplot2)
 library(dplyr)
 library(usethis)
+```
+
+```{r, echo=FALSE}
 
 sheet_names <- excel_sheets("Page Reporting_shock des scénarios.xlsx")
 nb_sheets <- length(sheet_names)
@@ -70,18 +74,6 @@ for (i in 1:nb_sheets){
 
 # I. Générale
 
-```{r, echo=FALSE}
-#faut qjouter l'unite 
-ggplot() + 
-  geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
-  geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Tax_AvecDis")) + 
-  geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
-  geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Sub_AvecDis")) + 
-  geom_line( data = Sc5, aes(x = year,y = gdp_2, group = 1, color = "ENR")) + 
-  geom_line( data = Sc6, aes(x = year,y = gdp_2, group = 1, color = "Mélange")) +
-  labs(y = "Variation de GDP en %", title = "Evolution de variation de GDP") +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-```
 
 ```{r, echo=FALSE}
 ggplot() + 
@@ -792,7 +784,22 @@ y <- rep(c("Intensité carbone","Activité économique","Intensité énergétiqu
 # IV. Economie
 
 
-## A. Prix
+## A. Production
+
+```{r, echo=FALSE}
+#faut qjouter l'unite 
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
+  geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Tax_AvecDis")) + 
+  geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
+  geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Sub_AvecDis")) + 
+  geom_line( data = Sc5, aes(x = year,y = gdp_2, group = 1, color = "ENR")) + 
+  geom_line( data = Sc6, aes(x = year,y = gdp_2, group = 1, color = "Mélange")) +
+  labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+## C. Prix
 
 ```{r, echo=FALSE}
 
@@ -895,7 +902,7 @@ ggplot() +
 ```
 
 
-## B. Politiques publiques - Taxe carbone et levée des subventions 
+## C. Politiques publiques - Taxe carbone et levée des subventions 
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -932,7 +939,7 @@ ggplot() +
 
 
 
-## C. Commerce extérieur
+## D. Commerce extérieur
 
 
 ```{r, echo=FALSE}
@@ -952,9 +959,9 @@ ggplot() +
 ```
 
 
-## B. Emploi - Report shock 
+## E. Emploi - Report shock 
 
-### 1. Emploi - Niveau agrégé
+### 1. Emploi interscénario - Niveau agrégé
 
 ```{r, echo=FALSE}
             
@@ -963,7 +970,7 @@ ggplot() +
   geom_line( data = S1, aes(x = year,y = unr_2*100, group = 1, color = "Taxe sans redistribution")) + 
   geom_line( data = S2, aes(x = year,y = unr_2*100, group = 1, color = "Taxe avec redistribution")) + 
   geom_line( data = S3, aes(x = year,y = unr_2*100, group = 1, color = "Subvention sans redistribution")) + 
-  geom_line( data = S4, aes(x = year,y = unr_2*100, group = 1, color = ("Subvention_AvecRedis"))) + 
+  geom_line( data = S4, aes(x = year,y = unr_2*100, group = 1, color = ("Subvention avec redistribution"))) + 
   geom_line( data = S5, aes(x = year,y = unr_2*100, group = 1, color = "ENR"), size=0.8) + 
   geom_line( data = S6, aes(x = year,y = unr_2*100, group = 1, color = "SNBC"), size=0.8) +
   labs(x= "Temps (en année)", y = "Chômage (en % de la population active)", title = "Taux de chômage en fonction des scénarii", color="Scénarii") +
@@ -972,7 +979,89 @@ ggplot() +
 
 ```
 
-### 2. Emploi - Niveau sectoriel
+
+
+```{r, echo=FALSE}
+#faut qjouter l'unite 
+
+
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Taxe sans redistribution")) + 
+  geom_line( data = Sc2, aes(x = year,y = f_l_2, group = 1, color = "Tax avec redistribution")) + 
+  geom_line( data = Sc3, aes(x = year,y = f_l_2, group = 1, color = "Sub sans redistribution")) + 
+  geom_line( data = Sc4, aes(x = year,y = f_l_2, group = 1, color = "Sub avec redistribution")) + 
+  geom_line( data = Sc5, aes(x = year,y = f_l_2, group = 1, color = "ENR")) + 
+  geom_line( data = Sc6, aes(x = year,y = f_l_2, group = 1, color = "SNBC")) +
+  labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+```{r, echo=FALSE}
+#faut qjouter l'unite 
+deltaf_l <- Baseline$year
+deltaf_l <- as.data.frame(deltaf_l)
+deltaf_l <- cbind(deltaf_l,S1[,"f_l_2"]-Baseline[,"f_l_0"],S2[,"f_l_2"]-Baseline[,"f_l_0"],S3[,"f_l_2"]-Baseline[,"f_l_0"],S4[,"f_l_2"]-Baseline[,"f_l_0"],S5[,"f_l_2"]-Baseline[,"f_l_0"],S6[,"f_l_2"]-Baseline[,"f_l_0"])
+deltaf_l <- as.data.frame(deltaf_l)
+colnames(deltaf_l) <- c("year","S1","S2","S3","S4","S5","S6")
+
+ggplot(data = deltaf_l) + 
+  geom_line(aes(x=year,y = S1, group = 1, color = "Taxe sans redistribution")) + 
+  geom_line( aes(x=year,y = S2, group = 1, color = "Tax avec redistribution")) + 
+  geom_line( aes(x=year,y = S3, group = 1, color = "Sub sans redistribution")) + 
+  geom_line( aes(x=year,y = S4, group = 1, color = "Sub avec redistribution")) + 
+  geom_line( aes(x=year,y = S5, group = 1, color = "ENR")) + 
+  geom_line(aes(x=year,y = S6, group = 1, color = "SNBC")) +
+  labs(y = "Variation de l'emploi (en milliers d'emploi)", title = "Emploi en volume. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+```{r FONCTION GRAPHIQUE RADAR}
+create_beautiful_radarchart <- function(data, color = "#00AFBB", 
+                                        vlabels = colnames(data), vlcex = 0.7,
+                                        caxislabels = NULL, title = NULL, ...){
+  radarchart(
+    data, axistype = 1,
+    # Personnaliser le polygone
+    pcol = color, pfcol = scales::alpha(color, 0.5), plwd = 2, plty = 1,
+    # Personnaliser la grille
+    cglcol = "grey", cglty = 1, cglwd = 0.8,
+    # Personnaliser l'axe
+    axislabcol = "grey", 
+    # Étiquettes des variables
+    vlcex = vlcex, vlabels = vlabels,
+    caxislabels = caxislabels, title = title, ...
+  )
+}
+```
+
+```{r CREATION GRAPHIQUE RADAR}
+library(fmsb)
+
+
+data_radar <-deltaf_l[36,c(2:7)]
+
+
+
+colnames(data_radar)<-c("Taxe sans redistribution","Taxe avec redistribution","Subvention sans redistribution","Taxe avec redistribution","ENR","SNBC")
+
+data_radar  = as.data.frame(data_radar)
+data_radar  = rbind(225,-50, 0, data_radar)
+
+
+
+
+
+op <- par(mar = c(1, 2, 2, 1), cex.main=0.9)
+create_beautiful_radarchart(data_radar, caxislabels = c(-50, 0, 100,150,200,250), color = c(NA,"#00AFBB"), title="Variation d'emploi en 2050. 
+Ecart par rapport au scénario en référence (en milliers d'emploi).")
+par(op)
+
+
+```
+
+
+### 2. Emploi par scénario - Niveau sectoriel 
 Peu concluant, pas beaucoup de variation (même en relatif) à part pour la transformation d'énergie (voir peut-être les missing data pour avoir plus de secteurs)
 
 ```{r, echo=FALSE}
