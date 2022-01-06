@@ -27,12 +27,6 @@ header-includes:
 
 \newpage
 
-```{r, include=FALSE}
-options(tinytex.verbose = TRUE)
-library(tinytex)
-tinytex::pdflatex('test.tex')
-```
-
 # Introduction
 
 # Revue de la littérature
@@ -92,3 +86,9 @@ OUverture : pb du secteur informel non pris en compte par la comptabilité natio
 # Conclusion
 
 # Bibliographie
+```{r}
+tinytex::lualatex('test.tex')
+latexmk(engine = 'lualatex', emulation = TRUE)
+```
+
+
