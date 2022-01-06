@@ -7,7 +7,7 @@ output:
 ---
 
 # Importation des données et package
-
+ 
 
 ```{r}
 library(knitr) 
