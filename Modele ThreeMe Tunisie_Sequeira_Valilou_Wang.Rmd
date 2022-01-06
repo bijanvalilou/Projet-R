@@ -40,9 +40,9 @@ header-includes:
 
 ## Politiques clilmatiques
 
--   Impact de la taxe carbone
+### Taxe carbone
 
--   Impact des subventions énergétiques
+### Subvention énergétique
 
 # Méthodologie
 
