@@ -86,9 +86,5 @@ OUverture : pb du secteur informel non pris en compte par la comptabilité natio
 # Conclusion
 
 # Bibliographie
-```{r}
-tinytex::lualatex('test.tex')
-latexmk(engine = 'lualatex', emulation = TRUE)
-```
 
 
