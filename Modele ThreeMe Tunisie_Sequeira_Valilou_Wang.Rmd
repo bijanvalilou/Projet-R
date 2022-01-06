@@ -24,8 +24,6 @@ header-includes:
 - \fancyfoot[LE,RO]{\thepage}
 ---
 
-\\begin{document}
-
 \newpage
 
 # Introduction
