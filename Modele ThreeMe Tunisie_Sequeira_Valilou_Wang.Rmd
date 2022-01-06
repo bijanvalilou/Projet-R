@@ -1,49 +1,87 @@
 ---
-title: "Modèle ThreeMe Tunisie" 
-subtitle : "Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour un petit pays en développement : le cas de la Tunisie"
-author : "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
-date : "Janvier 2021"
-    
+title: "Modèle ThreeMe Tunisie"
+author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
+date: "Janvier 2021"
 output:
-  pdf_document: 
+  html_document:
+    toc: yes
+    toc_depth: '2'
+    df_print: paged
+  pdf_document:
     citation_package: biblatex
     toc: yes
     number_sections: yes
     toc_depth: 2
     highlight: tango
     latex_engine: lualatex
-    keep_tex: yes 
-
+    keep_tex: yes
+subtitle: 'Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour
+  un petit pays en développement : le cas de la Tunisie'
 header-includes:
-  - \usepackage{fancyhdr}
-  - \pagestyle{fancy}
-  - \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
-  - \fancyfoot[LE,RO]{\thepage}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
+- \fancyfoot[LE,RO]{\thepage}
 ---
 
 \newpage
 
-
-
-
 # Introduction
 
-# Cadre énergétique et économique en Tunisie
+# Modèle ThreeME Tunisie
 
-# Modèle ThreeME
+## Cadre énergétique et économique en Tunisie
 
 ## Modèle ThreeME
 
-## Adaptation au cas de Tunisie
+### Un modèle d'inspiration néo-keynésienne
 
-# Scénarios à analyser
+### Modèle ThreeMe Tunisie : Adaptation au cas d'un petit pays en développement
+
+# Les différents scénarii 
 
 ## Descriptifs des scénarios à analyser
 
-## Choix des indicateurs d'évaluation
+## Choix des indicateurs d'évaluation - Identité de Kaya
+
+-   Présentation des tables de données :
+
+-   Identité de Kaya : intensité énergétique, .... Décomposition sectorielle
+
+-   
+
+## Revue de littérature - Taxe carbone et levée des subventions énergétiques
+
+-   impact de la taxe carbone
+
+-   Impact des subventions énergétiques
 
 # Interprétations des analyses
 
-# D'autres leviers pour analyser (ouverture)
+## Introduction
+
+-   graphique PIB : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
+-   chomage : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
+-   émissions : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
+
+## Taxe carbone
+
+Avec/ sans recylage Focus inter-sectoriel
+
+## Levée des subventions énergétiques
+
+Avec/ sans recylage Focus inter-sectoriel
+
+## ENR
+
+## SNBC
+
+# Les prolongements
+
+##D'autres leviers pour analyser (ouverture)
+
+## L'amélioration du cadre statistique
+
+OUverture : pb du secteur informel non pris en compte par la comptabilité nationale
 
 # Conclusion
