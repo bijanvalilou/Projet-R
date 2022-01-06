@@ -16,6 +16,7 @@ output:
     toc_depth: '2'
     df_print: paged
 subtitle: 'Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour
+
   un petit pays en développement : le cas de la Tunisie'
 header-includes:
 - \usepackage{fancyhdr}
@@ -25,6 +26,12 @@ header-includes:
 ---
 
 \newpage
+
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+library(tinytex)
+tinytex::pdflatex('test.tex')
+```
 
 # Introduction
 
