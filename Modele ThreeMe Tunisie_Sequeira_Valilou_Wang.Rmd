@@ -3,10 +3,6 @@ title: "Modèle ThreeMe Tunisie"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "Janvier 2021"
 output:
-  html_document:
-    toc: yes
-    toc_depth: '2'
-    df_print: paged
   pdf_document:
     citation_package: biblatex
     toc: yes
@@ -15,6 +11,10 @@ output:
     highlight: tango
     latex_engine: lualatex
     keep_tex: yes
+  html_document:
+    toc: yes
+    toc_depth: '2'
+    df_print: paged
 subtitle: 'Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour
   un petit pays en développement : le cas de la Tunisie'
 header-includes:
@@ -23,6 +23,8 @@ header-includes:
 - \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
 - \fancyfoot[LE,RO]{\thepage}
 ---
+
+\\begin{document}
 
 \newpage
 
@@ -85,4 +87,3 @@ OUverture : pb du secteur informel non pris en compte par la comptabilité natio
 # Conclusion
 
 # Bibliographie
-
