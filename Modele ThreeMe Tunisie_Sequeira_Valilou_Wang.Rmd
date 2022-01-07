@@ -51,6 +51,7 @@ header-includes:
 
 ## Choix des indicateurs d'évaluation
 
+
 -   Présentation des tables de données :
 
 -   Identité de Kaya : décomposition sectorielle
