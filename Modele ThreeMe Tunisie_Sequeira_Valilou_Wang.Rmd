@@ -48,16 +48,9 @@ bibliography: references.bib
 
 ### A model of neo-Keynesian inspiration
 
+### ThreeMe model Tunisia : Adaptation for a little country in development
 
-
-### ThreeMe model Tunisia : Adaptation for a little country in development 
-
-
-<<<<<<< HEAD
-### A neo-Keynesian Computable General Equilibrium model
-=======
->>>>>>> 5f890b9e017bfd46f858ebbda0a7dfc2f5bedce2
-
+##\# A neo-Keynesian Computable General Equilibrium model
 
 ## Description of scenario
 
@@ -75,11 +68,7 @@ $$ Emission_{CO_2} = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \fr
 
 where:
 
-<<<<<<< HEAD
--   POP is global population;
--   GDP is gross domestic product;
--   TEC is total energy consumption;
--   TEM is total emission of carbon dioxide;
+\<\<\<\<\<\<\< HEAD - POP is global population; - GDP is gross domestic product; - TEC is total energy consumption; - TEM is total emission of carbon dioxide;
 
 And:
 
@@ -89,11 +78,10 @@ And:
 
 #### Aggregated level
 
-#### Sectorial level
-=======
- - Aggregated level
- - Sectorial level
->>>>>>> ff9d61ca7f2f3564bf03f9bae9f22850a7a8d1e9
+# #### Sectorial level
+
+-   Aggregated level
+-   Sectorial level >\>\>\>\>\>\> ff9d61ca7f2f3564bf03f9bae9f22850a7a8d1e9
 
 # Results et discussions
 
