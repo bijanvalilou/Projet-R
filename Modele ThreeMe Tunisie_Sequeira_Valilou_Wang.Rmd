@@ -23,6 +23,7 @@ header-includes:
 - \pagestyle{fancy}
 - \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
 - \fancyfoot[LE,RO]{\thepage}
+bibliography: references.bib
 ---
 
 \newpage
@@ -32,22 +33,35 @@ header-includes:
 # Literature review
 
 ## Energy and economy framework in Tunisia
+## Energy and economy framework in Tunisia (Jin)
 
 ## Climate policy
 
 ### Carbon tax
+### Carbon tax (Jin)
 
 ### Energetic subsidy
+### Energetic subsidy (Bee)
+
+### Recycle of gouvernment income for tax (Lucia)
 
 # Methodology
 
 ## ThreeME model
+## ThreeME model (Bee)
 
-ThreeME stands for Multi-sector Macroeconomic Model for the Evaluation of Environmental and Energy policy.
+### A model of neo-Keynesian inspiration
 
+
+
+### ThreeMe model Tunisia : Adaptation for a little country in development 
+
+
+<<<<<<< HEAD
 ### A neo-Keynesian Computable General Equilibrium model
+=======
+>>>>>>> 5f890b9e017bfd46f858ebbda0a7dfc2f5bedce2
 
-### ThreeMe model Tunisia : Adaptation for a little country in development
 
 ## Description of scenario
 
@@ -58,23 +72,50 @@ ThreeME stands for Multi-sector Macroeconomic Model for the Evaluation of Enviro
 ### Data structure
 
 ### Kaya identity
+### Kaya identity (Jin)
 
--   Aggregated level
--   Sectorial level
+The Kaya identity is an identity where the total emission of carbon dioxide can be explained by four product driving forcec as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption. It is expressed in the form:
+
+$$ Emission_{CO_2} = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \frac{TEM}{TEC}$$
+
+where:
+
+<<<<<<< HEAD
+-   POP is global population;
+-   GDP is gross domestic product;
+-   TEC is total energy consumption;
+-   TEM is total emission of carbon dioxide;
+
+And:
+
+-   GDP/POP is GDP per capita describing the economical activities within a period;
+-   TEC/GDP is energy intensity;
+-   TEM/TEC is carbon intensity;
+
+#### Aggregated level
+
+#### Sectorial level
+=======
+ - Aggregated level
+ - Sectorial level
+>>>>>>> ff9d61ca7f2f3564bf03f9bae9f22850a7a8d1e9
 
 # Results et discussions
 
 ## Comparasion of redistribution
+## Comparasion of redistribution (lucia)
 
 -   graphique PIB : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   chomage : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   émissions : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 
 ## Carbon tax
+## Carbon tax (jin)
 
 Avec/ sans recyclage Focus inter-sectoriel
 
 ## Lifting of energy subsidies
+## Lifting of energy subsidies (bee)
 
 Avec/ sans recyclage Focus inter-sectoriel
 
