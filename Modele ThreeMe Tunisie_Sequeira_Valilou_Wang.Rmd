@@ -30,7 +30,7 @@ bibliography: references.bib
 
 # Introduction
 
-# Literature review - pas urgent, on le fait en parallèle
+# Literature review
 
 ## Energy and economy framework in Tunisia (Jin)
 
@@ -48,7 +48,12 @@ bibliography: references.bib
 
 ### A model of neo-Keynesian inspiration
 
-### ThreeMe model Tunisia : Adaptation au cas d'un pays en développement
+
+
+### ThreeMe model Tunisia : Adaptation for a little country in development 
+
+
+
 
 ## Description of scenario
 
@@ -66,6 +71,7 @@ $$ Emission_{CO_2} = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \fr
 
 where:
 
+<<<<<<< HEAD
 -   POP is global population;
 -   GDP is gross domestic product;
 -   TEC is total energy consumption;
@@ -80,6 +86,10 @@ And:
 #### Aggregated level
 
 #### Sectorial level
+=======
+ - Aggregated level
+ - Sectorial level
+>>>>>>> ff9d61ca7f2f3564bf03f9bae9f22850a7a8d1e9
 
 # Results et discussions
 
