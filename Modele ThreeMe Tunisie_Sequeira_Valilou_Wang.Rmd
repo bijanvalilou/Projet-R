@@ -42,6 +42,8 @@ bibliography: references.bib
 
 ### Recycle of gouvernment income for tax (Lucia)
 
+hhqhq test test test test test test le 8 jan
+
 # Methodology
 
 ## ThreeME model (Bee)
@@ -90,10 +92,9 @@ And:
 #### Aggregated level
 
 #### Sectorial level
-=======
+
  - Aggregated level
  - Sectorial level
->>>>>>> ff9d61ca7f2f3564bf03f9bae9f22850a7a8d1e9
 
 # Results et discussions
 
