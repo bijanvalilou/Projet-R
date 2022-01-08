@@ -29,7 +29,7 @@ header-includes:
 
 # Introduction
 
-# Literature review
+# Literature review - pas urgent, on le fait en parallèle
 
 ## Energy and economy framework in Tunisia
 
@@ -57,8 +57,11 @@ header-includes:
 
 ### Kaya identity
 
- - Aggregated level
- - Sectorial level
+
+
+####  Aggregated level
+
+####  Sectorial level
 
 # Results et discussions
 
@@ -75,7 +78,7 @@ Avec/ sans recyclage Focus inter-sectoriel
 ## Lifting of energy subsidies
 
 Avec/ sans recyclage Focus inter-sectoriel
-
+[@cite]
 ## ENR
 
 ## SNBC
