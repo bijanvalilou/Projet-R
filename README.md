@@ -1,5 +1,7 @@
 # Projet-R : Modele ThreeMe
 
+## Utilisation du Github
+
 
 Github pour avoir un fichier R Markdown collaboratif
 
@@ -26,8 +28,7 @@ https://bookdown.org/yihui/rmarkdown/markdown-syntax.html
 Certaines commandes Latex peuvent être intégrées grâce à l'usage du compilateur Lualuatex. 
 
 
-
-# Presentation du projet
+## Presentation du projet
 
 Proposition de sujet de projet pour le parcours modélisation, master EEET 2021-2022 Encadrement : Meriem Hamdi-Cherif (OFCE SciencesPo)
 
