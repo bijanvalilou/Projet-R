@@ -23,6 +23,7 @@ header-includes:
 - \pagestyle{fancy}
 - \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
 - \fancyfoot[LE,RO]{\thepage}
+bibliography: references.bib
 ---
 
 \newpage
@@ -31,17 +32,19 @@ header-includes:
 
 # Literature review - pas urgent, on le fait en parallèle
 
-## Energy and economy framework in Tunisia
+## Energy and economy framework in Tunisia (Jin)
 
 ## Climate policy
 
-### Carbon tax
+### Carbon tax (Jin)
 
-### Energetic subsidy
+### Energetic subsidy (Bee)
+
+### Recycle of gouvernment income for tax (Lucia)
 
 # Methodology
 
-## ThreeME model
+## ThreeME model (Bee)
 
 ### A model of neo-Keynesian inspiration
 
@@ -49,36 +52,51 @@ header-includes:
 
 ## Description of scenario
 
- - describe redistribution
+-   describe redistribution
 
 ## Choice of evaluation indicators
 
 ### Data structure
 
-### Kaya identity
+### Kaya identity (Jin)
 
+The Kaya identity is an identity where the total emission of carbon dioxide can be explained by four product driving forcec as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption. It is expressed in the form:
 
+$$ Emission_{CO_2} = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \frac{TEM}{TEC}$$
 
-####  Aggregated level
+where:
 
-####  Sectorial level
+-   POP is global population;
+-   GDP is gross domestic product;
+-   TEC is total energy consumption;
+-   TEM is total emission of carbon dioxide;
+
+And:
+
+-   GDP/POP is GDP per capita describing the economical activities within a period;
+-   TEC/GDP is energy intensity;
+-   TEM/TEC is carbon intensity;
+
+#### Aggregated level
+
+#### Sectorial level
 
 # Results et discussions
 
-## Comparasion of redistribution
+## Comparasion of redistribution (lucia)
 
 -   graphique PIB : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   chomage : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   émissions : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 
-## Carbon tax
+## Carbon tax (jin)
 
 Avec/ sans recyclage Focus inter-sectoriel
 
-## Lifting of energy subsidies
+## Lifting of energy subsidies (bee)
 
 Avec/ sans recyclage Focus inter-sectoriel
-[@cite]
+
 ## ENR
 
 ## SNBC
@@ -94,5 +112,3 @@ OUverture : pb du secteur informel non pris en compte par la comptabilité natio
 # Conclusion
 
 # Bibliographie
-
-
