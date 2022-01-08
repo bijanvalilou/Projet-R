@@ -43,18 +43,15 @@ header-includes:
 
 ## ThreeME model
 
-### A model of neo-Keynesian inspiration
+ThreeME stands for Multi-sector Macroeconomic Model for the Evaluation of Environmental and Energy policy.
 
+### A neo-Keynesian  Computable General Equilibrium model
 
-
-### ThreeMe model Tunisia : Adaptation for a little country in development 
-
-
-
+### ThreeMe model Tunisia : Adaptation for a little country in development
 
 ## Description of scenario
 
- - describe redistribution
+-   describe redistribution
 
 ## Choice of evaluation indicators
 
@@ -62,8 +59,8 @@ header-includes:
 
 ### Kaya identity
 
- - Aggregated level
- - Sectorial level
+-   Aggregated level
+-   Sectorial level
 
 # Results et discussions
 
@@ -96,5 +93,3 @@ OUverture : pb du secteur informel non pris en compte par la comptabilité natio
 # Conclusion
 
 # Bibliographie
-
-
