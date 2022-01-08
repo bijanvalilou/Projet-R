@@ -29,46 +29,50 @@ header-includes:
 
 # Introduction
 
-# Revue de la littérature
+# Literature review
 
-## Cadre énergétique et économique en Tunisie
+## Energy and economy framework in Tunisia
 
-## Politiques clilmatiques
+## Climate policy
 
-### Taxe carbone
+### Carbon tax
 
-### Subvention énergétique
+### Energetic subsidy
 
-# Méthodologie
+# Methodology
 
-## Modèle ThreeME
+## ThreeME model
 
-### Un modèle d'inspiration néo-keynésienne
+### A model of neo-Keynesian inspiration
 
-### Modèle ThreeMe Tunisie : Adaptation au cas d'un pays en développement
+### ThreeMe model Tunisia : Adaptation au cas d'un pays en développement
 
-## Descriptifs des scénarii à analyser
+## Description of scenario
 
-## Choix des indicateurs d'évaluation
+ - describe redistribution
 
+## Choice of evaluation indicators
 
--   Présentation des tables de données :
+### Data structure
 
--   Identité de Kaya : décomposition sectorielle
+### Kaya identity
 
-# Résultats et discussions
+ - Aggregated level
+ - Sectorial level
 
-## Introduction
+# Results et discussions
+
+## Comparasion of redistribution
 
 -   graphique PIB : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   chomage : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   émissions : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 
-## Taxe carbone
+## Carbon tax
 
 Avec/ sans recyclage Focus inter-sectoriel
 
-## Levée des subventions énergétiques
+## Lifting of energy subsidies
 
 Avec/ sans recyclage Focus inter-sectoriel
 
