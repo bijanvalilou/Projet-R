@@ -45,7 +45,7 @@ header-includes:
 
 ThreeME stands for Multi-sector Macroeconomic Model for the Evaluation of Environmental and Energy policy.
 
-### A neo-Keynesian  Computable General Equilibrium model
+### A neo-Keynesian Computable General Equilibrium model
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
