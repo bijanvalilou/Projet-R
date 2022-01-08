@@ -33,12 +33,6 @@ header-includes:
 
 ## Cadre énergétique et économique en Tunisie
 
-## Modèle ThreeME
-
-### Un modèle d'inspiration néo-keynésienne
-
-### Modèle ThreeMe Tunisie : Adaptation au cas d'un pays en développement
-
 ## Politiques clilmatiques
 
 ### Taxe carbone
@@ -46,6 +40,12 @@ header-includes:
 ### Subvention énergétique
 
 # Méthodologie
+
+## Modèle ThreeME
+
+### Un modèle d'inspiration néo-keynésienne
+
+### Modèle ThreeMe Tunisie : Adaptation au cas d'un pays en développement
 
 ## Descriptifs des scénarii à analyser
 
