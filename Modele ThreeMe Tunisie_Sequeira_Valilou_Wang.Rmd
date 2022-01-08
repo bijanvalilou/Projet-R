@@ -32,22 +32,18 @@ bibliography: references.bib
 
 # Literature review
 
-## Energy and economy framework in Tunisia
 ## Energy and economy framework in Tunisia (Jin)
 
 ## Climate policy
 
-### Carbon tax
 ### Carbon tax (Jin)
 
-### Energetic subsidy
 ### Energetic subsidy (Bee)
 
 ### Recycle of gouvernment income for tax (Lucia)
 
 # Methodology
 
-## ThreeME model
 ## ThreeME model (Bee)
 
 ### A model of neo-Keynesian inspiration
@@ -71,7 +67,6 @@ bibliography: references.bib
 
 ### Data structure
 
-### Kaya identity
 ### Kaya identity (Jin)
 
 The Kaya identity is an identity where the total emission of carbon dioxide can be explained by four product driving forcec as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption. It is expressed in the form:
@@ -102,19 +97,16 @@ And:
 
 # Results et discussions
 
-## Comparasion of redistribution
 ## Comparasion of redistribution (lucia)
 
 -   graphique PIB : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   chomage : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 -   émissions : grandes tendances des scénarii Taxe carbone, Levée des subventions énergétiques
 
-## Carbon tax
 ## Carbon tax (jin)
 
 Avec/ sans recyclage Focus inter-sectoriel
 
-## Lifting of energy subsidies
 ## Lifting of energy subsidies (bee)
 
 Avec/ sans recyclage Focus inter-sectoriel
