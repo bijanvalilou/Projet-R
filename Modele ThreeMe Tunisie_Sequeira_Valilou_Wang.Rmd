@@ -1,7 +1,7 @@
 ---
-title: "Modèle ThreeMe Tunisie"
+title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
-date: "Janvier 2021"
+date: "January 2022"
 output:
   pdf_document:
     citation_package: biblatex
@@ -15,9 +15,7 @@ output:
     toc: yes
     toc_depth: '2'
     df_print: paged
-subtitle: 'Implications macroéconomiques d’une Stratégie Nationale Bas Carbone pour
-
-  un petit pays en développement : le cas de la Tunisie'
+subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
 - \pagestyle{fancy}
