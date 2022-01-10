@@ -3,6 +3,10 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  html_document:
+    toc: yes
+    toc_depth: '2'
+    df_print: paged
   pdf_document:
     citation_package: biblatex
     toc: yes
@@ -11,10 +15,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     keep_tex: yes
-  html_document:
-    toc: yes
-    toc_depth: '2'
-    df_print: paged
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -46,11 +46,9 @@ hhqhq test test test test test test le 8 jan
 
 ## ThreeME model (Bee)
 
-### A model of neo-Keynesian inspiration
+### A neo-Keynesian Computable General Equilibrium model
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
-
-##\# A neo-Keynesian Computable General Equilibrium model
 
 ## Description of scenario
 
@@ -68,7 +66,7 @@ $$ Emission_{CO_2} = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \fr
 
 where:
 
-\<\<\<\<\<\<\< HEAD - POP is global population; - GDP is gross domestic product; - TEC is total energy consumption; - TEM is total emission of carbon dioxide;
+HEAD - POP is global population; - GDP is gross domestic product; - TEC is total energy consumption; - TEM is total emission of carbon dioxide;
 
 And:
 
@@ -78,17 +76,7 @@ And:
 
 #### Aggregated level
 
-<<<<<<< HEAD
-# #### Sectorial level
-
--   Aggregated level
--   Sectorial level >\>\>\>\>\>\> ff9d61ca7f2f3564bf03f9bae9f22850a7a8d1e9
-=======
 #### Sectorial level
-
- - Aggregated level
- - Sectorial level
->>>>>>> ae27a8dfde2c11f3d8ec0fceb8bfee9802ea8d9a
 
 # Results et discussions
 
