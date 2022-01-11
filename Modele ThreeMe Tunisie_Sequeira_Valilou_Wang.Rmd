@@ -38,6 +38,8 @@ bibliography: references.bib
 
 ### Energetic subsidy (Bee)
 
+Energy subsidies are common. Their amount is estimated at \$4.7 trillion in 2015, which is equivalent to 6.3 percent of Gross Domestic Product according to \@coady2019.
+
 ### Recycle of gouvernment income for tax (Lucia)
 
 hhqhq test test test test test test le 8 jan
