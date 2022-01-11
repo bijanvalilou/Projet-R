@@ -38,11 +38,9 @@ bibliography: references.bib
 
 ### Energetic subsidy (Bee)
 
-Energy subsidies are a common. Their amount is estimated at \$4.7 trillion in 2015, which is equivalent to 6.3 percent of Gross Domestic Product as pointed \@coady2019. According to authors' calculations, the coal is the most subsidized product, before oil. Energy subsidies are very high and depend on the price of the energy products. In the forty-one countries from the database of the International Energy Agency, we can notice that the fossil fuel subsidies have fallen by 42 percent between 2019 and 2020 due the fall in fuel prices, but theses prices have rocketed in 2021.
+Subsidies are defined by @demoor1997 as *'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'*. Energy subsidies are a common policy. Their amount is estimated at \$4.7 trillion in 2015 as pointed out @coady2019, which is equivalent to 6.3 percent of Gross Domestic Product . Energy subsidies are very high and fluctuate depending on the price of the energy products. From the database of the International Energy Agency, we can notice that the fossil fuel subsidies have [fallen by 42 percent between 2019 and 2020](https://www.iea.org/topics/energy-subsidies) due to the fall of fuel prices, but theses prices have rocketed in 2021.
 
-The energy subsidies are very present in in the Middle East and North Africa Region (MENA). The prevalence of energy subsidies can be explained by its benefits. Indeed, energy subsidies can increase export competitiveness or reduce poverty. @verme2017 explain that theses measures were introduced in MENA Region in order to stabilize prices. but also create distortions and costs for environment.
-
-Subsidies are defined by @demoor1997 as \*'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'\*.
+The energy subsidies are very present in in the Middle East, North Africa, Afghanistan and Pakistan region (MENAP). According to @coady2019, MENAP is the fourth region in absolute terms, which subsidized the most energy in 2015. Nevertheless, in relative terms, MENAP is the second, if we take the percent of its GDP. The prevalence of energy subsidies in MENAP can be explained by post-par period. @verme2017 explain that theses energy subsidies were introduced in Middle East and North Africa region (MENA) in order to stabilize prices after the decolonization. These stabilization mechanisms became a social protection system.
 
 ### Recycle of gouvernment income for tax (Lucia)
 
