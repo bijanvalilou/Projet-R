@@ -24,6 +24,67 @@ header-includes:
 bibliography: references.bib
 ---
 
+```{r, echo = FALSE, tidy = TRUE, include = FALSE}
+
+# Importer des packages
+library(knitr) 
+library(rmarkdown) 
+library(markdown) 
+library(readxl)
+library(tibble)
+library(ggplot2)
+library(dplyr)
+library(usethis)
+
+```
+
+```{r, echo = FALSE, tidy = TRUE, include = FALSE}
+
+# Importer de la base de données
+sheet_names <- excel_sheets("Page Reporting_shock des scénarios.xlsx")
+nb_sheets <- length(sheet_names)
+for (i in 1:nb_sheets){  
+        name <- sheet_names[i] 
+        name2 <- paste0(name) 
+        data <- read_excel("Page Reporting_shock des scénarios.xlsx", sheet = i) 
+        data <- column_to_rownames(data, var = '_date_')
+        colnames(data) <- c(2015:2050)
+        data <- data.frame(t(data))
+        data$year <- c(2015:2050)
+        assign(name2,data)
+        rm(name,name2,data)
+} 
+
+Sc1 <- (S1/Baseline-1)*100
+Sc2 <- (S2/Baseline-1)*100
+Sc3 <- (S3/Baseline-1)*100
+Sc4 <- (S4/Baseline-1)*100
+Sc5 <- (S5/Baseline-1)*100
+Sc6 <- (S6/Baseline-1)*100
+Sc1$year <- c(2015:2050)
+Sc2$year <- c(2015:2050)
+Sc3$year <- c(2015:2050)
+Sc4$year <- c(2015:2050)
+Sc5$year <- c(2015:2050)
+Sc6$year <- c(2015:2050)
+
+sheet_names <- excel_sheets("Page Macro.xlsx")
+nb_sheets <- length(sheet_names)
+for (i in 1:nb_sheets){  
+        name <- sheet_names[i] 
+        name2 <- paste0(name,"_Macro") 
+        data <- read_excel("Page Macro.xlsx", sheet = i) 
+        data <- column_to_rownames(data, var = '_date_')
+        colnames(data) <- c(2015:2050)
+        data <- data.frame(t(data))
+        data$year <- c(2015:2050)
+        assign(name2,data)
+        rm(name,name2,data)
+} 
+```
+
+
+
 \newpage
 
 # Introduction
@@ -44,8 +105,6 @@ The energy subsidies are very present in in the Middle East, North Africa, Afgha
 
 ### Recycle of gouvernment income for tax (Lucia)
 
-hhqhq test test test test test test le 8 jan
-
 # Methodology
 
 ## ThreeME model (Bee)
@@ -62,23 +121,36 @@ hhqhq test test test test test test le 8 jan
 
 ### Data structure
 
+All the indicators used in the analysis are in exact hat algebra, meaning the proportional variation to Baseline scenario.
+
 ### Kaya identity (Jin)
 
-The Kaya identity is an identity where the total emission of carbon dioxide can be explained by four product driving forcec as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption. It is expressed in the form:
+The Kaya identity, firstly proposed by \[Kaya 1990 a trouver\], is an identity where the total emission of carbon dioxide can be explained by four product driving forces as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption [@kayaide2021]. It is expressed in the form:
 
-$$ Emission_{CO_2} = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \frac{TEM}{TEC}$$
+$$ C = POP \times\frac{GDP}{POP} \times \frac{TEC}{GDP} \times \frac{C}{TEC} \tag{1}$$
 
 where:
 
-HEAD - POP is global population; - GDP is gross domestic product; - TEC is total energy consumption; - TEM is total emission of carbon dioxide;
+-   POP is global population;
+-   GDP is gross domestic product;
+-   TEC is total energy consumption;
+-   C is total emission of carbon dioxide;
 
 And:
 
 -   GDP/POP is GDP per capita describing the economical activities within a period;
 -   TEC/GDP is energy intensity;
--   TEM/TEC is carbon intensity;
+-   C/TEC is carbon intensity;
+
+In this study, we introduced Kaya identity to explain how different driving forces influenced the total emission for different scenarios. Firstly, a modified Kaya identity is used to analysis CO2 emission with the aggregated factors, then an extended Kaya identity coupled with Log Mean Divisia Index (LMDI) method to decomposite CO2 emission at the sectorial level. We will describe the detailed method in the following sections.
 
 #### Aggregated level
+
+We modified the function of Kaya identity mentioned above in order to adapt our model assumption, seeing the equation (2).
+
+$$ C = VA \times\frac{TEC}{VA} \times \frac{C}{TEC} = E \times I \times P \tag{2}$$ 
+
+where VA, TEC and C denote total added value of all economic sectors, total energy consumption and total CO2 emission. In the modified Kaya identity, we drew 3 driving forces for CO2 emission: E, I and P represent, respectively, overall economic activity, energy intensity over added value and carbon intensity over energy consumption. Here we cancelled population effect because its increasing rate remains still over time for the 6 scenarios and is considered as an exogenous variable in ThreeME model.
 
 #### Sectorial level
 
