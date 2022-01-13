@@ -131,7 +131,7 @@ All the indicators used in the analysis are in exact hat algebra, meaning the pr
 
 ### Kaya identity (Jin)
 
-The Kaya identity, firstly proposed by \[Kaya 1990 a trouver\], is an identity where the total emission of carbon dioxide can be explained by four product driving forces as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption [@kayaide2021]. It is expressed in the form:
+The Kaya identity, firstly proposed by [@kaya1989], is an identity where the total emission of carbon dioxide can be explained by four product driving forces as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption [@kayaide2021]. It is expressed in the form:
 
 $$ C = POP \cdot \frac{GDP}{POP} \cdot \frac{TEC}{GDP} \cdot \frac{C}{TEC} \tag{1}$$
 
@@ -148,39 +148,27 @@ And:
 -   TEC/GDP is energy intensity;
 -   C/TEC is carbon intensity;
 
-In this study, we introduced Kaya identity to explain how different driving forces influenced the total emission for different scenarios. Firstly, a modified Kaya identity is used to analysis CO~2~ emission with the aggregated factors, then an extended Kaya identity coupled with Logarithmic Mean Divisia Index (LMDI) method to decomposite CO~2~ emission at the sectorial level. We will describe the detailed method in the following sections.
+In this study, we introduced an extension of Kaya identity to explain how different driving forces influenced the total emission for different scenarios. Firstly, a extended Kaya identity is used to analysis CO~2~ emission with the aggregated factors, then we couple with Logarithmic Mean Divisia Index (LMDI) method to decomposite CO~2~ emission at the sectorial level.
 
-#### Aggregated level
+We modified the function of Kaya identity mentioned above to adapt our model assumption, where we integrated a new driving force, named economy structure, to decomposite emissions driving force at sectorial level. The five economic sectors considered in ThreeME Tunisia model are: Industry and Agriculture, Service, Transportation, Energy Transformation and Electricity. However, we did not take population into consideration because its increasing rate remains still over time for all our scenarios and is considered as an exogenous variable in ThreeME model. 
 
-We modified the function of Kaya identity mentioned above in order to adapt our model assumption, the ajusted form is the equation (2).
+Therefore, the CO~2~ emission can be written as:
 
-$$ C = VA \cdot \frac{TEC}{VA} \cdot \frac{C}{TEC} = V \cdot E \cdot I \tag{2}$$
+$$  C_{tot} = \Sigma C_{i} = \Sigma( VA \cdot \frac{VA_{i}}{VA} \cdot \frac{EC_{i}}{VA_{i}} \cdot \frac{CE_{i}}{EC_{i}} )=  \Sigma( V \cdot S_{i} \cdot E_{i} \cdot I_{i}) \tag{2}$$ 
+where C~tot~ is overall CO~2~ emission, C~i~ is CO~2~ emission of economic sector i, VA is total added value, VA~i~ is added value of sector i, EC~i~ is total energy consumption by sector i, CE~i~ is CO~2~ emission arising from sector i. According to equation 8, total CO~2~ emission can be explained by four driving forces, including one aggregated indicator, overall economic activities V, and three sectorial indicators, share of total added value of sector i S~i~, energy intensity over added value of sector i E~i~ and carbon intensity over energy consumption of sector i I~i~. Especially, S~i~ can be interpreted as economy structure of Tunisia, @grubb2015 and @kanitkar2015 found that for a developing country, this term could be a key variable determining the future emissions pathway. 
 
-where VA, TEC and C denote total added value of all economic sectors, total energy consumption and total CO~2~ emission. However, we did not take population into consideration here because its increasing rate remains still over time for the 7 scenarios and is considered as an exogenous variable in ThreeME model.
+The effects of driving forces can be expressed in two ways: multiplicative and additive form, where multiplicative deviation $D_{tot}$ is the ratio of total CO~2~ emission between policy scenario and baseline scenario (equation 3), and additive deviation $\Delta C_{tot}$ is the difference of total CO~2~ emission (equation 4). The two expressions are shown below:
 
-Thus, we drew 3 driving forces at aggregated level for CO~2~ emission change: V, E and I represent, respectively, overall economic activity, energy intensity over added value and carbon intensity over energy consumption. Their effects can be expressed in two ways: multiplicative and additive, where multiplicative change $D_{tot}$ is the ratio of total CO~2~ emission between policy scenario and baseline scenario (equation 3), and additive change $\Delta C_{tot}$ is the difference of total CO~2~ emission (equation 4).
+$$ D_{tot} =\frac{C_{2}}{C_{0}} = \Pi(\frac{V_{2}}{V_{0}} \cdot \frac{S_{2,i}}{S_{0,i}} \cdot \frac{E_{2,i}}{E_{0,i}}  \cdot \frac{I_{2,i}}{I_{0,i}}) = D_{V}  \cdot  D_{S} \cdot D_{E} \cdot D_{I} = D_{V}  \cdot \Pi ( D_{S_{i}} \cdot D_{E_{i}} \cdot D_{I_{i}}) \tag{3}$$ 
 
-$$ D_{tot} =\frac{C_{2}}{C_{0}} = \frac{V_{2}}{V_{0}} \cdot \frac{E_{2}}{E_{0}}  \cdot \frac{I_{2}}{I_{0}} = D_{V} \cdot D_{E} \cdot D_{I} \tag{3}$$
+$$ \Delta C_{tot} = C_{2} - C_{0} = \Delta C_{V} + \Delta C_{S} + \Delta C_{E} + \Delta C_{I} = \Delta C_{V} + \Sigma( \Delta C_{S_{i}} + \Delta C_{E_{i}} + \Delta C_{I_{i}}) \tag{4}$$
+where subscript $tot$ represents overall change of emission, subscript 0 and 2 mean baseline scenario and policy scenario respectively. Hence we obtain the index $D_{V}$, $D_{S}$, $D_{E}$ and $D_{I}$, meaning the deviation of emissions due to change of overall economic activities, economy structure, energy intensity and carbon intensity, while $\Delta C_{V}$, $\Delta C_{S}$, $\Delta C_{E}$ and $\Delta C_{I}$ depict the difference of emissions related to change of driving forces.
 
-$$ \Delta C_{tot} = C_{2} - C_{0} = \Delta C_{V} + \Delta C_{E} + \Delta C_{I} \tag{4}$$ where subscript tot represents overall change of emission, subscript 0 and 2 mean baseline scenario and policy scenario respectively. Moreover, the index $D_{V}$, $D_{E}$ and $D_{I}$ explain the change of total emissions with the regard of baseline due to the variation of overall economic activities, energy intensity and carbon intensity respectively, whilst $\Delta C_{V}$, $\Delta C_{E}$ and $\Delta C_{I}$ are the difference of emissions caused by these three driving forces. A simplified LMDI method proposed by @ang1997 and @ang2005 is introduced here in order to calculate the additive impacts of each driving force:
+Now we expect to identify the effect of each driving force at a sectorial level, to do this, we used a LMDI method proposed by @ang1997 and @ang2005. For multiplicative form, we have:
 
-$$ \Delta C_{V} = \frac{C_{2}-C_{0}}{lnC_{2}-lnC_{0}} \cdot ln\frac{V_{2}}{V_{0}} \tag{5}$$ $$ \Delta C_{E} = \frac{C_{2}-C_{0}}{lnC_{2}-lnC_{0}} \cdot ln\frac{E_{2}}{E_{0}} \tag{6}$$ $$ \Delta C_{I} = \frac{C_{2}-C_{0}}{lnC_{2}-lnC_{0}} \cdot ln\frac{I_{2}}{I_{0}} \tag{7}$$
-
-#### Sectorial level
-
-The method to decomposite CO~2~ emission at a sectorial level requires an extension from our modified Kaya identity mentioned above, where we integrated five economic sectors in ThreeME Tunisia model, Industry and Agriculture, Service, Transportation, Energy Transformation and Electricity. Therefore, the CO~2~ emission can be written as:
-
-$$  C_{tot} = \Sigma C_{i} = \Sigma( VA \cdot \frac{VA_{i}}{VA} \cdot \frac{EC_{i}}{VA_{i}} \cdot \frac{CE_{i}}{EC_{i}} )=  \Sigma( V \cdot S_{i} \cdot E_{i} \cdot I_{i}) \tag{8}$$ where C~tot~ is overall CO~2~ emission, C~i~ is CO~2~ emission of economic sector i, VA is total added value, VA~i~ is added value of sector i, EC~i~ is total energy consumption by sector i, CE~i~ is CO~2~ emission arising from sector i. According to equation 8, total CO~2~ emission can be explained by four driving forces, including one aggregated indicator, overall economic activities V, and three sectorial indicators, share of total added value of sector i S~i~, energy intensity over added value of sector i E~i~ and carbon intensity over energy consumption of sector i I~i~. Especially, S~i~ can be interpreted as economy structure of Tunisia, @grubb2015 and @kanitkar2015 found that for a developing country, this term could be a key variable determining the future emission pathway.
-
-Similarly, the total emissions can be written in a multiplicative form (9) and a additive form (10):
-
-$$ D_{tot} =\frac{C_{2}}{C_{0}} = \Pi(\frac{V_{2}}{V_{0}} \cdot \frac{S_{2,i}}{S_{0,i}} \cdot \frac{E_{2,i}}{E_{0,i}}  \cdot \frac{I_{2,i}}{I_{0,i}}) = D_{V}  \cdot  D_{S} \cdot D_{E} \cdot D_{I} = D_{V}  \cdot \Pi ( D_{S_{i}} \cdot D_{E_{i}} \cdot D_{I_{i}}) \tag{9}$$ $$ \Delta C_{tot} = C_{2} - C_{0} = \Delta C_{V} + \Delta C_{S} + \Delta C_{E} + \Delta C_{I} = \Delta C_{V} + \Sigma( \Delta C_{S_{i}} + \Delta C_{E_{i}} + \Delta C_{I_{i}}) \tag{10}$$
-
-Hence we obtain the index $D_{V}$, $D_{S_{i}}$, $D_{E_{i}}$ and $D_{I_{i}}$, meaning the change of emission due to overall economic activities, share of total added value for sector i, energy intensity of sector i and carbon intensity of sector i, while $\Delta C_{V}$, $\Delta C_{S_{i}}$, $\Delta C_{E_{i}}$ and $\Delta C_{I_{i}}$ depict the difference of emission related to those driving forces.
-
-Now we expect to identify each driving forces with a sectorial level, to do this, we used a LMDI method proposed by @ang1997 and @ang2005 as previous section. For multiplicative form, we have:
-
-$$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_{0})/(lnC_{2}-lnC_{0})} \cdot ln \frac{X_{2,(i)}}{X_{0,(i)}} ) \tag{11}$$ $$ \Delta C_{X} =  \Sigma (\frac{C_{2,i}-C_{0,i}}{lnC_{2,i}-lnC_{0,i}} \cdot ln\frac{X_{2,(i)}}{X_{0,(i)}}) \tag{12} $$ where $C_{2}$ is total emission of policy scenario, $C_{0}$ is total emission of baseline, $C_{2,i}$ is emission of policy scenario arising from sector i, $C_{0,i}$ is emission of baseline arising from sector i, $D_{X}$ and $\Delta C_{X}$ represent multiplicative and additive index of driving force $X$, $X_{2,(i)}$ is value of driving force $X$ of policy scenario for sector i, $X_{0,(i)}$ is value of driving force $X$ of baseline for sector i.
+$$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_{0})/(lnC_{2}-lnC_{0})} \cdot ln \frac{X_{2,(i)}}{X_{0,(i)}} ) \tag{11}$$ 
+$$ \Delta C_{X} =  \Sigma (\frac{C_{2,i}-C_{0,i}}{lnC_{2,i}-lnC_{0,i}} \cdot ln\frac{X_{2,(i)}}{X_{0,(i)}}) \tag{12} $$
+where $C_{2}$ is total emission of policy scenario, $C_{0}$ is total emission of baseline, $C_{2,i}$ is emission of policy scenario arising from sector i, $C_{0,i}$ is emission of baseline arising from sector i, $D_{X}$ and $\Delta C_{X}$ represent multiplicative and additive index of driving force $X$, $X_{2,(i)}$ is value of driving force $X$ of policy scenario for sector i, $X_{0,(i)}$ is value of driving force $X$ of baseline for sector i.
 
 # Results et discussions
 
