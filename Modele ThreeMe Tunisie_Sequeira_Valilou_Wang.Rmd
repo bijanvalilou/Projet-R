@@ -3,6 +3,10 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  html_document:
+    toc: yes
+    toc_depth: '2'
+    df_print: paged
   pdf_document:
     citation_package: biblatex
     toc: yes
@@ -11,10 +15,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     keep_tex: no
-  html_document:
-    toc: yes
-    toc_depth: '2'
-    df_print: paged
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -285,7 +285,7 @@ The energy subsidies are very present in the Middle East, North Africa, Afghanis
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
-## Description of scenario
+## Description of scenario (lucia)
 
 with/without redistribution
 
