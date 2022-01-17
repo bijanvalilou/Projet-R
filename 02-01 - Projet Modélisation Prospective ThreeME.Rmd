@@ -1414,6 +1414,44 @@ plt_S4_i
 ```
 
 
+```{r, echo=FALSE}
+
+
+library(grid)
+library(ggnewscale)
+library(ggtext)
+library(tidyverse)
+library(shadowtext)
+library(patchwork)
+
+BROWN <- "#AD8C97"
+BROWN_DARKER <- "#7d3a46"
+GREEN <- "#2FC1D3"
+BLUE <- "#076FA1"
+GREY <- "#C7C9CB"
+GREY_DARKER <- "#5C5B5D"
+RED <- "#E3120B"
+
+
+Sectors <- c("Industry and agriculture","Transports","Services","Transformation of énergy","Electricity")
+
+stacked_data <- data.frame(
+  year = rep(S6[,"year"], times = 5),
+  percent = c(Sc4[,"ia_ind_2"],Sc4[,"ia_trsp_2"],Sc4[,"ia_ser_2"],Sc4[,"ia_trsf_2"],Sc4[,"ia_ele_2"]),
+  Sectors = factor(rep(Sectors, each = 36), levels = rev(Sectors))
+)
+
+
+plt2 <- ggplot(stacked_data) +
+  # color = "white" indicates the color of the lines between the areas
+  geom_area(aes(year, percent, fill = Sectors), color = "white") +
+  scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
+  labs(x = "year", y = "Investment (in %)", title = "Change in investment by sector in the scenario of energy 
+subsidy removal with recycling. Deviation from the baseline scenario.") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+plt2
+```
 
 
 ```{r, echo=FALSE}
