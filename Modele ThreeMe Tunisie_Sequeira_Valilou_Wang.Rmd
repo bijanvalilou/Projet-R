@@ -677,14 +677,16 @@ stacked_data <- data.frame(
   Sectors = factor(rep(Sectors, each = 36), levels = rev(Sectors))
 )
 
+library(forcats)
 
 plt2 <- ggplot(stacked_data) +
   # color = "white" indicates the color of the lines between the areas
-  geom_area(aes(year, percent, fill = Sectors), color = "white") +
+  geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
   scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
   labs(x = "year", y = "Investment (in %)", title = "Change in investment by sector \nin deviation from the baseline scenario. \nEnergy subsidy removal scenario with redistribution. \n.") + 
       theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+guides(fill=guide_legend(title="Sectors"))
 
 plt2
 
@@ -842,37 +844,18 @@ stacked_data <- data.frame(
 
 plt2 <- ggplot(stacked_data) +
   # color = "white" indicates the color of the lines between the areas
-  geom_area(aes(year, percent, fill = Sectors), color = "white") +
+  geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
   scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER, RED))+
   labs(x = "year", y = "Energy consumption \n in deviation to Baseline (%)", title = "Fig.X Evolution of energy comsuption by different sectors, \nEnergy subventions removal with redistribution") + 
       theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+  guides(fill=guide_legend(title="Sectors"))
 
 plt2
 
 ```
 
 
-```{r, echo=FALSE}
-#energy consumption
-z <- c(Sc4[,"ci_toe_ind_2"],Sc4[,"ci_toe_trsp_2"],Sc4[,"ci_toe_ser_2"],Sc4[,"ci_toe_trsf_2"],Sc4[,"ci_toe_ele_2"],Sc4[,"ch_toe_2"])
-x <- rep(S2[,"year"], times = 6)
-Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy transformation","Electricity","Household"), each = 36)
-
-ggplot(
-  mapping = aes(
-               x = x, 
-               y = z, 
-               fill = Legend,
-               group = 1)
-               ) + 
-  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Energy consumption \n in dep difference to Baseline ", title = "Fig.X Evolution of energy comsuption by different sectors, \nthe difference with respect to Baseline scenario") + 
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-rm(z,x,Legend)
-```
 
 ## ENR
 
