@@ -1365,54 +1365,6 @@ ggplot(
 
 
 
-```{r, echo=FALSE}
-
-
-library(grid)
-library(ggnewscale)
-library(ggtext)
-library(tidyverse)
-library(shadowtext)
-library(patchwork)
-
-BROWN <- "#AD8C97"
-BROWN_DARKER <- "#7d3a46"
-GREEN <- "#2FC1D3"
-BLUE <- "#076FA1"
-GREY <- "#C7C9CB"
-GREY_DARKER <- "#5C5B5D"
-RED <- "#E3120B"
-
-
-sectors <- c("Industry and agriculture","Transports","Services","Transformation of énergy","Electricity")
-
-stacked_data <- data.frame(
-  year = rep(S6[,"year"], times = 5),
-  percent = c(S4[,"ia_ind_2"],S4[,"ia_trsp_2"],S4[,"ia_ser_2"],S4[,"ia_trsf_2"],S4[,"ia_ele_2"]),
-  sectors = factor(rep(sectors, each = 36), levels = rev(sectors))
-)
-
-stacked_labels <- data.frame(
-  labels = c("Industry and agriculture","Transports","Services","Transformation of énergy","Electricity"),
-  x = c(2014, 2014, 2014, 2008.1),
-  y = c(25, 100, 225, 225),
-  color = c("white", "white", BROWN_DARKER, GREY_DARKER)
-)
-
-data_S4_i <- S6[,"year"]
-data_S4_i <- as.data.frame(data_S4_i)
-data_S4_i <- cbind(data_S4_i,Sc4[,"ia_ind_2"],Sc4[,"ia_trsp_2"],Sc4[,"ia_ser_2"],Sc4[,"ia_trsf_2"],Sc4[,"ia_ele_2"])
-colnames(data_S4_i) <- c("Year","Industry and agriculture","Transports","Services","Transformation of énergy","Electricity")
-
-plt_S4_i <- ggplot(data_S4_i) +
-  # color = "white" indicates the color of the lines between the areas
-  geom_area(aes(data_S4_i$year, percent, fill = region), color = "white") +
-  theme(legend.position = "None")
-
-plt_S4_i
-
-```
-
 
 ```{r, echo=FALSE}
 
