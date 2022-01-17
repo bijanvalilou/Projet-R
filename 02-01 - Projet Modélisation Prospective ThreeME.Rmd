@@ -1360,3 +1360,51 @@ ggplot(
   scale_y_continuous(breaks = brks,labels = scales::percent(brks))
 
 ```
+
+## F. Investissement 
+
+
+
+```{r, echo=FALSE}
+
+z <- c(Sc4[,"ia_ind_2"],Sc4[,"ia_trsp_2"],Sc4[,"ia_ser_2"],Sc4[,"ia_trsf_2"],Sc4[,"ia_ele_2"])
+x <- rep(S6[,"year"], times = 5)
+y <- rep(c("Industrie et agriculture","Transports","Services","Transformation d'énergie","Electricité"), each = 36)
+
+
+brks <- c(0, 0.25, 0.5, 0.75, 1)
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Investment (in %)", title = "Change in investment by sector in the scenario of energy subsidy removal with recycling. Deviation from the baseline scenario.") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+```
+
+```{r, echo=FALSE}
+
+z <- c(S4[,"ia_ind_2"],S4[,"ia_trsp_2"],S4[,"ia_ser_2"],S4[,"ia_trsf_2"],S4[,"ia_ele_2"])
+x <- rep(S6[,"year"], times = 5)
+y <- rep(c("Industrie et agriculture","Transports","Services","Transformation d'énergie","Electricité"), each = 36)
+
+
+brks <- c(0, 0.25, 0.5, 0.75, 1)
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = y,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Investment (in %)", title = "Change in investment by sector in the scenario of energy subsidy removal with recycling. Deviation from the baseline scenario.") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+```

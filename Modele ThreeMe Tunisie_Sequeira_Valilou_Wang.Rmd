@@ -83,8 +83,6 @@ for (i in 1:nb_sheets){
 } 
 ```
 
-
-
 \newpage
 
 # Introduction
@@ -105,9 +103,9 @@ Along with the sluggish economy is the huge energy deficit in Tunisia. @irena202
 
 ### Energetic subsidy (Bee)
 
-Subsidies are defined by @demoor1997 as *'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'*. Energy subsidies are a common policy. Their amount is estimated at \$4.7 trillion in 2015 as pointed out @coady2019, which is equivalent to 6.3 percent of Gross Domestic Product . Energy subsidies are very high and fluctuate depending on the price of the energy products. From the database of the International Energy Agency, we can notice that the fossil fuel subsidies have [fallen by 42 percent between 2019 and 2020](https://www.iea.org/topics/energy-subsidies) due to the fall of fuel prices, but theses prices have rocketed in 2021.
+Subsidies are defined by @demoor1997 as *'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'*. Energy subsidies are a common policy. Their amount is estimated at \$4.7 trillion in 2015 as pointed out @coady2019, which is equivalent to 6.3 percent of Gross Domestic Product . Energy subsidies fluctuate depending on the price of the energy products. From the database of the International Energy Agency, we can notice that the fossil fuel subsidies have [fallen by 42 percent between 2019 and 2020](https://www.iea.org/topics/energy-subsidies) due to the drop of fuel prices.
 
-The energy subsidies are very present in in the Middle East, North Africa, Afghanistan and Pakistan region (MENAP). According to @coady2019, MENAP is the fourth region in absolute terms, which subsidized the most energy in 2015. Nevertheless, in relative terms, MENAP is the second, if we take the percent of its GDP. The prevalence of energy subsidies in MENAP can be explained by post-par period. @verme2017 explain that theses energy subsidies were introduced in Middle East and North Africa region (MENA) in order to stabilize prices after the decolonization. These stabilization mechanisms became a social protection system.
+The energy subsidies are very present in the Middle East, North Africa, Afghanistan and Pakistan region (MENAP). According to @coady2019, MENAP is the fourth region in absolute terms, which subsidized the most energy in 2015. Nevertheless, in relative terms, MENAP is the second, if we take into account the percent of its GDP. The prevalence of energy subsidies in MENAP can be explained by post-par period. @verme2017 explain that theses energy subsidies were introduced in Middle East and North Africa region (MENA) in order to stabilize prices after the decolonization. These stabilization mechanisms became a social protection system.
 
 ### Recycle of gouvernment income for tax (Lucia)
 
@@ -138,6 +136,7 @@ ggplot() +
 ### ENR
 
 ### SNBC
+
 ## Choice of evaluation indicators
 
 ### Data structure
@@ -165,25 +164,21 @@ And:
 
 In this study, we introduced an extension of Kaya identity to explain how different driving forces influenced the total emission for different scenarios. Firstly, a extended Kaya identity is used to analysis CO~2~ emission with the aggregated factors, then we couple with Logarithmic Mean Divisia Index (LMDI) method to decomposite CO~2~ emission at the sectorial level.
 
-We modified the function of Kaya identity mentioned above to adapt our model assumption, where we integrated a new driving force, named economy structure, to decomposite emissions driving force at sectorial level. The five economic sectors considered in ThreeME Tunisia model are: Industry and Agriculture, Service, Transportation, Energy Transformation and Electricity. However, we did not take population into consideration because its increasing rate remains still over time for all our scenarios and is considered as an exogenous variable in ThreeME model. 
+We modified the function of Kaya identity mentioned above to adapt our model assumption, where we integrated a new driving force, named economy structure, to decomposite emissions driving force at sectorial level. The five economic sectors considered in ThreeME Tunisia model are: Industry and Agriculture, Service, Transportation, Energy Transformation and Electricity. However, we did not take population into consideration because its increasing rate remains still over time for all our scenarios and is considered as an exogenous variable in ThreeME model.
 
 Therefore, the CO~2~ emission can be written as:
 
-$$  C_{tot} = \Sigma C_{i} = \Sigma( VA \cdot \frac{VA_{i}}{VA} \cdot \frac{EC_{i}}{VA_{i}} \cdot \frac{CE_{i}}{EC_{i}} )=  \Sigma( V \cdot S_{i} \cdot E_{i} \cdot I_{i}) \tag{2}$$ 
-where C~tot~ is overall CO~2~ emission, C~i~ is CO~2~ emission of economic sector i, VA is total added value, VA~i~ is added value of sector i, EC~i~ is total energy consumption by sector i, CE~i~ is CO~2~ emission arising from sector i. According to equation 8, total CO~2~ emission can be explained by four driving forces, including one aggregated indicator, overall economic activities V, and three sectorial indicators, share of total added value of sector i S~i~, energy intensity over added value of sector i E~i~ and carbon intensity over energy consumption of sector i I~i~. Especially, S~i~ can be interpreted as economy structure of Tunisia, @grubb2015 and @kanitkar2015 found that for a developing country, this term could be a key variable determining the future emissions pathway. 
+$$  C_{tot} = \Sigma C_{i} = \Sigma( VA \cdot \frac{VA_{i}}{VA} \cdot \frac{EC_{i}}{VA_{i}} \cdot \frac{CE_{i}}{EC_{i}} )=  \Sigma( V \cdot S_{i} \cdot E_{i} \cdot I_{i}) \tag{2}$$ where C~tot~ is overall CO~2~ emission, C~i~ is CO~2~ emission of economic sector i, VA is total added value, VA~i~ is added value of sector i, EC~i~ is total energy consumption by sector i, CE~i~ is CO~2~ emission arising from sector i. According to equation 8, total CO~2~ emission can be explained by four driving forces, including one aggregated indicator, overall economic activities V, and three sectorial indicators, share of total added value of sector i S~i~, energy intensity over added value of sector i E~i~ and carbon intensity over energy consumption of sector i I~i~. Especially, S~i~ can be interpreted as economy structure of Tunisia, @grubb2015 and @kanitkar2015 found that for a developing country, this term could be a key variable determining the future emissions pathway.
 
 The effects of driving forces can be expressed in two ways: multiplicative and additive form, where multiplicative deviation $D_{tot}$ is the ratio of total CO~2~ emission between policy scenario and baseline scenario (equation 3), and additive deviation $\Delta C_{tot}$ is the difference of total CO~2~ emission (equation 4). The two expressions are shown below:
 
-$$ D_{tot} =\frac{C_{2}}{C_{0}} = \Pi(\frac{V_{2}}{V_{0}} \cdot \frac{S_{2,i}}{S_{0,i}} \cdot \frac{E_{2,i}}{E_{0,i}}  \cdot \frac{I_{2,i}}{I_{0,i}}) = D_{V}  \cdot  D_{S} \cdot D_{E} \cdot D_{I} = D_{V}  \cdot \Pi ( D_{S_{i}} \cdot D_{E_{i}} \cdot D_{I_{i}}) \tag{3}$$ 
+$$ D_{tot} =\frac{C_{2}}{C_{0}} = \Pi(\frac{V_{2}}{V_{0}} \cdot \frac{S_{2,i}}{S_{0,i}} \cdot \frac{E_{2,i}}{E_{0,i}}  \cdot \frac{I_{2,i}}{I_{0,i}}) = D_{V}  \cdot  D_{S} \cdot D_{E} \cdot D_{I} = D_{V}  \cdot \Pi ( D_{S_{i}} \cdot D_{E_{i}} \cdot D_{I_{i}}) \tag{3}$$
 
-$$ \Delta C_{tot} = C_{2} - C_{0} = \Delta C_{V} + \Delta C_{S} + \Delta C_{E} + \Delta C_{I} = \Delta C_{V} + \Sigma( \Delta C_{S_{i}} + \Delta C_{E_{i}} + \Delta C_{I_{i}}) \tag{4}$$
-where subscript $tot$ represents overall change of emission, subscript 0 and 2 mean baseline scenario and policy scenario respectively. Hence we obtain the index $D_{V}$, $D_{S}$, $D_{E}$ and $D_{I}$, meaning the deviation of emissions due to change of overall economic activities, economy structure, energy intensity and carbon intensity, while $\Delta C_{V}$, $\Delta C_{S}$, $\Delta C_{E}$ and $\Delta C_{I}$ depict the difference of emissions related to change of driving forces.
+$$ \Delta C_{tot} = C_{2} - C_{0} = \Delta C_{V} + \Delta C_{S} + \Delta C_{E} + \Delta C_{I} = \Delta C_{V} + \Sigma( \Delta C_{S_{i}} + \Delta C_{E_{i}} + \Delta C_{I_{i}}) \tag{4}$$ where subscript $tot$ represents overall change of emission, subscript 0 and 2 mean baseline scenario and policy scenario respectively. Hence we obtain the index $D_{V}$, $D_{S}$, $D_{E}$ and $D_{I}$, meaning the deviation of emissions due to change of overall economic activities, economy structure, energy intensity and carbon intensity, while $\Delta C_{V}$, $\Delta C_{S}$, $\Delta C_{E}$ and $\Delta C_{I}$ depict the difference of emissions related to change of driving forces.
 
 Now we expect to identify the effect of each driving force at a sectorial level, to do this, we used a LMDI method proposed by @ang1997 and @ang2005. For multiplicative form, we have:
 
-$$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_{0})/(lnC_{2}-lnC_{0})} \cdot ln \frac{X_{2,(i)}}{X_{0,(i)}} ) \tag{11}$$ 
-$$ \Delta C_{X} =  \Sigma (\frac{C_{2,i}-C_{0,i}}{lnC_{2,i}-lnC_{0,i}} \cdot ln\frac{X_{2,(i)}}{X_{0,(i)}}) \tag{12} $$
-where $C_{2}$ is total emission of policy scenario, $C_{0}$ is total emission of baseline, $C_{2,i}$ is emission of policy scenario arising from sector i, $C_{0,i}$ is emission of baseline arising from sector i, $D_{X}$ and $\Delta C_{X}$ represent multiplicative and additive index of driving force $X$, $X_{2,(i)}$ is value of driving force $X$ of policy scenario for sector i, $X_{0,(i)}$ is value of driving force $X$ of baseline for sector i.
+$$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_{0})/(lnC_{2}-lnC_{0})} \cdot ln \frac{X_{2,(i)}}{X_{0,(i)}} ) \tag{11}$$ $$ \Delta C_{X} =  \Sigma (\frac{C_{2,i}-C_{0,i}}{lnC_{2,i}-lnC_{0,i}} \cdot ln\frac{X_{2,(i)}}{X_{0,(i)}}) \tag{12} $$ where $C_{2}$ is total emission of policy scenario, $C_{0}$ is total emission of baseline, $C_{2,i}$ is emission of policy scenario arising from sector i, $C_{0,i}$ is emission of baseline arising from sector i, $D_{X}$ and $\Delta C_{X}$ represent multiplicative and additive index of driving force $X$, $X_{2,(i)}$ is value of driving force $X$ of policy scenario for sector i, $X_{0,(i)}$ is value of driving force $X$ of baseline for sector i.
 
 # Results et discussions
 
@@ -196,7 +191,6 @@ where $C_{2}$ is total emission of policy scenario, $C_{0}$ is total emission of
 ## Carbon tax (jin)
 
 Avec/ sans recyclage Focus inter-sectoriel
-
 
 ```{r, echo = FALSE}
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
@@ -212,11 +206,7 @@ kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "",
 rm(tablename,Table_Macro_CT)
 ```
 
-
-
 ## Lifting of energy subsidies (bee)
-
-Avec/ sans recyclage Focus inter-sectoriel
 
 ## ENR
 
