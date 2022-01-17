@@ -1369,13 +1369,6 @@ ggplot(
 ```{r, echo=FALSE}
 
 
-library(grid)
-library(ggnewscale)
-library(ggtext)
-library(tidyverse)
-library(shadowtext)
-library(patchwork)
-
 BROWN <- "#AD8C97"
 BROWN_DARKER <- "#7d3a46"
 GREEN <- "#2FC1D3"

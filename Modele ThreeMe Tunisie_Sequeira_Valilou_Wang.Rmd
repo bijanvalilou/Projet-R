@@ -84,7 +84,6 @@ for (i in 1:nb_sheets){
 } 
 ```
 
-
 ```{r, echo=FALSE, tidy = TRUE, include = FALSE}
 
 sc <- c("KAYA_1","KAYA_2","KAYA_3","KAYA_4","KAYA_5","KAYA_6")
@@ -157,7 +156,6 @@ rm(data,temp,i,j,sc,va,va_0,kayaname)
 # Fin de creation de la base de donnees
 
 ```
-
 
 ```{r, echo=FALSE, tidy = TRUE, include = FALSE}
 # Decomposition multiplicative
@@ -253,7 +251,6 @@ Dif <- list(D1,D2,D3,D4,D5,D6)
 rm(i,j,jin,name,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
 ```
 
-
 \newpage
 
 # Introduction
@@ -294,23 +291,30 @@ with/without redistribution
 
 ### Tax carbone
 
-Avant 2030, le niveau de la TC est calculé de façon a couvrir 100% des besoins du FTE
-Il passe de 1.1 à 9 DT/tCO2
-Après 2030, la trajectoire de la TC est définie de façon à atteindre les objectifs de réduction d’émission à 2050
-D’après les hypothèse des substitutions retenues dans ThreeME, l’atteinte d’un factor 5 en 2050 par rapport au niveau de 2020 nécessite une hause régulière de 9 DT/tCO2 à 372 DT/ tCO2.
-En plus de la TC des signaux prix ont été introduits afin d’atteindre les objectifs de consommations d’énergie par source
-
+Avant 2030, le niveau de la TC est calculé de façon a couvrir 100% des besoins du FTE Il passe de 1.1 à 9 DT/tCO2 Après 2030, la trajectoire de la TC est définie de façon à atteindre les objectifs de réduction d'émission à 2050 D'après les hypothèse des substitutions retenues dans ThreeME, l'atteinte d'un factor 5 en 2050 par rapport au niveau de 2020 nécessite une hause régulière de 9 DT/tCO2 à 372 DT/ tCO2. En plus de la TC des signaux prix ont été introduits afin d'atteindre les objectifs de consommations d'énergie par source
 
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = S1, aes(x = year,y = rco2tax_vol.1000, group = 1)) +
-    labs(x= "year", y = "Carbon tax rate \n (in constant Tunisian dinars on 2015 per tonne of CO2) ", title = "Fig.X Evolution of carbon tax in Tunisia") +
+    labs(x= "year", y = "Carbon tax rate \n (in constant Tunisian dinars on 2015 per ton of CO2) ", title = "Fig.X Evolution of carbon tax in Tunisia") +
   scale_x_continuous(breaks=seq(2015,2050,5)) + 
   theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5))
 
 ```
 
 ### Energy subsidy
+
+```{r, echo=FALSE}
+
+ggplot() + 
+  geom_line( data = S3, aes(x = year,y = abs(esub_gdp_2.gdp_2.1000000..ems_co2_2.1000.), group = 1)) +
+    labs(x= "Year", y = "Energy subventions 
+         (in 2015 constant Tunisian dinars per ton of CO2)", title = "Scenarios with lifting of energy subsidies. Energy subsidies.") +
+  scale_x_continuous(breaks=seq(2015,2050,5))+ theme(axis.title=element_text(size=9))
+
+# valeur négative passée en valeur absolue 
+
+```
 
 ### ENR
 
@@ -387,12 +391,11 @@ kable_styling(latex_options = c("striped","hover","repeat_header"), full_width =
 row_spec(0, bold = T)
 ```
 
+An intuitive influence of carbon tax is that the price of internal market will raise, which is in line with our model output: higher household consumption price of 9.49% with 11.33% and 13.14% for production price and intermediate consumption price, respectively. The increasing cost of household and company will force them to choose the substitution with less CO2 emissions, thus reducing their cost. The variation of internal price also has an impact on the competitiveness of local goods on international market, causing a recession for exportation and a boost for importation.
 
-An intuitive influence of carbon tax is that the price of internal market will raise, which is in line with our model output: higher household consumption price of 9.49% with 11.33% and 13.14% for production price and intermediate consumption price, respectively. The increasing cost of household and company will force them to choose the substitution with less CO2 emissions, thus reducing their cost. The variation of internal price also has  an impact on the competitiveness of local goods on international market, causing a recession for exportation and a boost for importation.
+It is interesting to note that the implemented policy can alleviate social poverty to some extent. We observed, for example, the continuous growth of wage employment. It will reinforce the acceptability of the climate policy.
 
-It is interesting to note that the implemented policy can alleviate social poverty to some extent. We observed, for example, the continuous growth of wage employment. It will reinforce the acceptability of the climate policy. 
-
-As the economy grows, we find that the emissions reduction of 42.2% by 2050 is achieved. We are now interested in its pathway, to do this, we firstly employ our extended Kaya identity to clarify the main driving forces, where, a priori, Economic activities are expected to have positive effects on emissions, whilst Energy intensity and Carbon intensity should have negative effects. Figure X. et X. present the results of all the aggregated driving forces. We observe that economy structure has a significantly positive and growing impact until 2043 where it reaches the peak raising 7947.48 Kt CO2 (+19,38%) with regard to baseline, then it begins to decline to 5650,17 Kt CO2 (+12,46%) on 2050. On the other hand, carbon intensity and energy intensity show the negative and monotone trend, the former reducing 7128.35 Kt CO2 (-13.77%) on 2050 and 30715.93 Kt CO2 (-47.18%) for the later. However, the influence of economic activities is negligible (+886,37 Kt CO2 \& +1.86%), revealing that even though the total production remains relatively invariable, the revolution of economy structure could still strongly impact the emissions pathway.
+As the economy grows, we find that the emissions reduction of 42.2% by 2050 is achieved. We are now interested in its pathway, to do this, we firstly employ our extended Kaya identity to clarify the main driving forces, where, a priori, Economic activities are expected to have positive effects on emissions, whilst Energy intensity and Carbon intensity should have negative effects. Figure X. et X. present the results of all the aggregated driving forces. We observe that economy structure has a significantly positive and growing impact until 2043 where it reaches the peak raising 7947.48 Kt CO2 (+19,38%) with regard to baseline, then it begins to decline to 5650,17 Kt CO2 (+12,46%) on 2050. On the other hand, carbon intensity and energy intensity show the negative and monotone trend, the former reducing 7128.35 Kt CO2 (-13.77%) on 2050 and 30715.93 Kt CO2 (-47.18%) for the later. However, the influence of economic activities is negligible (+886,37 Kt CO2 & +1.86%), revealing that even though the total production remains relatively invariable, the revolution of economy structure could still strongly impact the emissions pathway.
 
 ```{r, echo = FALSE}
 
@@ -425,10 +428,8 @@ Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","C
 rm(z,x,Legend)
 
 ```
-Sectorial level analysis,
-Economy Structure: main sectors are electricity (positive) and energy transformation (negative)
-what happened in these two sectors?
-a developpement of electricity production, and a recession of energy transformation
+
+Sectorial level analysis, Economy Structure: main sectors are electricity (positive) and energy transformation (negative) what happened in these two sectors? a developpement of electricity production, and a recession of energy transformation
 
 ```{r, echo=FALSE}
 
@@ -462,8 +463,7 @@ ggplot(
 rm(z,x,Legend)
 ```
 
-Energy intensity -> we observe the improvement of energy efficiency, in another word the decrement of energy intensity, for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture.
-explained by the global drop of energy consumption, coupled with the augmentation of added value in certain sectors
+Energy intensity -> we observe the improvement of energy efficiency, in another word the decrement of energy intensity, for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture. explained by the global drop of energy consumption, coupled with the augmentation of added value in certain sectors
 
 ```{r, echo = FALSE}
 ggplot() + 
@@ -477,7 +477,6 @@ ggplot() +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
-
 
 ```{r, echo=FALSE}
 #energy consumption
@@ -500,14 +499,7 @@ ggplot(
 rm(z,x,Legend)
 ```
 
-Carbon intensity
-Dramastically change in energy transformation and industry&agriculture
-for energy transformation: -> explain the integration of household into this sector 
--> mainly from less consumption of fuels for transportation, and a increment of electricity -> maybe because the electrical car or hybride car. 
-A slight reduction of natural gas consumption in energy transformation
-for industry & agriculture: same tendance, less natural gas, less consumption of fuels for transportation, more electricity (for transportation and heating etc)
-
-
+Carbon intensity Dramastically change in energy transformation and industry&agriculture for energy transformation: -> explain the integration of household into this sector -> mainly from less consumption of fuels for transportation, and a increment of electricity -> maybe because the electrical car or hybride car. A slight reduction of natural gas consumption in energy transformation for industry & agriculture: same tendance, less natural gas, less consumption of fuels for transportation, more electricity (for transportation and heating etc)
 
 ```{r, echo = FALSE}
 ggplot() + 
@@ -521,7 +513,6 @@ ggplot() +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
-
 
 ```{r, echo = FALSE}
 z_1 <- c(
@@ -593,7 +584,6 @@ kable(Table_I_trsf, booktabs = T, longtable = T, caption = "Energy mix of sector
 rm(tablename,Table_I_trsf)
 ```
 
-
 ```{r, echo = FALSE}
 z_1 <- c(
        S2[,"ch_toe_cfut_2"]/S2[,"ch_toe_2"],
@@ -643,13 +633,46 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ```
 
-Focus inter-sectoriel energy price will 
+Focus inter-sectoriel energy price will
 
-1 - induce company to invest to reduce energy demande -> une amelioration pour intensite energetique 
+1 - induce company to invest to reduce energy demande -> une amelioration pour intensite energetique
 
 2 - renwable energy -> une amelioration pour intensite carbone, mais dans notre modele ca se voit pas a cause de l'hypothese du modele
 
 ## Lifting of energy subsidies (bee)
+
+```{r, echo = FALSE}
+
+
+BROWN <- "#AD8C97"
+BROWN_DARKER <- "#7d3a46"
+GREEN <- "#2FC1D3"
+BLUE <- "#076FA1"
+GREY <- "#C7C9CB"
+GREY_DARKER <- "#5C5B5D"
+RED <- "#E3120B"
+
+
+Sectors <- c("Industry and agriculture","Transports","Services","Transformation of énergy","Electricity")
+
+stacked_data <- data.frame(
+  year = rep(S6[,"year"], times = 5),
+  percent = c(Sc4[,"ia_ind_2"],Sc4[,"ia_trsp_2"],Sc4[,"ia_ser_2"],Sc4[,"ia_trsf_2"],Sc4[,"ia_ele_2"]),
+  Sectors = factor(rep(Sectors, each = 36), levels = rev(Sectors))
+)
+
+
+plt2 <- ggplot(stacked_data) +
+  # color = "white" indicates the color of the lines between the areas
+  geom_area(aes(year, percent, fill = Sectors), color = "white") +
+  scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
+  labs(x = "year", y = "Investment (in %)", title = "Change in investment by sector in the scenario of energy 
+subsidy removal with recycling. Deviation from the baseline scenario.") + 
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+plt2
+
+```
 
 ## ENR
 
