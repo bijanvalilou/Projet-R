@@ -83,6 +83,176 @@ for (i in 1:nb_sheets){
 } 
 ```
 
+
+```{r, echo=FALSE, tidy = TRUE, include = FALSE}
+
+sc <- c("KAYA_1","KAYA_2","KAYA_3","KAYA_4","KAYA_5","KAYA_6")
+kayaname <- c("S_ind","S_trsp","S_ser","S_trsf","S_ele","E_ind","E_trsp","E_ser","E_trsf","E_ele","I_ind","I_trsp","I_ser","I_trsf","I_ele","V")
+va <- c("va_ind_2","va_trsp_2","va_ser_2","va_trsf_2","va_ele_2","ci_toe_ind_2","ci_toe_trsp_2","ci_toe_ser_2","ci_toe_trsf_2","ci_toe_ele_2","ems_ci_co2_ind_2","ems_ci_co2_trsp_2","ems_ci_co2_ser_2","ems_ci_co2_trsf_2","ems_ci_co2_ele_2","year","va_2")
+va_0 <- c("va_ind_0","va_trsp_0","va_ser_0","va_trsf_0","va_ele_0","ci_toe_ind_0","ci_toe_trsp_0","ci_toe_ser_0","ci_toe_trsf_0","ci_toe_ele_0","ems_ci_co2_ind_0","ems_ci_co2_trsp_0","ems_ci_co2_ser_0","ems_ci_co2_trsf_0","ems_ci_co2_ele_0","year","va_0")
+
+
+DataBase <- list(S1,S2,S3,S4,S5,S6)
+
+for (i in 1:6) {
+  DataBase[[i]][,"ems_ci_co2_trsf_2"] <- DataBase[[i]][,"ems_ci_co2_trsf_2"] + DataBase[[i]][,"ems_ch_co2_2"]
+  DataBase[[i]][,"ci_toe_trsf_2"] <- DataBase[[i]][,"ci_toe_trsf_2"] + DataBase[[i]][,"ch_toe_2"]
+}
+
+
+
+for (j in 1:6) {
+
+data <- as.data.frame(array(,dim=c(36,16)))
+
+for (i in 1:15) {
+  if (i < 6) {
+  temp <- DataBase[[j]][,va[i]]/DataBase[[j]][,va[17]]
+  data[,i] <- temp
+  }
+  else if(i < 11) {
+  temp <- DataBase[[j]][,va[i]]/DataBase[[j]][,va[i-5]]
+  data[,i] <- temp
+  }
+  else if(i < 16) {
+  temp <- DataBase[[j]][,va[i]]/DataBase[[j]][,va[i-5]]
+  data[,i] <- temp
+  }
+}
+data[,16] = DataBase[[j]][,va[17]]
+colnames(data) = kayaname
+assign(sc[j],data)
+rm(data,temp)
+
+}
+
+data <- as.data.frame(array(,dim=c(36,16)))
+
+Base <- Baseline
+Base[,"ems_ci_co2_trsf_0"] <- Base[,"ems_ci_co2_trsf_0"] + Base[,"ems_ch_co2_0"] 
+Base[,"ci_toe_trsf_0"] <- Base[,"ci_toe_trsf_0"] + Base[,"ch_toe_0"] 
+
+for (i in 1:15) {
+  if (i < 6) {
+  temp <- Base[,va_0[i]]/Base[,va_0[17]]
+  data[,i] <- temp
+  }
+  else if(i < 11) {
+  temp <- Base[,va_0[i]]/Base[,va_0[i-5]]
+  data[,i] <- temp
+  }
+  else if(i < 16) {
+  temp <- Base[,va_0[i]]/Base[,va_0[i-5]]
+  data[,i] <- temp
+  }
+}
+data[,16] = Baseline[,va_0[17]]
+colnames(data) = kayaname
+assign("KAYA_Baseline",data)
+
+Kaya_Base <- list(KAYA_1,KAYA_2,KAYA_3,KAYA_4,KAYA_5,KAYA_6)
+
+rm(data,temp,i,j,sc,va,va_0,kayaname)
+# Fin de creation de la base de donnees
+
+```
+
+
+```{r, echo=FALSE, tidy = TRUE, include = FALSE}
+# Decomposition multiplicative
+
+name <- c("D1","D2","D3","D4","D5","D6")
+secteur <- c("ems_ci_co2_ind_2","ems_ci_co2_trsp_2","ems_ci_co2_ser_2","ems_ci_co2_trsf_2","ems_ci_co2_ele_2")
+secteur0 <- c("ems_ci_co2_ind_0","ems_ci_co2_trsp_0","ems_ci_co2_ser_0","ems_ci_co2_trsf_0","ems_ci_co2_ele_0")
+kayaname <- c("S_ind","S_trsp","S_ser","S_trsf","S_ele","E_ind","E_trsp","E_ser","E_trsf","E_ele","I_ind","I_trsp","I_ser","I_trsf","I_ele","V","ind","trsp","ser","trsf","ele","S","E","I")
+
+for (i in 1:6) {
+  
+  w <- as.data.frame(array(,dim=c(36,16)))
+  for (j in 1:5) {
+  w[,c(j,j+5,j+10)] <- ((DataBase[[i]][,secteur[j]]-Base[,secteur0[j]])/
+          log(DataBase[[i]][,secteur[j]]/Base[,secteur0[j]]))/
+     ((DataBase[[i]][,"ems_ci_co2_2"] - Base[,"ems_ci_co2_0"])/
+       log(DataBase[[i]][,"ems_ci_co2_2"]/Base[,"ems_ci_co2_0"]))
+  }
+  w[,16] <- w[,1]+ w[,2]+ w[,3]+ w[,4]+ w[,5]
+  data <- exp(w*log(Kaya_Base[[i]]/KAYA_Baseline))
+  data <- rapply( data, f=function(x) ifelse(is.nan(x),1,x), how="replace" )
+  
+  for (k in 1:8) {
+    if (k < 6) {
+      data <- data %>% add_column(newColname = data[,k] * data[,k+5] * data[,k+10]) 
+    }
+    else if (k == 6) {
+      data <- data %>% add_column(newColname = data[,k-5]*data[,k-4]*data[,k-3]*data[,k-2]*data[,k-1]) 
+    }
+    else if (k == 7) {
+      data <- data %>% add_column(newColname = data[,k-1]*data[,k]*data[,k+1]*data[,k+2]*data[,k+3]) 
+    }
+    else if (k == 8) {
+      data <- data %>% add_column(newColname = data[,k+3]*data[,k+4]*data[,k+5]*data[,k+6]*data[,k+7]) 
+    }
+  }
+  
+  colnames(data) <- kayaname
+  data <- (data - 1) * 100
+  data$year <- c(2015:2050)
+  jin <- name[i]
+  assign(jin,data)
+}
+
+Det <- list(D1,D2,D3,D4,D5,D6)
+
+rm(i,j,jin,name,kayaname,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
+```
+
+```{r, echo=FALSE, tidy = TRUE, include = FALSE}
+# Decomposition additive
+name <- c("D1","D2","D3","D4","D5","D6")
+secteur <- c("ems_ci_co2_ind_2","ems_ci_co2_trsp_2","ems_ci_co2_ser_2","ems_ci_co2_trsf_2","ems_ci_co2_ele_2")
+secteur0 <- c("ems_ci_co2_ind_0","ems_ci_co2_trsp_0","ems_ci_co2_ser_0","ems_ci_co2_trsf_0","ems_ci_co2_ele_0")
+kayaname <- c("S_ind","S_trsp","S_ser","S_trsf","S_ele","E_ind","E_trsp","E_ser","E_trsf","E_ele","I_ind","I_trsp","I_ser","I_trsf","I_ele","V","ind","trsp","ser","trsf","ele","S","E","I")
+
+for (i in 1:6) {
+  
+  w <- as.data.frame(array(,dim=c(36,16)))
+  
+  for (j in 1:5) {
+    w[,c(j,j+5,j+10)] <- (DataBase[[i]][,secteur[j]]-Base[,secteur0[j]])/
+          log(DataBase[[i]][,secteur[j]]/Base[,secteur0[j]])
+  }
+  
+  w[,16] <- w[,1]+ w[,2]+ w[,3]+ w[,4]+ w[,5]
+  data <- w*log(Kaya_Base[[i]]/KAYA_Baseline)
+  data <- rapply( data, f=function(x) ifelse(is.nan(x),0,x), how="replace" )
+  
+  for (k in 1:8) {
+    if (k < 6) {
+      data <- data %>% add_column(newColname = data[,k] + data[,k+5] + data[,k+10]) 
+    }
+    else if (k == 6) {
+      data <- data %>% add_column(newColname = data[,k-5]+data[,k-4]+data[,k-3]+data[,k-2]+data[,k-1]) 
+    }
+    else if (k == 7) {
+      data <- data %>% add_column(newColname = data[,k-1]+data[,k]+data[,k+1]+data[,k+2]+data[,k+3]) 
+    }
+    else if (k == 8) {
+      data <- data %>% add_column(newColname = data[,k+3]+data[,k+4]+data[,k+5]+data[,k+6]+data[,k+7]) 
+    }
+  }
+  
+  colnames(data) <- kayaname
+  data$year <- c(2015:2050)
+  jin <- name[i]
+  assign(jin,data)
+}
+
+Dif <- list(D1,D2,D3,D4,D5,D6)
+
+rm(i,j,jin,name,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
+```
+
+
 \newpage
 
 # Introduction
@@ -123,12 +293,20 @@ with/without redistribution
 
 ### Tax carbone
 
+Avant 2030, le niveau de la TC est calculé de façon a couvrir 100% des besoins du FTE
+Il passe de 1.1 à 9 DT/tCO2
+Après 2030, la trajectoire de la TC est définie de façon à atteindre les objectifs de réduction d’émission à 2050
+D’après les hypothèse des substitutions retenues dans ThreeME, l’atteinte d’un factor 5 en 2050 par rapport au niveau de 2020 nécessite une hause régulière de 9 DT/tCO2 à 372 DT/ tCO2.
+En plus de la TC des signaux prix ont été introduits afin d’atteindre les objectifs de consommations d’énergie par source
+
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = S1, aes(x = year,y = rco2tax_vol.1000, group = 1)) +
     labs(x= "year", y = "Carbon tax rate \n (in constant Tunisian dinars on 2015 per tonne of CO2) ", title = "Fig.X Evolution of carbon tax in Tunisia") +
   scale_x_continuous(breaks=seq(2015,2050,5)) + 
-  theme(axis.title=element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5))
+  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5))
+
 ```
 
 ### Energy subsidy
@@ -190,21 +368,285 @@ $$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_
 
 ## Carbon tax (jin)
 
-Avec/ sans recyclage Focus inter-sectoriel
+As the carbon tax before 2030 stays at a moderate level, the impacts of this policy are therefore limited, while the significant effects are observed during the later period from 2030 to 2050 when a much stronger tax carbon is implemented. The macroeconomic impacts are summarized in table 1, the results are expressed as percentage deviation from Baseline scenario.
+
+Generally speaking, the policy of carbon tax with redistribution of government revenue has a positive impact on Tunisia's economy. Whereas GDP increases slightly up to 0.13% with respect to baseline on 2030, the relatively rapid augmentation is observed from 2030 to 2050. At the horizon of 2050, it reaches a highest level (+1.93%) thanks to the carbon tax policy. In the meantime, social welfare is improved with the same rhythme as GDP growth, with a higher consumption level (+4.20%) and a higher disposable income (+4.17%) on 2050.
 
 ```{r, echo = FALSE}
+
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
 Table_Macro_CT <- S2_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
 Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "",
-      caption = "Macroecnomic indicators - Tax carbon with redistribution, \n in relative variation % to baseline scenario") %>% 
-  kable_styling(latex_options = c("striped","hover","hole_position","repeat_header"))%>% 
-  row_spec(0, bold = T)
 
-rm(tablename,Table_Macro_CT)
+kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
 ```
+
+
+An intuitive influence of carbon tax is that the price of internal market will raise, which is in line with our model output: higher household consumption price of 9.49% with 11.33% and 13.14% for production price and intermediate consumption price, respectively. The increasing cost of household and company will force them to choose the substitution with less CO2 emissions, thus reducing their cost. The variation of internal price also has  an impact on the competitiveness of local goods on international market, causing a recession for exportation and a boost for importation.
+
+It is interesting to note that the implemented policy can alleviate social poverty to some extent. We observed, for example, the continuous growth of wage employment. It will reinforce the acceptability of the climate policy. 
+
+As the economy grows, we find that the emissions reduction of 42.2% by 2050 is achieved. We are now interested in its pathway, to do this, we firstly employ our extended Kaya identity to clarify the main driving forces, where, a priori, Economic activities are expected to have positive effects on emissions, whilst Energy intensity and Carbon intensity should have negative effects. Figure X. et X. present the results of all the aggregated driving forces. We observe that economy structure has a significantly positive and growing impact until 2043 where it reaches the peak raising 7947.48 Kt CO2 (+19,38%) with regard to baseline, then it begins to decline to 5650,17 Kt CO2 (+12,46%) on 2050. On the other hand, carbon intensity and energy intensity show the negative and monotone trend, the former reducing 7128.35 Kt CO2 (-13.77%) on 2050 and 30715.93 Kt CO2 (-47.18%) for the later. However, the influence of economic activities is negligible (+886,37 Kt CO2 \& +1.86%), revealing that even though the total production remains relatively invariable, the revolution of economy structure could still strongly impact the emissions pathway.
+
+```{r, echo = FALSE}
+
+ggplot() + 
+  geom_line( aes(x = Det[[2]][,"year"],y = S2[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"V"], group = 1, color = "Economic activities")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S"], group = 1, color = "Economy structure")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E"], group = 1, color = "Energy intensity")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I"], group = 1, color = "Carbon intensity")) + 
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n Carbon tax with redistribution") +
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+```{r, echo = FALSE}
+
+
+z <- c(Dif[[2]][,"V"],Dif[[2]][,"S"],Dif[[2]][,"E"],Dif[[2]][,"I"])
+x <- rep(Dif[[2]][,"year"], time = 4)
+Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","Carbon intensity"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "CO2 emissions in Kt CO2, \n in difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation \n Carbon tax with redistribution") +
+  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+rm(z,x,Legend)
+
+```
+Sectorial level analysis,
+Economy Structure: main sectors are electricity (positive) and energy transformation (negative)
+what happened in these two sectors?
+a developpement of electricity production, and a recession of energy transformation
+
+```{r, echo=FALSE}
+
+ggplot() + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S"], group = 1, color = "Total effect")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_ind"], group = 1, color = "Industry & Agriculture")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_trsp"], group = 1, color = "Transportation")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_ser"], group = 1, color = "Services")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_trsf"], group = 1, color = "Energy Transformation")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_ele"], group = 1, color = "Electricity")) +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution of economy structure for overall emissions \n Carbon tax with redistribution") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+z <- c(Sc2[,"va_ind_2"],Sc2[,"va_trsp_2"],Sc2[,"va_ser_2"],Sc2[,"va_trsf_2"],Sc2[,"va_ele_2"])
+x <- rep(Sc2[,"year"], times = 5)
+Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy Transformation","Electricity"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = Legend,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Added value \n variation in % to Baseline", title = "Fig.x Revolution of economy structure in Tunisia \nfor Carbon tax with redistribution scenario, \n expressed by added value variation with regard to Baseline scenario") + 
+      theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+rm(z,x,Legend)
+```
+
+Energy intensity -> we observe the improvement of energy efficiency, in another word the decrement of energy intensity, for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture.
+explained by the global drop of energy consumption, coupled with the augmentation of added value in certain sectors
+
+```{r, echo = FALSE}
+ggplot() + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E"], group = 1, color = "Total effect")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_trsp"], group = 1, color = "Transportation")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_ser"], group = 1, color = "Services")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_ele"], group = 1, color = "Electricity")) +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution of energy intensity for overall emissions \n Carbon tax with redistribution") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+```{r, echo=FALSE}
+#energy consumption
+z <- c(S2[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S2[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S2[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S2[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S2[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S2[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
+x <- rep(S2[,"year"], times = 6)
+Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy transformation","Electricity","Household"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = Legend,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Energy consumption \n in dep difference to Baseline ", title = "Fig.X Evolution of energy comsuption by different sectors, \nthe difference with respect to Baseline scenario") + 
+  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+rm(z,x,Legend)
+```
+
+Carbon intensity
+Dramastically change in energy transformation and industry&agriculture
+for energy transformation: -> explain the integration of household into this sector 
+-> mainly from less consumption of fuels for transportation, and a increment of electricity -> maybe because the electrical car or hybride car. 
+A slight reduction of natural gas consumption in energy transformation
+for industry & agriculture: same tendance, less natural gas, less consumption of fuels for transportation, more electricity (for transportation and heating etc)
+
+
+
+```{r, echo = FALSE}
+ggplot() + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I"], group = 1, color = "Total effect")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_ind"], group = 1, color = "Industry & Agriculture")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_trsp"], group = 1, color = "Transportation")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_ser"], group = 1, color = "Services")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_trsf"], group = 1, color = "Energy Transformation")) + 
+  geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_ele"], group = 1, color = "Electricity")) +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution of carbon intensity for overall emissions \n Carbon tax with redistribution") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
+
+```{r, echo = FALSE}
+z_1 <- c(
+       S2[,"ci_toe_cfut_ind_2"]/S2[,"ci_toe_ind_2"],
+       S2[,"ci_toe_cfuh_ind_2"]/S2[,"ci_toe_ind_2"],
+       S2[,"ci_toe_cgas_ind_2"]/S2[,"ci_toe_ind_2"],
+       S2[,"ci_toe_cele_ind_2"]/S2[,"ci_toe_ind_2"])
+x_1 <- rep(Baseline[,"year"], times = 4)
+Legend <- rep(c("Fuels for transportation","Fuels for other use","Natural gas","Electricity"), each = 36)
+
+Fig.1 <-
+  ggplot(
+  mapping = aes(
+                x = x_1, 
+                y = z_1, 
+                fill = Legend,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of Industry & Agriculture for Carbon tax scenario") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+z_2 <- c(
+       Baseline[,"ci_toe_cfut_ind_0"]/Baseline[,"ci_toe_ind_0"],
+       Baseline[,"ci_toe_cfuh_ind_0"]/Baseline[,"ci_toe_ind_0"],
+       Baseline[,"ci_toe_cgas_ind_0"]/Baseline[,"ci_toe_ind_0"],
+       Baseline[,"ci_toe_cele_ind_0"]/Baseline[,"ci_toe_ind_0"])
+x_2 <- rep(Baseline[,"year"], times = 4)
+Legend <- rep(c("Fuels for transportation","Fuels for other use","Natural gas","Electricity"), each = 36)
+
+Fig.2 <-
+  ggplot(
+  mapping = aes(
+                x = x_2, 
+                y = z_2, 
+                fill = Legend,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of Industry & Agriculture for Baseline scenario") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
+
+```
+
+For energy transformation, we creat a table, which is better than a figure
+
+```{r, echo = FALSE}
+
+tablename <- c("Crude oil","Natural gas","Fuels for transportation","Electricity","Fuels for other use","Crude oil","Natural gas","Fuels for transportation","Electricity","Fuels for other use")
+
+Table_I_trsf <- cbind(S2[c("2021","2025","2030","2035","2040","2045","2050"),c("ci_toe_coil_trsf_2","ci_toe_cgas_trsf_2","ci_toe_cfut_trsf_2","ci_toe_cele_trsf_2","ci_toe_cfuh_trsf_2")]/S2[c("2021","2025","2030","2035","2040","2045","2050"),c("ci_toe_trsf_2","ci_toe_trsf_2","ci_toe_trsf_2","ci_toe_trsf_2","ci_toe_trsf_2")]*100, Baseline[c("2021","2025","2030","2035","2040","2045","2050"),c("ci_toe_coil_trsf_0","ci_toe_cgas_trsf_0","ci_toe_cfut_trsf_0","ci_toe_cele_trsf_0","ci_toe_cfuh_trsf_0")]/Baseline[c("2021","2025","2030","2035","2040","2045","2050"),c("ci_toe_trsf_0","ci_toe_trsf_0","ci_toe_trsf_0","ci_toe_trsf_0","ci_toe_trsf_0")]*100)
+
+Table_I_trsf <- t(Table_I_trsf)
+
+Table_I_trsf <- round(Table_I_trsf,digits = 2)
+
+row.names(Table_I_trsf) <- tablename
+
+kable(Table_I_trsf, booktabs = T, longtable = T, caption = "Energy mix of sector Energy Transformation (in %) \n for Carbon tax scenario and Baseline scenario") %>% 
+  kable_styling(latex_options = c("striped","hover","hole_position","repeat_header"), full_width = T) %>% 
+  row_spec(0, bold = T) %>%
+  group_rows("Carbon Tax", 1, 5) %>%
+  group_rows("Baseline", 6, 10)
+
+rm(tablename,Table_I_trsf)
+```
+
+
+```{r, echo = FALSE}
+z_1 <- c(
+       S2[,"ch_toe_cfut_2"]/S2[,"ch_toe_2"],
+       S2[,"ch_toe_cfuh_2"]/S2[,"ch_toe_2"],
+       S2[,"ch_toe_cgas_2"]/S2[,"ch_toe_2"],
+       S2[,"ch_toe_cele_2"]/S2[,"ch_toe_2"]
+        )
+x_1 <- rep(Baseline[,"year"], times = 4)
+Legend <- rep(c("Fuels for transportation","Fuels for other use","Natural gas","Electricity"), each = 36)
+
+Fig.1 <-
+  ggplot(
+  mapping = aes(
+                x = x_1, 
+                y = z_1, 
+                fill = Legend,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of household consumption for Carbon tax scenario") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+z_2 <- c(
+       Baseline[,"ch_toe_cfut_0"]/Baseline[,"ch_toe_0"],
+       Baseline[,"ch_toe_cfuh_0"]/Baseline[,"ch_toe_0"],
+       Baseline[,"ch_toe_cgas_0"]/Baseline[,"ch_toe_0"],
+       Baseline[,"ch_toe_cele_0"]/Baseline[,"ch_toe_0"]
+       )
+x_2 <- rep(Baseline[,"year"], times = 4)
+Legend <- rep(c("Fuels for transportation","Fuels for other use","Natural gas","Electricity"), each = 36)
+
+Fig.2 <-
+  ggplot(
+  mapping = aes(
+                x = x_2, 
+                y = z_2, 
+                fill = Legend,
+                group = 1)
+  ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of household consumption for Baseline scenario") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
+
+```
+
+Focus inter-sectoriel energy price will 
+
+1 - induce company to invest to reduce energy demande -> une amelioration pour intensite energetique 
+
+2 - renwable energy -> une amelioration pour intensite carbone, mais dans notre modele ca se voit pas a cause de l'hypothese du modele
 
 ## Lifting of energy subsidies (bee)
 
