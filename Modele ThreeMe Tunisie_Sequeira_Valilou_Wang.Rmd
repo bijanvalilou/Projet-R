@@ -641,6 +641,22 @@ Focus inter-sectoriel energy price will
 
 ## Lifting of energy subsidies (bee)
 
+
+```{r, echo = FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_CT <- S4_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_CT <- t(Table_Macro_CT)
+Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
+row.names(Table_Macro_CT) <- tablename
+
+kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
+
+
 ```{r, echo = FALSE}
 
 
