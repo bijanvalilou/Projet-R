@@ -289,7 +289,7 @@ The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model
 
 The [open source](https://github.com/fosem/ThreeME_V3-open) ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
 
-ThreeME combines several features [@callonnec2013 ; @callonnec2021] :
+ThreeME combines several features \[@callonnec2013 ; @callonnec2021 :
 
 -   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig.X). Demand defines supply and in return, supply determines demand through the production factor incomes.
 
