@@ -281,23 +281,43 @@ According to @goulder, tax redistribution is the mechanism that allows the gover
 
 # Methodology
 
+## ThreeME model (Bee)
+
 The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model (1), which had to be adaptated and calibrated on Tunisian data (2).
 
 ### A hybrid neo-Keynesian Computable General Equilibrium model
 
-The open source ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
+The [open source](https://github.com/fosem/ThreeME_V3-open) ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
 
-ThreeME combines several features as pointed out @callonnec2013 :
+ThreeME combines several features as pointed out @callonnec2013 and [@callonnec2021] :
 
--   ThreeME is a Computable General Equilibrium Model (CGEM).
+-   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig.X). Demand defines supply and in return, supply determines demand through the production factor incomes.
 
-![](Images/Architecture%20of%20a%20CGEM.jpg){Fig.X .: .Architecture .of .a .CGEM=""}
+![](Images/Architecture%20of%20a%20CGEM.jpg)
 
--   The high sectoral disaggregation is a way to describe the transfers of activity from a sector to another. The ThreeME model allows to track changes in investment, employment or energy consumption.
+::: {align="center"}
+Fig.X : Architecture of CGEM (source : @callonnec2013)
+:::
+
+-   ThreeME is a CGEM of neo-Keynesian inspiration. Instead of perfect flexibility hypothesis, prices and quantities slowly adjust, because of uncertainties, adjustment costs or temporal boundaries. Prices do not clear supply and demands. Market imperfections are also included in the model. Consequently, there are disequilibrium between supply and demand. For instance, involuntary unemployment is possible. ThreeME differs from Walrasian CGEM in its dynamics and its transition to the long run.
+
+-   The high sectoral disaggregation is a way to describe the transfers of activity from a sector to another. The ThreeME model allows to track sectoral changes in investment, employment or energy consumption.
 
 -   ThreeME is a hybrid model which combines top-down and bottom-up modelling. On one side, the general equilibrium effets are represented. On the other side, the energy disaggregation allows for the analysis of the energy production and consumption. The trade-offs between energy and other production factors and between several energy consumptions are included in the model.
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
+
+ThreeME has already been adapted to Mexico by [@landarivera2016] and to Indonesia by \[@frédéricg.2017\] . The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. The sectoral disaggregation was validated by Tunisian stakeholders (see Fig.X). 21 sectors and 18 products were chosen. The tax structure is based on the supply and use table (SUT) of the national accounts.
+
+![](Images/Sectoral%20disaggregation.jpg)
+
+::: {align="center"}
+Fig.X : Sectoral disaggregation
+:::
+
+The nequired data are economic data from national accounts, in particular from Input-Output Tables (IOTs), physical data from energy balance and detailed tax data by product.
+
+The data were collected from Tunisian institutions, in particular ANME (National Agency for Energy Management), INS (National Institute of statistics), ONE (National Energy Observatory), STEG (Tunisian Company of Electricity and Gas), ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies), Ministry of Energy, Mines and Energy Transition and the Ministry of Economic Development, Investment and International Cooperation.
 
 ## Description of scenario (Lucia)
 
@@ -958,7 +978,6 @@ plt2
 
 ## ENR
 
-
 ```{r, echo = FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
@@ -972,7 +991,6 @@ kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Mac
 kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
 row_spec(0, bold = T)
 ```
-
 
 ```{r, echo = FALSE}
 
@@ -1005,7 +1023,6 @@ Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","C
 rm(z,x,Legend)
 
 ```
-
 
 ## SNBC
 
