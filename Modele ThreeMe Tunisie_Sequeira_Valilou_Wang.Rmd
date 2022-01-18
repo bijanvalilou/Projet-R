@@ -315,7 +315,7 @@ ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia 
 Fig.X : Sectoral disaggregation
 :::
 
-The nequired data are economic data from national accounts, in particular from Input-Output Tables (IOTs), physical data from energy balance and detailed tax data by product.
+The required data are economic data from national accounts, in particular from Input-Output Tables (IOTs), physical data from energy balance and detailed tax data by product.
 
 The data were collected from Tunisian institutions, in particular ANME (National Agency for Energy Management), INS (National Institute of statistics), ONE (National Energy Observatory), STEG (Tunisian Company of Electricity and Gas), ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies), Ministry of Energy, Mines and Energy Transition and the Ministry of Economic Development, Investment and International Cooperation.
 
