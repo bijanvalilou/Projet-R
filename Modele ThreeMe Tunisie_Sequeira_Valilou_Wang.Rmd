@@ -289,6 +289,9 @@ According to @goulder, tax redistribution is the mechanism that allows the gover
 
 ## Description of scenario (Lucia)
 
+with/without redistribution?
+*Voir si peut être on déplace cette partie
+
 We work on six different scenarios that simulate the implementation of six alternative environmental policies.
 
 Scenario 1 : Implementation of a carbon tax from 2021 without redistribution of the revenues of the tax in the economy - they are used to reduce public debt.
