@@ -238,6 +238,26 @@ ggplot(
 ```
 
 
+```{r, echo=FALSE}
+#energy consumption
+z <- c(S2[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S2[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S2[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S2[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S2[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S2[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
+x <- rep(S2[,"year"], times = 6)
+Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy transformation","Electricity","Household"), each = 36)
+
+ggplot(
+  mapping = aes(
+               x = x, 
+               y = z, 
+               fill = Legend,
+               group = 1)
+               ) + 
+  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "Energy consumption \n in dep difference to Baseline ", title = "Fig.X Evolution of energy comsuption by different sectors, \nthe difference with respect to Baseline scenario") + 
+  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+rm(z,x,Legend)
+```
 
 
 ## B. Production énergétique par énergies
