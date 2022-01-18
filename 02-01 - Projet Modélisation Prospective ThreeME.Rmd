@@ -83,6 +83,20 @@ ggplot() +
 
 
 ```
+```{r, echo=FALSE}
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_SansDis")) + 
+  geom_line( data = Sc2, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_AvecDis")) + 
+  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+```{r, echo=FALSE}
+ggplot() + 
+  geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_SansDis")) + 
+  geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_AvecDis")) + 
+  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
 
 # II. Energie 
 
@@ -953,6 +967,20 @@ ggplot() +
   labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+```{r, echo=FALSE}
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
+  geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Tax_AvecDis")) + 
+  labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+```{r, echo=FALSE}
+ggplot() + 
+  geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
+  geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Sub_AvecDis")) + 
+  labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
 
 ## C. Prix
 
@@ -1131,14 +1159,11 @@ ggplot() +
   labs(x= "Temps (en année)", y = "Chômage (en % de la population active)", title = "Taux de chômage en fonction des scénarii", color="Scénarii") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
-
 ```
 
 
 
 ```{r, echo=FALSE}
-#faut qjouter l'unite 
-
 
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Taxe sans redistribution")) + 
@@ -1147,6 +1172,22 @@ ggplot() +
   geom_line( data = Sc4, aes(x = year,y = f_l_2, group = 1, color = "Sub avec redistribution")) + 
   geom_line( data = Sc5, aes(x = year,y = f_l_2, group = 1, color = "ENR")) + 
   geom_line( data = Sc6, aes(x = year,y = f_l_2, group = 1, color = "SNBC")) +
+  labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+```{r, echo=FALSE}
+
+ggplot() + 
+  geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Taxe sans redistribution")) + 
+  geom_line( data = Sc2, aes(x = year,y = f_l_2, group = 1, color = "Tax avec redistribution")) + 
+  labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+```{r, echo=FALSE}
+
+ggplot() + 
+  geom_line( data = Sc3, aes(x = year,y = f_l_2, group = 1, color = "Sub sans redistribution")) + 
+  geom_line( data = Sc4, aes(x = year,y = f_l_2, group = 1, color = "Sub avec redistribution")) + 
   labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
