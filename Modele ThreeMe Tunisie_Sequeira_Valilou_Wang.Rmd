@@ -307,7 +307,7 @@ Fig.X : Architecture of CGEM (source : @callonnec2013)
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
-ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. The sectoral disaggregation was validated by Tunisian stakeholders (see Fig.X). 21 sectors and 18 products were chosen. The tax structure is based on the supply and use table (SUT) of the national accounts.
+ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. The sectoral disaggregation was validated by Tunisian stakeholders. 21 sectors and 18 products were chosen (see Fig.X).. The tax structure is based on the supply and use table (SUT) of the national accounts.
 
 ![](Images/Sectoral%20disaggregation.jpg)
 
