@@ -299,7 +299,7 @@ ThreeME combines several features [@callonnec2013 ; @callonnec2021] :
 Fig.X : Architecture of CGEM (source : @callonnec2013)
 :::
 
--   ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from Walrasian CGEM in its dynamics and its transition to the long run. Instead of perfect flexibility hypothesis, prices and quantities slowly adjust, because of uncertainties, adjustment costs or temporal boundaries. Prices do not clear supply and demands and market imperfections are also included in the model. Consequently, there are disequilibrium between supply and demand. For instance, involuntary unemployment is possible. 
+-   ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from Walrasian CGEM in its dynamics and its transition to the long run. Instead of perfect flexibility hypothesis, prices and quantities slowly adjust, because of uncertainties, adjustment costs or temporal boundaries. Prices do not clear supply and demands and market imperfections are also included in the model. Consequently, there are disequilibrium between supply and demand. For instance, involuntary unemployment is possible.
 
 -   The high sectoral disaggregation is a way to describe the transfers of activity from a sector to another. The ThreeME model allows to track sectoral changes in investment, employment or energy consumption.
 
