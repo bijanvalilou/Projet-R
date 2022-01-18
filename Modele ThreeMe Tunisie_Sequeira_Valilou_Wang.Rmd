@@ -958,6 +958,55 @@ plt2
 
 ## ENR
 
+
+```{r, echo = FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_ENR <- S5_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_ENR <- t(Table_Macro_ENR)
+Table_Macro_ENR <- round(Table_Macro_ENR,digits = 2)
+row.names(Table_Macro_ENR) <- tablename
+
+kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
+
+
+```{r, echo = FALSE}
+
+ggplot() + 
+  geom_line( aes(x = Det[[5]][,"year"],y = S5[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"V"], group = 1, color = "Economic activities")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S"], group = 1, color = "Economy structure")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E"], group = 1, color = "Energy intensity")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I"], group = 1, color = "Carbon intensity")) + 
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n ENR") +
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+```{r, echo = FALSE}
+
+
+z <- c(Dif[[5]][,"V"],Dif[[5]][,"S"],Dif[[5]][,"E"],Dif[[5]][,"I"])
+x <- rep(Dif[[5]][,"year"], time = 4)
+Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","Carbon intensity"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "CO2 emissions in Kt CO2, \n in difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation \n ENR") +
+  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+rm(z,x,Legend)
+
+```
+
+
 ## SNBC
 
 # Prolongements
