@@ -287,29 +287,21 @@ According to @goulder, tax redistribution is the mechanism that allows the gover
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
-## Description of scenario (lucia)
+## Description of scenario (Lucia)
 
 We work on six different scenarios that simulate the implementation of six alternative environmental policies.
 
 Scenario 1 : Implementation of a carbon tax from 2021 without redistribution of the revenues of the tax in the economy - they are used to reduce public debt.
 
-Scenario 2 : Carbon tax with recycling: recycling in the GTF (Energy Transition Fund): in fact:
-Part is given back to households (they are given back what they paid)
-A portion to “non-polluting” businesses
+Scenario 2 : Carbon tax with recycling of revenues that are redirected to the Energy Transition Fund. In fact, a part is given back to households and a portion is devoted to “non-polluting” businesses.
 
-Scenario 3 : Removal of subsidies on fossil fuels (without recycling)
+Scenario 3 : Fossil fuels subsidies removal (without recycling).
 
-Scenario 4 : Fossil fuel subsidies lifted (with recycling)
-Part is given back to households (they are given back what they paid)
-A share of enterprises in proportion to the employment of each sector in the total salaried labour force
+Scenario 4 : Fossil fuels subsidies removal (with recycling). A part is given back to households and a portion is given to enterprises in proportion to the employment of each sector in the total salaried labor force.
 
 Scenario 5 : Significant penetration of Renewable Energies in the electrical mix (80% by 2050)
 
 Scenario 6 : Combination of scenarios 2, 4 and 5. 
-
-
-
-
 
 ### Tax carbone
 
