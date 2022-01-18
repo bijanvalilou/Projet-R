@@ -289,7 +289,7 @@ The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model
 
 The [open source](https://github.com/fosem/ThreeME_V3-open) ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
 
-ThreeME combines several features as pointed out @callonnec2013 and [@callonnec2021] :
+ThreeME combines several features as pointed out @callonnec2013 and @callonnec2021 :
 
 -   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig.X). Demand defines supply and in return, supply determines demand through the production factor incomes.
 
@@ -307,7 +307,7 @@ Fig.X : Architecture of CGEM (source : @callonnec2013)
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
-ThreeME has already been adapted to Mexico by [@landarivera2016] and to Indonesia by \[@frédéricg.2017\] . The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. The sectoral disaggregation was validated by Tunisian stakeholders (see Fig.X). 21 sectors and 18 products were chosen. The tax structure is based on the supply and use table (SUT) of the national accounts.
+ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. The sectoral disaggregation was validated by Tunisian stakeholders (see Fig.X). 21 sectors and 18 products were chosen. The tax structure is based on the supply and use table (SUT) of the national accounts.
 
 ![](Images/Sectoral%20disaggregation.jpg)
 
