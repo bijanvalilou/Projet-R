@@ -289,6 +289,22 @@ The energy subsidies are very present in the Middle East, North Africa, Afghanis
 
 with/without redistribution
 
+Implementation of a carbon tax (from 2021) without recycling of the revenues of this tax in the economy. They are used to reduce public debt
+Carbon tax with recycling: recycling in the GTF (Energy Transition Fund): in fact:
+Part is given back to households (they are given back what they paid)
+A portion to “non-polluting” businesses (I’ll give you the exact allocation rule by sector later)
+Removal of subsidies on fossil fuels (without recycling)
+Fossil fuel subsidies lifted (with recycling)
+Part is given back to households (they are given back what they paid)
+A share of enterprises in proportion to the employment of each sector in the total salaried labour force
+A significant penetration of ENR in the electrical mix is required (80% by 2050)
+Package 2-4-5. 
+
+
+
+
+
+
 ### Tax carbone
 
 Avant 2030, le niveau de la TC est calculé de façon a couvrir 100% des besoins du FTE Il passe de 1.1 à 9 DT/tCO2 Après 2030, la trajectoire de la TC est définie de façon à atteindre les objectifs de réduction d'émission à 2050 D'après les hypothèse des substitutions retenues dans ThreeME, l'atteinte d'un factor 5 en 2050 par rapport au niveau de 2020 nécessite une hause régulière de 9 DT/tCO2 à 372 DT/ tCO2. En plus de la TC des signaux prix ont été introduits afin d'atteindre les objectifs de consommations d'énergie par source
