@@ -277,26 +277,37 @@ The energy subsidies are very present in the Middle East, North Africa, Afghanis
 
 ### Recycle of gouvernment income for tax (Lucia)
 
-According to @goulder, tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax. 
+According to @goulder, tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax.
 
 # Methodology
 
-## ThreeME model (Bee)
+The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model (1), which had to be adaptated and calibrated on Tunisian data (2).
 
-### A neo-Keynesian Computable General Equilibrium model
+### A hybrid neo-Keynesian Computable General Equilibrium model
+
+The open source ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
+
+ThreeME combines several features as pointed out @callonnec2013 :
+
+-   ThreeME is a Computable General Equilibrium Model (CGEM).
+
+![](Images/Architecture%20of%20a%20CGEM.jpg){Fig.X .: .Architecture .of .a .CGEM=""}
+
+-   The high sectoral disaggregation is a way to describe the transfers of activity from a sector to another. The ThreeME model allows to track changes in investment, employment or energy consumption.
+
+-   ThreeME is a hybrid model which combines top-down and bottom-up modelling. On one side, the general equilibrium effets are represented. On the other side, the energy disaggregation allows for the analysis of the energy production and consumption. The trade-offs between energy and other production factors and between several energy consumptions are included in the model.
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
 ## Description of scenario (Lucia)
 
-with/without redistribution?
-*Voir si peut être on déplace cette partie
+with/without redistribution? \*Voir si peut être on déplace cette partie
 
 We work on six different scenarios that simulate the implementation of six alternative environmental policies.
 
 Scenario 1 : Implementation of a carbon tax from 2021 without redistribution of the revenues of the tax in the economy - they are used to reduce public debt.
 
-Scenario 2 : Carbon tax with recycling of revenues that are redirected to the Energy Transition Fund. In fact, a part is given back to households and a portion is devoted to “non-polluting” businesses.
+Scenario 2 : Carbon tax with recycling of revenues that are redirected to the Energy Transition Fund. In fact, a part is given back to households and a portion is devoted to "non-polluting" businesses.
 
 Scenario 3 : Fossil fuels subsidies removal (without recycling).
 
@@ -304,7 +315,7 @@ Scenario 4 : Fossil fuels subsidies removal (with recycling). A part is given ba
 
 Scenario 5 : Significant penetration of Renewable Energies in the electrical mix (80% by 2050)
 
-Scenario 6 : Combination of scenarios 2, 4 and 5. 
+Scenario 6 : Combination of scenarios 2, 4 and 5.
 
 ### Tax carbone
 
@@ -384,9 +395,10 @@ $$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_
 
 ## Importance of redistribution (lucia)
 
--   graphique PIB : 
+-   graphique PIB :
 
 grandes tendances des scénarii Taxe carbone
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
@@ -396,6 +408,7 @@ ggplot() +
 ```
 
 Levée des subventions énergétiques
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
@@ -404,8 +417,8 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
--   chomage : 
-grandes tendances des scénarii Taxe carbone
+-   chomage : grandes tendances des scénarii Taxe carbone
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -414,7 +427,9 @@ ggplot() +
   labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+
 Levée des subventions énergétiques
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -425,6 +440,7 @@ ggplot() +
 ```
 
 Il peut être intéressant de faire un commentaire sur le salaire brut
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -440,8 +456,8 @@ ggplot() +
 
 ```
 
--   émissions : 
-grandes tendances des scénarii Taxe carbone
+-   émissions : grandes tendances des scénarii Taxe carbone
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_SansDis")) + 
@@ -449,6 +465,7 @@ ggplot() +
   labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+
 Levée des subventions énergétiques
 
 ```{r, echo=FALSE}
@@ -780,8 +797,8 @@ plt2
 
 ```
 
-
 ### Environmental and energy impacts
+
 ```{r}
 
 ggplot() + 
@@ -826,7 +843,6 @@ rm(z,x,Legend)
 
 ```
 
-
 ```{r, echo = FALSE}
 ggplot() + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E"], group = 1, color = "Total effect")) + 
@@ -839,7 +855,6 @@ ggplot() +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
-
 
 ```{r, echo=FALSE}
 
@@ -872,7 +887,6 @@ ggplot(
 
 rm(z,x,Legend)
 ```
-
 
 ```{r, echo=FALSE}
 #energy consumption
@@ -908,7 +922,6 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-
 ```{r, echo = FALSE}
 
 
@@ -942,8 +955,6 @@ plt2 <- ggplot(stacked_data) +
 plt2
 
 ```
-
-
 
 ## ENR
 
