@@ -277,6 +277,8 @@ The energy subsidies are very present in the Middle East, North Africa, Afghanis
 
 ### Recycle of gouvernment income for tax (Lucia)
 
+According to @goulder, tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax. 
+
 # Methodology
 
 ## ThreeME model (Bee)
@@ -287,19 +289,23 @@ The energy subsidies are very present in the Middle East, North Africa, Afghanis
 
 ## Description of scenario (lucia)
 
-with/without redistribution
+We work on six different scenarios that simulate the implementation of six alternative environmental policies.
 
-Implementation of a carbon tax (from 2021) without recycling of the revenues of this tax in the economy. They are used to reduce public debt
-Carbon tax with recycling: recycling in the GTF (Energy Transition Fund): in fact:
+Scenario 1 : Implementation of a carbon tax from 2021 without redistribution of the revenues of the tax in the economy - they are used to reduce public debt.
+
+Scenario 2 : Carbon tax with recycling: recycling in the GTF (Energy Transition Fund): in fact:
 Part is given back to households (they are given back what they paid)
-A portion to “non-polluting” businesses (I’ll give you the exact allocation rule by sector later)
-Removal of subsidies on fossil fuels (without recycling)
-Fossil fuel subsidies lifted (with recycling)
+A portion to “non-polluting” businesses
+
+Scenario 3 : Removal of subsidies on fossil fuels (without recycling)
+
+Scenario 4 : Fossil fuel subsidies lifted (with recycling)
 Part is given back to households (they are given back what they paid)
 A share of enterprises in proportion to the employment of each sector in the total salaried labour force
-A significant penetration of ENR in the electrical mix is required (80% by 2050)
-Package 2-4-5. 
 
+Scenario 5 : Significant penetration of Renewable Energies in the electrical mix (80% by 2050)
+
+Scenario 6 : Combination of scenarios 2, 4 and 5. 
 
 
 
