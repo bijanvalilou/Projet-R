@@ -382,7 +382,10 @@ $$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_
 
 # Results et discussions
 
+In this section we will analyse the results obtained for the different scenarios for the different variables took into account.
+
 ## Importance of redistribution (lucia)
+Firstly, we will analyse the influence of the redistribution of both the tax and of the removed energy subsidy. We will observe the impact of the redistribution on the economical and environmental aspects. For the economic aspect, we will take into account the GDP variation and the unemployment. For the environmental, we will analyse the evolution of emissions.
 
 -   graphique PIB : 
 
