@@ -384,11 +384,10 @@ $$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_
 
 In this section we will analyse the results obtained for the different scenarios for the different variables taken into account.
 
-## Importance of redistribution (lucia)
+## Importance of redistribution (Lucia)
 Here we will analyse the influence of the redistribution of both the tax and the removed energy subsidy. We will observe the impact of the redistribution on the economical and environmental aspects. We will focus on GDP variation and unemployment when it comes to the economical aspect and we will analyse the evolution of emissions for the environmental aspect.
 
 Firstly, we will analyse the redistribution of the carbon tax. The figure below show the variation in GDP in relation to the baseline for both the scenarios carbon tax with and without redistribution. We observe that the evolution of the curves is opposite and symmetric in relation to the x-axis, the scenario with redistribution showing a marked increase in GDP.
-
 
 ```{r, echo=FALSE}
 ggplot() + 
@@ -397,9 +396,8 @@ ggplot() +
   labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+Then when we analyse the *level of employment* we can see that the redistribution operates an increase on it in relation to the baseline, when the scenario of a carbon tax without redistribution produce a decrease in the level of employment. That is consistent with the fact that the 
 
-
-chomage
 ```{r, echo=FALSE}
 
 ggplot() + 
