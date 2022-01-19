@@ -820,17 +820,6 @@ plt2
 
 ### Environmental and energy impacts
 
-```{r}
-
-ggplot() + 
-  geom_line(aes(x = S4[,"year"],y = S4[,"ems_co2_2"]/Baseline[,"ems_co2_0"], group = 1, color = "Total effect"), size = 1.0) + 
-  geom_line(aes(x = S4[,"year"],y = S4[,"va_2"]/Baseline[,"va_0"], group = 1, color = "GDP per capita")) + 
-  geom_line(aes(x = S4[,"year"],y = ((S4[,"ci_toe_2"]+S4[,"ch_toe_2"])/(Baseline[,"ci_toe_0"]+Baseline[,"ch_toe_0"]))/(S4[,"va_2"]/Baseline[,"va_0"]), group = 1, color = "Energy intensity")) + 
-  geom_line(aes(x = S4[,"year"],y =  (S4[,"ems_co2_2"]/Baseline[,"ems_co2_0"])/((S4[,"ci_toe_2"]+S4[,"ch_toe_2"])/(Baseline[,"ci_toe_0"]+Baseline[,"ch_toe_0"])), group = 1, color = "Carbon Intensity")) + 
-  labs(x = "year", y = "Index of Kaya identity", title = "Kaya identity at aggragated level \nEnergy subsidy with redistribution scenario") +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-```
 
 ```{r, echo = FALSE}
 
