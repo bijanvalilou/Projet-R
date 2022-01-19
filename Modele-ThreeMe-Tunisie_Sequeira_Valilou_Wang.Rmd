@@ -277,26 +277,55 @@ The energy subsidies are very present in the Middle East, North Africa, Afghanis
 
 ### Recycle of gouvernment income for tax (Lucia)
 
-According to @goulder, tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax. 
+According to @goulder, tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax.
 
 # Methodology
 
 ## ThreeME model (Bee)
 
-### A neo-Keynesian Computable General Equilibrium model
+The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model (1), which had to be adaptated and calibrated on Tunisian data (2).
+
+### A hybrid neo-Keynesian Computable General Equilibrium model
+
+The [open source](https://github.com/fosem/ThreeME_V3-open) ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
+
+ThreeME combines several features [@callonnec2013 ; @callonnec2021] :
+
+-   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig.X). Demand defines supply and in return, supply determines demand through the production factor incomes.
+
+![](Images/Architecture%20of%20a%20CGEM.jpg)
+
+::: {align="center"}
+Fig.X : Architecture of CGEM (source : @callonnec2013)
+:::
+
+-   ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from Walrasian CGEM in its dynamics and its transition to the long run. Instead of perfect flexibility hypothesis, prices and quantities slowly adjust, because of uncertainties, adjustment costs or temporal boundaries. Prices do not clear supply and demands and market imperfections are also included in the model. Consequently, there are disequilibrium between supply and demand. For instance, involuntary unemployment is possible.
+
+-   The high sectoral disaggregation is a way to describe the transfers of activity from a sector to another. The ThreeME model allows to track sectoral changes in investment, employment or energy consumption.
+
+-   ThreeME is a hybrid model which combines top-down and bottom-up modelling. On one side, the general equilibrium effets are represented. On the other side, the energy disaggregation allows for the analysis of the energy production and consumption. The trade-offs between energy and other production factors and between several energy consumptions are included in the model.
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
+ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. Indeed, the sectoral disaggregation was validated by Tunisian stakeholders. At the end, 21 sectors and 18 products were chosen (see Fig.X). The tax structure is based on the supply and use table (SUT) of the national accounts.
+
+![](Images/Sectoral%20disaggregation.jpg)
+
+::: {align="center"}
+Fig.X : Sectoral disaggregation
+:::
+
+The required data are economic data from national accounts, in particular from Input-Output Tables (IOTs), physical data from energy balance and detailed tax data by product. These data were collected from Tunisian institutions, in particular ANME (National Agency for Energy Management), INS (National Institute of statistics), ONE (National Energy Observatory), STEG (Tunisian Company of Electricity and Gas), ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies), Ministry of Energy, Mines and Energy Transition and the Ministry of Economic Development, Investment and International Cooperation.
+
 ## Description of scenario (Lucia)
 
-with/without redistribution?
-*Voir si peut être on déplace cette partie
+with/without redistribution? \*Voir si peut être on déplace cette partie
 
 We work on six different scenarios that simulate the implementation of six alternative environmental policies.
 
 Scenario 1 : Implementation of a carbon tax from 2021 without redistribution of the revenues of the tax in the economy - they are used to reduce public debt.
 
-Scenario 2 : Carbon tax with recycling of revenues that are redirected to the Energy Transition Fund. In fact, a part is given back to households and a portion is devoted to “non-polluting” businesses.
+Scenario 2 : Carbon tax with recycling of revenues that are redirected to the Energy Transition Fund. In fact, a part is given back to households and a portion is devoted to "non-polluting" businesses.
 
 Scenario 3 : Fossil fuels subsidies removal (without recycling).
 
@@ -304,7 +333,7 @@ Scenario 4 : Fossil fuels subsidies removal (with recycling). A part is given ba
 
 Scenario 5 : Significant penetration of Renewable Energies in the electrical mix (80% by 2050)
 
-Scenario 6 : Combination of scenarios 2, 4 and 5. 
+Scenario 6 : Combination of scenarios 2, 4 and 5.
 
 ### Tax carbone
 
@@ -387,9 +416,10 @@ In this section we will analyse the results obtained for the different scenarios
 ## Importance of redistribution (lucia)
 Firstly, we will analyse the influence of the redistribution of both the tax and of the removed energy subsidy. We will observe the impact of the redistribution on the economical and environmental aspects. For the economic aspect, we will take into account the GDP variation and the unemployment. For the environmental, we will analyse the evolution of emissions.
 
--   graphique PIB : 
+-   graphique PIB :
 
 grandes tendances des scénarii Taxe carbone
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
@@ -399,6 +429,7 @@ ggplot() +
 ```
 
 Levée des subventions énergétiques
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
@@ -407,8 +438,8 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
--   chomage : 
-grandes tendances des scénarii Taxe carbone
+-   chomage : grandes tendances des scénarii Taxe carbone
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -417,7 +448,9 @@ ggplot() +
   labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+
 Levée des subventions énergétiques
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -428,6 +461,7 @@ ggplot() +
 ```
 
 Il peut être intéressant de faire un commentaire sur le salaire brut
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -443,8 +477,8 @@ ggplot() +
 
 ```
 
--   émissions : 
-grandes tendances des scénarii Taxe carbone
+-   émissions : grandes tendances des scénarii Taxe carbone
+
 ```{r, echo=FALSE}
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_SansDis")) + 
@@ -452,6 +486,7 @@ ggplot() +
   labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+
 Levée des subventions énergétiques
 
 ```{r, echo=FALSE}
@@ -783,8 +818,8 @@ plt2
 
 ```
 
-
 ### Environmental and energy impacts
+
 ```{r}
 
 ggplot() + 
@@ -829,7 +864,6 @@ rm(z,x,Legend)
 
 ```
 
-
 ```{r, echo = FALSE}
 ggplot() + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E"], group = 1, color = "Total effect")) + 
@@ -842,7 +876,6 @@ ggplot() +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
-
 
 ```{r, echo=FALSE}
 
@@ -875,7 +908,6 @@ ggplot(
 
 rm(z,x,Legend)
 ```
-
 
 ```{r, echo=FALSE}
 #energy consumption
@@ -911,7 +943,6 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-
 ```{r, echo = FALSE}
 
 
@@ -946,9 +977,53 @@ plt2
 
 ```
 
-
-
 ## ENR
+
+```{r, echo = FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_ENR <- S5_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_ENR <- t(Table_Macro_ENR)
+Table_Macro_ENR <- round(Table_Macro_ENR,digits = 2)
+row.names(Table_Macro_ENR) <- tablename
+
+kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
+
+```{r, echo = FALSE}
+
+ggplot() + 
+  geom_line( aes(x = Det[[5]][,"year"],y = S5[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"V"], group = 1, color = "Economic activities")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S"], group = 1, color = "Economy structure")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E"], group = 1, color = "Energy intensity")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I"], group = 1, color = "Carbon intensity")) + 
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n ENR") +
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+```{r, echo = FALSE}
+
+
+z <- c(Dif[[5]][,"V"],Dif[[5]][,"S"],Dif[[5]][,"E"],Dif[[5]][,"I"])
+x <- rep(Dif[[5]][,"year"], time = 4)
+Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","Carbon intensity"), each = 36)
+
+  ggplot() + 
+  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  labs(x = "year", y = "CO2 emissions in Kt CO2, \n in difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation \n ENR") +
+  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+rm(z,x,Legend)
+
+```
 
 ## SNBC
 
