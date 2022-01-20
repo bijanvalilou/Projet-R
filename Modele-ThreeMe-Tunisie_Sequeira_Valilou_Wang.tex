@@ -188,25 +188,128 @@ stabilization mechanisms became a social protection system.
 \subsubsection{Recycle of gouvernment income for tax
 (Lucia)}\label{recycle-of-gouvernment-income-for-tax-lucia}}
 
+According to \textcite{goulder}, tax redistribution is the mechanism
+that allows the government to return to the private economy the revenues
+that are produced by the instrument. There are many ways in which this
+redistribution can operate. It can be presented as a lump-sum transfer
+to households and firms, or as a reduction of taxes that introduce a
+deformation into the economy as is the case of the labor tax.
+
 \hypertarget{methodology}{%
 \section{Methodology}\label{methodology}}
 
 \hypertarget{threeme-model-bee}{%
 \subsection{ThreeME model (Bee)}\label{threeme-model-bee}}
 
-\hypertarget{a-neo-keynesian-computable-general-equilibrium-model}{%
-\subsubsection{A neo-Keynesian Computable General Equilibrium
-model}\label{a-neo-keynesian-computable-general-equilibrium-model}}
+The ThreeME model is a hybrid neo-Keynesian Computable General
+Equilibrium model (1), which had to be adaptated and calibrated on
+Tunisian data (2).
+
+\hypertarget{a-hybrid-neo-keynesian-computable-general-equilibrium-model}{%
+\subsubsection{A hybrid neo-Keynesian Computable General Equilibrium
+model}\label{a-hybrid-neo-keynesian-computable-general-equilibrium-model}}
+
+The \href{https://github.com/fosem/ThreeME_V3-open}{open source} ThreeME
+model has been developped since 2008 by OFCE (French Economic
+Observatory), ADEME (French Environment and Energy Management Agency)
+and NEO (Netherlands Economic Observatory). ThreeME is a Computable
+General Equilibrium Model (CGEM), with neo-Keynesian features and a
+hybrid structure.
+
+ThreeME combines several features \autocites[
+]{callonnec2013}{callonnec2021} :
+
+\begin{itemize}
+\tightlist
+\item
+  ThreeME is a Computable General Equilibrium Model (CGEM), which takes
+  into account the interactions and feedbacks between supply and demand
+  (see Fig.X). Demand defines supply and in return, supply determines
+  demand through the production factor incomes.
+\end{itemize}
+
+\includegraphics{Images/Architecture of a CGEM.jpg}
+
+Fig.X : Architecture of CGEM (source : \textcite{callonnec2013})
+
+\begin{itemize}
+\item
+  ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from
+  Walrasian CGEM in its dynamics and its transition to the long run.
+  Instead of perfect flexibility hypothesis, prices and quantities
+  slowly adjust, because of uncertainties, adjustment costs or temporal
+  boundaries. Prices do not clear supply and demands and market
+  imperfections are also included in the model. Consequently, there are
+  disequilibrium between supply and demand. For instance, involuntary
+  unemployment is possible.
+\item
+  The high sectoral disaggregation is a way to describe the transfers of
+  activity from a sector to another. The ThreeME model allows to track
+  sectoral changes in investment, employment or energy consumption.
+\item
+  ThreeME is a hybrid model which combines top-down and bottom-up
+  modelling. On one side, the general equilibrium effets are
+  represented. On the other side, the energy disaggregation allows for
+  the analysis of the energy production and consumption. The trade-offs
+  between energy and other production factors and between several energy
+  consumptions are included in the model.
+\end{itemize}
 
 \hypertarget{threeme-model-tunisia-adaptation-for-a-little-country-in-development}{%
 \subsubsection{ThreeMe model Tunisia : Adaptation for a little country
 in
 development}\label{threeme-model-tunisia-adaptation-for-a-little-country-in-development}}
 
-\hypertarget{description-of-scenario}{%
-\subsection{Description of scenario}\label{description-of-scenario}}
+ThreeME has already been adapted to Mexico by \textcite{landarivera2016}
+and to Indonesia by \textcite{reynes2017}. The adaptation of ThreeME to
+Tunisia has been founded on consultation with Tunisian experts and other
+stakeholders. Indeed, the sectoral disaggregation was validated by
+Tunisian stakeholders. At the end, 21 sectors and 18 products were
+chosen (see Fig.X). The tax structure is based on the supply and use
+table (SUT) of the national accounts.
 
-with/without redistribution
+\includegraphics{Images/Sectoral disaggregation.jpg}
+
+Fig.X : Sectoral disaggregation
+
+The required data are economic data from national accounts, in
+particular from Input-Output Tables (IOTs), physical data from energy
+balance and detailed tax data by product. These data were collected from
+Tunisian institutions, in particular ANME (National Agency for Energy
+Management), INS (National Institute of statistics), ONE (National
+Energy Observatory), STEG (Tunisian Company of Electricity and Gas),
+ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies),
+Ministry of Energy, Mines and Energy Transition and the Ministry of
+Economic Development, Investment and International Cooperation.
+
+\hypertarget{description-of-scenario-lucia}{%
+\subsection{Description of scenario
+(Lucia)}\label{description-of-scenario-lucia}}
+
+with/without redistribution? *Voir si peut être on déplace cette partie
+
+We work on six different scenarios that simulate the implementation of
+six alternative environmental policies.
+
+Scenario 1 : Implementation of a carbon tax from 2021 without
+redistribution of the revenues of the tax in the economy - they are used
+to reduce public debt.
+
+Scenario 2 : Carbon tax with recycling of revenues that are redirected
+to the Energy Transition Fund. In fact, a part is given back to
+households and a portion is devoted to ``non-polluting'' businesses.
+
+Scenario 3 : Fossil fuels subsidies removal (without recycling).
+
+Scenario 4 : Fossil fuels subsidies removal (with recycling). A part is
+given back to households and a portion is given to enterprises in
+proportion to the employment of each sector in the total salaried labor
+force.
+
+Scenario 5 : Significant penetration of Renewable Energies in the
+electrical mix (80\% by 2050)
+
+Scenario 6 : Combination of scenarios 2, 4 and 5.
 
 \hypertarget{tax-carbone}{%
 \subsubsection{Tax carbone}\label{tax-carbone}}
@@ -355,22 +458,61 @@ force \(X\) of baseline for sector i.
 \hypertarget{results-et-discussions}{%
 \section{Results et discussions}\label{results-et-discussions}}
 
-\hypertarget{comparasion-of-redistribution-lucia}{%
-\subsection{Comparasion of redistribution
-(lucia)}\label{comparasion-of-redistribution-lucia}}
+In this section we will analyse the results obtained for the different
+scenarios for the different variables took into account.
+
+\hypertarget{importance-of-redistribution-lucia}{%
+\subsection{Importance of redistribution
+(lucia)}\label{importance-of-redistribution-lucia}}
+
+Firstly, we will analyse the influence of the redistribution of both the
+tax and of the removed energy subsidy. We will observe the impact of the
+redistribution on the economical and environmental aspects. For the
+economic aspect, we will take into account the GDP variation and the
+unemployment. For the environmental, we will analyse the evolution of
+emissions.
 
 \begin{itemize}
 \tightlist
 \item
-  graphique PIB : grandes tendances des scénarii Taxe carbone, Levée des
-  subventions énergétiques
-\item
-  chomage : grandes tendances des scénarii Taxe carbone, Levée des
-  subventions énergétiques
-\item
-  émissions : grandes tendances des scénarii Taxe carbone, Levée des
-  subventions énergétiques
+  graphique PIB :
 \end{itemize}
+
+grandes tendances des scénarii Taxe carbone
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf}
+
+Levée des subventions énergétiques
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  chomage : grandes tendances des scénarii Taxe carbone
+\end{itemize}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf}
+
+Levée des subventions énergétiques
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+Il peut être intéressant de faire un commentaire sur le salaire brut
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  émissions : grandes tendances des scénarii Taxe carbone
+\end{itemize}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+Levée des subventions énergétiques
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf}
 
 \hypertarget{carbon-tax-jin-1}{%
 \subsection{Carbon tax (jin)}\label{carbon-tax-jin-1}}
@@ -392,7 +534,7 @@ same rhythme as GDP growth, with a higher consumption level (+4.20\%)
 and a higher disposable income (+4.17\%) on 2050.
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-8}Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline}\\
+\caption{\label{tab:unnamed-chunk-15}Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline}\\
 \toprule
 \textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
 \midrule
@@ -461,17 +603,17 @@ CO2 \& +1.86\%), revealing that even though the total production remains
 relatively invariable, the revolution of economy structure could still
 strongly impact the emissions pathway.
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-16-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-17-1.pdf}
 
 Sectorial level analysis, Economy Structure: main sectors are
 electricity (positive) and energy transformation (negative) what
 happened in these two sectors? a developpement of electricity
 production, and a recession of energy transformation
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf}
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-2.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-18-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-18-2.pdf}
 
 Energy intensity -\textgreater{} we observe the improvement of energy
 efficiency, in another word the decrement of energy intensity, for all
@@ -480,9 +622,9 @@ industry \& agriculture. explained by the global drop of energy
 consumption, coupled with the augmentation of added value in certain
 sectors
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-19-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf}
 
 Carbon intensity Dramastically change in energy transformation and
 industry\&agriculture for energy transformation: -\textgreater{} explain
@@ -494,15 +636,15 @@ transformation for industry \& agriculture: same tendance, less natural
 gas, less consumption of fuels for transportation, more electricity (for
 transportation and heating etc)
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-15-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf}
 
 For energy transformation, we creat a table, which is better than a
 figure
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-16}Energy mix of sector Energy Transformation (in %) 
+\caption{\label{tab:unnamed-chunk-23}Energy mix of sector Energy Transformation (in %) 
  for Carbon tax scenario and Baseline scenario}\\
 \toprule
 \textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
@@ -533,7 +675,7 @@ figure
 \hspace{1em}Fuels for other use & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\*
 \end{longtabu}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-17-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf}
 
 Focus inter-sectoriel energy price will
 
@@ -544,12 +686,15 @@ une amelioration pour intensite energetique
 carbone, mais dans notre modele ca se voit pas a cause de l'hypothese du
 modele
 
-\hypertarget{lifting-of-energy-subsidies-bee}{%
-\subsection{Lifting of energy subsidies
-(bee)}\label{lifting-of-energy-subsidies-bee}}
+\hypertarget{energy-subsidies-removal-bee}{%
+\subsection{Energy subsidies removal
+(bee)}\label{energy-subsidies-removal-bee}}
+
+\hypertarget{economic-impacts}{%
+\subsubsection{Economic impacts}\label{economic-impacts}}
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-18}Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in % deviation to Baseline}\\
+\caption{\label{tab:unnamed-chunk-25}Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in % deviation to Baseline}\\
 \toprule
 \textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
 \midrule
@@ -585,10 +730,70 @@ Public budget balance (in points of GDP) & 0.24 & 1.83 & 2.41 & 2.08 & 1.61 & 1.
 CO2 emissions & -3.63 & -17.01 & -20.74 & -20.34 & -17.53 & -13.49 & -9.66\\*
 \end{longtabu}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-19-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf}
+
+\hypertarget{environmental-and-energy-impacts}{%
+\subsubsection{Environmental and energy
+impacts}\label{environmental-and-energy-impacts}}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-30-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-30-2.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf}
 
 \hypertarget{enr-1}{%
 \subsection{ENR}\label{enr-1}}
+
+\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\caption{\label{tab:unnamed-chunk-34}Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline}\\
+\toprule
+\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
+\midrule
+\endfirsthead
+\caption[]{Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline \textit{(continued)}}\\
+\toprule
+\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+\cellcolor{gray!6}{GDP in volume} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.49} & \cellcolor{gray!6}{1.33} & \cellcolor{gray!6}{1.78} & \cellcolor{gray!6}{2.36} & \cellcolor{gray!6}{2.77} & \cellcolor{gray!6}{2.96}\\
+Household consumption & 0.05 & 0.40 & 1.59 & 2.03 & 2.61 & 3.14 & 3.48\\
+\cellcolor{gray!6}{Investment} & \cellcolor{gray!6}{-0.02} & \cellcolor{gray!6}{0.32} & \cellcolor{gray!6}{1.98} & \cellcolor{gray!6}{3.16} & \cellcolor{gray!6}{4.25} & \cellcolor{gray!6}{4.71} & \cellcolor{gray!6}{4.64}\\
+Exports & 0.00 & -0.05 & -0.12 & -0.18 & -0.24 & -0.27 & -0.22\\
+\cellcolor{gray!6}{Imports} & \cellcolor{gray!6}{-0.12} & \cellcolor{gray!6}{-0.32} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{0.45} & \cellcolor{gray!6}{0.60} & \cellcolor{gray!6}{0.76} & \cellcolor{gray!6}{0.86}\\
+Household disposable income & 0.05 & 0.46 & 1.56 & 2.01 & 2.62 & 3.12 & 3.47\\
+\cellcolor{gray!6}{Household consumption price index} & \cellcolor{gray!6}{0.03} & \cellcolor{gray!6}{0.23} & \cellcolor{gray!6}{0.26} & \cellcolor{gray!6}{0.37} & \cellcolor{gray!6}{0.45} & \cellcolor{gray!6}{0.43} & \cellcolor{gray!6}{0.22}\\
+production price index & 0.01 & -0.02 & -0.05 & 0.20 & 0.38 & 0.40 & 0.17\\
+\cellcolor{gray!6}{Added value price index} & \cellcolor{gray!6}{0.06} & \cellcolor{gray!6}{0.48} & \cellcolor{gray!6}{0.66} & \cellcolor{gray!6}{0.83} & \cellcolor{gray!6}{0.98} & \cellcolor{gray!6}{1.04} & \cellcolor{gray!6}{0.84}\\
+Intermediate consumption price index & -0.04 & -0.50 & -0.81 & -0.57 & -0.45 & -0.52 & -0.81\\
+\cellcolor{gray!6}{Export price index} & \cellcolor{gray!6}{0.01} & \cellcolor{gray!6}{0.10} & \cellcolor{gray!6}{0.20} & \cellcolor{gray!6}{0.30} & \cellcolor{gray!6}{0.38} & \cellcolor{gray!6}{0.39} & \cellcolor{gray!6}{0.24}\\
+Import price index & -0.02 & -0.39 & -0.40 & -0.37 & -0.35 & -0.38 & -0.43\\
+\cellcolor{gray!6}{Gross nominal wage} & \cellcolor{gray!6}{0.06} & \cellcolor{gray!6}{0.51} & \cellcolor{gray!6}{1.17} & \cellcolor{gray!6}{1.51} & \cellcolor{gray!6}{1.94} & \cellcolor{gray!6}{2.21} & \cellcolor{gray!6}{2.28}\\
+Real cost of labor & -0.01 & -0.06 & 0.35 & 0.48 & 0.70 & 0.89 & 1.15\\
+\cellcolor{gray!6}{Wage employment rate (in thousands)} & \cellcolor{gray!6}{0.68} & \cellcolor{gray!6}{9.23} & \cellcolor{gray!6}{40.89} & \cellcolor{gray!6}{59.02} & \cellcolor{gray!6}{79.82} & \cellcolor{gray!6}{95.15} & \cellcolor{gray!6}{103.17}\\
+Unemployment rate (in point) & -0.01 & -0.15 & -0.59 & -0.82 & -1.09 & -1.27 & -1.36\\
+\cellcolor{gray!6}{Trade balance (in point of GDP)} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.59} & \cellcolor{gray!6}{0.39} & \cellcolor{gray!6}{0.31} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{0.20} & \cellcolor{gray!6}{0.12}\\
+Public budget balance (in points of GDP) & 0.04 & 0.39 & 0.61 & 0.55 & 0.53 & 0.47 & 0.34\\
+\cellcolor{gray!6}{Public debt (in points of GDP)} & \cellcolor{gray!6}{-0.15} & \cellcolor{gray!6}{-1.48} & \cellcolor{gray!6}{-4.19} & \cellcolor{gray!6}{-5.91} & \cellcolor{gray!6}{-7.04} & \cellcolor{gray!6}{-7.88} & \cellcolor{gray!6}{-8.26}\\
+CO2 emissions & -1.77 & -7.56 & -9.85 & -13.71 & -19.23 & -24.57 & -29.24\\*
+\end{longtabu}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf}
 
 \hypertarget{snbc-1}{%
 \subsection{SNBC}\label{snbc-1}}

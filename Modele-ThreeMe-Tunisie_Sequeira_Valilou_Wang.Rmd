@@ -3,18 +3,18 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
-  html_document:
-    toc: yes
-    toc_depth: '2'
-    df_print: paged
-  pdf_document:
+  pdf_document: 
     citation_package: biblatex
     toc: yes
     number_sections: yes
     toc_depth: 2
     highlight: tango
     latex_engine: lualatex
-    keep_tex: no
+    keep_tex: yes
+  html_document:
+    toc: yes
+    toc_depth: '2'
+    df_print: paged
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
