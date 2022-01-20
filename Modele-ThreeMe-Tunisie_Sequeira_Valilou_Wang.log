@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12.10) (format=lualatex 2022.1.6)  20 JAN 2022 13:47
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12.10) (format=lualatex 2022.1.6)  20 JAN 2022 15:14
  restricted system commands enabled.
 **Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
@@ -1269,22 +1269,303 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 98.
 LaTeX Info: Redefining \pageref on input line 98.
 LaTeX Info: Redefining \nameref on input line 98.
-! I can't write on file `Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.pdf'.
-Please type another file name for output
-! Emergency stop.
-\PDF@SetupDoc ...tartview \@empty \else openaction
-                                                   goto page\@pdfstartpage {...
-l.98 \begin{document}
-                   
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/lbx/english.lb
+x
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2021-11-22 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-case-expl3
+.sty
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout3 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bcf
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.b
+bl' not found.
+No file Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl.
+Package biblatex Info: Reference section=0 on input line 98.
+Package biblatex Info: Reference segment=0 on input line 98.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00073pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 100.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 100.
+(C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+\tf@toc=\write4
+
+\openout4 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc
+[1
+
+{C:/Users/bijan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: Citation 'tunisia2022' on page 2 undefined on input line 119.
+
+
+LaTeX Warning: Citation 'worldbank2020' on page 2 undefined on input line 121.
+
+
+LaTeX Warning: Citation 'worldbank2020' on page 2 undefined on input line 124.
+
+
+LaTeX Warning: Citation 'bnpparibas' on page 2 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'worldbank2020' on page 2 undefined on input line 130.
+
+
+LaTeX Warning: Citation 'worldbank' on page 2 undefined on input line 137.
+
+
+LaTeX Warning: Citation 'bnpparibas' on page 2 undefined on input line 139.
+
+
+LaTeX Warning: Citation 'irena2021' on page 2 undefined on input line 142.
+
+
+LaTeX Warning: Citation 'giz' on page 2 undefined on input line 145.
+
+
+LaTeX Warning: Citation 'demoor1997' on page 2 undefined on input line 164.
+
+
+LaTeX Warning: Citation 'coady2019' on page 2 undefined on input line 169.
+
+
+LaTeX Warning: Citation 'coady2019' on page 2 undefined on input line 178.
+
+
+LaTeX Warning: Citation 'verme2017' on page 2 undefined on input line 182.
+
+
+LaTeX Warning: Citation 'goulder' on page 2 undefined on input line 191.
+
+[2]
+
+LaTeX Warning: Citation 'callonnec2013' on page 3 undefined on input line 220.
+
+
+LaTeX Warning: Citation 'callonnec2021' on page 3 undefined on input line 220.
+
+<Images/Architecture of a CGEM.jpg, id=37, 441.14813pt x 339.2675pt>
+File: Images/Architecture of a CGEM.jpg Graphic file (type jpg)
+<use Images/Architecture of a CGEM.jpg>
+Package luatex.def Info: Images/Architecture of a CGEM.jpg  used on input line 
+231.
+(luatex.def)             Requested size: 441.16724pt x 339.28218pt.
+
+LaTeX Warning: Citation 'callonnec2013' on page 3 undefined on input line 233.
+
+[3<./Images/Architecture of a CGEM.jpg>]
+
+LaTeX Warning: Citation 'landarivera2016' on page 4 undefined on input line 263
+.
+
+
+LaTeX Warning: Citation 'reynes2017' on page 4 undefined on input line 264.
+
+<Images/Sectoral disaggregation.jpg, id=50, 602.75188pt x 297.11pt>
+File: Images/Sectoral disaggregation.jpg Graphic file (type jpg)
+<use Images/Sectoral disaggregation.jpg>
+Package luatex.def Info: Images/Sectoral disaggregation.jpg  used on input line
+ 271.
+(luatex.def)             Requested size: 469.74908pt x 231.54991pt.
+[4<./Images/Sectoral disaggregation.jpg>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+6-1.pdf, id=59, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-6-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-6-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-6-1.pdf  used on input line 326.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+7-1.pdf, id=60, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-7-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-7-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-7-1.pdf  used on input line 331.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[5<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chu
+nk-6-1.pdf>]
+
+LaTeX Warning: Citation 'kaya1989' on page 6 undefined on input line 353.
+
+
+LaTeX Warning: Citation 'kayaide2021' on page 6 undefined on input line 357.
+
+[6<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chu
+nk-7-1.pdf>]
+
+LaTeX Warning: Citation 'grubb2015' on page 7 undefined on input line 419.
+
+
+LaTeX Warning: Citation 'kanitkar2015' on page 7 undefined on input line 419.
+
+
+LaTeX Warning: Citation 'ang1997' on page 7 undefined on input line 445.
+
+
+LaTeX Warning: Citation 'ang2005' on page 7 undefined on input line 445.
+
+[7]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+8-1.pdf, id=105, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-8-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-8-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-8-1.pdf  used on input line 483.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+9-1.pdf, id=106, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-9-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-9-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-9-1.pdf  used on input line 487.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[8<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chu
+nk-8-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+10-1.pdf, id=119, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-10-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-10-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-10-1.pdf  used on input line 495.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[9<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chu
+nk-9-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+11-1.pdf, id=128, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-11-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-11-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-11-1.pdf  used on input line 499.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[10<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-10-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+12-1.pdf, id=137, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-12-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-12-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-12-1.pdf  used on input line 503.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[11<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-11-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+13-1.pdf, id=147, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-13-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-13-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-13-1.pdf  used on input line 511.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[12<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-12-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
+14-1.pdf, id=156, 469.755pt x 325.215pt>
+File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
+hunk-14-1.pdf Graphic file (type pdf)
+<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-14-1.pdf>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
+ure-latex/unnamed-chunk-14-1.pdf  used on input line 515.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[13<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
+unk-13-1.pdf>]
+! Dimension too large.
+\LT@max@sel #1#2->{\ifdim #2=\wd \tw@ 
+                                      #1\else \number \c@LT@chunks \fi }{\th...
+l.571 \end{longtabu}
+                  
 
 Here is how much of LuaTeX's memory you used:
- 27746 strings out of 477867
- 125086,1373583 words of node,token memory allocated
- 563 words of node memory still in use:
-   5 hlist, 1 vlist, 2 rule, 1 dir, 4 kern, 1 glyph, 7 attribute, 70 glue_spec, 
-7 attribute_list, 2 if_stack, 1 write, 1 user_defined, 1 pdf_colorstack nodes
-   avail lists: 2:15,3:3,4:3,5:8,6:1,7:2,9:4,11:2
- 47480 multiletter control sequences out of 65536+600000
- 38 fonts using 10696679 bytes
- 86i,1n,121p,1040b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29149 strings out of 477867
+ 125086,1648299 words of node,token memory allocated
+ 10931 words of node memory still in use:
+   74 hlist, 10 vlist, 17 rule, 1 mark, 72 disc, 5 local_par, 3 dir, 267 glue, 5
+8 kern, 16 penalty, 9 margin_kern, 865 glyph, 97 attribute, 76 glue_spec, 97 att
+ribute_list, 2 temp, 3 if_stack, 2 write, 1 user_defined, 3 pdf_dest, 1 pdf_acti
+on nodes
+   avail lists: 2:1691,3:387,4:73,5:440,6:179,7:7868,8:72,9:1166,10:16,11:641
+ 48702 multiletter control sequences out of 65536+600000
+ 64 fonts using 19231947 bytes
+ 86i,12n,121p,1040b,1595s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
