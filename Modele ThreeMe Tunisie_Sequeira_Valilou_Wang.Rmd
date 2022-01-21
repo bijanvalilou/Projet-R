@@ -350,7 +350,7 @@ Scenario 5 : Significant penetration of Renewable Energies in the electrical mix
 
 Scenario 6 : Combination of scenarios 2, 4 and 5.
 
-### Tax carbone
+### Tax carbon scenario
 
 Avant 2030, le niveau de la TC est calculé de façon a couvrir 100% des besoins du FTE Il passe de 1.1 à 9 DT/tCO2 Après 2030, la trajectoire de la TC est définie de façon à atteindre les objectifs de réduction d'émission à 2050 D'après les hypothèse des substitutions retenues dans ThreeME, l'atteinte d'un factor 5 en 2050 par rapport au niveau de 2020 nécessite une hause régulière de 9 DT/tCO2 à 372 DT/ tCO2. En plus de la TC des signaux prix ont été introduits afin d'atteindre les objectifs de consommations d'énergie par source
 
@@ -363,7 +363,7 @@ ggplot() +
 
 ```
 
-### Energy subsidy
+### Energy subsidy removal scenario
 
 ```{r, echo=FALSE}
 
@@ -377,9 +377,9 @@ ggplot() +
 
 ```
 
-### ENR
+### Renewable energy scenario
 
-### SNBC
+### National Low-Carbon Strategy scenario
 
 ## Choice of evaluation indicators
 
