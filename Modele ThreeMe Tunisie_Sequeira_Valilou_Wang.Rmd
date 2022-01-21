@@ -3,18 +3,19 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
-  html_document:
+  html_document: 
     toc: yes
-    toc_depth: '2'
-    df_print: paged
-  pdf_document:
+    toc_depth: 5
+  pdf_document: 
     citation_package: biblatex
     toc: yes
     number_sections: yes
-    toc_depth: 2
+    toc_depth: 4
     highlight: tango
     latex_engine: lualatex
-    keep_tex: no
+    fig_caption: yes
+    fig_height: 2.95
+    fig_width: 3.1
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -265,6 +266,20 @@ Since the Jasmine Revolution on 2011, Tunisia economy has been suffered from the
 
 Along with the sluggish economy is the huge energy deficit in Tunisia. @irena2021 reported that energy deficit (50% in 2019) has existed in Tunisia over the past two decades, mainly because of the increasing consumption but with the stagnated even declined domestic production in recent years. @giz reported that Tunisia depends for 60% on energy imports, and this number is continuously raising. The energy transition project proclaimed in 2014 aims to reduce energy needs by 34% by 2030, lower subsidies and establish incentive mechanisms favoring profitable and climate friendly investments. However, the challenging is the lack of reliable institutional mechanisms and motivation for enterprises to participate, accompanied with a poorly established service market and weak transmission of knowledge to citizens, especially outside urban area.
 
+The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to 3.3 billion Tunisian dinars (\$1,14 billion) [@trésor2021]. Concerning energy subsidies, the governement subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure X. The LPG and the electricity subsidies are the main expenditure items as shown in figure X. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. After the revolution, Tunisian government began to reduce energy subsidies. In 2012, the prices of gasoline, diesel and electricity increased by 7% [@albertin2014]. In 2020, Tunsia has introduced an automatic monthly price adjustment mechanism for petrol and diesel sales, with the aim of eliminating fuel subsidies.
+
+![](Images/Composition%20of%20fuel%20subsidies%20by%20product.jpg)
+
+::: {align="center"}
+Fig.X : Composition of fuel subsidies product. Source : @tunisia2020
+:::
+
+![](Images/Energy%20subsdies%20received%20by%20welfare%20quintile.jpg)
+
+::: {align="center"}
+Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions). Source : @tunisia2020
+:::
+
 ## Climate policy
 
 ### Carbon tax (Jin)
@@ -283,9 +298,39 @@ According to @goulder, tax redistribution is the mechanism that allows the gover
 
 ## ThreeME model (Bee)
 
-### A neo-Keynesian Computable General Equilibrium model
+The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model (1), which had to be adaptated and calibrated on Tunisian data (2).
+
+### A hybrid neo-Keynesian Computable General Equilibrium model
+
+The [open source](https://github.com/fosem/ThreeME_V3-open) ThreeME model has been developped since 2008 by OFCE (French Economic Observatory), ADEME (French Environment and Energy Management Agency) and NEO (Netherlands Economic Observatory). ThreeME is a Computable General Equilibrium Model (CGEM), with neo-Keynesian features and a hybrid structure.
+
+ThreeME combines several features [@callonnec2013 ; @callonnec2021] :
+
+-   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig.X). Demand defines supply and in return, supply determines demand through the production factor incomes.
+
+![](Images/Architecture%20of%20a%20CGEM.jpg)
+
+::: {align="center"}
+Fig.X : Architecture of CGEM (source : @callonnec2013)
+:::
+
+-   ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from Walrasian CGEM in its dynamics and its transition to the long run. Instead of perfect flexibility hypothesis, prices and quantities slowly adjust, because of uncertainties, adjustment costs or temporal boundaries. Prices do not clear supply and demands and market imperfections are also included in the model. Consequently, there are disequilibrium between supply and demand. For instance, involuntary unemployment is possible.
+
+-   The high sectoral disaggregation is a way to describe the transfers of activity from a sector to another. The ThreeME model allows to track sectoral changes in investment, employment or energy consumption.
+
+-   ThreeME is a hybrid model which combines top-down and bottom-up modelling. On one side, the general equilibrium effets are represented. On the other side, the energy disaggregation allows for the analysis of the energy production and consumption. The trade-offs between energy and other production factors and between several energy consumptions are included in the model.
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
+
+ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. Indeed, the sectoral disaggregation was validated by Tunisian stakeholders. At the end, 21 sectors and 18 products were chosen (see Fig.X). The tax structure is based on the supply and use table (SUT) of the national accounts.
+
+![](Images/Sectoral%20disaggregation.jpg)
+
+::: {align="center"}
+Fig.X : Sectoral disaggregation
+:::
+
+The required data are economic data from national accounts, in particular from Input-Output Tables (IOTs), physical data from energy balance and detailed tax data by product. These data were collected from Tunisian institutions, in particular ANME (National Agency for Energy Management), INS (National Institute of statistics), ONE (National Energy Observatory), STEG (Tunisian Company of Electricity and Gas), ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies), Ministry of Energy, Mines and Energy Transition and the Ministry of Economic Development, Investment and International Cooperation.
 
 ## Description of scenario (Lucia)
 
@@ -472,11 +517,23 @@ As the carbon tax before 2030 stays at a moderate level, the impacts of this pol
 
 Generally speaking, the policy of carbon tax with redistribution of government revenue has a positive impact on Tunisia's economy. Whereas GDP increases slightly up to 0.13% with respect to baseline on 2030, the relatively rapid augmentation is observed from 2030 to 2050. At the horizon of 2050, it reaches a highest level (+1.93%) thanks to the carbon tax policy. In the meantime, social welfare is improved with the same rhythme as GDP growth, with a higher consumption level (+4.20%) and a higher disposable income (+4.17%) on 2050.
 
+```{r eval=FALSE, dev='jpeg', include=FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_CT <- S2_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_CT <- t(Table_Macro_CT)
+Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
+row.names(Table_Macro_CT) <- tablename
+
+kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
+
 ::: {align="center"}
 Table.X :Macroeconomic impacts of Carbon tax scenario in % deviation to Baseline
 :::
-
-![](Images/Macroeconomic%20impacts%20of%20Carbon%20tax%20scenario%20in%20%25%20deviation%20to%20Baseline.jpg)
 
 An intuitive influence of carbon tax is that the price of internal market will raise, which is in line with our model output: higher household consumption price of 9.49% with 11.33% and 13.14% for production price and intermediate consumption price, respectively. The increasing cost of household and company will force them to choose the substitution with less CO2 emissions, thus reducing their cost. The variation of internal price also has an impact on the competitiveness of local goods on international market, causing a recession for exportation and a boost for importation.
 
@@ -671,7 +728,7 @@ kable(Table_I_trsf, booktabs = T, longtable = T, caption = "Energy mix of sector
 rm(tablename,Table_I_trsf)
 ```
 
-```{r, echo = FALSE}
+```{r eval=FALSE, include=FALSE}
 z_1 <- c(
        S2[,"ch_toe_cfut_2"]/S2[,"ch_toe_2"],
        S2[,"ch_toe_cfuh_2"]/S2[,"ch_toe_2"],
@@ -731,10 +788,22 @@ Focus inter-sectoriel energy price will
 ### Economic impacts
 
 ::: {align="center"}
-Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline
+Table.X : Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline!
 :::
 
-![](Images/Macroeconomic%20impacts%20of%20Energy%20subsidies%20removal%20scenario%20in%20%25%20deviation%20to%20Baseline.jpg)
+```{r eval=FALSE, dev='jpeg', include=FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_CT <- S4_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_CT <- t(Table_Macro_CT)
+Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
+row.names(Table_Macro_CT) <- tablename
+
+kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in percent deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
 
 ```{r, echo = FALSE}
 
@@ -930,13 +999,25 @@ plt2
 
 ```
 
-## ENR
+## Renewable energy scenario
 
 ::: {align="center"}
 Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline
 :::
 
-![](Images/Macroeconomic%20impacts%20of%20Renewable%20energy%20scenario%20in%20%25%20deviation%20to%20Baseline.jpg)
+```{r eval=FALSE, dev='jpeg', include=FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_ENR <- S5_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_ENR <- t(Table_Macro_ENR)
+Table_Macro_ENR <- round(Table_Macro_ENR,digits = 2)
+row.names(Table_Macro_ENR) <- tablename
+
+kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
 
 ```{r, echo = FALSE}
 
@@ -1084,13 +1165,25 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-## SNBC
+## National Low-Carbon Strategy scenario
 
 ::: {align="center"}
 Table.X :Macroeconomic impacts of Nation Low-Carbon Strategy scenario in % deviation to Baseline
 :::
 
-![](Images/Macroeconomic%20impacts%20of%20National%20Low-Carbon%20Strategy%20scenario%20in%20%25%20deviation%20to%20Baseline.jpg)
+```{r dev='jpeg', include=FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_SNBC <- S6_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_SNBC <- t(Table_Macro_SNBC)
+Table_Macro_ENR <- round(Table_Macro_SNBC,digits = 2)
+row.names(Table_Macro_SNBC) <- tablename
+
+kable(Table_Macro_SNBC, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Nation Low-Carbon Strategy scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
+row_spec(0, bold = T)
+```
 
 ```{r, echo = FALSE}
 

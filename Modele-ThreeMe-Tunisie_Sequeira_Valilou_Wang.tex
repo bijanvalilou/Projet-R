@@ -54,6 +54,46 @@ little country in development : the case of Tunisia}
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -99,7 +139,7 @@ little country in development : the case of Tunisia}
 \maketitle
 
 {
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{4}
 \tableofcontents
 }
 \newpage
@@ -201,86 +241,14 @@ deformation into the economy as is the case of the labor tax.
 \hypertarget{threeme-model-bee}{%
 \subsection{ThreeME model (Bee)}\label{threeme-model-bee}}
 
-The ThreeME model is a hybrid neo-Keynesian Computable General
-Equilibrium model (1), which had to be adaptated and calibrated on
-Tunisian data (2).
-
-\hypertarget{a-hybrid-neo-keynesian-computable-general-equilibrium-model}{%
-\subsubsection{A hybrid neo-Keynesian Computable General Equilibrium
-model}\label{a-hybrid-neo-keynesian-computable-general-equilibrium-model}}
-
-The \href{https://github.com/fosem/ThreeME_V3-open}{open source} ThreeME
-model has been developped since 2008 by OFCE (French Economic
-Observatory), ADEME (French Environment and Energy Management Agency)
-and NEO (Netherlands Economic Observatory). ThreeME is a Computable
-General Equilibrium Model (CGEM), with neo-Keynesian features and a
-hybrid structure.
-
-ThreeME combines several features \autocites[
-]{callonnec2013}{callonnec2021} :
-
-\begin{itemize}
-\tightlist
-\item
-  ThreeME is a Computable General Equilibrium Model (CGEM), which takes
-  into account the interactions and feedbacks between supply and demand
-  (see Fig.X). Demand defines supply and in return, supply determines
-  demand through the production factor incomes.
-\end{itemize}
-
-\includegraphics{Images/Architecture of a CGEM.jpg}
-
-Fig.X : Architecture of CGEM (source : \textcite{callonnec2013})
-
-\begin{itemize}
-\item
-  ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from
-  Walrasian CGEM in its dynamics and its transition to the long run.
-  Instead of perfect flexibility hypothesis, prices and quantities
-  slowly adjust, because of uncertainties, adjustment costs or temporal
-  boundaries. Prices do not clear supply and demands and market
-  imperfections are also included in the model. Consequently, there are
-  disequilibrium between supply and demand. For instance, involuntary
-  unemployment is possible.
-\item
-  The high sectoral disaggregation is a way to describe the transfers of
-  activity from a sector to another. The ThreeME model allows to track
-  sectoral changes in investment, employment or energy consumption.
-\item
-  ThreeME is a hybrid model which combines top-down and bottom-up
-  modelling. On one side, the general equilibrium effets are
-  represented. On the other side, the energy disaggregation allows for
-  the analysis of the energy production and consumption. The trade-offs
-  between energy and other production factors and between several energy
-  consumptions are included in the model.
-\end{itemize}
+\hypertarget{a-neo-keynesian-computable-general-equilibrium-model}{%
+\subsubsection{A neo-Keynesian Computable General Equilibrium
+model}\label{a-neo-keynesian-computable-general-equilibrium-model}}
 
 \hypertarget{threeme-model-tunisia-adaptation-for-a-little-country-in-development}{%
 \subsubsection{ThreeMe model Tunisia : Adaptation for a little country
 in
 development}\label{threeme-model-tunisia-adaptation-for-a-little-country-in-development}}
-
-ThreeME has already been adapted to Mexico by \textcite{landarivera2016}
-and to Indonesia by \textcite{reynes2017}. The adaptation of ThreeME to
-Tunisia has been founded on consultation with Tunisian experts and other
-stakeholders. Indeed, the sectoral disaggregation was validated by
-Tunisian stakeholders. At the end, 21 sectors and 18 products were
-chosen (see Fig.X). The tax structure is based on the supply and use
-table (SUT) of the national accounts.
-
-\includegraphics{Images/Sectoral disaggregation.jpg}
-
-Fig.X : Sectoral disaggregation
-
-The required data are economic data from national accounts, in
-particular from Input-Output Tables (IOTs), physical data from energy
-balance and detailed tax data by product. These data were collected from
-Tunisian institutions, in particular ANME (National Agency for Energy
-Management), INS (National Institute of statistics), ONE (National
-Energy Observatory), STEG (Tunisian Company of Electricity and Gas),
-ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies),
-Ministry of Energy, Mines and Energy Transition and the Ministry of
-Economic Development, Investment and International Cooperation.
 
 \hypertarget{description-of-scenario-lucia}{%
 \subsection{Description of scenario
@@ -459,58 +427,53 @@ force \(X\) of baseline for sector i.
 \section{Results et discussions}\label{results-et-discussions}}
 
 In this section we will analyse the results obtained for the different
-scenarios for the different variables took into account.
+scenarios for the different variables taken into account.
 
 \hypertarget{importance-of-redistribution-lucia}{%
 \subsection{Importance of redistribution
-(lucia)}\label{importance-of-redistribution-lucia}}
+(Lucia)}\label{importance-of-redistribution-lucia}}
 
-Firstly, we will analyse the influence of the redistribution of both the
-tax and of the removed energy subsidy. We will observe the impact of the
-redistribution on the economical and environmental aspects. For the
-economic aspect, we will take into account the GDP variation and the
-unemployment. For the environmental, we will analyse the evolution of
-emissions.
+Here we will analyse the influence of the redistribution of both the tax
+and the removed energy subsidy. We will observe the impact of the
+redistribution on the economical and environmental aspects. We will
+focus on GDP variation and unemployment when it comes to the economical
+aspect and we will analyse the evolution of emissions for the
+environmental aspect.
 
-\begin{itemize}
-\tightlist
-\item
-  graphique PIB :
-\end{itemize}
-
-grandes tendances des scénarii Taxe carbone
+Firstly, we will analyse the redistribution of the carbon tax. The
+figure below show the variation in GDP in relation to the baseline for
+both the scenarios carbon tax with and without redistribution. We
+observe that the evolution of the curves is opposite and symmetric in
+relation to the x-axis, the scenario with redistribution showing a
+marked increase in GDP.
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf}
 
-Levée des subventions énergétiques
+Then when we analyse the \emph{level of employment} we can see that the
+redistribution operates an increase on it in relation to the baseline,
+when the scenario of a carbon tax without redistribution produce a
+decrease in the level of employment. That is consistent with the fact
+that the
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf}
 
-\begin{itemize}
-\tightlist
-\item
-  chomage : grandes tendances des scénarii Taxe carbone
-\end{itemize}
+emissions
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf}
 
-Levée des subventions énergétiques
+PIB
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf}
 
-Il peut être intéressant de faire un commentaire sur le salaire brut
+chomage :
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf}
 
-\begin{itemize}
-\tightlist
-\item
-  émissions : grandes tendances des scénarii Taxe carbone
-\end{itemize}
+Il peut être intéressant de faire un commentaire sur le salaire brut
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf}
 
-Levée des subventions énergétiques
+émissions :
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf}
 
@@ -533,42 +496,8 @@ carbon tax policy. In the meantime, social welfare is improved with the
 same rhythme as GDP growth, with a higher consumption level (+4.20\%)
 and a higher disposable income (+4.17\%) on 2050.
 
-\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-15}Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline}\\
-\toprule
-\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
-\midrule
-\endfirsthead
-\caption[]{Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline \textit{(continued)}}\\
-\toprule
-\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
-\midrule
-\endhead
-
-\endfoot
-\bottomrule
-\endlastfoot
-\cellcolor{gray!6}{GDP in volume} & \cellcolor{gray!6}{0.03} & \cellcolor{gray!6}{0.11} & \cellcolor{gray!6}{0.13} & \cellcolor{gray!6}{0.97} & \cellcolor{gray!6}{1.56} & \cellcolor{gray!6}{1.87} & \cellcolor{gray!6}{1.93}\\
-Household consumption & 0.02 & 0.13 & 0.20 & 1.04 & 2.12 & 3.29 & 4.20\\
-\cellcolor{gray!6}{Investment} & \cellcolor{gray!6}{0.03} & \cellcolor{gray!6}{0.07} & \cellcolor{gray!6}{0.10} & \cellcolor{gray!6}{0.74} & \cellcolor{gray!6}{1.47} & \cellcolor{gray!6}{2.62} & \cellcolor{gray!6}{3.96}\\
-Exports & 0.00 & -0.03 & -0.09 & -0.36 & -1.20 & -2.32 & -3.36\\
-\cellcolor{gray!6}{Imports} & \cellcolor{gray!6}{-0.03} & \cellcolor{gray!6}{-0.02} & \cellcolor{gray!6}{-0.03} & \cellcolor{gray!6}{-0.40} & \cellcolor{gray!6}{-0.44} & \cellcolor{gray!6}{0.20} & \cellcolor{gray!6}{1.13}\\
-Household disposable income & 0.03 & 0.14 & 0.19 & 1.07 & 2.12 & 3.27 & 4.17\\
-\cellcolor{gray!6}{Household consumption price index} & \cellcolor{gray!6}{0.05} & \cellcolor{gray!6}{0.17} & \cellcolor{gray!6}{0.33} & \cellcolor{gray!6}{1.89} & \cellcolor{gray!6}{4.51} & \cellcolor{gray!6}{7.24} & \cellcolor{gray!6}{9.49}\\
-production price index & 0.03 & 0.17 & 0.35 & 1.88 & 4.99 & 8.43 & 11.33\\
-\cellcolor{gray!6}{Added value price index} & \cellcolor{gray!6}{-0.07} & \cellcolor{gray!6}{0.02} & \cellcolor{gray!6}{0.19} & \cellcolor{gray!6}{0.23} & \cellcolor{gray!6}{2.84} & \cellcolor{gray!6}{6.42} & \cellcolor{gray!6}{9.76}\\
-Intermediate consumption price index & 0.13 & 0.33 & 0.51 & 3.70 & 7.42 & 10.73 & 13.14\\
-\cellcolor{gray!6}{Export price index} & \cellcolor{gray!6}{0.01} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.21} & \cellcolor{gray!6}{1.02} & \cellcolor{gray!6}{2.91} & \cellcolor{gray!6}{5.02} & \cellcolor{gray!6}{6.80}\\
-Import price index & -0.01 & -0.09 & -0.11 & -0.58 & -0.75 & -0.83 & -0.92\\
-\cellcolor{gray!6}{Gross nominal wage} & \cellcolor{gray!6}{0.00} & \cellcolor{gray!6}{0.10} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{1.03} & \cellcolor{gray!6}{3.32} & \cellcolor{gray!6}{6.26} & \cellcolor{gray!6}{8.92}\\
-Real cost of labor & 0.07 & 0.08 & 0.07 & 0.79 & 0.44 & -0.19 & -0.81\\
-\cellcolor{gray!6}{Wage employment rate (in thousands)} & \cellcolor{gray!6}{0.70} & \cellcolor{gray!6}{3.82} & \cellcolor{gray!6}{4.29} & \cellcolor{gray!6}{34.47} & \cellcolor{gray!6}{63.39} & \cellcolor{gray!6}{82.96} & \cellcolor{gray!6}{97.35}\\
-Unemployment rate (in point) & -0.01 & -0.06 & -0.06 & -0.50 & -0.87 & -1.11 & -1.29\\
-\cellcolor{gray!6}{Trade balance (in point of GDP)} & \cellcolor{gray!6}{0.03} & \cellcolor{gray!6}{0.15} & \cellcolor{gray!6}{0.23} & \cellcolor{gray!6}{1.17} & \cellcolor{gray!6}{1.89} & \cellcolor{gray!6}{2.12} & \cellcolor{gray!6}{2.07}\\
-Public budget balance (in points of GDP) & 0.01 & 0.12 & 0.20 & 0.88 & 1.56 & 2.04 & 2.23\\
-\cellcolor{gray!6}{Public debt (in points of GDP)} & \cellcolor{gray!6}{-0.05} & \cellcolor{gray!6}{-0.49} & \cellcolor{gray!6}{-1.25} & \cellcolor{gray!6}{-4.81} & \cellcolor{gray!6}{-10.69} & \cellcolor{gray!6}{-17.51} & \cellcolor{gray!6}{-24.33}\\
-CO2 emissions & -0.61 & -2.00 & -2.90 & -16.79 & -29.06 & -36.98 & -42.22\\*
-\end{longtabu}
+Table.X :Macroeconomic impacts of Carbon tax scenario in \% deviation to
+Baseline
 
 An intuitive influence of carbon tax is that the price of internal
 market will raise, which is in line with our model output: higher
@@ -603,17 +532,17 @@ CO2 \& +1.86\%), revealing that even though the total production remains
 relatively invariable, the revolution of economy structure could still
 strongly impact the emissions pathway.
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-16-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-15-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-17-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-16-1.pdf}
 
 Sectorial level analysis, Economy Structure: main sectors are
 electricity (positive) and energy transformation (negative) what
 happened in these two sectors? a developpement of electricity
 production, and a recession of energy transformation
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-18-1.pdf}
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-18-2.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-17-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-17-2.pdf}
 
 Energy intensity -\textgreater{} we observe the improvement of energy
 efficiency, in another word the decrement of energy intensity, for all
@@ -622,9 +551,9 @@ industry \& agriculture. explained by the global drop of energy
 consumption, coupled with the augmentation of added value in certain
 sectors
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-19-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-18-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-19-1.pdf}
 
 Carbon intensity Dramastically change in energy transformation and
 industry\&agriculture for energy transformation: -\textgreater{} explain
@@ -636,15 +565,15 @@ transformation for industry \& agriculture: same tendance, less natural
 gas, less consumption of fuels for transportation, more electricity (for
 transportation and heating etc)
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf}
 
 For energy transformation, we creat a table, which is better than a
 figure
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-23}Energy mix of sector Energy Transformation (in %) 
+\caption{\label{tab:unnamed-chunk-22}Energy mix of sector Energy Transformation (in %) 
  for Carbon tax scenario and Baseline scenario}\\
 \toprule
 \textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
@@ -675,8 +604,6 @@ figure
 \hspace{1em}Fuels for other use & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\*
 \end{longtabu}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf}
-
 Focus inter-sectoriel energy price will
 
 1 - induce company to invest to reduce energy demande -\textgreater{}
@@ -693,110 +620,89 @@ modele
 \hypertarget{economic-impacts}{%
 \subsubsection{Economic impacts}\label{economic-impacts}}
 
-\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-25}Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in percent deviation to Baseline}\\
-\toprule
-\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
-\midrule
-\endfirsthead
-\caption[]{Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in percent deviation to Baseline \textit{(continued)}}\\
-\toprule
-\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
-\midrule
-\endhead
+Table.X : Macroeconomic impacts of Energy subsidies removal scenario in
+\% deviation to Baseline!
 
-\endfoot
-\bottomrule
-\endlastfoot
-\cellcolor{gray!6}{GDP in volume} & \cellcolor{gray!6}{0.17} & \cellcolor{gray!6}{0.56} & \cellcolor{gray!6}{0.32} & \cellcolor{gray!6}{0.13} & \cellcolor{gray!6}{0.06} & \cellcolor{gray!6}{0.01} & \cellcolor{gray!6}{-0.03}\\
-Household consumption & -0.02 & 0.06 & 0.10 & 0.39 & 0.63 & 0.72 & 0.68\\
-\cellcolor{gray!6}{Investment} & \cellcolor{gray!6}{0.16} & \cellcolor{gray!6}{-0.19} & \cellcolor{gray!6}{-0.49} & \cellcolor{gray!6}{0.20} & \cellcolor{gray!6}{1.01} & \cellcolor{gray!6}{1.68} & \cellcolor{gray!6}{2.10}\\
-Exports & 0.00 & -0.22 & -0.94 & -1.58 & -1.85 & -1.84 & -1.71\\
-\cellcolor{gray!6}{Imports} & \cellcolor{gray!6}{-0.30} & \cellcolor{gray!6}{-1.22} & \cellcolor{gray!6}{-1.34} & \cellcolor{gray!6}{-0.86} & \cellcolor{gray!6}{-0.28} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{0.65}\\
-Household disposable income & -0.01 & 0.05 & 0.09 & 0.40 & 0.62 & 0.71 & 0.68\\
-\cellcolor{gray!6}{Household consumption price index} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{2.13} & \cellcolor{gray!6}{3.88} & \cellcolor{gray!6}{4.59} & \cellcolor{gray!6}{4.62} & \cellcolor{gray!6}{4.25} & \cellcolor{gray!6}{3.81}\\
-production price index & 0.08 & 1.15 & 3.23 & 4.70 & 5.11 & 4.87 & 4.40\\
-\cellcolor{gray!6}{Added value price index} & \cellcolor{gray!6}{-0.55} & \cellcolor{gray!6}{-1.47} & \cellcolor{gray!6}{1.17} & \cellcolor{gray!6}{3.48} & \cellcolor{gray!6}{4.35} & \cellcolor{gray!6}{4.50} & \cellcolor{gray!6}{4.31}\\
-Intermediate consumption price index & 0.76 & 3.93 & 5.47 & 6.02 & 5.89 & 5.22 & 4.46\\
-\cellcolor{gray!6}{Export price index} & \cellcolor{gray!6}{0.36} & \cellcolor{gray!6}{1.89} & \cellcolor{gray!6}{3.15} & \cellcolor{gray!6}{3.70} & \cellcolor{gray!6}{3.69} & \cellcolor{gray!6}{3.37} & \cellcolor{gray!6}{2.98}\\
-Import price index & -0.05 & -1.19 & -1.11 & -0.73 & -0.42 & -0.27 & -0.18\\
-\cellcolor{gray!6}{Gross nominal wage} & \cellcolor{gray!6}{0.01} & \cellcolor{gray!6}{0.71} & \cellcolor{gray!6}{2.64} & \cellcolor{gray!6}{3.95} & \cellcolor{gray!6}{4.35} & \cellcolor{gray!6}{4.18} & \cellcolor{gray!6}{3.79}\\
-Real cost of labor & 0.56 & 2.19 & 1.43 & 0.43 & -0.03 & -0.33 & -0.53\\
-\cellcolor{gray!6}{Wage employment rate (in thousands)} & \cellcolor{gray!6}{3.76} & \cellcolor{gray!6}{20.06} & \cellcolor{gray!6}{-1.32} & \cellcolor{gray!6}{-12.88} & \cellcolor{gray!6}{-8.61} & \cellcolor{gray!6}{1.33} & \cellcolor{gray!6}{10.74}\\
-Unemployment rate (in point) & -0.07 & -0.30 & 0.04 & 0.18 & 0.11 & -0.03 & -0.15\\
-\cellcolor{gray!6}{Trade balance (in point of GDP)} & \cellcolor{gray!6}{0.39} & \cellcolor{gray!6}{2.57} & \cellcolor{gray!6}{2.99} & \cellcolor{gray!6}{2.31} & \cellcolor{gray!6}{1.60} & \cellcolor{gray!6}{1.03} & \cellcolor{gray!6}{0.65}\\
-Public budget balance (in points of GDP) & 0.24 & 1.83 & 2.41 & 2.08 & 1.61 & 1.11 & 0.73\\
-\cellcolor{gray!6}{Public debt (in points of GDP)} & \cellcolor{gray!6}{-0.50} & \cellcolor{gray!6}{-6.41} & \cellcolor{gray!6}{-15.82} & \cellcolor{gray!6}{-22.39} & \cellcolor{gray!6}{-25.38} & \cellcolor{gray!6}{-26.20} & \cellcolor{gray!6}{-25.56}\\
-CO2 emissions & -3.63 & -17.01 & -20.74 & -20.34 & -17.53 & -13.49 & -9.66\\*
-\end{longtabu}
-
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf}
 
 \hypertarget{environmental-and-energy-impacts}{%
 \subsubsection{Environmental and energy
 impacts}\label{environmental-and-energy-impacts}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ S4[,}\StringTok{"year"}\NormalTok{],}\AttributeTok{y =}\NormalTok{ S4[,}\StringTok{"ems\_co2\_2"}\NormalTok{]}\SpecialCharTok{/}\NormalTok{Baseline[,}\StringTok{"ems\_co2\_0"}\NormalTok{], }\AttributeTok{group =} \DecValTok{1}\NormalTok{, }\AttributeTok{color =} \StringTok{"Total effect"}\NormalTok{), }\AttributeTok{size =} \FloatTok{1.0}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ S4[,}\StringTok{"year"}\NormalTok{],}\AttributeTok{y =}\NormalTok{ S4[,}\StringTok{"va\_2"}\NormalTok{]}\SpecialCharTok{/}\NormalTok{Baseline[,}\StringTok{"va\_0"}\NormalTok{], }\AttributeTok{group =} \DecValTok{1}\NormalTok{, }\AttributeTok{color =} \StringTok{"GDP per capita"}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ S4[,}\StringTok{"year"}\NormalTok{],}\AttributeTok{y =}\NormalTok{ ((S4[,}\StringTok{"ci\_toe\_2"}\NormalTok{]}\SpecialCharTok{+}\NormalTok{S4[,}\StringTok{"ch\_toe\_2"}\NormalTok{])}\SpecialCharTok{/}\NormalTok{(Baseline[,}\StringTok{"ci\_toe\_0"}\NormalTok{]}\SpecialCharTok{+}\NormalTok{Baseline[,}\StringTok{"ch\_toe\_0"}\NormalTok{]))}\SpecialCharTok{/}\NormalTok{(S4[,}\StringTok{"va\_2"}\NormalTok{]}\SpecialCharTok{/}\NormalTok{Baseline[,}\StringTok{"va\_0"}\NormalTok{]), }\AttributeTok{group =} \DecValTok{1}\NormalTok{, }\AttributeTok{color =} \StringTok{"Energy intensity"}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ S4[,}\StringTok{"year"}\NormalTok{],}\AttributeTok{y =}\NormalTok{  (S4[,}\StringTok{"ems\_co2\_2"}\NormalTok{]}\SpecialCharTok{/}\NormalTok{Baseline[,}\StringTok{"ems\_co2\_0"}\NormalTok{])}\SpecialCharTok{/}\NormalTok{((S4[,}\StringTok{"ci\_toe\_2"}\NormalTok{]}\SpecialCharTok{+}\NormalTok{S4[,}\StringTok{"ch\_toe\_2"}\NormalTok{])}\SpecialCharTok{/}\NormalTok{(Baseline[,}\StringTok{"ci\_toe\_0"}\NormalTok{]}\SpecialCharTok{+}\NormalTok{Baseline[,}\StringTok{"ch\_toe\_0"}\NormalTok{])), }\AttributeTok{group =} \DecValTok{1}\NormalTok{, }\AttributeTok{color =} \StringTok{"Carbon Intensity"}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"year"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Index of Kaya identity"}\NormalTok{, }\AttributeTok{title =} \StringTok{"Kaya identity at aggragated level }\SpecialCharTok{\textbackslash{}n}\StringTok{Energy subsidy with redistribution scenario"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_x\_continuous}\NormalTok{(}\AttributeTok{breaks=}\FunctionTok{seq}\NormalTok{(}\DecValTok{2015}\NormalTok{,}\DecValTok{2050}\NormalTok{,}\DecValTok{5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-2.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-30-1.pdf}
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-30-2.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf}
 
-\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf}
-
 \hypertarget{enr-1}{%
 \subsection{ENR}\label{enr-1}}
 
-\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
-\caption{\label{tab:unnamed-chunk-34}Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline}\\
-\toprule
-\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
-\midrule
-\endfirsthead
-\caption[]{Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline \textit{(continued)}}\\
-\toprule
-\textbf{ } & \textbf{2021} & \textbf{2025} & \textbf{2030} & \textbf{2035} & \textbf{2040} & \textbf{2045} & \textbf{2050}\\
-\midrule
-\endhead
+Table.X :Macroeconomic impacts of Energy subsidies removal scenario in
+\% deviation to Baseline
 
-\endfoot
-\bottomrule
-\endlastfoot
-\cellcolor{gray!6}{GDP in volume} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.49} & \cellcolor{gray!6}{1.33} & \cellcolor{gray!6}{1.78} & \cellcolor{gray!6}{2.36} & \cellcolor{gray!6}{2.77} & \cellcolor{gray!6}{2.96}\\
-Household consumption & 0.05 & 0.40 & 1.59 & 2.03 & 2.61 & 3.14 & 3.48\\
-\cellcolor{gray!6}{Investment} & \cellcolor{gray!6}{-0.02} & \cellcolor{gray!6}{0.32} & \cellcolor{gray!6}{1.98} & \cellcolor{gray!6}{3.16} & \cellcolor{gray!6}{4.25} & \cellcolor{gray!6}{4.71} & \cellcolor{gray!6}{4.64}\\
-Exports & 0.00 & -0.05 & -0.12 & -0.18 & -0.24 & -0.27 & -0.22\\
-\cellcolor{gray!6}{Imports} & \cellcolor{gray!6}{-0.12} & \cellcolor{gray!6}{-0.32} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{0.45} & \cellcolor{gray!6}{0.60} & \cellcolor{gray!6}{0.76} & \cellcolor{gray!6}{0.86}\\
-Household disposable income & 0.05 & 0.46 & 1.56 & 2.01 & 2.62 & 3.12 & 3.47\\
-\cellcolor{gray!6}{Household consumption price index} & \cellcolor{gray!6}{0.03} & \cellcolor{gray!6}{0.23} & \cellcolor{gray!6}{0.26} & \cellcolor{gray!6}{0.37} & \cellcolor{gray!6}{0.45} & \cellcolor{gray!6}{0.43} & \cellcolor{gray!6}{0.22}\\
-production price index & 0.01 & -0.02 & -0.05 & 0.20 & 0.38 & 0.40 & 0.17\\
-\cellcolor{gray!6}{Added value price index} & \cellcolor{gray!6}{0.06} & \cellcolor{gray!6}{0.48} & \cellcolor{gray!6}{0.66} & \cellcolor{gray!6}{0.83} & \cellcolor{gray!6}{0.98} & \cellcolor{gray!6}{1.04} & \cellcolor{gray!6}{0.84}\\
-Intermediate consumption price index & -0.04 & -0.50 & -0.81 & -0.57 & -0.45 & -0.52 & -0.81\\
-\cellcolor{gray!6}{Export price index} & \cellcolor{gray!6}{0.01} & \cellcolor{gray!6}{0.10} & \cellcolor{gray!6}{0.20} & \cellcolor{gray!6}{0.30} & \cellcolor{gray!6}{0.38} & \cellcolor{gray!6}{0.39} & \cellcolor{gray!6}{0.24}\\
-Import price index & -0.02 & -0.39 & -0.40 & -0.37 & -0.35 & -0.38 & -0.43\\
-\cellcolor{gray!6}{Gross nominal wage} & \cellcolor{gray!6}{0.06} & \cellcolor{gray!6}{0.51} & \cellcolor{gray!6}{1.17} & \cellcolor{gray!6}{1.51} & \cellcolor{gray!6}{1.94} & \cellcolor{gray!6}{2.21} & \cellcolor{gray!6}{2.28}\\
-Real cost of labor & -0.01 & -0.06 & 0.35 & 0.48 & 0.70 & 0.89 & 1.15\\
-\cellcolor{gray!6}{Wage employment rate (in thousands)} & \cellcolor{gray!6}{0.68} & \cellcolor{gray!6}{9.23} & \cellcolor{gray!6}{40.89} & \cellcolor{gray!6}{59.02} & \cellcolor{gray!6}{79.82} & \cellcolor{gray!6}{95.15} & \cellcolor{gray!6}{103.17}\\
-Unemployment rate (in point) & -0.01 & -0.15 & -0.59 & -0.82 & -1.09 & -1.27 & -1.36\\
-\cellcolor{gray!6}{Trade balance (in point of GDP)} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.59} & \cellcolor{gray!6}{0.39} & \cellcolor{gray!6}{0.31} & \cellcolor{gray!6}{0.27} & \cellcolor{gray!6}{0.20} & \cellcolor{gray!6}{0.12}\\
-Public budget balance (in points of GDP) & 0.04 & 0.39 & 0.61 & 0.55 & 0.53 & 0.47 & 0.34\\
-\cellcolor{gray!6}{Public debt (in points of GDP)} & \cellcolor{gray!6}{-0.15} & \cellcolor{gray!6}{-1.48} & \cellcolor{gray!6}{-4.19} & \cellcolor{gray!6}{-5.91} & \cellcolor{gray!6}{-7.04} & \cellcolor{gray!6}{-7.88} & \cellcolor{gray!6}{-8.26}\\
-CO2 emissions & -1.77 & -7.56 & -9.85 & -13.71 & -19.23 & -24.57 & -29.24\\*
-\end{longtabu}
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf}
 
 \includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf}
 
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-40-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf}
+
 \hypertarget{snbc-1}{%
 \subsection{SNBC}\label{snbc-1}}
+
+Table.X :Macroeconomic impacts of Nation Low-Carbon Strategy scenario in
+\% deviation to Baseline
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-46-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf}
+
+\includegraphics{Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf}
 
 \hypertarget{prolongements}{%
 \section{Prolongements}\label{prolongements}}
