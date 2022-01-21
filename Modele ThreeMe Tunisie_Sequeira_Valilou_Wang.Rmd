@@ -932,6 +932,12 @@ plt2
 
 ## ENR
 
+::: {align="center"}
+Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline
+:::
+
+![](Images/Macroeconomic%20impacts%20of%20Renewable%20energy%20scenario%20in%20%25%20deviation%20to%20Baseline.jpg)
+
 ```{r, echo = FALSE}
 
 ggplot() + 
@@ -1080,19 +1086,11 @@ ggplot() +
 
 ## SNBC
 
-```{r, echo = FALSE}
+::: {align="center"}
+Table.X :Macroeconomic impacts of Nation Low-Carbon Strategy scenario in % deviation to Baseline
+:::
 
-tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
-
-Table_Macro_SNBC <- S6_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
-Table_Macro_SNBC <- t(Table_Macro_SNBC)
-Table_Macro_SNBC <- round(Table_Macro_SNBC,digits = 2)
-row.names(Table_Macro_SNBC) <- tablename
-
-kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of SNBC scenario in % deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
-```
+![](Images/Macroeconomic%20impacts%20of%20National%20Low-Carbon%20Strategy%20scenario%20in%20%25%20deviation%20to%20Baseline.jpg)
 
 ```{r, echo = FALSE}
 
