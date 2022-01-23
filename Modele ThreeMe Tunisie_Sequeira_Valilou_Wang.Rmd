@@ -266,29 +266,53 @@ Since the Jasmine Revolution on 2011, Tunisia economy has been suffered from the
 
 Along with the sluggish economy is the huge energy deficit in Tunisia. @irena2021 reported that energy deficit (50% in 2019) has existed in Tunisia over the past two decades, mainly because of the increasing consumption but with the stagnated even declined domestic production in recent years. @giz reported that Tunisia depends for 60% on energy imports, and this number is continuously raising. The energy transition project proclaimed in 2014 aims to reduce energy needs by 34% by 2030, lower subsidies and establish incentive mechanisms favoring profitable and climate friendly investments. However, the challenging is the lack of reliable institutional mechanisms and motivation for enterprises to participate, accompanied with a poorly established service market and weak transmission of knowledge to citizens, especially outside urban area.
 
-The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to 3.3 billion Tunisian dinars (\$1,14 billion) [@trésor2021]. Concerning energy subsidies, the governement subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure X. The LPG and the electricity subsidies are the main expenditure items as shown in figure X. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. After the revolution, Tunisian government began to reduce energy subsidies. In 2012, the prices of gasoline, diesel and electricity increased by 7% [@albertin2014]. In 2020, Tunsia has introduced an automatic monthly price adjustment mechanism for petrol and diesel sales, with the aim of eliminating fuel subsidies.
+The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the Tunisian welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to 3.3 billion Tunisian dinars (\$1,14 billion) [@trésor2021]. Concerning energy subsidies, the government subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure X. The LPG and the electricity subsidies are the main expenditure items as shown in figure X. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. On the contrary, in 2013, the bottom 40% of the distribution captured only 29% of energy subsidies [@worldbank2014]. According to @cuesta2017 , energy subsidies are also a cornerstone of the development of Tunisian productive sectors. The subsidy system allows firms to buy cheap energy resources. The noncompetitive companies, which employ unskilled workers, rely on the subsidies.
+
+After the revolution, fiscal and equity issues incited the Tunisian government to reduce energy subsidies. In 2012, the prices of gasoline, diesel and electricity increased by 7% [@albertin2014]. In 2014, energy subsidies to cement firms were reduced by half. In 2020, Tunisia has introduced an automatic monthly price adjustment mechanism for petrol and diesel sales, with the aim of eliminating fuel subsidies.
 
 ![](Images/Composition%20of%20fuel%20subsidies%20by%20product.jpg)
 
 ::: {align="center"}
-Fig.X : Composition of fuel subsidies product. Source : @tunisia2020
+Fig.X : Composition of fuel subsidies product (source : @tunisia2020)
 :::
 
 ![](Images/Energy%20subsdies%20received%20by%20welfare%20quintile.jpg)
 
 ::: {align="center"}
-Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions). Source : @tunisia2020
+Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (source : @tunisia2020)
 :::
 
 ## Climate policy
 
 ### Carbon tax (Jin)
 
-### Energetic subsidy (Bee)
+### Energy subsidy (Bee)
 
 Subsidies are defined by @demoor1997 as *'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'*. Energy subsidies are a common policy. Their amount is estimated at \$4.7 trillion in 2015 as pointed out @coady2019, which is equivalent to 6.3 percent of Gross Domestic Product . Energy subsidies fluctuate depending on the price of the energy products. From the database of the International Energy Agency, we can notice that the fossil fuel subsidies have [fallen by 42 percent between 2019 and 2020](https://www.iea.org/topics/energy-subsidies) due to the drop of fuel prices.
 
-The energy subsidies are very present in the Middle East, North Africa, Afghanistan and Pakistan region (MENAP). According to @coady2019, MENAP is the fourth region in absolute terms, which subsidized the most energy in 2015. Nevertheless, in relative terms, MENAP is the second, if we take into account the percent of its GDP. The prevalence of energy subsidies in MENAP can be explained by post-par period. @verme2017 explain that theses energy subsidies were introduced in Middle East and North Africa region (MENA) in order to stabilize prices after the decolonization. These stabilization mechanisms became a social protection system.
+The energy subsidies are very present in the Middle East, North Africa, Afghanistan and Pakistan region (MENAP). According to @coady2019, MENAP is the fourth region in absolute terms, which subsidized the most energy in 2015. Nevertheless, in relative terms, MENAP is the second, if we take into account the percent of its GDP. The prevalence of energy subsidies in MENAP can be explained by the post-par period. These energy subsidies were introduced, after the decolonization, in Middle East and North Africa region (MENA) in order to stabilize prices and then, became a social protection system [@verme2017].
+
+@fattouh2013 emphasize three positive aspects of the energy subsidies that we saw above :
+
+-   The energy subsidies enhance the incomes of the poorest part of the population. It constitute a core part of the welfare system in the MENA.
+
+-   The energy subsidies help to reduce production costs and to strengthen competitiveness of local firms. Energy subsidies are a tool for industrialization and diversification policy.
+
+-   The regulation of energy prices is used to control inflation and stabilize prices.
+
+Reducing energy subsidies may improve economic welfare and reduce emissions [@aldy2013 ; @coady2019 ; @hahn2021]. @fattouh2013 also highlight unintended consequences of energy subsidies :
+
+-   Energy subsidies raise energy intensity of GDP and reduce energy efficiency rates. Low energy pricing favors the growth of energy-intensive industries and discourage the firms from minimizing energy costs. Fig. X below shows that many energy-intensive countries have also high fossil fuel subsidies as a proportion of their GDP.
+-   Energy subsidies distort consumption. Indeed, they cause a fast growth in consumption of primary fuels and electricity. According to @fattouh2013, between 1980 to 2008, the total energy consumption in MENA grew more than 5% annually.
+-   Energy subsidies distort investments. The weak implementation of subsidies provoke underinvestment in energy sectors, where the subsidies do not entirely compensate the energy companies. Therefore, end users receive a low quality service.
+-   Energy subsides cause fuel shortages because of low prices. The smuggling across borders is also favored by the price differences between countries.
+-   Non-targeted subsidies create inequities between social groups (see fig. X. above).
+
+![](Images/Subsidies%20-%20energy%20intensity.jpg)
+
+::: {align="center"}
+Fig.X : Energy subsidies and energy intensities by country in 2017 (data : SDG indicators for United Nations Economic Commission for Europe)
+:::
 
 ### Recycle of gouvernment income for tax (Lucia)
 
