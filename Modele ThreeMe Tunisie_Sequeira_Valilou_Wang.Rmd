@@ -603,7 +603,7 @@ As the carbon tax before 2030 stays at a moderate level, the impacts of this pol
 
 Generally speaking, the policy of carbon tax with redistribution of government revenue has a positive impact on Tunisia's economy. Whereas GDP increases slightly up to 0.13% with respect to baseline on 2030, the relatively rapid augmentation is observed from 2030 to 2050. At the horizon of 2050, it reaches a highest level (+1.93%) thanks to the carbon tax policy. In the meantime, social welfare is improved with the same rhythme as GDP growth, with a higher consumption level (+4.20%) and a higher disposable income (+4.17%) on 2050.
 
-```{r eval=FALSE, dev='jpeg'}
+```{r eval=FALSE, dev='jpeg', echo = FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -642,7 +642,7 @@ ggplot() +
 
 Along with the economical growth, we find that the emissions reduction of 42.2% by 2050 is achieved, then we are now interested in its pathway. To do this, we firstly employ our extended Kaya identity to clarify the main driving forces, where, a priori, Economic activities are expected to have positive effects on emissions, whilst Energy intensity and Carbon intensity should have negative effects. Figure X. presents the results of all the aggregated driving forces. We observe that economy structure has a significantly positive and growing impact until 2043 where it reaches the peak raising 7947.48 Kt CO2 (+19,38%) with regard to baseline, then it begins to decline to 5650,17 Kt CO2 (+12,46%) on 2050. On the other hand, carbon intensity and energy intensity show the negative and monotone trend, the former reducing 7128.35 Kt CO2 (-13.77%) on 2050 and 30715.93 Kt CO2 (-47.18%) for the later. However, the influence of economic activities is negligible (+886,37 Kt CO2 \& +1.86%), revealing that even though the total production remains relatively invariable, the revolution of economy structure and production methods could still strongly impact the emissions pathway.
 
-```{r}
+```{r, echo = FALSE}
 
 ggplot() + 
   geom_line( aes(x = Det[[2]][,"year"],y = S2_Macro[,"Prix.à.la.consommation"], group = 1, color = "Consumption price")) + 
@@ -697,7 +697,7 @@ rm(z,x,Legend)
 The carbon tax induces the increasing investment for all sectors except energy transformation, firstly to accelerate the penetration of renewable energies in electricity mix and secondly, to reduce the consumption of fossil fuels especially for energy intensive sectors. We observe then the improvement of energy efficiency, in another word reduction of energy intensity, for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture (Fig.x). However, the other sectors display slight reduction of energy intensity. For example, the transportation sector consume majorly jet fuel for aircraft and diesel for container ship. Electrification faces still huge challenges for long distance transportation. The inertia of energy demand thus exists in such a sector despite of the increasing cost for carbon dioxide emission.
 
 
-```{r}
+```{r, echo = FALSE}
 
 ggplot() + 
   geom_line( aes(x = Sc2[,"year"],y = Sc2[,"ia_ind_2"], group = 1, color = "Industry & Agriculture")) + 
