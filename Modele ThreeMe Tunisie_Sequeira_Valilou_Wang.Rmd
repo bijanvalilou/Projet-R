@@ -694,8 +694,8 @@ ggplot(
 
 rm(z,x,Legend)
 ```
-The carbon tax induces the increasing investment for all sectors except energy transformation, firstly to accelerate the penetration of renewable energies in electricity mix and secondly, to reduce the consumption of fossil fuels especially for energy intensive sectors. We observe then the improvement of energy efficiency, in another word reduction of energy intensity, for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture (Fig.x). However, the other sectors display slight reduction of energy intensity. For example, the transportation sector consume majorly jet fuel for aircraft and diesel for container ship. Electrification faces still huge challenges for long distance transportation. The inertia of energy demand thus exists in such a sector despite of the increasing cost for carbon dioxide emission.
 
+The carbon tax induces the increasing investment for all sectors except energy transformation, firstly to accelerate the penetration of renewable energies in electricity mix and secondly, to reduce the consumption of fossil fuels especially for energy intensive sectors. We observe then the improvement of energy efficiency, in another word, reduction of energy intensity for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture (Fig.x). However, the trend for other sectors remains much less compelling. The transportation sector, for instance, consumes majorly jet fuel for aircraft and diesel for container ship. Electrification faces still huge challenges for long distance transportation. The inertia of energy demand thus exists in such a sector despite of the increasing cost for carbon dioxide emission.
 
 ```{r, echo = FALSE}
 
