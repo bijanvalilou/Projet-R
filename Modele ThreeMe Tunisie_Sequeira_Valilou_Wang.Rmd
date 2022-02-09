@@ -284,9 +284,9 @@ Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (s
 
 ## Climate policy
 
-### Carbon tax (Jin)
+### Carbon tax 
 
-### Energy subsidy (Bee)
+### Energy subsidy
 
 Subsidies are defined by @demoor1997 as *'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'*. Energy subsidies are a common policy. Their amount is estimated at \$4.7 trillion in 2015 as pointed out @coady2019, which is equivalent to 6.3 percent of Gross Domestic Product . Energy subsidies fluctuate depending on the price of the energy products. From the database of the International Energy Agency, we can notice that the fossil fuel subsidies have [fallen by 42 percent between 2019 and 2020](https://www.iea.org/topics/energy-subsidies) due to the drop of fuel prices.
 
@@ -316,7 +316,7 @@ Fig.X : Energy subsidies and energy intensities by country in 2017 (data : SDG i
 
 ### Recycle of gouvernment income for tax (Lucia)
 
-According to @goulder, tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax.
+Tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument [@goulder]. There are many ways in which this redistribution can operate. It can be presented as a lump-sum transfer to households and firms, or as a reduction of taxes that introduce a deformation into the economy as is the case of the labor tax.
 
 # Methodology
 
