@@ -1081,7 +1081,9 @@ plt2
 Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline
 :::
 
-```{r eval=FALSE, dev='jpeg', include=FALSE}
+In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains. 
+
+```{r, echo = FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -1090,62 +1092,12 @@ Table_Macro_ENR <- t(Table_Macro_ENR)
 Table_Macro_ENR <- round(Table_Macro_ENR,digits = 2)
 row.names(Table_Macro_ENR) <- tablename
 
-kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Renewable energy scenario in % deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
 row_spec(0, bold = T)
 ```
 
-```{r, echo = FALSE}
-
-ggplot() + 
-  geom_line( aes(x = Det[[5]][,"year"],y = S5[,"ems_co2_2"]/Baseline[,"ems_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"V"], group = 1, color = "Economic activities")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S"], group = 1, color = "Economy structure")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E"], group = 1, color = "Energy intensity")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n Renewable Energy") +
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-```
-
-```{r, echo = FALSE}
-
-
-z <- c(Dif[[5]][,"V"],Dif[[5]][,"S"],Dif[[5]][,"E"],Dif[[5]][,"I"])
-x <- rep(Dif[[5]][,"year"], time = 4)
-Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","Carbon intensity"), each = 36)
-
-  ggplot() + 
-  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
-  guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "CO2 emissions \n in Kt CO2 difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation \n Renewable Energy") +
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-rm(z,x,Legend)
-
-```
-
-```{r, echo = FALSE}
-
-
-z <- c(Dif[[5]][,"V"],Dif[[5]][,"ind"],Dif[[5]][,"trsp"],Dif[[5]][,"ser"],Dif[[5]][,"trsf"],Dif[[5]][,"ele"])
-x <- rep(Dif[[5]][,"year"], time = 6)
-Legend <- rep(c("Economic activities","Industry & Agriculture","Transportation","Services","Energy Transformation","Electricity"), each = 36)
-
-  ggplot() + 
-  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
-  guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "CO2 emissions \n in Kt CO2 difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation by different sectors \n Renewable Energy") +
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-#rm(z,x,Legend)
-
-
-
-```
+When it comes to the environmental sphere ( seeing Fig.x ), electricity sector is the only one with negative impact on emissions profile, it compensates the positive impacts arose from all other sectors, resulting in a emissions reduction up to 29.24% by the end of 2050. Fig.x depicts the evolution of different driving forces to emissions, where we find such a emissions reduction is totally thanks to the amelioration of energy intensity while economic structure and carbon intensity contribute in another way to CO2 emissions.
 
 ```{r, echo = FALSE}
 
@@ -1163,6 +1115,23 @@ ggplot() +
 
 ```
 
+
+```{r, echo = FALSE}
+
+ggplot() + 
+  geom_line( aes(x = Det[[5]][,"year"],y = S5[,"ems_co2_2"]/Baseline[,"ems_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"V"], group = 1, color = "Economic activities")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S"], group = 1, color = "Economy structure")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E"], group = 1, color = "Energy intensity")) + 
+  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I"], group = 1, color = "Carbon intensity")) + 
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n Renewable Energy") +
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+```
+
+The renewable energies policy prompts the rapid development of electricity sector, but at the same time constrains that of energy transformation sector as shown in the Fig.x. Such a policy will give rise to a supply-side structural revolution of energy sector in Tunisia. More and more investment will be incited into green energy exploitation, then reduce the cost to exploit renewable energies, making it increasingly profitable and engendering a growing share of green electricity in the grid. On the other hand, the fossil fuels lose its competitiveness compared to renewable electricity due to the shrinkage of innovation (seeing Fig.x).
+
 ```{r, echo=FALSE}
 
 ggplot() + 
@@ -1178,21 +1147,23 @@ ggplot() +
 
 ```
 
-```{r, echo=FALSE}
-
+```{r}
 
 ggplot() + 
-  geom_line( data = Sc5, aes(x = year,y = va_2, group = 1, color = "Global effect")) + 
-  geom_line( data = Sc5, aes(x = year,y = va_ind_2, group = 1, color = "Industry & agriculture")) + 
-  geom_line( data = Sc5, aes(x = year,y = va_trsp_2, group = 1, color = "Transportation")) + 
-  geom_line( data = Sc5, aes(x = year,y = va_ser_2, group = 1, color = "Services")) + 
-  geom_line( data = Sc5, aes(x = year,y = va_trsf_2, group = 1, color = "Energy Transformation")) +
-  geom_line( data = Sc5, aes(x = year,y = va_ele_2, group = 1, color = "Electricity")) +
-  labs(y = "Added value \n in % deviation to Baseline", title = "Fig.x Revolution of economy structure in Tunisia \n for Renewable Energy scenario, \n expressed by added value variation with regard to Baseline scenario") +
-      theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_ind_2"], group = 1, color = "Industry & Agriculture")) + 
+  geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_trsp_2"], group = 1, color = "Transportation")) + 
+  geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_ser_2"], group = 1, color = "Services")) + 
+  geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_trsf_2"], group = 1, color = "Energy Transformation")) + 
+  geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_ele_2"], group = 1, color = "Electricity")) + 
+  labs(x = "year", y = "Investment \n in % deviation to Baseline", title = "Fig.x Investment for different sectors in Tunisia") + 
+    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
 ```
+
+In fact, the expanding investment not only cuts back the cost of exploitation, but also boosts the energy efficiency in electricity sector. We notice from Fig.x that electricity is the only sector where there is a reduction of energy intensity. This is quite intuitive for the emerging renewable energies replace the fossil fuels in electricity mix, meaning a stronger independence to fossil fuels, thus less emissions during electricity generation. 
+
+As discussed above that the electricity is the only sector who is impacted by this policy, the penetration of renewable energies could seldom influence other sectors. We observe then a rebound effect for certain sectors. Apparently the renewable energy does not induce the innovation oriented to improve energy efficiency, and on the other hand, the fact knowing that electricity is a much more environmental friendly energy, makes them somehow indifferent to consume more or less energies. That is to say, the penetration just provides an alternative with less environmental impacts, rather than intrinsically resolves the problem meaning a transition from energy-intensive to energy-efficient production. Thus, in terms of sustainable development, the renewable energies policy should better cooperate with other economic levers in order to guarantee its efficiency in the longer term.
 
 ```{r, echo = FALSE}
 ggplot() + 
@@ -1203,40 +1174,6 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E_ele"], group = 1, color = "Electricity")) +
   labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of energy intensity for overall emissions \n Renewable Energy") + 
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-```
-
-```{r, echo=FALSE}
-#energy consumption
-z <- c(S5[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S5[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S5[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S5[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S5[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S5[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
-x <- rep(S5[,"year"], times = 6)
-Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy transformation","Electricity","Household"), each = 36)
-
-ggplot(
-  mapping = aes(
-               x = x, 
-               y = z, 
-               fill = Legend,
-               group = 1)
-               ) + 
-  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Energy consumption \n in tep difference to Baseline ", title = "Fig.X Evolution of energy comsuption by different sectors, \n Renewable energy scenario, \nthe difference with respect to Baseline scenario") + 
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-rm(z,x,Legend)
-```
-
-```{r, echo = FALSE}
-ggplot() + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I"], group = 1, color = "Total effect")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I_ind"], group = 1, color = "Industry & Agriculture")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I_trsp"], group = 1, color = "Transportation")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I_ser"], group = 1, color = "Services")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I_trsf"], group = 1, color = "Energy Transformation")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of carbon intensity for overall emissions \n Renewable Energy") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
