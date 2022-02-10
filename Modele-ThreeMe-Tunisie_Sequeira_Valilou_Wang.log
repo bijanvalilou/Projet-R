@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.10)  10 FEB 2022 12:13
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.10)  10 FEB 2022 12:33
  restricted system commands enabled.
 **Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
@@ -336,21 +336,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks23
-) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count298
-\FV@InFile=\read2
-\FV@TabBox=\box53
-\c@FancyVerbLine=\count299
-\FV@StepNumber=\count300
-\FV@OutFile=\write3
-) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip53
-\fb@frw=\dimen162
-\fb@frh=\dimen163
-\FrameRule=\dimen164
-\FrameSep=\dimen165
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -362,96 +347,96 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 107.
 )
-\Gin@req@height=\dimen166
-\Gin@req@width=\dimen167
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip54
-\f@nch@O@elh=\skip55
-\f@nch@O@erh=\skip56
-\f@nch@O@olh=\skip57
-\f@nch@O@orh=\skip58
-\f@nch@O@elf=\skip59
-\f@nch@O@erf=\skip60
-\f@nch@O@olf=\skip61
-\f@nch@O@orf=\skip62
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
 )
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 116.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 76.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 117.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 77.
 
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen168
-\lightrulewidth=\dimen169
-\cmidrulewidth=\dimen170
-\belowrulesep=\dimen171
-\belowbottomsep=\dimen172
-\aboverulesep=\dimen173
-\abovetopsep=\dimen174
-\cmidrulesep=\dimen175
-\cmidrulekern=\dimen176
-\defaultaddspace=\dimen177
-\@cmidla=\count301
-\@cmidlb=\count302
-\@aboverulesep=\dimen178
-\@belowrulesep=\dimen179
-\@thisruleclass=\count303
-\@lastruleclass=\count304
-\@thisrulewidth=\dimen180
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen176
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip63
-\LTright=\skip64
-\LTpre=\skip65
-\LTpost=\skip66
-\LTchunksize=\count305
-\LTcapwidth=\dimen181
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@gbox=\box58
-\LT@cols=\count306
-\LT@rows=\count307
-\c@LT@tables=\count308
-\c@LT@chunks=\count309
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count302
+\LTcapwidth=\dimen177
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@gbox=\box57
+\LT@cols=\count303
+\LT@rows=\count304
+\c@LT@tables=\count305
+\c@LT@chunks=\count306
 \LT@p@ftn=\toks24
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen182
-\ar@mcellbox=\box59
-\extrarowheight=\dimen183
+\col@sep=\dimen178
+\ar@mcellbox=\box58
+\extrarowheight=\dimen179
 \NC@list=\toks25
-\extratabsurround=\skip67
-\backup@length=\skip68
-\ar@cellbox=\box60
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box59
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip69
-\multirow@cntb=\count310
-\multirow@dima=\skip70
-\bigstrutjot=\dimen184
+\multirow@colwidth=\skip68
+\multirow@cntb=\count307
+\multirow@dima=\skip69
+\bigstrutjot=\dimen180
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen185
-\WF@size=\dimen186
-\c@WF@wrappedlines=\count311
-\WF@box=\box61
+\wrapoverhang=\dimen181
+\WF@size=\dimen182
+\c@WF@wrappedlines=\count308
+\WF@box=\box60
 \WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count312
+\c@float@type=\count309
 \float@exts=\toks27
-\float@box=\box62
+\float@box=\box61
 \@float@everytoks=\toks28
-\@floatcapt=\box63
+\@floatcapt=\box62
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks29
-\minrowclearance=\skip71
+\minrowclearance=\skip70
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
@@ -462,36 +447,36 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box64
-\sift@deathcycles=\count313
-\@vwid@loff=\dimen187
-\@vwid@roff=\dimen188
+\@vwid@box=\box63
+\sift@deathcycles=\count310
+\@vwid@loff=\dimen183
+\@vwid@roff=\dimen184
 )
-\c@taburow=\count314
-\tabu@nbcols=\count315
-\tabu@cnt=\count316
-\tabu@Xcol=\count317
-\tabu@alloc=\count318
-\tabu@nested=\count319
-\tabu@target=\dimen189
-\tabu@spreadtarget=\dimen190
-\tabu@naturalX=\dimen191
-\tabucolX=\dimen192
-\tabu@Xsum=\dimen193
-\extrarowdepth=\dimen194
-\abovetabulinesep=\dimen195
-\belowtabulinesep=\dimen196
-\tabustrutrule=\dimen197
+\c@taburow=\count311
+\tabu@nbcols=\count312
+\tabu@cnt=\count313
+\tabu@Xcol=\count314
+\tabu@alloc=\count315
+\tabu@nested=\count316
+\tabu@target=\dimen185
+\tabu@spreadtarget=\dimen186
+\tabu@naturalX=\dimen187
+\tabucolX=\dimen188
+\tabu@Xsum=\dimen189
+\extrarowdepth=\dimen190
+\abovetabulinesep=\dimen191
+\belowtabulinesep=\dimen192
+\tabustrutrule=\dimen193
 \tabu@thebody=\toks30
 \tabu@footnotes=\toks31
-\tabu@box=\box65
-\tabu@arstrutbox=\box66
-\tabu@hleads=\box67
-\tabu@vleads=\box68
-\tabu@cellskip=\skip72
+\tabu@box=\box64
+\tabu@arstrutbox=\box65
+\tabu@hleads=\box66
+\tabu@vleads=\box67
+\tabu@cellskip=\skip71
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box69
+\@tempboxb=\box68
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
@@ -499,22 +484,22 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip73
+\TPTL@width=\skip72
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box70
-\UL@hyphenbox=\box71
-\UL@skip=\skip74
+\UL@box=\box69
+\UL@hyphenbox=\box70
+\UL@skip=\skip73
 \UL@hook=\toks32
-\UL@height=\dimen198
-\UL@pe=\count320
-\UL@pixel=\dimen199
-\ULC@box=\box72
+\UL@height=\dimen194
+\UL@pe=\count317
+\UL@pixel=\dimen195
+\ULC@box=\box71
 Package: ulem 2019/11/18
-\ULdepth=\dimen256
+\ULdepth=\dimen196
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen257
-\c@nlinenum=\count321
+\rotheadsize=\dimen197
+\c@nlinenum=\count318
 \TeXr@lab=\toks33
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/lualatex/selnolig/selnolig.sty
 === Package selnolig, Version 0.302, Date 2015/10/26 ===
@@ -525,7 +510,7 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
-\@catcodetablestackcnt=\count322
+\@catcodetablestackcnt=\count319
 )
 \CatcodeTableOther=\catcodetable12
 \CatcodeTableExpl=\catcodetable13
@@ -534,68 +519,68 @@ Inserting `Suppress ligatures selectively' at position 1 in `ligaturing'.) (/Use
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count323
+\lrq@indent=\count320
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count324
-\c@listtotal=\count325
-\c@listcount=\count326
-\c@liststart=\count327
-\c@liststop=\count328
-\c@citecount=\count329
-\c@citetotal=\count330
-\c@multicitecount=\count331
-\c@multicitetotal=\count332
-\c@instcount=\count333
-\c@maxnames=\count334
-\c@minnames=\count335
-\c@maxitems=\count336
-\c@minitems=\count337
-\c@citecounter=\count338
-\c@maxcitecounter=\count339
-\c@savedcitecounter=\count340
-\c@uniquelist=\count341
-\c@uniquename=\count342
-\c@refsection=\count343
-\c@refsegment=\count344
-\c@maxextratitle=\count345
-\c@maxextratitleyear=\count346
-\c@maxextraname=\count347
-\c@maxextradate=\count348
-\c@maxextraalpha=\count349
-\c@abbrvpenalty=\count350
-\c@highnamepenalty=\count351
-\c@lownamepenalty=\count352
-\c@maxparens=\count353
-\c@parenlevel=\count354
-\blx@tempcnta=\count355
-\blx@tempcntb=\count356
-\blx@tempcntc=\count357
-\c@blx@maxsection=\count358
-\c@blx@maxsegment@0=\count359
-\blx@notetype=\count360
-\blx@parenlevel@text=\count361
-\blx@parenlevel@foot=\count362
-\c@blx@sectionciteorder@0=\count363
-\blx@entrysetcounter=\count364
-\blx@biblioinstance=\count365
-\labelnumberwidth=\skip75
-\labelalphawidth=\skip76
-\biblabelsep=\skip77
-\bibitemsep=\skip78
-\bibnamesep=\skip79
-\bibinitsep=\skip80
-\bibparsep=\skip81
-\bibhang=\skip82
-\blx@bcfin=\read3
-\blx@bcfout=\write4
+\c@tabx@nest=\count321
+\c@listtotal=\count322
+\c@listcount=\count323
+\c@liststart=\count324
+\c@liststop=\count325
+\c@citecount=\count326
+\c@citetotal=\count327
+\c@multicitecount=\count328
+\c@multicitetotal=\count329
+\c@instcount=\count330
+\c@maxnames=\count331
+\c@minnames=\count332
+\c@maxitems=\count333
+\c@minitems=\count334
+\c@citecounter=\count335
+\c@maxcitecounter=\count336
+\c@savedcitecounter=\count337
+\c@uniquelist=\count338
+\c@uniquename=\count339
+\c@refsection=\count340
+\c@refsegment=\count341
+\c@maxextratitle=\count342
+\c@maxextratitleyear=\count343
+\c@maxextraname=\count344
+\c@maxextradate=\count345
+\c@maxextraalpha=\count346
+\c@abbrvpenalty=\count347
+\c@highnamepenalty=\count348
+\c@lownamepenalty=\count349
+\c@maxparens=\count350
+\c@parenlevel=\count351
+\blx@tempcnta=\count352
+\blx@tempcntb=\count353
+\blx@tempcntc=\count354
+\c@blx@maxsection=\count355
+\c@blx@maxsegment@0=\count356
+\blx@notetype=\count357
+\blx@parenlevel@text=\count358
+\blx@parenlevel@foot=\count359
+\c@blx@sectionciteorder@0=\count360
+\blx@entrysetcounter=\count361
+\blx@biblioinstance=\count362
+\labelnumberwidth=\skip74
+\labelalphawidth=\skip75
+\biblabelsep=\skip76
+\bibitemsep=\skip77
+\bibnamesep=\skip78
+\bibinitsep=\skip79
+\bibparsep=\skip80
+\bibhang=\skip81
+\blx@bcfin=\read2
+\blx@bcfout=\write3
 \blx@langwohyphens=\language2
-\c@mincomprange=\count366
-\c@maxcomprange=\count367
-\c@mincompwidth=\count368
+\c@mincomprange=\count363
+\c@maxcomprange=\count364
+\c@mincompwidth=\count365
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -603,88 +588,88 @@ File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count369
-\c@savedafterword=\count370
-\c@annotator=\count371
-\c@savedannotator=\count372
-\c@author=\count373
-\c@savedauthor=\count374
-\c@bookauthor=\count375
-\c@savedbookauthor=\count376
-\c@commentator=\count377
-\c@savedcommentator=\count378
-\c@editor=\count379
-\c@savededitor=\count380
-\c@editora=\count381
-\c@savededitora=\count382
-\c@editorb=\count383
-\c@savededitorb=\count384
-\c@editorc=\count385
-\c@savededitorc=\count386
-\c@foreword=\count387
-\c@savedforeword=\count388
-\c@holder=\count389
-\c@savedholder=\count390
-\c@introduction=\count391
-\c@savedintroduction=\count392
-\c@namea=\count393
-\c@savednamea=\count394
-\c@nameb=\count395
-\c@savednameb=\count396
-\c@namec=\count397
-\c@savednamec=\count398
-\c@translator=\count399
-\c@savedtranslator=\count400
-\c@shortauthor=\count401
-\c@savedshortauthor=\count402
-\c@shorteditor=\count403
-\c@savedshorteditor=\count404
-\c@labelname=\count405
-\c@savedlabelname=\count406
-\c@institution=\count407
-\c@savedinstitution=\count408
-\c@lista=\count409
-\c@savedlista=\count410
-\c@listb=\count411
-\c@savedlistb=\count412
-\c@listc=\count413
-\c@savedlistc=\count414
-\c@listd=\count415
-\c@savedlistd=\count416
-\c@liste=\count417
-\c@savedliste=\count418
-\c@listf=\count419
-\c@savedlistf=\count420
-\c@location=\count421
-\c@savedlocation=\count422
-\c@organization=\count423
-\c@savedorganization=\count424
-\c@origlocation=\count425
-\c@savedoriglocation=\count426
-\c@origpublisher=\count427
-\c@savedorigpublisher=\count428
-\c@publisher=\count429
-\c@savedpublisher=\count430
-\c@language=\count431
-\c@savedlanguage=\count432
-\c@origlanguage=\count433
-\c@savedoriglanguage=\count434
-\c@pageref=\count435
-\c@savedpageref=\count436
-\shorthandwidth=\skip83
-\shortjournalwidth=\skip84
-\shortserieswidth=\skip85
-\shorttitlewidth=\skip86
-\shortauthorwidth=\skip87
-\shorteditorwidth=\skip88
-\locallabelnumberwidth=\skip89
-\locallabelalphawidth=\skip90
-\localshorthandwidth=\skip91
-\localshortjournalwidth=\skip92
-\localshortserieswidth=\skip93
-\localshorttitlewidth=\skip94
-\localshortauthorwidth=\skip95
-\localshorteditorwidth=\skip96
+\c@afterword=\count366
+\c@savedafterword=\count367
+\c@annotator=\count368
+\c@savedannotator=\count369
+\c@author=\count370
+\c@savedauthor=\count371
+\c@bookauthor=\count372
+\c@savedbookauthor=\count373
+\c@commentator=\count374
+\c@savedcommentator=\count375
+\c@editor=\count376
+\c@savededitor=\count377
+\c@editora=\count378
+\c@savededitora=\count379
+\c@editorb=\count380
+\c@savededitorb=\count381
+\c@editorc=\count382
+\c@savededitorc=\count383
+\c@foreword=\count384
+\c@savedforeword=\count385
+\c@holder=\count386
+\c@savedholder=\count387
+\c@introduction=\count388
+\c@savedintroduction=\count389
+\c@namea=\count390
+\c@savednamea=\count391
+\c@nameb=\count392
+\c@savednameb=\count393
+\c@namec=\count394
+\c@savednamec=\count395
+\c@translator=\count396
+\c@savedtranslator=\count397
+\c@shortauthor=\count398
+\c@savedshortauthor=\count399
+\c@shorteditor=\count400
+\c@savedshorteditor=\count401
+\c@labelname=\count402
+\c@savedlabelname=\count403
+\c@institution=\count404
+\c@savedinstitution=\count405
+\c@lista=\count406
+\c@savedlista=\count407
+\c@listb=\count408
+\c@savedlistb=\count409
+\c@listc=\count410
+\c@savedlistc=\count411
+\c@listd=\count412
+\c@savedlistd=\count413
+\c@liste=\count414
+\c@savedliste=\count415
+\c@listf=\count416
+\c@savedlistf=\count417
+\c@location=\count418
+\c@savedlocation=\count419
+\c@organization=\count420
+\c@savedorganization=\count421
+\c@origlocation=\count422
+\c@savedoriglocation=\count423
+\c@origpublisher=\count424
+\c@savedorigpublisher=\count425
+\c@publisher=\count426
+\c@savedpublisher=\count427
+\c@language=\count428
+\c@savedlanguage=\count429
+\c@origlanguage=\count430
+\c@savedoriglanguage=\count431
+\c@pageref=\count432
+\c@savedpageref=\count433
+\shorthandwidth=\skip82
+\shortjournalwidth=\skip83
+\shortserieswidth=\skip84
+\shorttitlewidth=\skip85
+\shortauthorwidth=\skip86
+\shorteditorwidth=\skip87
+\locallabelnumberwidth=\skip88
+\locallabelalphawidth=\skip89
+\localshorthandwidth=\skip90
+\localshortjournalwidth=\skip91
+\localshortserieswidth=\skip92
+\localshorttitlewidth=\skip93
+\localshortauthorwidth=\skip94
+\localshorteditorwidth=\skip95
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-unicode.def)
@@ -697,19 +682,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count437
-\c@textcitetotal=\count438
-\c@textcitemaxnames=\count439
-\c@biburlbigbreakpenalty=\count440
-\c@biburlbreakpenalty=\count441
-\c@biburlnumpenalty=\count442
-\c@biburlucpenalty=\count443
-\c@biburllcpenalty=\count444
+\c@textcitecount=\count434
+\c@textcitetotal=\count435
+\c@textcitemaxnames=\count436
+\c@biburlbigbreakpenalty=\count437
+\c@biburlbreakpenalty=\count438
+\c@biburlnumpenalty=\count439
+\c@biburlucpenalty=\count440
+\c@biburllcpenalty=\count441
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count445
+\c@smartand=\count442
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -719,8 +704,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count446
-\c@bbx:relatedtotal=\count447
+\c@bbx:relatedcount=\count443
+\c@bbx:relatedtotal=\count444
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -753,45 +738,45 @@ Package biblatex Info: ... and expl3
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))
-\@quotelevel=\count448
-\@quotereset=\count449
+\@quotelevel=\count445
+\@quotereset=\count446
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
 \openout1 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 138.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 138.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 138.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 138.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 138.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 138.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 138.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 98.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -822,7 +807,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 138.
+(Font)              scaled to size 10.0pt on input line 98.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -859,15 +844,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 138.
+(Font)              scaled to size 10.0pt on input line 98.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 138.
+(Font)              `operators' in the math version `normal' on input line 98.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 138.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 98.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 138.
+(Font)              `operators' in the math version `bold' on input line 98.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 138.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 98.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -949,13 +934,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 138.
+(Font)              `symbols' in the math version `normal' on input line 98.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 138.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 98.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 138.
+(Font)              `symbols' in the math version `bold' on input line 98.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 138.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 98.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1019,38 +1004,38 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 138.
+(Font)              `largesymbols' in the math version `normal' on input line 98.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 138.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 98.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 138.
+(Font)              `largesymbols' in the math version `bold' on input line 98.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 138.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 138.
+(Font)              scaled to size 7.0pt on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 138.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 138.
+(Font)              scaled to size 5.0pt on input line 98.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 98.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 138.
+(Font)              scaled to size 10.00092pt on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 138.
+(Font)              scaled to size 7.00064pt on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 138.
+(Font)              scaled to size 5.00046pt on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 138.
+(Font)              scaled to size 9.99893pt on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 138.
+(Font)              scaled to size 6.99925pt on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 138.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
+(Font)              scaled to size 4.99947pt on input line 98.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -1059,7 +1044,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 138.
+Package hyperref Info: Link coloring OFF on input line 98.
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/leo/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1067,15 +1052,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/Users/leo/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count450
+\c@section@level=\count447
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.out) (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.out)
-\@outlinefile=\write5
+\@outlinefile=\write4
 
-\openout5 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.out
+\openout4 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.out
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -1120,7 +1105,7 @@ Package biblatex Info: LuaTeX detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 
-\openout4 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bcf
+\openout3 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl' found.
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl
@@ -1139,329 +1124,1020 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 138.
-Package biblatex Info: Reference segment=0 on input line 138.
+Package biblatex Info: Reference section=0 on input line 98.
+Package biblatex Info: Reference segment=0 on input line 98.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 140.
+(Font)              scaled to size 12.0pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 140.
+(Font)              scaled to size 8.0pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 140.
+(Font)              scaled to size 6.0pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 140.
+(Font)              scaled to size 12.0011pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 140.
+(Font)              scaled to size 8.00073pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 140.
+(Font)              scaled to size 6.00055pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 140.
+(Font)              scaled to size 11.99872pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 140.
+(Font)              scaled to size 7.99915pt on input line 100.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 140.
+(Font)              scaled to size 5.99936pt on input line 100.
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc [1
 
 {/Users/leo/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-\tf@toc=\write6
+\tf@toc=\write5
 
-\openout6 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc
+\openout5 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc
 [2]
 <Images/Composition of fuel subsidies by product.jpg, id=193, 761.84625pt x 325.215pt>
 File: Images/Composition of fuel subsidies by product.jpg Graphic file (type jpg)
 <use Images/Composition of fuel subsidies by product.jpg>
-Package luatex.def Info: Images/Composition of fuel subsidies by product.jpg  used on input line 222.
+Package luatex.def Info: Images/Composition of fuel subsidies by product.jpg  used on input line 182.
 (luatex.def)             Requested size: 469.74745pt x 200.5246pt.
 [3]
 <Images/Energy subsdies received by welfare quintile.jpg, id=214, 503.38063pt x 355.82938pt>
 File: Images/Energy subsdies received by welfare quintile.jpg Graphic file (type jpg)
 <use Images/Energy subsdies received by welfare quintile.jpg>
-Package luatex.def Info: Images/Energy subsdies received by welfare quintile.jpg  used on input line 227.
+Package luatex.def Info: Images/Energy subsdies received by welfare quintile.jpg  used on input line 187.
 (luatex.def)             Requested size: 469.75215pt x 332.05807pt.
 [4<./Images/Composition of fuel subsidies by product.jpg><./Images/Energy subsdies received by welfare quintile.jpg>]
 <Images/Subsidies - energy intensity.jpg, id=233, 575.65062pt x 293.59688pt>
 File: Images/Subsidies - energy intensity.jpg Graphic file (type jpg)
 <use Images/Subsidies - energy intensity.jpg>
-Package luatex.def Info: Images/Subsidies - energy intensity.jpg  used on input line 313.
+Package luatex.def Info: Images/Subsidies - energy intensity.jpg  used on input line 273.
 (luatex.def)             Requested size: 469.77037pt x 239.59517pt.
 [5]
 
-LaTeX Warning: Citation 'goulder' on page 6 undefined on input line 324.
+LaTeX Warning: Citation 'goulder' on page 6 undefined on input line 284.
 
 <Images/Architecture of a CGEM.jpg, id=252, 441.14813pt x 339.2675pt>
 File: Images/Architecture of a CGEM.jpg Graphic file (type jpg)
 <use Images/Architecture of a CGEM.jpg>
-Package luatex.def Info: Images/Architecture of a CGEM.jpg  used on input line 362.
+Package luatex.def Info: Images/Architecture of a CGEM.jpg  used on input line 322.
 (luatex.def)             Requested size: 441.16724pt x 339.28218pt.
 [6<./Images/Subsidies - energy intensity.jpg>]
 <Images/Sectoral disaggregation.jpg, id=267, 602.75188pt x 297.11pt>
 File: Images/Sectoral disaggregation.jpg Graphic file (type jpg)
 <use Images/Sectoral disaggregation.jpg>
-Package luatex.def Info: Images/Sectoral disaggregation.jpg  used on input line 402.
+Package luatex.def Info: Images/Sectoral disaggregation.jpg  used on input line 362.
 (luatex.def)             Requested size: 469.74908pt x 231.54991pt.
 [7<./Images/Architecture of a CGEM.jpg>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf, id=276, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf  used on input line 457.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf  used on input line 417.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
 [8<./Images/Sectoral disaggregation.jpg>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf, id=283, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 463.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[9<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf>]
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 423.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[9<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-6-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf>]
 
-LaTeX Warning: Citation 'kaya1989' on page 10 undefined on input line 487.
+LaTeX Warning: Citation 'kaya1989' on page 10 undefined on input line 447.
 
-[10<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-7-1.pdf>] [11]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf, id=332, 469.755pt x 325.215pt>
+[10] [11]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf, id=336, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf  used on input line 616.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[12]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf, id=341, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf  used on input line 593.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf, id=337, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 624.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[13<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf>]
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 601.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[12<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-8-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf, id=350, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf  used on input line 628.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[14<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-9-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf, id=359, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf  used on input line 605.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf, id=351, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf  used on input line 632.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[15<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf, id=368, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf  used on input line 609.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf, id=352, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf  used on input line 636.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[16<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf, id=377, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf  used on input line 613.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[13<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-10-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-11-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf, id=365, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf  used on input line 640.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[17<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf, id=386, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf  used on input line 617.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf, id=366, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf  used on input line 644.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[18<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf>] [19
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf  used on input line 621.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[14<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-12-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-13-1.pdf>] [15
 warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
-<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf>] [20]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf, id=411, 469.755pt x 325.215pt>
+<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-14-1.pdf>] [16
+warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.3'
+]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf, id=396, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 772.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf, id=412, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 833.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[17
+warning  (pdf backend): ignoring duplicate destination with the name 'table.4'
+]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf, id=402, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 793.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[21<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf, id=422, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 854.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[18
+warning  (pdf backend): ignoring duplicate destination with the name 'table.5'
+<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-20-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf, id=412, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf  used on input line 806.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[22<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf, id=431, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf  used on input line 867.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf, id=413, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf  used on input line 808.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[23<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf, id=441, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf  used on input line 869.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[19<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-21-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-22-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf, id=426, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 824.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[24<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf, id=450, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 885.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf, id=427, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf  used on input line 826.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[25<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf, id=459, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf  used on input line 887.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[20<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-23-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-24-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf, id=441, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf  used on input line 836.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[26<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf, id=468, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf  used on input line 897.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[21<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-25-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf, id=455, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf  used on input line 853.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[27<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-26-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf, id=477, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf  used on input line 914.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf, id=456, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf  used on input line 868.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[28<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf, id=486, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf  used on input line 929.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf, id=457, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf  used on input line 870.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[29<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf, id=495, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf  used on input line 931.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[22<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-27-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-28-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf, id=470, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf  used on input line 882.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[30<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf, id=506, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf  used on input line 976.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[23
+warning  (pdf backend): ignoring duplicate destination with the name 'table.6'
+<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-29-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf, id=482, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf  used on input line 900.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[31<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf, id=517, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf  used on input line 982.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf, id=483, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf  used on input line 902.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[32<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf, id=526, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf  used on input line 984.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[24<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-31-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-32-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf, id=497, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf  used on input line 904.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[33<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf, id=535, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf  used on input line 986.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf, id=498, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf  used on input line 906.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[34<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf, id=544, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf  used on input line 988.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[25<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-33-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-34-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf, id=511, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf  used on input line 908.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf, id=545, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf  used on input line 990.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf, id=512, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf  used on input line 909.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 908--910
-[][]
- []
-
-[35<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf>] [36<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf, id=562, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf  used on input line 992.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[26<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-35-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf, id=525, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf  used on input line 911.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[37<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf, id=571, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf  used on input line 994.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf, id=526, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf  used on input line 913.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[38<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf, id=580, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf  used on input line 996.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[27<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-36-2.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-37-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf, id=539, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf  used on input line 915.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[39<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf, id=590, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf  used on input line 998.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[28<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-38-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf, id=553, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf  used on input line 983.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[40<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-39-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf, id=600, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf  used on input line 1066.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf, id=554, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf  used on input line 985.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[41
-warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf  used on input line 1068.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[29
+warning  (pdf backend): ignoring duplicate destination with the name 'table.7'
 <./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-41-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf, id=611, 469.755pt x 325.215pt>
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf, id=564, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf  used on input line 998.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[42<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf, id=620, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf  used on input line 1081.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf, id=565, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf  used on input line 1014.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[43<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf, id=629, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf  used on input line 1083.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[30<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-42-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-43-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf, id=578, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf  used on input line 1038.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[44<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf, id=638, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf  used on input line 1107.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[31<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-44-1.pdf>]
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.2895441|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.0705537|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.4754452|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.2329688|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.2564027|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.0405452|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.4202832|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.0425383|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.5695008|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.6247787|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.9249813|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.6566972|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.3542381|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 7.5193048|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.1673353|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.2530047|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.2685695|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.5054685|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.2093074|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 8.5473511|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 10.1235641|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.0090497|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.3028144|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.1455957|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 2.0079317|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 2.9337775|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 3.8146015|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 4.4436990|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.4373043|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.4084930|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.9897993|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.4721709|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.3701086|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.5979977|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.7574615|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.0724309|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.6145608|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.5751917|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.9474429|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.6701336|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.3203368|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 7.4677296|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.3491234|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.4543029|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.3315690|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.2104482|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 8.3779250|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 10.1570316|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 11.1556452|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.1165305|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.2914328|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.5239563|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.3159517|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 9.3252865|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 11.8483263|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 13.3435815|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.5410510|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.8164001|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.1806175|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.8639822|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 8.2400611|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 11.5332058|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 13.8310490|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.8293088|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.6224162|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 5.0064762|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 7.8869342|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 10.4088850|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 11.9558878|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 12.4581399|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.3739608|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.0882720|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.5462861|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 4.7573507|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.2955455|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 7.6910483|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 8.5298162|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.0654869|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.5521032|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.4701156|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.3765071|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.2171764|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.2018409|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.2769303|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.0709812|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.2726063|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.8734043|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 6.0153625|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 8.6700144|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 11.2843480|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 13.1440481|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.5981838|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.0023850|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 1.4908104|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.9029344|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.1527675|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.4981665|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.8960226|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 5.0681210|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 32.4426680|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 36.6216410|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 64.7511930|
+ []
+
+
+Overfull \hbox (13.08553pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 120.7904060|
+ []
+
+
+Overfull \hbox (13.08553pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 171.1933780|
+ []
+
+
+Overfull \hbox (13.08553pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 205.1478420|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.0911077|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.4931664|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.5022689|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.9208871|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 1.6635391|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 2.2932214|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 2.7079677|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.4971976|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.0668058|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.3011851|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 3.0623372|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.8266725|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.4749490|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.0802386|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 0.2922667|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.1793959|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.9218029|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.8943793|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.9793966|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.9114401|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ []\TU/lmr/m/n/7 2.6638663|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 0.6898930|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 7.9032253|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 19.4900558|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 28.7260264|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 35.8115175|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 42.0496607|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 47.2895509|
+ []
+
+
+Overfull \hbox (5.11952pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 5.8695307|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 24.2395123|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 29.9364314|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 40.7728631|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 51.3816196|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 59.6475800|
+ []
+
+
+Overfull \hbox (9.10252pt too wide) in paragraph at lines 1146--1146
+ \TU/lmr/m/n/7 66.0955818|
+ []
+
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf, id=589, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf  used on input line 1047.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[45<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf, id=648, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf  used on input line 1149.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[32
+warning  (pdf backend): ignoring duplicate destination with the name 'table.8'
+<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-45-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf, id=600, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf  used on input line 1049.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[46<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf, id=657, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf  used on input line 1151.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf, id=601, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf  used on input line 1051.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[47<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf, id=666, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf  used on input line 1153.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[33<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-47-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-48-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf, id=614, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf  used on input line 1053.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[48<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf, id=675, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf  used on input line 1155.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf, id=615, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf  used on input line 1055.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[49<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf, id=684, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf  used on input line 1157.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[34<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-49-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-50-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf, id=628, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf  used on input line 1057.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[50<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf, id=693, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf  used on input line 1159.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf, id=629, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf  used on input line 1059.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[51<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf, id=703, 469.755pt x 325.215pt>
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf  used on input line 1161.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[35<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-51-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-52-1.pdf>]
+<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf, id=642, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf  used on input line 1061.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[52<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf>] [53<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf>] [54] [55] (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
+Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf  used on input line 1163.
+(luatex.def)             Requested size: 328.82626pt x 227.64894pt.
+[36<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-53-1.pdf><./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-54-1.pdf>] [37] [38] (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
 Package rerunfilecheck Info: File `Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.out' has not changed.
 (rerunfilecheck)             Checksum: CFFFC0DB9DB24F59C6ADDF62B340EAC0;6314.
 Package logreq Info: Writing requests to 'Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.run.xml'.
@@ -1470,19 +2146,19 @@ Package logreq Info: Writing requests to 'Modele-ThreeMe-Tunisie_Sequeira_Valilo
 )
 
 Here is how much of LuaTeX's memory you used:
- 28258 strings out of 477802
- 125048,1648299 words of node,token memory allocated
- 816 words of node memory still in use:
-   7 hlist, 2 vlist, 3 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 74 glue_spec, 35 attribute_list, 1 write, 1 user_defined, 14 pdf_action nodes
-   avail lists: 1:1,2:2119,3:751,4:693,5:492,6:359,7:10828,8:146,9:1956,10:18,11:757
- 47647 multiletter control sequences out of 65536+600000
- 67 fonts using 19620671 bytes
- 86i,15n,121p,1132b,1611s stack positions out of 5000i,500n,10000p,200000b,80000s
-</Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman7-bold.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.pdf (55 pages, 1041068 bytes).
+ 27835 strings out of 477802
+ 195407,1648299 words of node,token memory allocated
+ 811 words of node memory still in use:
+   7 hlist, 2 vlist, 3 rule, 2 glue, 4 kern, 1 glyph, 35 attribute, 73 glue_spec, 35 attribute_list, 1 write, 1 user_defined, 14 pdf_action nodes
+   avail lists: 1:6,2:6629,3:1801,4:184,5:479,6:876,7:14733,8:154,9:4624,10:18,11:757
+ 47255 multiletter control sequences out of 65536+600000
+ 66 fonts using 19494127 bytes
+ 86i,15n,121p,776b,1611s stack positions out of 5000i,500n,10000p,200000b,80000s
+</Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman7-bold.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></Users/leo/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf>
+Output written on Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.pdf (38 pages, 1030000 bytes).
 
-PDF statistics: 877 PDF objects out of 1000 (max. 8388607)
- 682 compressed objects within 7 object streams
- 154 named destinations out of 1000 (max. 131072)
+PDF statistics: 805 PDF objects out of 1000 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 143 named destinations out of 1000 (max. 131072)
  249 words of extra memory for PDF output out of 10000 (max. 100000000)
 

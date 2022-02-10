@@ -376,7 +376,7 @@ Scenario 6 : Combination of scenarios 2, 4 and 5.
 
 Avant 2030, le niveau de la TC est calculé de façon a couvrir 100% des besoins du FTE Il passe de 1.1 à 9 DT/tCO2 Après 2030, la trajectoire de la TC est définie de façon à atteindre les objectifs de réduction d'émission à 2050 D'après les hypothèse des substitutions retenues dans ThreeME, l'atteinte d'un factor 5 en 2050 par rapport au niveau de 2020 nécessite une hause régulière de 9 DT/tCO2 à 372 DT/ tCO2. En plus de la TC des signaux prix ont été introduits afin d'atteindre les objectifs de consommations d'énergie par source
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( data = S1, aes(x = year,y = rco2tax_vol.1000, group = 1)) +
     labs(x= "year", y = "Carbon tax rate \n (in constant Tunisian dinars on 2015 per ton of CO2) ", title = "Fig.X Evolution of carbon tax in Tunisia") +
@@ -387,7 +387,7 @@ ggplot() +
 
 ### Energy subsidy removal scenario
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( data = S3, aes(x = year,y = abs(esub_gdp_2.gdp_2.1000000..ems_co2_2.1000.), group = 1)) +
@@ -458,7 +458,7 @@ Here we will analyse the influence of the redistribution of both the tax and the
 
 Firstly, we will analyse the redistribution of the carbon tax. The figure below show the variation in GDP in relation to the baseline for both the scenarios carbon tax with and without redistribution. We observe that the evolution of the curves is opposite and symmetric in relation to the x-axis, the scenario with redistribution showing a marked increase in GDP.
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
   geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Tax_AvecDis")) + 
@@ -468,7 +468,7 @@ ggplot() +
 
 Then when we analyse the *level of employment* we can see that the redistribution operates an increase on it in relation to the baseline, when the scenario of a carbon tax without redistribution produce a decrease in the level of employment. That is consistent with the fact that the
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Taxe sans redistribution")) + 
@@ -479,7 +479,7 @@ ggplot() +
 
 emissions
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_SansDis")) + 
   geom_line( data = Sc2, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_AvecDis")) + 
@@ -489,7 +489,7 @@ ggplot() +
 
 PIB
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
   geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Sub_AvecDis")) + 
@@ -499,7 +499,7 @@ ggplot() +
 
 chomage :
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = f_l_2, group = 1, color = "Sub sans redistribution")) + 
@@ -510,7 +510,7 @@ ggplot() +
 
 Il peut être intéressant de faire un commentaire sur le salaire brut
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( data = S1_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Taxe_SansRedis")) + 
@@ -527,7 +527,7 @@ ggplot() +
 
 émissions :
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_SansDis")) + 
   geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_AvecDis")) + 
@@ -632,7 +632,7 @@ An intuitive influence of carbon tax is that the price of internal market will r
 
 It is interesting to note that the implemented policy can alleviate social poverty to some extent. We observed, for example, the continuous growth of wage employment. It will then reinforce the acceptability of the climate policy.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[2]][,"year"],y = S2[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
@@ -648,7 +648,7 @@ ggplot() +
 
 Along with the economical growth, we find that the emissions reduction of 42.2% by 2050 is achieved, then we are now interested in its pathway. To do this, we firstly employ our extended Kaya identity to clarify the main driving forces, where, a priori, Economic activities are expected to have positive effects on emissions, whilst Energy intensity and Carbon intensity should have negative effects. Figure X. presents the results of all the aggregated driving forces. We observe that economy structure has a significantly positive and growing impact until 2043 where it reaches the peak raising 7947.48 Kt CO2 (+19,38%) with regard to baseline, then it begins to decline to 5650,17 Kt CO2 (+12,46%) on 2050. On the other hand, carbon intensity and energy intensity show the negative and monotone trend, the former reducing 7128.35 Kt CO2 (-13.77%) on 2050 and 30715.93 Kt CO2 (-47.18%) for the later. However, the influence of economic activities is negligible (+886,37 Kt CO2 & +1.86%), revealing that even though the total production remains relatively invariable, the revolution of economy structure and production methods could still strongly impact the emissions pathway.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[2]][,"year"],y = S2_Macro[,"Prix.à.la.consommation"], group = 1, color = "Consumption price")) + 
@@ -663,7 +663,7 @@ ggplot() +
 
 So how do these driving forces work exactly to impact emissions? To answer this question, we conduct a sectorial analysis with the help of our extended Kaya identity. Fig.X depicts the evolution of economy structure for different sectors. Electricity sector has a positive impact while energy transformation has a negative one, with all other sectors staying relatively stable. It indicates the development of electricity production, and recession of another, standing for the substitution of electricity over fossil fuels. Compared with fossil fuels, electricity is potentially less pollutant because it is the final conversion of renewable energies.
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S"], group = 1, color = "Total effect")) + 
@@ -678,7 +678,7 @@ ggplot() +
 
 ```
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 z <- c(Sc2[,"va_ind_2"],Sc2[,"va_trsp_2"],Sc2[,"va_ser_2"],Sc2[,"va_trsf_2"],Sc2[,"va_ele_2"])
 x <- rep(Sc2[,"year"], times = 5)
@@ -701,7 +701,7 @@ rm(z,x,Legend)
 
 The carbon tax induces the increasing investment for all sectors except energy transformation, firstly to accelerate the penetration of renewable energies in electricity mix and secondly, to reduce the consumption of fossil fuels especially for energy intensive sectors. We observe then the improvement of energy efficiency, in another word reduction of energy intensity, for all the sectors of Tunisia's economy, especially for electricity and industry & agriculture (Fig.x). However, the other sectors display slight reduction of energy intensity. For example, the transportation sector consume majorly jet fuel for aircraft and diesel for container ship. Electrification faces still huge challenges for long distance transportation. The inertia of energy demand thus exists in such a sector despite of the increasing cost for carbon dioxide emission.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Sc2[,"year"],y = Sc2[,"ia_ind_2"], group = 1, color = "Industry & Agriculture")) + 
@@ -715,7 +715,7 @@ ggplot() +
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -730,7 +730,7 @@ ggplot() +
 
 Fig.x shows how energy consumption varies with the carbon tax, which can be explained by improvement of energy intensity. As what we discussed above, we can find more and more diminished energy demand for all the economic sectors and for household. And one more time, we observe the inertia for transportation and services. Even though there is not noticeable amelioration of energy intensity for energy transformation, the overall shrinkage of the sector explains the energy demand profile.
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z <- c(S2[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S2[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S2[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S2[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S2[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S2[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
 x <- rep(S2[,"year"], times = 6)
 Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy transformation","Electricity","Household"), each = 36)
@@ -752,7 +752,7 @@ rm(z,x,Legend)
 
 The energy intensity represents the choice of production technology considering whether it is energy intensive or not, whilst the carbon intensity describes how carbon tax leads the economy to choose the types of energy. We notice a moderate fall for industry & agriculture and energy transformation, meaning the transition towards energies with less emission. The electricity mix is exogenous according to our modelling assumptions, that is why the carbon tax has no effect on it, whereas it might be wildly influenced by climate policies in the real situation. It is worthy to mention here that energy consumption by household are almost from energy transformation sector, so we integrated household energy consumption into energy transformation sector. In fact, the reduction of carbon intensity observed here in energy transformation sector is arose by a different energy mix of household rather than the sector itself.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -767,7 +767,7 @@ ggplot() +
 
 As the carbon tax induces the production of green electricity (with less pollution per unit of energy production), the energy consumers then have a more environmental friendly alternative other than fuel. Even though maybe they are not intended to care about the climate change, using this alternative enables them to cut back their costs. Therefore, we see the rapid shifting from fossil fuel to electricity for industry & agriculture and the household, and reaching nearly a half of their energy consumption until 2050 like depicted in Fig.X to X. For industry & agriculture, electricity mainly offsets a part of natural gas demand, which hints the electrification of heating unit for instance. As for household, the wild spread of electrical or hybrid cars reduces the domand for fossil fuel.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z_1 <- c(
        S2[,"ci_toe_cfut_ind_2"]/S2[,"ci_toe_ind_2"],
        S2[,"ci_toe_cfuh_ind_2"]/S2[,"ci_toe_ind_2"],
@@ -815,7 +815,7 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z_1 <- c(
        S2[,"ch_toe_cfut_2"]/S2[,"ch_toe_2"],
        S2[,"ch_toe_cfuh_2"]/S2[,"ch_toe_2"],
@@ -889,7 +889,7 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 
 BROWN <- "#AD8C97"
@@ -926,7 +926,7 @@ plt2
 
 ### Environmental and energy impacts
 
-```{r}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line(aes(x = S4[,"year"],y = S4[,"ems_co2_2"]/Baseline[,"ems_co2_0"], group = 1, color = "Total effect"), size = 1.0) + 
@@ -938,7 +938,7 @@ ggplot() +
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[4]][,"year"],y = S4[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
@@ -952,7 +952,7 @@ ggplot() +
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 
 z <- c(Dif[[4]][,"V"],Dif[[4]][,"S"],Dif[[4]][,"E"],Dif[[4]][,"I"])
@@ -970,7 +970,7 @@ rm(z,x,Legend)
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -983,7 +983,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"S"], group = 1, color = "Total effect")) + 
@@ -1015,7 +1015,7 @@ ggplot(
 rm(z,x,Legend)
 ```
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 #energy consumption
 z <- c(S2[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S2[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S2[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S2[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S2[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S2[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
 x <- rep(S2[,"year"], times = 6)
@@ -1036,7 +1036,7 @@ ggplot(
 rm(z,x,Legend)
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"I"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"I_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -1049,7 +1049,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 
 BROWN <- "#AD8C97"
@@ -1091,7 +1091,7 @@ Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviati
 
 In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains. 
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -1108,7 +1108,7 @@ column_spec(1, width = "6cm")
 
 When it comes to the environmental sphere ( seeing Fig.x ), electricity sector is the only one with negative impact on emissions profile, it compensates the positive impacts arose from all other sectors, resulting in a emissions reduction up to 29.24% by the end of 2050. Fig.x depicts the evolution of different driving forces to emissions, where we find such a emissions reduction is totally thanks to the amelioration of energy intensity while economic structure and carbon intensity contribute in another way to CO2 emissions.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[5]][,"year"],y = (S5[,"ems_co2_2"]/Baseline[,"ems_co2_0"] - 1)*100, group = 1, color = "Total reduction")) + 
@@ -1125,7 +1125,7 @@ ggplot() +
 ```
 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[5]][,"year"],y = S5[,"ems_co2_2"]/Baseline[,"ems_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
@@ -1141,7 +1141,7 @@ ggplot() +
 
 The renewable energies policy prompts the rapid development of electricity sector, but at the same time constrains that of energy transformation sector as shown in the Fig.x. Such a policy will give rise to a supply-side structural revolution of energy sector in Tunisia. More and more investment will be incited into green energy exploitation, then reduce the cost to exploit renewable energies, making it increasingly profitable and engendering a growing share of green electricity in the grid. On the other hand, the fossil fuels lose its competitiveness compared to renewable electricity due to the shrinkage of innovation (seeing Fig.x).
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S"], group = 1, color = "Total effect")) + 
@@ -1156,7 +1156,7 @@ ggplot() +
 
 ```
 
-```{r}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_ind_2"], group = 1, color = "Industry & Agriculture")) + 
@@ -1174,7 +1174,7 @@ In fact, the expanding investment not only cuts back the cost of exploitation, b
 
 As discussed above that the electricity is the only sector who is impacted by this policy, the penetration of renewable energies could seldom influence other sectors. We observe then a rebound effect for certain sectors. Apparently the renewable energy does not induce the innovation oriented to improve energy efficiency, and on the other hand, the fact knowing that electricity is a much more environmental friendly energy, makes them somehow indifferent to consume more or less energies. That is to say, the penetration just provides an alternative with less environmental impacts, rather than intrinsically resolves the problem meaning a transition from energy-intensive to energy-efficient production. Thus, in terms of sustainable development, the renewable energies policy should better cooperate with other economic levers in order to guarantee its efficiency in the longer term.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -1208,7 +1208,7 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[6]][,"year"],y = S6[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
@@ -1222,7 +1222,7 @@ ggplot() +
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 
 z <- c(Dif[[6]][,"V"],Dif[[6]][,"S"],Dif[[6]][,"E"],Dif[[6]][,"I"])
@@ -1240,7 +1240,7 @@ rm(z,x,Legend)
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 z <- c(Dif[[6]][,"V"],Dif[[6]][,"ind"],Dif[[6]][,"trsp"],Dif[[6]][,"ser"],Dif[[5]][,"trsf"],Dif[[6]][,"ele"])
 x <- rep(Dif[[6]][,"year"], time = 6)
@@ -1257,7 +1257,7 @@ rm(z,x,Legend)
 
 ```
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S"], group = 1, color = "Total effect")) + 
@@ -1272,7 +1272,7 @@ ggplot() +
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -1285,7 +1285,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-```{r, echo=FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 #energy consumption
 z <- c(S6[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S6[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S6[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S6[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S6[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S6[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
 x <- rep(S6[,"year"], times = 6)
@@ -1306,7 +1306,7 @@ ggplot(
 rm(z,x,Legend)
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I"], group = 1, color = "Total effect")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I_ind"], group = 1, color = "Industry & Agriculture")) + 
@@ -1319,7 +1319,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z_1 <- c(
        S6[,"ci_toe_cfut_ind_2"]/S6[,"ci_toe_ind_2"],
        S6[,"ci_toe_cfuh_ind_2"]/S6[,"ci_toe_ind_2"],
