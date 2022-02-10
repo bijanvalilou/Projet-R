@@ -862,6 +862,7 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ### Economic impacts
 
+
 ::: {align="center"}
 Table.X : Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline!
 :::

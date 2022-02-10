@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12.10) (format=lualatex 2022.1.6)  10 FEB 2022 10:20
+This is LuaHBTeX, Version 1.14.0 (MiKTeX 21.12.10) (format=lualatex 2022.1.6)  10 FEB 2022 10:49
  restricted system commands enabled.
 **Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
 (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.tex
@@ -886,9 +886,9 @@ File: biblatex.cfg
 ))
 \@quotelevel=\count449
 \@quotereset=\count450
-(./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux)
-\openout1 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux
+No file Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux.
 
+\openout1 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
@@ -1344,23 +1344,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.b
-bl' found.
-(./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                goulder
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                kaya1989
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+bl' not found.
+No file Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.bbl.
 Package biblatex Info: Reference section=0 on input line 138.
 Package biblatex Info: Reference segment=0 on input line 138.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1385,600 +1370,397 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (C:/Users/bijan/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc)
+)
 \tf@toc=\write5
 
 \openout5 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.toc
 [1
 
 {C:/Users/bijan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Images/Composition of fuel subsidies by product.jpg, id=92, 761.84625pt x 325.
+
+LaTeX Warning: Citation 'tunisia2022' on page 2 undefined on input line 159.
+
+
+LaTeX Warning: Citation 'worldbank2020' on page 2 undefined on input line 161.
+
+
+LaTeX Warning: Citation 'worldbank2020' on page 2 undefined on input line 164.
+
+
+LaTeX Warning: Citation 'bnpparibas' on page 2 undefined on input line 167.
+
+
+LaTeX Warning: Citation 'worldbank2020' on page 2 undefined on input line 170.
+
+
+LaTeX Warning: Citation 'worldbank' on page 2 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'bnpparibas' on page 2 undefined on input line 179.
+
+
+LaTeX Warning: Citation 'irena2021' on page 2 undefined on input line 182.
+
+
+LaTeX Warning: Citation 'giz' on page 2 undefined on input line 185.
+
+
+LaTeX Warning: Citation 'albertin2014' on page 2 undefined on input line 196.
+
+
+LaTeX Warning: Citation 'tunisia2020' on page 2 undefined on input line 200.
+
+
+LaTeX Warning: Citation 'trésor2021' on page 2 undefined on input line 201.
+
+
+LaTeX Warning: Citation 'worldbank2014' on page 2 undefined on input line 209.
+
+
+LaTeX Warning: Citation 'cuesta2017' on page 2 undefined on input line 209.
+
+
+LaTeX Warning: Citation 'albertin2014' on page 2 undefined on input line 217.
+
+<Images/Composition of fuel subsidies by product.jpg, id=13, 761.84625pt x 325.
 215pt>
 File: Images/Composition of fuel subsidies by product.jpg Graphic file (type jp
 g)
 <use Images/Composition of fuel subsidies by product.jpg>
 Package luatex.def Info: Images/Composition of fuel subsidies by product.jpg  u
-sed on input line 223.
+sed on input line 222.
 (luatex.def)             Requested size: 469.74745pt x 200.5246pt.
 [2]
-<Images/Energy subsdies received by welfare quintile.jpg, id=114, 503.38063pt x
- 355.82938pt>
+
+LaTeX Warning: Citation 'tunisia2020' on page 3 undefined on input line 225.
+
+<Images/Energy subsdies received by welfare quintile.jpg, id=26, 503.38063pt x 
+355.82938pt>
 File: Images/Energy subsdies received by welfare quintile.jpg Graphic file (typ
 e jpg)
 <use Images/Energy subsdies received by welfare quintile.jpg>
 Package luatex.def Info: Images/Energy subsdies received by welfare quintile.jp
-g  used on input line 228.
+g  used on input line 227.
 (luatex.def)             Requested size: 469.75215pt x 332.05807pt.
+
+LaTeX Warning: Citation 'tunisia2020' on page 3 undefined on input line 230.
+
+
+LaTeX Warning: Citation 'demoor1997' on page 3 undefined on input line 241.
+
+
+LaTeX Warning: Citation 'coady2019' on page 3 undefined on input line 246.
+
 [3<./Images/Composition of fuel subsidies by product.jpg><./Images/Energy subsdi
 es received by welfare quintile.jpg>]
-<Images/Subsidies - energy intensity.jpg, id=133, 575.65062pt x 293.59688pt>
+
+LaTeX Warning: Citation 'coady2019' on page 4 undefined on input line 255.
+
+
+LaTeX Warning: Citation 'verme2017' on page 4 undefined on input line 262.
+
+
+LaTeX Warning: Citation 'fattouh2013' on page 4 undefined on input line 264.
+
+
+LaTeX Warning: Citation 'aldy2013' on page 4 undefined on input line 282.
+
+
+LaTeX Warning: Citation 'coady2019' on page 4 undefined on input line 282.
+
+
+LaTeX Warning: Citation 'hahn2021' on page 4 undefined on input line 282.
+
+
+LaTeX Warning: Citation 'fattouh2013' on page 4 undefined on input line 283.
+
+
+LaTeX Warning: Citation 'fattouh2013' on page 4 undefined on input line 297.
+
+<Images/Subsidies - energy intensity.jpg, id=33, 575.65062pt x 293.59688pt>
 File: Images/Subsidies - energy intensity.jpg Graphic file (type jpg)
 <use Images/Subsidies - energy intensity.jpg>
 Package luatex.def Info: Images/Subsidies - energy intensity.jpg  used on input
- line 314.
+ line 313.
 (luatex.def)             Requested size: 469.77037pt x 239.59517pt.
 [4]
-<Images/Architecture of a CGEM.jpg, id=152, 441.14813pt x 339.2675pt>
+
+LaTeX Warning: Citation 'goulder' on page 5 undefined on input line 324.
+
+
+LaTeX Warning: Citation 'callonnec2013' on page 5 undefined on input line 351.
+
+
+LaTeX Warning: Citation 'callonnec2021' on page 5 undefined on input line 351.
+
+<Images/Architecture of a CGEM.jpg, id=47, 441.14813pt x 339.2675pt>
 File: Images/Architecture of a CGEM.jpg Graphic file (type jpg)
 <use Images/Architecture of a CGEM.jpg>
 Package luatex.def Info: Images/Architecture of a CGEM.jpg  used on input line 
-363.
+362.
 (luatex.def)             Requested size: 441.16724pt x 339.28218pt.
 [5<./Images/Subsidies - energy intensity.jpg>]
-<Images/Sectoral disaggregation.jpg, id=167, 602.75188pt x 297.11pt>
+
+LaTeX Warning: Citation 'callonnec2013' on page 6 undefined on input line 364.
+
+
+LaTeX Warning: Citation 'landarivera2016' on page 6 undefined on input line 394
+.
+
+
+LaTeX Warning: Citation 'reynes2017' on page 6 undefined on input line 395.
+
+<Images/Sectoral disaggregation.jpg, id=61, 602.75188pt x 297.11pt>
 File: Images/Sectoral disaggregation.jpg Graphic file (type jpg)
 <use Images/Sectoral disaggregation.jpg>
 Package luatex.def Info: Images/Sectoral disaggregation.jpg  used on input line
- 403.
+ 402.
 (luatex.def)             Requested size: 469.74908pt x 231.54991pt.
 [6<./Images/Architecture of a CGEM.jpg>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-6-1.pdf, id=176, 469.755pt x 325.215pt>
+6-1.pdf, id=68, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-6-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-6-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-6-1.pdf  used on input line 458.
+ure-latex/unnamed-chunk-6-1.pdf  used on input line 457.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [7<./Images/Sectoral disaggregation.jpg>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-7-1.pdf, id=183, 469.755pt x 325.215pt>
+7-1.pdf, id=77, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-7-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-7-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-7-1.pdf  used on input line 464.
+ure-latex/unnamed-chunk-7-1.pdf  used on input line 463.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [8<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chu
-nk-6-1.pdf>] [9<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-late
-x/unnamed-chunk-7-1.pdf>] [10]
+nk-6-1.pdf>]
+
+LaTeX Warning: Citation 'kaya1989' on page 9 undefined on input line 487.
+
+
+LaTeX Warning: Citation 'kayaide2021' on page 9 undefined on input line 491.
+
+[9<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chu
+nk-7-1.pdf>]
+
+LaTeX Warning: Citation 'grubb2015' on page 10 undefined on input line 553.
+
+
+LaTeX Warning: Citation 'kanitkar2015' on page 10 undefined on input line 553.
+
+
+LaTeX Warning: Citation 'ang1997' on page 10 undefined on input line 579.
+
+
+LaTeX Warning: Citation 'ang2005' on page 10 undefined on input line 579.
+
+[10]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-8-1.pdf, id=232, 469.755pt x 325.215pt>
+8-1.pdf, id=120, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-8-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-8-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-8-1.pdf  used on input line 617.
+ure-latex/unnamed-chunk-8-1.pdf  used on input line 616.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-9-1.pdf, id=233, 469.755pt x 325.215pt>
+9-1.pdf, id=121, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-9-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-9-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-9-1.pdf  used on input line 625.
+ure-latex/unnamed-chunk-9-1.pdf  used on input line 624.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [11<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-8-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-10-1.pdf, id=245, 469.755pt x 325.215pt>
+10-1.pdf, id=135, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-10-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-10-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-10-1.pdf  used on input line 629.
+ure-latex/unnamed-chunk-10-1.pdf  used on input line 628.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [12<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-9-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-11-1.pdf, id=254, 469.755pt x 325.215pt>
+11-1.pdf, id=144, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-11-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-11-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-11-1.pdf  used on input line 633.
+ure-latex/unnamed-chunk-11-1.pdf  used on input line 632.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [13<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-10-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-12-1.pdf, id=263, 469.755pt x 325.215pt>
+12-1.pdf, id=153, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-12-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-12-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-12-1.pdf  used on input line 637.
+ure-latex/unnamed-chunk-12-1.pdf  used on input line 636.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [14<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-11-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-13-1.pdf, id=272, 469.755pt x 325.215pt>
+13-1.pdf, id=162, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-13-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-13-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-13-1.pdf  used on input line 641.
+ure-latex/unnamed-chunk-13-1.pdf  used on input line 640.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [15<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-12-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-14-1.pdf, id=281, 469.755pt x 325.215pt>
+14-1.pdf, id=171, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-14-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-14-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-14-1.pdf  used on input line 645.
+ure-latex/unnamed-chunk-14-1.pdf  used on input line 644.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [16<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-13-1.pdf>] [17<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-l
 atex/unnamed-chunk-14-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-20-1.pdf, id=299, 469.755pt x 325.215pt>
+20-1.pdf, id=189, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-20-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-20-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-20-1.pdf  used on input line 752.
+ure-latex/unnamed-chunk-20-1.pdf  used on input line 751.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [18]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-21-1.pdf, id=305, 469.755pt x 325.215pt>
+21-1.pdf, id=196, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-21-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-21-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-21-1.pdf  used on input line 773.
+ure-latex/unnamed-chunk-21-1.pdf  used on input line 772.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [19<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-20-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-22-1.pdf, id=314, 469.755pt x 325.215pt>
+22-1.pdf, id=205, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-22-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-22-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-22-1.pdf  used on input line 786.
+ure-latex/unnamed-chunk-22-1.pdf  used on input line 785.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [20<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-21-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-23-1.pdf, id=323, 469.755pt x 325.215pt>
+23-1.pdf, id=214, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-23-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-23-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-23-1.pdf  used on input line 788.
+ure-latex/unnamed-chunk-23-1.pdf  used on input line 787.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [21<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-22-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-24-1.pdf, id=333, 469.755pt x 325.215pt>
+24-1.pdf, id=224, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-24-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-24-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-24-1.pdf  used on input line 804.
+ure-latex/unnamed-chunk-24-1.pdf  used on input line 803.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [22<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-23-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-25-1.pdf, id=342, 469.755pt x 325.215pt>
+25-1.pdf, id=233, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-25-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-25-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-25-1.pdf  used on input line 806.
+ure-latex/unnamed-chunk-25-1.pdf  used on input line 805.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [23<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-24-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-26-1.pdf, id=351, 469.755pt x 325.215pt>
+26-1.pdf, id=242, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-26-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-26-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-26-1.pdf  used on input line 816.
+ure-latex/unnamed-chunk-26-1.pdf  used on input line 815.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [24<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-25-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-27-1.pdf, id=360, 469.755pt x 325.215pt>
+27-1.pdf, id=251, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-27-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-27-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-27-1.pdf  used on input line 833.
+ure-latex/unnamed-chunk-27-1.pdf  used on input line 832.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [25<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-26-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-28-1.pdf, id=369, 469.755pt x 325.215pt>
+28-1.pdf, id=260, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-28-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-28-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-28-1.pdf  used on input line 848.
+ure-latex/unnamed-chunk-28-1.pdf  used on input line 847.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [26<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-27-1.pdf>]
 <Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-29-1.pdf, id=378, 469.755pt x 325.215pt>
+29-1.pdf, id=269, 469.755pt x 325.215pt>
 File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
 hunk-29-1.pdf Graphic file (type pdf)
 <use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-29-1.pdf>
 Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-29-1.pdf  used on input line 850.
+ure-latex/unnamed-chunk-29-1.pdf  used on input line 849.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 [27<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
 unk-28-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-31-1.pdf, id=387, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-31-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-31-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-31-1.pdf  used on input line 862.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[28<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-29-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-32-1.pdf, id=398, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-32-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-32-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-32-1.pdf  used on input line 880.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[29<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-31-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-33-1.pdf, id=408, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-33-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-33-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-33-1.pdf  used on input line 882.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[30<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-32-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-34-1.pdf, id=417, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-34-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-34-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-34-1.pdf  used on input line 884.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[31<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-33-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-35-1.pdf, id=427, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-35-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-35-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-35-1.pdf  used on input line 886.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[32<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-34-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-36-1.pdf, id=436, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-36-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-36-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-36-1.pdf  used on input line 888.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-36-2.pdf, id=437, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-36-2.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-36-2.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-36-2.pdf  used on input line 889.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 888--890
-[][]
- []
-
-[33<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-35-1.pdf>] [34<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-l
-atex/unnamed-chunk-36-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-37-1.pdf, id=454, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-37-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-37-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-37-1.pdf  used on input line 891.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[35<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-36-2.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-38-1.pdf, id=463, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-38-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-38-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-38-1.pdf  used on input line 893.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[36<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-37-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-39-1.pdf, id=472, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-39-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-39-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-39-1.pdf  used on input line 895.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[37<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-38-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-41-1.pdf, id=481, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-41-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-41-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-41-1.pdf  used on input line 904.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[38<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-39-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-42-1.pdf, id=491, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-42-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-42-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-42-1.pdf  used on input line 906.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[39<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-41-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-43-1.pdf, id=500, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-43-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-43-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-43-1.pdf  used on input line 908.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[40<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-42-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-44-1.pdf, id=509, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-44-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-44-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-44-1.pdf  used on input line 910.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[41<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-43-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-45-1.pdf, id=519, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-45-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-45-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-45-1.pdf  used on input line 912.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[42<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-44-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-46-1.pdf, id=528, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-46-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-46-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-46-1.pdf  used on input line 914.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[43<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-45-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-47-1.pdf, id=537, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-47-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-47-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-47-1.pdf  used on input line 916.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[44<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-46-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-48-1.pdf, id=546, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-48-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-48-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-48-1.pdf  used on input line 918.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[45<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-47-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-49-1.pdf, id=555, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-49-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-49-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-49-1.pdf  used on input line 920.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[46<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-48-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-51-1.pdf, id=564, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-51-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-51-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-51-1.pdf  used on input line 929.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[47<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-49-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-52-1.pdf, id=574, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-52-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-52-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-52-1.pdf  used on input line 931.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[48<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-51-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-53-1.pdf, id=583, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-53-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-53-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-53-1.pdf  used on input line 933.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[49<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-52-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-54-1.pdf, id=592, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-54-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-54-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-54-1.pdf  used on input line 935.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[50<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-53-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-55-1.pdf, id=601, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-55-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-55-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-55-1.pdf  used on input line 937.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[51<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-54-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-56-1.pdf, id=611, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-56-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-56-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-56-1.pdf  used on input line 939.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[52<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-55-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-57-1.pdf, id=620, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-57-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-57-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-57-1.pdf  used on input line 941.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[53<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-56-1.pdf>]
-<Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-chunk-
-58-1.pdf, id=629, 469.755pt x 325.215pt>
-File: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-c
-hunk-58-1.pdf Graphic file (type pdf)
-<use Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-58-1.pdf>
-Package luatex.def Info: Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/fig
-ure-latex/unnamed-chunk-58-1.pdf  used on input line 943.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-[54<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-latex/unnamed-ch
-unk-57-1.pdf>] [55<./Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang_files/figure-l
-atex/unnamed-chunk-58-1.pdf>] [56] (./Modele-ThreeMe-Tunisie_Sequeira_Valilou_W
-ang.aux)
-Package logreq Info: Writing requests to 'Modele-ThreeMe-Tunisie_Sequeira_Valil
-ou_Wang.run.xml'.
-
-\openout1 = Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.run.xml
-)
+! Dimension too large.
+\LT@max@sel #1#2->{\ifdim #2=\wd \tw@ 
+                                      #1\else \number \c@LT@chunks \fi }{\th...
+l.886 \end{longtabu}
+                  
 
 Here is how much of LuaTeX's memory you used:
- 30372 strings out of 477867
+ 29843 strings out of 477867
  125086,1648299 words of node,token memory allocated
- 823 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 33 attribute, 73 glue_spec, 33 attribute_list, 1 write, 1 user_defi
-ned, 12 pdf_action nodes
-   avail lists: 2:1487,3:865,4:558,5:592,6:143,7:12187,8:142,9:706,10:16,11:756
- 49547 multiletter control sequences out of 65536+600000
- 66 fonts using 19488755 bytes
- 86i,12n,121p,1132b,1597s stack positions out of 5000i,500n,10000p,200000b,80000s
-<//?/c:/users/bijan/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
-ancaps10-regular.otf><//?/c:/users/bijan/appdata/local/programs/miktex/fonts/ope
-ntype/public/lm/lmmono10-regular.otf><//?/c:/users/bijan/appdata/local/programs/
-miktex/fonts/opentype/public/lm-math/latinmodern-math.otf><//?/c:/users/bijan/ap
-pdata/local/programs/miktex/fonts/opentype/public/lm-math/latinmodern-math.otf><
-//?/c:/users/bijan/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroma
-n7-regular.otf><//?/c:/users/bijan/appdata/local/programs/miktex/fonts/opentype/
-public/lm-math/latinmodern-math.otf><//?/c:/users/bijan/appdata/local/programs/m
-iktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/c:/users/bijan/appdata/
-local/programs/miktex/fonts/opentype/public/lm/lmromanslant10-regular.otf><//?/c
-:/users/bijan/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-r
-egular.otf><//?/c:/users/bijan/appdata/local/programs/miktex/fonts/opentype/publ
-ic/lm/lmroman10-bold.otf><//?/c:/users/bijan/appdata/local/programs/miktex/fonts
-/opentype/public/lm/lmroman12-bold.otf><//?/c:/users/bijan/appdata/local/program
-s/miktex/fonts/opentype/public/lm/lmroman12-regular.otf><//?/c:/users/bijan/appd
-ata/local/programs/miktex/fonts/opentype/public/lm/lmroman17-regular.otf>
-Output written on Modele-ThreeMe-Tunisie_Sequeira_Valilou_Wang.pdf (56 pages, 1
-129106 bytes).
-
-PDF statistics: 880 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 131072)
- 249 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+ 3201 words of node memory still in use:
+   65 hlist, 10 vlist, 17 rule, 1 mark, 6 disc, 4 local_par, 3 dir, 115 glue, 10
+ kern, 18 penalty, 1 margin_kern, 59 glyph, 104 attribute, 77 glue_spec, 104 att
+ribute_list, 2 temp, 3 if_stack, 4 write, 1 user_defined, 5 pdf_dest, 1 pdf_acti
+on nodes
+   avail lists: 1:1,2:1183,3:264,4:558,5:472,6:122,7:8858,8:70,9:805,10:16,11:75
+0
+ 49278 multiletter control sequences out of 65536+600000
+ 65 fonts using 19358263 bytes
+ 86i,12n,121p,1132b,1595s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
