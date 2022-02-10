@@ -36,6 +36,9 @@ library(dplyr)
 library(usethis)
 library(kableExtra)
 library(ggpubr)
+library(forcats)
+library(cowplot)
+library(gridExtra)
 ```
 
 ```{r, echo = FALSE, tidy = TRUE, include = FALSE}
