@@ -888,6 +888,23 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ### Economic impacts
 
+
+```{r, echo=FALSE}
+x= (SubvavecRedis[,"pch_cfuh_2"]/SubvavecRedis[,"pch_cfuh_0"]-1)*100
+table <- cbind(Sc4[,"year"], Sc4[,"ch_toe_cfuh_2"]/x)
+colnames(table) <- c("Year", "Price elasticity")
+table <- table[c(7, 11, 16, 21, 26, 31, 36),]
+
+
+kbl(table, booktabs = T, linesep = "", caption = "Price elasticity of demand for fuel dedicated to other use")%>%
+kable_styling(latex_options = "striped", full_width = F,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
+
+```
+
+
+
 ::: {align="center"}
 Table.X : Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline!
 :::
