@@ -535,7 +535,7 @@ ggplot() +
 
 Tableau Taxe sans redistribution
 
-```{r eval=FALSE, dev='jpeg'}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -544,9 +544,10 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 Tableau Taxe avec redistribution
@@ -560,9 +561,10 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 Tableau subvention sans redistribution
@@ -576,9 +578,10 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 Tableau subvention avec redistribution
@@ -592,9 +595,10 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 ## Carbon tax (jin)
@@ -612,9 +616,10 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 ::: {align="center"}
@@ -876,9 +881,10 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Lifting energy subsidies scenario with redistribution in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 ```{r, echo = FALSE}
@@ -1092,9 +1098,10 @@ Table_Macro_ENR <- t(Table_Macro_ENR)
 Table_Macro_ENR <- round(Table_Macro_ENR,digits = 2)
 row.names(Table_Macro_ENR) <- tablename
 
-kable(Table_Macro_ENR, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Renewable energy scenario in % deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_ENR, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Renewable energy scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 When it comes to the environmental sphere ( seeing Fig.x ), electricity sector is the only one with negative impact on emissions profile, it compensates the positive impacts arose from all other sectors, resulting in a emissions reduction up to 29.24% by the end of 2050. Fig.x depicts the evolution of different driving forces to emissions, where we find such a emissions reduction is totally thanks to the amelioration of energy intensity while economic structure and carbon intensity contribute in another way to CO2 emissions.
@@ -1193,9 +1200,10 @@ Table_Macro_SNBC <- t(Table_Macro_SNBC)
 Table_Macro_ENR <- round(Table_Macro_SNBC,digits = 2)
 row.names(Table_Macro_SNBC) <- tablename
 
-kable(Table_Macro_SNBC, booktabs = T, longtable = T, linesep = "", caption = "Macroeconomic impacts of Nation Low-Carbon Strategy scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hover","repeat_header"), full_width = T) %>% 
-row_spec(0, bold = T)
+kable(Table_Macro_SNBC, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Nation Low-Carbon Strategy scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 ```{r, echo = FALSE}
