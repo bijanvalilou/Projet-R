@@ -254,8 +254,6 @@ rm(i,j,jin,name,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
 
 # Introduction
 
-# Literature review
-
 ## Energy and economy framework in Tunisia
 
 Tunisia is one of the northernmost countries in Africa, ranked the most competitive economy in Africa by World Economy Forum in 2009 [@tunisia2022]. The local economy is largely oriented towards services, which account for 43% of GDP in 2019 [@worldbank2020], including the booming IT and tourism industries. Agriculture is another key sector of the Tunisian economy, representing 10.4% of the GDP and employing 12.7% of the working population [@worldbank2020]. Thanks to technical progress of agricultural sector, Tunisia is one of the most productive countries in Africa. Tunisia's industry represents 22.7% of GDP and employs 32.5% of the working population in 2020 [@bnpparibas]. The industrial sectors are mainly export oriented especially for manufacturing, Europe is the destination for more than 75% of Tunisia's exports [@worldbank2020].
@@ -280,9 +278,25 @@ Fig.X : Composition of fuel subsidies product (source : @tunisia2020)
 Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (source : @tunisia2020)
 :::
 
-## Climate policy
+## Literature review in climate policy
 
 ### Carbon tax
+
+@klenert2018
+
+After set-backs over the past two-decades, carbon pricing has become popular once again. Since 2016, eight new carbon-pricing initiatives have been implemented, with dozens of additional countries having pledged under the Paris Agreement to consider implementing carbon pricing in the years ahead.
+
+@goulder2013
+
+When considering the externality associated with the release of CO2 from combustion, we observe that there is a maginal social cost that exceeds marginal private cost by an amount reflecting the marginal external cost of damage. The typical prescription is to put a tax on emissions that reflects the marginal external damage. In a competitive market this will cause private costs to rise.
+
+@gueret : no citable
+
+@combet
+
+@deperthuis2010
+
+The level of the price retained, in other words the rate of the tax, corresponds to the value that society places on the protection of these resources.
 
 ### Energy subsidy
 
@@ -318,7 +332,7 @@ Tax redistribution is the mechanism that allows the government to return to the 
 
 # Methodology
 
-## ThreeME model (Bee)
+## ThreeME model
 
 The ThreeME model is a hybrid neo-Keynesian Computable General Equilibrium model (1), which had to be adaptated and calibrated on Tunisian data (2).
 
@@ -409,7 +423,7 @@ ggplot() +
 
 All the indicators used in the analysis are in exact hat algebra, meaning the proportional variation to Baseline scenario. time scale of data key indicator: two dimensions economy and environnement
 
-### Kaya identity (Jin)
+### Kaya identity
 
 The Kaya identity, firstly proposed by [@kaya1989], is an identity where the total emission of carbon dioxide can be explained by four product driving forces as population, Gross Domestic Product (GDP) per capita, enerny intensity over GDP and carbon intensity over energy consumption [@kayaide2021]. It is expressed in the form:
 
@@ -448,7 +462,7 @@ $$ D_{X} = exp ( \Sigma \frac{(C_{2,i}-C_{0,i})/(lnC_{2,i}-lnC_{0,i})}{(C_{2}-C_
 
 It should be noted that we integrated the energy consumption and carbon dioxide emission by household into that of energy transformation sector. On the one hand, household is the aggregation who does not hold added value, but who, at meantime, does contribute to the overall CO2 emissions, however, the emissions arose by households are certainly not negligible. On the other hand, the households consume principally fuels, natural gas and electricity, where the first two are derived from energy transformation sector. As for electricity, the usage of electricity in fact does not arise any emissions according to the assumptions for it is taken into consideration during its generation i.e. electricity sector. This may not be the best solution, however, it does not change our principal results but largely simplify the data treatment process. So we consider, for the following analysis, that for energy transformation sector the consumption of fuels for transportation, fuels for other uses and electricity are derived from households, whilst the natural gas consumption belongs to the sector itself.
 
-# Results et discussions
+# Results and discussions
 
 In this section we will analyse the results obtained for the different scenarios for the different variables taken into account.
 
@@ -603,7 +617,7 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 ```
 
-## Carbon tax (jin)
+## Carbon tax
 
 As the carbon tax before 2030 stays at a moderate level, the impacts of this policy are therefore limited, while the significant effects are observed during the later period from 2030 to 2050 when a much stronger tax carbon is implemented. The macroeconomic impacts are summarized in table 1, the results are expressed as percentage deviation from Baseline scenario.
 
@@ -865,7 +879,7 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ```
 
-## Energy subsidies removal (bee)
+## Energy subsidies removal
 
 ### Economic impacts
 
@@ -1364,14 +1378,10 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ```
 
-# Prolongements
-
-## D'autres leviers pour analyser (ouverture)
+# Conclusion
 
 ## L'amélioration du cadre statistique
 
 OUverture : pb du secteur informel non pris en compte par la comptabilité nationale
 
-# Conclusion
-
-# Bibliographie
+# Bibliography
