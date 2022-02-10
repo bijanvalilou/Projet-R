@@ -554,7 +554,7 @@ column_spec(1, width = "6cm")
 
 Tableau Taxe avec redistribution
 
-```{r eval=FALSE, dev='jpeg'}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -571,7 +571,7 @@ column_spec(1, width = "6cm")
 
 Tableau subvention sans redistribution
 
-```{r eval=FALSE, dev='jpeg'}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -588,7 +588,7 @@ column_spec(1, width = "6cm")
 
 Tableau subvention avec redistribution
 
-```{r eval=FALSE, dev='jpeg'}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -609,7 +609,7 @@ As the carbon tax before 2030 stays at a moderate level, the impacts of this pol
 
 Generally speaking, the policy of carbon tax with redistribution of government revenue has a positive impact on Tunisia's economy. Whereas GDP increases slightly up to 0.13% with respect to baseline on 2030, the relatively rapid augmentation is observed from 2030 to 2050. At the horizon of 2050, it reaches a highest level (+1.93%) thanks to the carbon tax policy. In the meantime, social welfare is improved with the same rhythme as GDP growth, with a higher consumption level (+4.20%) and a higher disposable income (+4.17%) on 2050.
 
-```{r eval=FALSE, dev='jpeg', echo = FALSE}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -874,7 +874,7 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 Table.X : Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline!
 :::
 
-```{r eval=FALSE, dev='jpeg', include=FALSE}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -1091,7 +1091,7 @@ Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviati
 
 In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains. 
 
-```{r, echo = FALSE}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
@@ -1193,7 +1193,7 @@ ggplot() +
 Table.X :Macroeconomic impacts of Nation Low-Carbon Strategy scenario in % deviation to Baseline
 :::
 
-```{r dev='jpeg', include=FALSE}
+```{r, echo=FALSE}
 
 tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
 
