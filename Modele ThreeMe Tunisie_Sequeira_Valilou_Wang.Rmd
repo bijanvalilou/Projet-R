@@ -256,7 +256,7 @@ rm(i,j,jin,name,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
 
 # Literature review
 
-## Energy and economy framework in Tunisia (Jin)
+## Energy and economy framework in Tunisia
 
 Tunisia is one of the northernmost countries in Africa, ranked the most competitive economy in Africa by World Economy Forum in 2009 [@tunisia2022]. The local economy is largely oriented towards services, which account for 43% of GDP in 2019 [@worldbank2020], including the booming IT and tourism industries. Agriculture is another key sector of the Tunisian economy, representing 10.4% of the GDP and employing 12.7% of the working population [@worldbank2020]. Thanks to technical progress of agricultural sector, Tunisia is one of the most productive countries in Africa. Tunisia's industry represents 22.7% of GDP and employs 32.5% of the working population in 2020 [@bnpparibas]. The industrial sectors are mainly export oriented especially for manufacturing, Europe is the destination for more than 75% of Tunisia's exports [@worldbank2020].
 
@@ -869,7 +869,6 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 ### Economic impacts
 
-
 ::: {align="center"}
 Table.X : Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline!
 :::
@@ -1089,7 +1088,7 @@ plt2
 Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline
 :::
 
-In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains. 
+In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -1123,7 +1122,6 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
 ```
-
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -1170,7 +1168,7 @@ ggplot() +
 
 ```
 
-In fact, the expanding investment not only cuts back the cost of exploitation, but also boosts the energy efficiency in electricity sector. We notice from Fig.x that electricity is the only sector where there is a reduction of energy intensity. This is quite intuitive for the emerging renewable energies replace the fossil fuels in electricity mix, meaning a stronger independence to fossil fuels, thus less emissions during electricity generation. 
+In fact, the expanding investment not only cuts back the cost of exploitation, but also boosts the energy efficiency in electricity sector. We notice from Fig.x that electricity is the only sector where there is a reduction of energy intensity. This is quite intuitive for the emerging renewable energies replace the fossil fuels in electricity mix, meaning a stronger independence to fossil fuels, thus less emissions during electricity generation.
 
 As discussed above that the electricity is the only sector who is impacted by this policy, the penetration of renewable energies could seldom influence other sectors. We observe then a rebound effect for certain sectors. Apparently the renewable energy does not induce the innovation oriented to improve energy efficiency, and on the other hand, the fact knowing that electricity is a much more environmental friendly energy, makes them somehow indifferent to consume more or less energies. That is to say, the penetration just provides an alternative with less environmental impacts, rather than intrinsically resolves the problem meaning a transition from energy-intensive to energy-efficient production. Thus, in terms of sustainable development, the renewable energies policy should better cooperate with other economic levers in order to guarantee its efficiency in the longer term.
 
