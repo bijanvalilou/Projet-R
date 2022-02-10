@@ -222,8 +222,6 @@ Det <- list(D1,D2,D3,D4,D5,D6)
 rm(i,j,jin,name,kayaname,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
 ```
 
-fdsafdsafdsahfjdsahkfj、jdjd
-
 ```{r, echo=FALSE, tidy = TRUE, include = FALSE}
 # Decomposition additive
 name <- c("D1","D2","D3","D4","D5","D6")
