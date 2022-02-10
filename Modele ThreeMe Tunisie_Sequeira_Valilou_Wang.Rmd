@@ -3,6 +3,9 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  html_document: 
+    toc: yes
+    toc_depth: 5
   pdf_document: 
     citation_package: biblatex
     toc: yes
@@ -11,9 +14,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
-  html_document: 
-    toc: yes
-    toc_depth: 5
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -282,17 +282,11 @@ Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (s
 
 ### Carbon tax
 
-After some reversals over the past twenty years, carbon pricing is reemerging. Since 2016, many new carbon-pricing initiatives have been implemented, with several countries considering implementing carbon pricing in the years ahead, after having signed the Paris Agreement [@klenert2018]. The level of the carbon price retained, i.e. the rate of the tax, corresponds to the value that society places on the protection of the environment from the consequences of climate change[@deperthuis2010].
+After some reversals over the past twenty years, carbon pricing is reemerging. Since 2016, many new carbon-pricing initiatives have been implemented, with several countries considering implementing carbon pricing in the years ahead, after having signed the Paris Agreement [@klenert2018]. The level of the carbon price retained, i.e. the rate of the tax, corresponds in someway to the value that society places on the protection of the environment from the consequences of a rise in temperature [@deperthuis2010].
 
-When considering the externality associated with the release of CO2 from combustion, we observe that there is a marginal social cost that exceeds marginal private cost. The difference between this two costs reflects the marginal external cost of damage [@goulder2013]. Carbon tax is the instrument that comes
+When considering the externality associated with the release of CO2 from combustion, we observe that there is a marginal social cost that exceeds marginal private cost. The difference between this two costs reflects the marginal external cost of damage [@goulder2013]. Carbon tax is the instrument that comes reflect marginal external damage. The advantage of using a tax system to price environmental harm is to send a clear price signal to guide economic entities spontaneously to reduce their level of pollution until their marginal cost of depollution equals the tax, as pointed by @deperthuis2010 .
 
-The advantage of using a tax system to price environmental harm is to send a clear price signal to economic entities which will each guide them spontaneously to reduce their level of pollution until their marginal cost of depollution equals the price. of the tax.
-
-The typical prescription is to put a tax on emissions that reflects the marginal external damage. In a competitive market this will cause private costs to rise.
-
-@gueret : no citable
-
-@combet
+In a competitive market, this will cause private costs to rise and this will cause an issue of acceptability.
 
 ### Energy subsidy
 
