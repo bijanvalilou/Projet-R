@@ -81,6 +81,21 @@ for (i in 1:nb_sheets){
         assign(name2,data)
         rm(name,name2,data)
 } 
+
+
+sheet_names <- excel_sheets("Sectors and commodities_MissingData.xlsx")
+nb_sheets <- length(sheet_names)
+for (i in 2:nb_sheets){  
+        name <- sheet_names[i] 
+        name2 <- paste0(name,sep="") 
+        data <- read_excel("Sectors and commodities_MissingData.xlsx", sheet = i) 
+        data <- column_to_rownames(data, var = 'Year')
+        colnames(data) <- c(2015:2050)
+        data <- data.frame(t(data))
+        data$year <- c(2015:2050)
+        assign(name2,data)
+        rm(name,name2,data)
+} 
 ```
 
 ```{r, echo=FALSE, tidy = TRUE, include = FALSE}
