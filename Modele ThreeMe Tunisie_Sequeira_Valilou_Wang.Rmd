@@ -1011,7 +1011,7 @@ The decrease in energy intensity is confirmed by the decrease in energy consumpt
 
 
 
-```{r}
+```{r echo=FALSE}
 ggplot() +
 geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_ind_2"], group = 1, color = "Industry & Agriculture")) + 
     geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_trsp_2"], group = 1, color = "Transport")) + 
