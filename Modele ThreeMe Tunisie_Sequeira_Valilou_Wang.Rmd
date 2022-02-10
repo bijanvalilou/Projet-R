@@ -3,9 +3,6 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
-  html_document: 
-    toc: yes
-    toc_depth: 5
   pdf_document: 
     citation_package: biblatex
     toc: yes
@@ -14,8 +11,9 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
-    fig_height: 2.95
-    fig_width: 3.1
+  html_document: 
+    toc: yes
+    toc_depth: 5
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -266,7 +264,7 @@ Since the Jasmine Revolution on 2011, Tunisia economy has been suffered from the
 
 Along with the sluggish economy is the huge energy deficit in Tunisia. @irena2021 reported that energy deficit (50% in 2019) has existed in Tunisia over the past two decades, mainly because of the increasing consumption but with the stagnated even declined domestic production in recent years. @giz reported that Tunisia depends for 60% on energy imports, and this number is continuously raising. The energy transition project proclaimed in 2014 aims to reduce energy needs by 34% by 2030, lower subsidies and establish incentive mechanisms favoring profitable and climate friendly investments. However, the challenging is the lack of reliable institutional mechanisms and motivation for enterprises to participate, accompanied with a poorly established service market and weak transmission of knowledge to citizens, especially outside urban area.
 
-The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the Tunisian welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to 3.3 billion Tunisian dinars (\$1,14 billion) [@trésor2021]. Concerning energy subsidies, the government subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure X. The LPG and the electricity subsidies are the main expenditure items as shown in figure X. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. On the contrary, in 2013, the bottom 40% of the distribution captured only 29% of energy subsidies [@worldbank2014]. According to @cuesta2017 , energy subsidies are also a cornerstone of the development of Tunisian productive sectors. The subsidy system allows firms to buy cheap energy resources. The noncompetitive companies, which employ unskilled workers, rely on the subsidies.
+The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the Tunisian welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to \$1,14 billion (2.7% of GDP) [@trésor2021]. Concerning energy subsidies, the government subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure X. The LPG and the electricity subsidies are the main expenditure items as shown in figure X. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. On the contrary, in 2013, the bottom 40% of the distribution captured only 29% of energy subsidies [@worldbank2014]. According to @cuesta2017 , energy subsidies are also a cornerstone of the development of Tunisian productive sectors. The subsidy system allows firms to buy cheap energy resources. The noncompetitive companies, which employ unskilled workers, rely on the subsidies.
 
 After the revolution, fiscal and equity issues incited the Tunisian government to reduce energy subsidies. In 2012, the prices of gasoline, diesel and electricity increased by 7% [@albertin2014]. In 2014, energy subsidies to cement firms were reduced by half. In 2020, Tunisia has introduced an automatic monthly price adjustment mechanism for petrol and diesel sales, with the aim of eliminating fuel subsidies.
 
@@ -284,7 +282,7 @@ Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (s
 
 ## Climate policy
 
-### Carbon tax 
+### Carbon tax
 
 ### Energy subsidy
 
