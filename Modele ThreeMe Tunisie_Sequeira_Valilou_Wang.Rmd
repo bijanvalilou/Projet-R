@@ -3,9 +3,6 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
-  html_document: 
-    toc: yes
-    toc_depth: 5
   pdf_document: 
     citation_package: biblatex
     toc: yes
@@ -14,6 +11,9 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
+  html_document: 
+    toc: yes
+    toc_depth: 5
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -75,6 +75,21 @@ for (i in 1:nb_sheets){
         name2 <- paste0(name,"_Macro") 
         data <- read_excel("Page Macro.xlsx", sheet = i) 
         data <- column_to_rownames(data, var = '_date_')
+        colnames(data) <- c(2015:2050)
+        data <- data.frame(t(data))
+        data$year <- c(2015:2050)
+        assign(name2,data)
+        rm(name,name2,data)
+} 
+
+
+sheet_names <- excel_sheets("Sectors and commodities_MissingData.xlsx")
+nb_sheets <- length(sheet_names)
+for (i in 2:nb_sheets){  
+        name <- sheet_names[i] 
+        name2 <- paste0(name,sep="") 
+        data <- read_excel("Sectors and commodities_MissingData.xlsx", sheet = i) 
+        data <- column_to_rownames(data, var = 'Year')
         colnames(data) <- c(2015:2050)
         data <- data.frame(t(data))
         data$year <- c(2015:2050)
@@ -876,6 +891,23 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 ## Energy subsidies removal
 
 ### Economic impacts
+
+
+```{r, echo=FALSE}
+x= (SubvavecRedis[,"pch_cfuh_2"]/SubvavecRedis[,"pch_cfuh_0"]-1)*100
+table <- cbind(Sc4[,"year"], Sc4[,"ch_toe_cfuh_2"]/x)
+colnames(table) <- c("Year", "Price elasticity")
+table <- table[c(7, 11, 16, 21, 26, 31, 36),]
+
+
+kbl(table, booktabs = T, linesep = "", caption = "Price elasticity of demand for fuel dedicated to other use")%>%
+kable_styling(latex_options = "striped", full_width = F,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
+
+```
+
+
 
 ::: {align="center"}
 Table.X : Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline!
