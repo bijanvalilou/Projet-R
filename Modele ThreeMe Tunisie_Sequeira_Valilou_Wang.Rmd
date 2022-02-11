@@ -538,13 +538,11 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario without redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
 ```
-
-Tableau Taxe avec redistribution
 
 ```{r, echo=FALSE}
 
@@ -555,7 +553,7 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario with redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
@@ -611,7 +609,9 @@ ggplot() +
 
 ```
 
-Tableau subvention sans redistribution
+We will now analyse further indicators for the fossil fuels subsidies removal with and without redistribution scenarios. This indicators give us a more complete panorama of the state of the Tunisian economy.
+
+We observe that the redistribution of the fossil fuels subsidies is at the origin of an augmentation in household consumption, however it is much less pronounced that the augmentation that we observed before for the redistribution of the carbon tax. There is in both cases an improvement in the trade balance, but it is more pronounced in the case without redistribution.
 
 ```{r, echo=FALSE}
 
@@ -622,13 +622,11 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of fossil fuels subsidies removal scenario without redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
 ```
-
-Tableau subvention avec redistribution
 
 ```{r, echo=FALSE}
 
@@ -639,7 +637,7 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of fossil fuels subsidies removal scenario without redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
