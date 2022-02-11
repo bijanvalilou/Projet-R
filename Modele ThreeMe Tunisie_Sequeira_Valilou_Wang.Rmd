@@ -1472,8 +1472,8 @@ annotate_figure(figure,
 When working with an Integrated Assessment Model as is the case of ThreeME we should pay attention not to attach too much importance to precise figures but instead to keep the whole in perspective, to focus on trends rather than on specific values. Another thing to keep in mind is that the model works on the basis of several hypothesis that influence the results in one way or another.
 
 Taking these remarks into consideration, we will try to draw some conclusions from the data analysis that we have made. First, it can be deduced that the SNBC scenario is the one that is preferred since the mix of policies appears to have the most positive macroeconomic effects. Second, the redistribution of the revenues that come from the carbon tax and the fossil fuels subsidies removal does have a positive impact on the economy and on the environmental and a double dividend is observed. 
-j
-
+ 
+Maybe one of the strongest hypothesis of the model is that it is a Neo-Keynesian one. This imply that prices and quantities do not adjust instantaneously but instead, they adjust slowly. Unlike Walrasian's models, Neo-Keynesian's models do not assume full utilization of production factors then giving rise to unemployment and to spare production capacities. The slow adjustments between capital and labor lead to a long term optimal relation between the level of production factors and the level of production, and this promote a positive multiplier effect of an increase in public spending (OFCE). The eviction effect is then limited and the double dividend is favoured.
 
 Amelioration du cadre statistique : pb du secteur informel non pris en compte par la comptabilité nationale
 
