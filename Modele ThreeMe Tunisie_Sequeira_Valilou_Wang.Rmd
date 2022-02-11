@@ -482,7 +482,7 @@ In this section we will analyse the influence of the redistribution of both the 
 
 ### Carbon tax with and without redistribution
 
-Firstly, we analyse the redistribution of the carbon tax. The figure below show the variation in GDP in relation to the baseline for both scenarios carbon tax with and without redistribution. We observe that the scenario with redistribution shows a marked increase in GDP since 2030 while the GDP decreases for the scenario without redistribution.
+We first analyse the redistribution of the carbon tax. The figure below shows the variation in GDP in relation to the baseline for both scenarios carbon tax with and without redistribution. We observe that the scenario with redistribution shows a marked increase in GDP since 2030 (+2% in 2050 in relation to the baseline) while GDP decreases for the scenario without redistribution (-1.5% in 2050 in comparison with the baseline). The variations in GDP observed before 2030 are less pronounced, and that correspond to the progressive implementation of the carbon tax.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
@@ -492,7 +492,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-If we analyse employment variations, we can see that the redistribution operates an increase on it in relation to the baseline. In the scenario without redistribution there is a decrease in the level of employment in comparison with the baseline.
+If we analyse employment variations, we can see that the redistribution operates an increase on it in relation to the baseline (+2.3% in 2050). In the scenario without redistribution there is a decrease in the level of employment in comparison with the baseline (-1% in 2050).
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -503,7 +503,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-Regarding CO2 emissions, it is noted that there is no a great difference in the variation between the scenarios carbon tax with and without redistribution. However, we can notice that the reduction in emissions compared to the be baseline is slightly larger in the case that there is no redistribution, and this seems consistent with the economic recession observed before.
+Regarding CO2 emissions, it is noted that there is not a great difference in the variation between the scenarios carbon tax with and without redistribution. However, we can notice that the reduction in emissions compared to the baseline is slightly larger in the case that there is no redistribution, and this seems consistent with the economic recession observed before.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
@@ -515,7 +515,9 @@ ggplot() +
 
 ### Fossil fuels subsidies removal with and without redistribution
 
-PIB
+If we do the same analyse on the economic indicators for the scenarios subsidies removal with and without redistribution, we notice that in general lines trends are similar.
+
+In the case of GDP variation for the scenario with redistribution, we can see in the figure below that there is a maximum increase of approximately 0.5% around the year 2024 when the subsidies fall to zero. Then there is an stabilization in GDP around baseline levels. For the scenario subsidies removal without redistribution, there is a strong decrease in GDP variation around 2028 (-2.1% in relation to the baseline), and then a progressive increase. However, GDP variation is always negative in comparison to the baseline at least in the period 2020-2050.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
