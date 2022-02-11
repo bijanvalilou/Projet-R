@@ -1259,11 +1259,7 @@ plot3 <- ggplot() +
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Taux.de.chômage"], group = 1, color = "Taxe carbone")) + 
  geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Taux.de.chômage"], group = 1, color = "Levée de \nsubventions")) + 
     geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Taux.de.chômage"], group = 1, color = "ENR")) +
-<<<<<<< Updated upstream
-  labs(x = "Year", y = "Rate of unemployment (%)", title = "Fig. X  Rate of \nunemployment") + 
-=======
   labs(x = "Year", y = "Rate of unemployment (%)", title = "Fig.42  Rate of unemployment") + 
->>>>>>> Stashed changes
     theme(axis.title=element_text(size=9),axis.text=element_text(size=6),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
