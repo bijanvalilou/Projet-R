@@ -3,9 +3,6 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
-  html_document:
-    toc: yes
-    toc_depth: 5
   pdf_document:
     citation_package: biblatex
     toc: yes
@@ -14,6 +11,9 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
+  html_document:
+    toc: yes
+    toc_depth: 5
   word_document:
     toc: yes
     toc_depth: '5'
@@ -1237,7 +1237,7 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 ```
 
-```{r}
+```{r,echo = FALSE, fig.align='center'}
 get_legend<-function(myggplot){
   tmp <- ggplot_gtable(ggplot_build(myggplot))
   leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
@@ -1339,7 +1339,7 @@ annotate_figure(figure,
 The decrease in energy intensity in the electricity sector, via the investment channel, corresponds to a strong improvement in energy efficiency. 
 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 
 BROWN <- "#AD8C97"
@@ -1377,7 +1377,7 @@ plt1
 
 The national low carbon strategy creates winners and losers. The electricity sector is a major beneficiary of the policy mix, while the energy transformation sector experiences a sharp decline in its value added (see figure X). 
 
-```{r}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 BROWN <- "#AD8C97"
 BROWN_DARKER <- "#7d3a46"
@@ -1412,7 +1412,7 @@ plt1
 
 Figure X shows that electricity increases from 19% of final energy consumption in Tunisia in 2050 to 30% in 2050. 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 tot <- S6[,"ci_toe_ind_2"]+S6[,"ci_toe_trsp_2"]+S6[,"ci_toe_ser_2"]+S6[,"ch_toe_2"]
 
