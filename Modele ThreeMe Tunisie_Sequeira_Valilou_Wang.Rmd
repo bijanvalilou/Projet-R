@@ -274,9 +274,7 @@ rm(i,j,jin,name,secteur,secteur0,w,data,D1,D2,D3,D4,D5,D6)
 
 \newpage
 
-# Introduction
-
-## Energy and economy framework in Tunisia
+# Introduction - Energy and economy framework in Tunisia
 
 Tunisia is one of the northernmost countries in Africa, ranked the most competitive economy in Africa by World Economy Forum in 2009 [@tunisia2022]. The local economy is largely oriented towards services, which account for 43% of GDP in 2019 [@worldbank2020], including the booming IT and tourism industries. Agriculture is another key sector of the Tunisian economy, representing 10.4% of the GDP and employing 12.7% of the working population [@worldbank2020]. Thanks to technical progress of agricultural sector, Tunisia is one of the most productive countries in Africa. Tunisia's industry represents 22.7% of GDP and employs 32.5% of the working population in 2020 [@bnpparibas]. The industrial sectors are mainly export oriented especially for manufacturing, Europe is the destination for more than 75% of Tunisia's exports [@worldbank2020].
 
@@ -300,9 +298,13 @@ Fig.1 : Composition of fuel subsidies product (source : @tunisia2020)
 Fig.2 : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (source : @tunisia2020)
 :::
 
-## Literature review in climate policy
+In its Nationally Determined Contribution, Tunisia commits to reducing its carbon intensity by 41% in 2030 compared to the base year 2010. In order to reach this objective, Tunisia has a range of policies to implement: carbon tax, lifting of subsidies and development of renewable energies. This paper asks the following question : **what are the macroeconomic, energy and environmental consequences of the policies, whether they are implemented separately or together ?**
 
-### Carbon tax
+After a literature review (II), the methodology based on the combination of scenarios, the ThreeMe Tunisia model and the extended Kaya identity is presented (III). The outputs per scenario of the ThreeMe Tunisia model are analysed, notably thanks to the extended Kaya identity (IV).
+
+# Literature review in climate policy
+
+## Carbon tax
 
 In general, the presence of an environmental externality suggests that there is a marginal social cost that exceeds the marginal private cost. In the absence of regulation, the difference between this two costs (the marginal external cost of damage) is not covered by the polluter. Consider the particular case of the externalities associated with the release of CO2 in the atmosphere. The carbon tax is the tax that comes reflect that marginal external damage.
 
@@ -312,7 +314,7 @@ After some reversals over the past twenty years, carbon pricing is reemerging. S
 
 In a competitive market, the introduction of a carbon tax will cause private costs to rise and in consequence its implementation encounters considerable resistance. It is then desirable to accompany carbon taxes with some mechanism that enhance its acceptability.
 
-### Energy subsidy
+## Energy subsidy
 
 Subsidies are defined by @demoor1997 as *'any measure that keeps prices for consumers below the market level or keeps prices for producers above the market level or that reduces costs for consumers and producers by giving direct or indirect support'*. Energy subsidies are a common policy. Their amount is estimated at \$4.7 trillion in 2015 as pointed out @coady2019, which is equivalent to 6.3 percent of Gross Domestic Product . Energy subsidies fluctuate depending on the price of the energy products. From the database of the International Energy Agency, we can notice that the fossil fuel subsidies have [fallen by 42 percent between 2019 and 2020](https://www.iea.org/topics/energy-subsidies) due to the drop of fuel prices.
 
@@ -340,7 +342,7 @@ Reducing energy subsidies may improve economic welfare and reduce emissions [@al
 Fig.3 : Energy subsidies and energy intensities by country in 2017 (data : SDG indicators for United Nations Economic Commission for Europe)
 :::
 
-### Carbon tax revenue recycling and double dividend
+## Carbon tax revenue recycling and double dividend
 
 Tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument [@goulder2013]. There are many ways in which this redistribution can operate.
 
