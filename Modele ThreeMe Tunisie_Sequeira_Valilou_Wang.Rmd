@@ -1475,6 +1475,6 @@ Taking these remarks into consideration, we will try to draw some conclusions fr
  
 Maybe one of the strongest hypothesis of the model is that it is a Neo-Keynesian one. This imply that prices and quantities do not adjust instantaneously but instead, they adjust slowly. Unlike Walrasian's models, Neo-Keynesian's models do not assume full utilization of production factors then giving rise to unemployment and to spare production capacities. The slow adjustments between capital and labor lead to a long term optimal relation between the level of production factors and the level of production, and this promote a positive multiplier effect of an increase in public spending (OFCE). The eviction effect is then limited and the double dividend is favored.
 
-Amelioration du cadre statistique : pb du secteur informel non pris en compte par la comptabilité nationale
+There is another point that should be highlighted, this time about the statistical framework. The data concerning the Tunisian economy comes from the system of national accounts and then the informal sectors of the economy are not taken into account. This can distort results since informal sectors are important in many African countries.
 
 # Bibliography
