@@ -523,7 +523,11 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-In order to have a deeper comprehension of the impact of tax recycling we will analyse further economic indicators that account for
+In order to have a deeper comprehension of the effects of tax recycling we will analyse further economic indicators that account for the state of the Tunisian economy. The figures in the two tables below represent the variation in relation to the baseline for each indicator at a given time.
+
+We can initially notice that redistribution tends to increase household consumption. This is intimately related to the type of redistribution chosen. As explained before, a part of the carbon tax revenues is given back to households as lump-sum transfers and this allows consumption to rise (even if moderately) despite the increase on production prices.
+
+Regarding public debt, we notice that it decreases in the two cases despite the presence or absence of redistribution. However, the decrease is much more pronounced in the scenario without redistribution, what seems reasonable since the revenues of the carbon tax are almost exclusively devoted to pay off the public debt.
 
 ```{r, echo=FALSE}
 
