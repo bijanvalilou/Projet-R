@@ -1481,6 +1481,6 @@ Maybe one of the strongest hypothesis of the model is that it is a Neo-Keynesian
 
 There is another point that should be highlighted, this time about the statistical framework. The data concerning the Tunisian economy comes from the system of national accounts and then the informal sectors of the economy are not taken into account. This can distort results since informal sectors are important in many African countries.
 
-Last but not least, social and political acceptability of environmental policies are not taken into account in the model.
+Last but not least, social and political acceptability of environmental policies are not taken into account in the model. In order to achieve the emission reduction targets, the conditions for the acceptability of the increase in the CO2 price must be ensured [\@combet] . Environmental policies are much more than an economic efficiency challenge or a fiscal instrument that the national administration can manage alone; they should take into account distributional fairness, political trust and policy stability [\@klenert2018a] . In this sense, the choice of revenue usage is crucial and should aim to enhance acceptability. There is no universal solution, instead the particularities of the Tunisian society and economy should be taken into account in order to carve out the policy that best suits them.
 
 # Bibliography
