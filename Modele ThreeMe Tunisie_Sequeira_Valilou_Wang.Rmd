@@ -291,13 +291,13 @@ After the revolution, fiscal and equity issues incited the Tunisian government t
 ![](Images/Composition%20of%20fuel%20subsidies%20by%20product.jpg)
 
 ::: {align="center"}
-Fig.X : Composition of fuel subsidies product (source : @tunisia2020)
+Fig.1 : Composition of fuel subsidies product (source : @tunisia2020)
 :::
 
 ![](Images/Energy%20subsdies%20received%20by%20welfare%20quintile.jpg)
 
 ::: {align="center"}
-Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (source : @tunisia2020)
+Fig.2 : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (source : @tunisia2020)
 :::
 
 ## Literature review in climate policy
@@ -337,7 +337,7 @@ Reducing energy subsidies may improve economic welfare and reduce emissions [@al
 ![](Images/Subsidies%20-%20energy%20intensity.jpg)
 
 ::: {align="center"}
-Fig.X : Energy subsidies and energy intensities by country in 2017 (data : SDG indicators for United Nations Economic Commission for Europe)
+Fig.3 : Energy subsidies and energy intensities by country in 2017 (data : SDG indicators for United Nations Economic Commission for Europe)
 :::
 
 ### Carbon tax revenue recycling and double dividend
@@ -354,7 +354,7 @@ In fact, there are no generalities regarding the way the revenues are recycled. 
 
 <div>
 
-Fig.X : Decision-tree diagram for carbon revenue recycling. Source : @klenert2018 .
+Fig.4 : Decision-tree diagram for carbon revenue recycling. Source : @klenert2018 .
 
 </div>
 
@@ -379,7 +379,7 @@ ThreeME combines several features [@callonnec2013 ; @callonnec2021] :
 ![](Images/Architecture%20of%20a%20CGEM.jpg)
 
 ::: {align="center"}
-Fig.X : Architecture of CGEM (source : @callonnec2013)
+Fig.5 : Architecture of CGEM (source : @callonnec2013)
 :::
 
 -   ThreeME is a CGEM of neo-Keynesian inspiration. ThreeME differs from Walrasian CGEM in its dynamics and its transition to the long run. Instead of perfect flexibility hypothesis, prices and quantities slowly adjust, because of uncertainties, adjustment costs or temporal boundaries. Prices do not clear supply and demands and market imperfections are also included in the model. Consequently, there are disequilibrium between supply and demand. For instance, involuntary unemployment is possible.
@@ -395,7 +395,7 @@ ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia 
 ![](Images/Sectoral%20disaggregation.jpg)
 
 ::: {align="center"}
-Fig.X : Sectoral disaggregation
+Fig.6 : Sectoral disaggregation
 :::
 
 The required data are economic data from national accounts, in particular from Input-Output Tables (IOTs), physical data from energy balance and detailed tax data by product. These data were collected from Tunisian institutions, in particular ANME (National Agency for Energy Management), INS (National Institute of statistics), ONE (National Energy Observatory), STEG (Tunisian Company of Electricity and Gas), ITCEQ (Tunisian Institute of Competitiveness and Quantitative Studies), Ministry of Energy, Mines and Energy Transition and the Ministry of Economic Development, Investment and International Cooperation.
@@ -423,7 +423,7 @@ Before 2030, carbon tax level is calculated to cover 100% of the needs of the En
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
   geom_line( data = S1, aes(x = year,y = rco2tax_vol.1000, group = 1)) +
-    labs(x= "year", y = "Carbon tax rate \n (in constant Tunisian dinars on 2015 per ton of CO2) ", title = "Fig.X Evolution of carbon tax in Tunisia") +
+    labs(x= "year", y = "Carbon tax rate \n (in constant Tunisian dinars on 2015 per ton of CO2) ", title = "Fig.7 Evolution of carbon tax in Tunisia") +
   scale_x_continuous(breaks=seq(2015,2050,5)) + 
   theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5))
 
@@ -438,7 +438,7 @@ Changes in fossil fuels subsidies between 2015 and 2020 are due to fluctuations 
 ggplot() + 
   geom_line( data = S3, aes(x = year,y = abs(esub_gdp_2.gdp_2.1000000..ems_co2_2.1000.), group = 1)) +
     labs(x= "Year", y = "Energy subsidies 
-         (in 2015 constant Tunisian dinars per ton of CO2)", title = "Scenarios with lifting of energy subsidies. Energy subsidies.") +
+         (in 2015 constant Tunisian dinars per ton of CO2)", title = "Fig.8 Scenarios with lifting of energy subsidies. Energy subsidies.") +
   scale_x_continuous(breaks=seq(2015,2050,5))+ theme(axis.title=element_text(size=9))
 
 # valeur négative passée en valeur absolue 
@@ -512,7 +512,7 @@ We first analyse the redistribution of the carbon tax. The figure below shows th
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Carbon tax without redistribution")) + 
   geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Carbon tax with redistribution")) + 
-  labs(y = "GDP variation (%)", title = "GDP in volume. Variation in relation to the baseline") +
+  labs(y = "GDP variation (%)", title = "Fig.9 GDP in volume. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -523,7 +523,7 @@ If we analyse employment variations, we can see that the redistribution operates
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Carbon tax without redistribution")) + 
   geom_line( data = Sc2, aes(x = year,y = f_l_2, group = 1, color = "Carbon tax with redistribution")) + 
-  labs(y = "Employment variation (%)", title = "Employment. Variation in relation to the baseline") +
+  labs(y = "Employment variation (%)", title = "Fig.10 Employment. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -533,7 +533,7 @@ Regarding CO2 emissions, it is noted that there is not a great difference in the
 ggplot() + 
   geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Carbon tax without redistribution")) + 
   geom_line( data = Sc2, aes(x = year,y = ems_co2_2, group = 1, color = "Carbon tax with redistribution")) + 
-  labs(y = "CO2 emissions variation (%)", title = "CO2 emissions. Variation in relation to the baseline") +
+  labs(y = "CO2 emissions variation (%)", title = "Fig.11 CO2 emissions. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -583,7 +583,7 @@ In the case of GDP variation for the scenario with redistribution, we can see in
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Subsidies removal without redistribution")) + 
   geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Subsidies removal with redistribution")) + 
-  labs(y = "GDP variation (%)", title = "GDP in volume. Variation in relation to the baseline") +
+  labs(y = "GDP variation (%)", title = "Fig.12 GDP in volume. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -594,7 +594,7 @@ As regards employment, the scenario with redistribution presents a positive vari
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = f_l_2, group = 1, color = "Subsidies removal without redistribution")) + 
   geom_line( data = Sc4, aes(x = year,y = f_l_2, group = 1, color = "Subsidies removal with redistribution")) + 
-  labs(y = "Employment variation (%)", title = "Employment. Variation in relation to the baseline") +
+  labs(y = "Employment variation (%)", title = "Fig.13 Employment. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -604,7 +604,7 @@ There are no marked differencies in emissions variation in relation with the bas
 ggplot() + 
   geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Subsidies removal without redistribution")) + 
   geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Subsidies removal with redistribution")) + 
-  labs(y = "CO2 emissions variation (%)", title = "CO2 emissions. Variation in relation to the baseline") +
+  labs(y = "CO2 emissions variation (%)", title = "Fig.14 CO2 emissions. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -617,7 +617,7 @@ ggplot() +
   geom_line( data = S2_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Carbon tax with redistribution")) + 
   geom_line( data = S3_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subsidies removal without redistribution")) + 
   geom_line( data = S4_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subsidies removal with redistribution")) +
-  labs(y = "Gross nominal wage (%)", title = "Gross nominal wage. Variation in relation to the baseline") +
+  labs(y = "Gross nominal wage (%)", title = "Fig.15 Gross nominal wage. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
 
@@ -677,7 +677,7 @@ ggplot() +
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S"], group = 1, color = "Economy structure")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E"], group = 1, color = "Energy intensity")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n Carbon tax with redistribution") +
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.16 Multiplicative contribution for overall emissions variation \n Carbon tax with redistribution") +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -692,7 +692,7 @@ ggplot() +
   geom_line( aes(x = Det[[2]][,"year"],y = S2_Macro[,"Prix.à.la.Production"], group = 1, color = "Production price")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = S2_Macro[,"Prix.de.la.valeur.ajoutée"], group = 1, color = "Added value price")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = S2_Macro[,"Prix.des.consommations.intermédiaires"], group = 1, color = "Intermediate consumption price")) + 
-  labs(x = "year", y = "Price \n in % deviation to Baseline", title = "Fig.x Evolution of prices on Tunisia's market with regard to baseline scenario") + 
+  labs(x = "year", y = "Price \n in % deviation to Baseline", title = "Fig.17 Evolution of prices on Tunisia's market with regard to baseline scenario") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -709,7 +709,7 @@ ggplot() +
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"S_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of economy structure for overall emissions \n Carbon tax with redistribution") + 
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.18 Multiplicative contribution of economy structure for overall emissions \n Carbon tax with redistribution") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -729,7 +729,7 @@ ggplot(
                group = 1)
                ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Added value \n in % deviation to Baseline", title = "Fig.x Revolution of economy structure in Tunisia \nfor Carbon tax with redistribution scenario, \n expressed by added value variation with regard to Baseline scenario") + 
+  labs(x = "year", y = "Added value \n in % deviation to Baseline", title = "Fig.19 Revolution of economy structure in Tunisia \nfor Carbon tax with redistribution scenario, \n expressed by added value variation with regard to Baseline scenario") + 
       theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -746,7 +746,7 @@ ggplot() +
   geom_line( aes(x = Sc2[,"year"],y = Sc2[,"ia_ser_2"], group = 1, color = "Services")) + 
   geom_line( aes(x = Sc2[,"year"],y = Sc2[,"ia_trsf_2"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Sc2[,"year"],y = Sc2[,"ia_ele_2"], group = 1, color = "Electricity")) + 
-  labs(x = "year", y = "Investment \n in % deviation to Baseline", title = "Fig.x Investment for different sectors in Tunisia") + 
+  labs(x = "year", y = "Investment \n in % deviation to Baseline", title = "Fig.20 Investment for different sectors in Tunisia") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -760,7 +760,7 @@ ggplot() +
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"E_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of energy intensity for overall emissions \n Carbon tax with redistribution") + 
+  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.21 Multiplicative contribution of energy intensity for overall emissions \n Carbon tax with redistribution") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
@@ -780,7 +780,7 @@ ggplot(
                group = 1)
                ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Energy consumption \n in tep difference to Baseline ", title = "Fig.X Evolution of energy consumption by different sectors, \nthe difference with respect to Baseline scenario") + 
+  labs(x = "year", y = "Energy consumption \n in tep difference to Baseline ", title = "Fig.22 Evolution of energy consumption by different sectors, \nthe difference with respect to Baseline scenario") + 
   theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -797,7 +797,7 @@ ggplot() +
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[2]][,"year"],y = Det[[2]][,"I_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of carbon intensity for overall emissions \n Carbon tax with redistribution") + 
+  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.23 Multiplicative contribution of carbon intensity for overall emissions \n Carbon tax with redistribution") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
@@ -822,7 +822,7 @@ Fig.1 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of Industry & Agriculture for Carbon tax scenario") + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.24 Energy mix of Industry & Agriculture for Carbon tax scenario") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -843,7 +843,7 @@ Fig.2 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of Industry & Agriculture for Baseline scenario") + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.25 Energy mix of Industry & Agriculture for Baseline scenario") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -871,7 +871,7 @@ Fig.1 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of household consumption for Carbon tax scenario") + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.26 Energy mix of household consumption for Carbon tax scenario") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -893,7 +893,7 @@ Fig.2 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of household consumption for Baseline scenario") + 
+  labs(x = "year", y = "Share of energy consumption", title = "Fig.27 Energy mix of household consumption for Baseline scenario") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -929,7 +929,7 @@ Fig.1 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.x Energy subsidies scenario with redistribution") + 
+  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.28 Energy subsidies scenario with redistribution") + 
     theme(axis.title=element_text(size=7),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 scale_y_continuous(labels = scales::percent_format(accuracy = 1))
@@ -954,7 +954,7 @@ Fig.2 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.X  Baseline scenario") + 
+  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.29  Baseline scenario") + 
     theme(axis.title=element_text(size=7),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 scale_y_continuous(labels = scales::percent_format(accuracy = 1))
@@ -984,7 +984,7 @@ plt1 <- ggplot() +
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"S"], group = 1, color = "Economy structure")) + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E"], group = 1, color = "Energy intensity")) + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution \n of all drivers for overall emissions variation") +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.30 Multiplicative contribution \n of all drivers for overall emissions variation") +
     theme(axis.title=element_text(size=6), axis.text=element_text(size=6),legend.text=element_text(size=6),title = element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5), legend.key.size = unit(0.4, "cm"))+
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -997,7 +997,7 @@ plt2 <- ggplot() +
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[4]][,"year"],y = Det[[4]][,"E_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution of energy intensity \n by sector for overall emissions") + 
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.31 Multiplicative contribution of energy intensity \n by sector for overall emissions") + 
     theme(axis.title=element_text(size=6), axis.text=element_text(size=6),legend.text=element_text(size=6),title = element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5), legend.key.size = unit(0.35, "cm")) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1019,7 +1019,7 @@ geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_ind_2"], group = 1, color = "In
   geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_trsf_2"], group = 1, color = "Energy transformation")) + 
   geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_ele_2"], group = 1, color = "Electricity sector")) + 
   geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_2"], group = 1, color = "Household")) + 
-  labs(x = "Year", y = "Energy consumption (%)", title = "Fig.x Energy consumption by sector and household consumption") +
+  labs(x = "Year", y = "Energy consumption (%)", title = "Fig.32 Energy consumption by sector and household consumption") +
     theme(axis.title=element_text(size=9),title = element_text(size=9), axis.text=element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
@@ -1053,7 +1053,7 @@ Fig.1 <- ggplot() +
   geom_line( aes(x = Sc4[,"year"],y = x, group = 1, color = "Fuels for other use")) + 
   geom_line( aes(x = Sc4[,"year"],y = w, group = 1, color = "Natural gas")) + 
   geom_line( aes(x = Sc4[,"year"],y = e, group = 1, color = "Electricity")) + 
-  labs(x = "Year", y = "Price (%)", title = "Fig.x Household energy prices") +
+  labs(x = "Year", y = "Price (%)", title = "Fig.33 Household energy prices") +
     theme(axis.title=element_text(size=9),axis.text=element_text(size=6), title = element_text(size=8), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1066,7 +1066,7 @@ Fig.2 <- ggplot() +
     geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cfuh_2"], group = 1, color = "Fuels for other use")) + 
   geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cgas_2"], group = 1, color = "Natural gas")) + 
   geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cele_2"], group = 1, color = "Electricity")) + 
-  labs(x = "Year", y = "Price (%)", title = "Fig.x Household energy consumption") +
+  labs(x = "Year", y = "Price (%)", title = "Fig.34 Household energy consumption") +
     theme(axis.title=element_text(size=9),title = element_text(size=8), axis.text=element_text(size=6), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1105,7 +1105,7 @@ plt2 <- ggplot(stacked_data) +
   # color = "white" indicates the color of the lines between the areas
   geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
   scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
-  labs(x = "year", y = "Investment (in %)", title = "Fig. X Change in investment by sector \nin deviation from the baseline scenario. \nEnergy subsidy removal scenario with redistribution.") + 
+  labs(x = "year", y = "Investment (in %)", title = "Fig.35 Change in investment by sector \nin deviation from the baseline scenario. \nEnergy subsidy removal scenario with redistribution.") + 
       theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 guides(fill=guide_legend(title="Sectors"))
@@ -1145,7 +1145,7 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"trsf"], group = 1, color = "Energy Transformation")) +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"ele"], group = 1, color = "Electricity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation by different sectors \n Renewable Energy") +
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.36 Multiplicative contribution for overall emissions variation by different sectors \n Renewable Energy") +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1159,7 +1159,7 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S"], group = 1, color = "Economy structure")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E"], group = 1, color = "Energy intensity")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n Renewable Energy") +
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.37 Multiplicative contribution for overall emissions variation \n Renewable Energy") +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1176,7 +1176,7 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Additive contribution of economy structure for overall emissions variation \n Renewable Energy") + 
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.38 Additive contribution of economy structure for overall emissions variation \n Renewable Energy") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1190,7 +1190,7 @@ ggplot() +
   geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_ser_2"], group = 1, color = "Services")) + 
   geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_trsf_2"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Sc5[,"year"],y = Sc5[,"ia_ele_2"], group = 1, color = "Electricity")) + 
-  labs(x = "year", y = "Investment \n in % deviation to Baseline", title = "Fig.x Investment for different sectors in Tunisia") + 
+  labs(x = "year", y = "Investment \n in % deviation to Baseline", title = "Fig.39 Investment for different sectors in Tunisia") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1208,7 +1208,7 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"E_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of energy intensity for overall emissions \n Renewable Energy") + 
+  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.40 Multiplicative contribution of energy intensity for overall emissions \n Renewable Energy") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
@@ -1249,7 +1249,7 @@ plot1 <- ggplot() +
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"PIB"], group = 1, color = "Carbon tax with redistribution")) + 
  geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"PIB"], group = 1, color = "Energy subsidies removal with redistribution")) + 
     geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"PIB"], group = 1, color = "Renewable energy")) +
-  labs(x = "Year", y = " GDP (%)", title = "Fig. X GDP") + 
+  labs(x = "Year", y = " GDP (%)", title = "Fig.41 GDP") + 
     theme(axis.text=element_text(size=6),legend.text=element_text(size=7),axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1258,7 +1258,11 @@ plot3 <- ggplot() +
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Taux.de.chômage"], group = 1, color = "Taxe carbone")) + 
  geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Taux.de.chômage"], group = 1, color = "Levée de \nsubventions")) + 
     geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Taux.de.chômage"], group = 1, color = "ENR")) +
+<<<<<<< Updated upstream
   labs(x = "Year", y = "Rate of unemployment (%)", title = "Fig. X  Rate of \nunemployment") + 
+=======
+  labs(x = "Year", y = "Rate of unemployment (%)", title = "Fig.42  Rate of unemployment") + 
+>>>>>>> Stashed changes
     theme(axis.title=element_text(size=9),axis.text=element_text(size=6),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1267,7 +1271,7 @@ plot2 <- ggplot() +
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Investissement"], group = 1, color = "Taxe carbone")) + 
  geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Investissement"], group = 1, color = "Levée de \nsubventions")) + 
     geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Investissement"], group = 1, color = "ENR")) +
-  labs(x = "Year", y = "Investment (%)", title = "Fig. X Investment") + 
+  labs(x = "Year", y = "Investment (%)", title = "Fig.43 Investment") + 
     theme(axis.title=element_text(size=9),axis.text=element_text(size=6), title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1277,7 +1281,7 @@ plot4 <- ggplot() +
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Emissions.CO2"], group = 1, color = "Taxe carbone avec redistribution")) + 
     geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Emissions.CO2"], group = 1, color = "ENR")) + 
       geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Emissions.CO2"], group = 1, color = "Levée des subventions \nénergétiques avec redistribution")) + 
-  labs(x = "Année", y = " Co2 (%)", title = "Fig.x CO2 Emissions (%)") + 
+  labs(x = "Année", y = " Co2 (%)", title = "Fig.44 CO2 Emissions (%)") + 
     theme(axis.title=element_text(size=9),axis.text=element_text(size=6),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1309,7 +1313,7 @@ plt1 <- ggplot() +
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"S"], group = 1, color = "Economy structure")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E"], group = 1, color = "Energy intensity")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution \n of all drivers for overall emissions variation") +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.45 Multiplicative contribution \n of all drivers for overall emissions variation") +
     theme(axis.title=element_text(size=6), axis.text=element_text(size=6),legend.text=element_text(size=6),title = element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5), legend.key.size = unit(0.4, "cm"))+
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1322,7 +1326,7 @@ plt2 <- ggplot() +
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution of energy intensity \n by sector for overall emissions") + 
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.46 Multiplicative contribution of energy intensity \n by sector for overall emissions") + 
     theme(axis.title=element_text(size=6), axis.text=element_text(size=6),legend.text=element_text(size=6),title = element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5), legend.key.size = unit(0.35, "cm")) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1365,7 +1369,7 @@ plt2 <- ggplot(stacked_data) +
   # color = "white" indicates the color of the lines between the areas
   geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
   scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
-  labs(x = "year", y = "Investment (in %)", title = "Fig. X Change in investment by sector \nin deviation from the baseline scenario. \nNational Low Carbon strategy") + 
+  labs(x = "year", y = "Investment (in %)", title = "Fig.47 Change in investment by sector \nin deviation from the baseline scenario. \nNational Low Carbon strategy") + 
       theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 guides(fill=guide_legend(title="Sectors"))
@@ -1400,7 +1404,7 @@ plt1 <- ggplot(stacked_data) +
   # color = "white" indicates the color of the lines between the areas
   geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
   scale_fill_manual(values = c(BROWN, GREEN, BLUE, BROWN_DARKER, RED))+
-  labs(x = "year", y = "Added value \n variation in % to Baseline", title = "Fig.x Added value variation with regard to Baseline scenario") + 
+  labs(x = "year", y = "Added value \n variation in % to Baseline", title = "Fig.48 Added value variation with regard to Baseline scenario") + 
       theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
   guides(fill=guide_legend(title="Sectors"))
@@ -1430,7 +1434,7 @@ Fig.1 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.x National Low Carbon strategy") + 
+  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.49 National Low Carbon strategy") + 
     theme(axis.title=element_text(size=7),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 scale_y_continuous(labels = scales::percent_format(accuracy = 1))
@@ -1455,7 +1459,7 @@ Fig.2 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.X  Baseline scenario") + 
+  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.50  Baseline scenario") + 
     theme(axis.title=element_text(size=7),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 scale_y_continuous(labels = scales::percent_format(accuracy = 1))
