@@ -284,7 +284,7 @@ Since the Jasmine Revolution on 2011, Tunisia economy has been suffered from the
 
 Along with the sluggish economy is the huge energy deficit in Tunisia. @irena2021 reported that energy deficit (50% in 2019) has existed in Tunisia over the past two decades, mainly because of the increasing consumption but with the stagnated even declined domestic production in recent years. @giz reported that Tunisia depends for 60% on energy imports, and this number is continuously raising. The energy transition project proclaimed in 2014 aims to reduce energy needs by 34% by 2030, lower subsidies and establish incentive mechanisms favoring profitable and climate friendly investments. However, the challenging is the lack of reliable institutional mechanisms and motivation for enterprises to participate, accompanied with a poorly established service market and weak transmission of knowledge to citizens, especially outside urban area.
 
-The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the Tunisian welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to \$1,14 billion (2.7% of GDP) [@trésor2021]. Concerning energy subsidies, the government subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure X. The LPG and the electricity subsidies are the main expenditure items as shown in figure X. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. On the contrary, in 2013, the bottom 40% of the distribution captured only 29% of energy subsidies [@worldbank2014]. According to @cuesta2017 , energy subsidies are also a cornerstone of the development of Tunisian productive sectors. The subsidy system allows firms to buy cheap energy resources. The noncompetitive companies, which employ unskilled workers, rely on the subsidies.
+The welfare system is based on non-targeted subsidies. According to @albertin2014, the subsidy policy is a pillar of the Tunisian welfare system. Targeted social assistance programs are above the regional average. In 2016, social expenditure represented 3.2 percent of GDP, majority of which was energy and food subsidies [@tunisia2020]. In 2021, the fossil fuel subsidies amounted to \$1,14 billion (2.7% of GDP) [@trésor2021]. Concerning energy subsidies, the government subsidizes liquefied petroleum gas (LPG), natural gas, kerosene, diesel, gasoline, electricity and heavy fuel oil. The effective subsidies by product are represented in figure 1. The LPG and the electricity subsidies are the main expenditure items as shown in figure 2. A significant part of the energy subsidies are captured by the wealthiest quintile of the population. On the contrary, in 2013, the bottom 40% of the distribution captured only 29% of energy subsidies [@worldbank2014]. According to @cuesta2017 , energy subsidies are also a cornerstone of the development of Tunisian productive sectors. The subsidy system allows firms to buy cheap energy resources. The noncompetitive companies, which employ unskilled workers, rely on the subsidies.
 
 After the revolution, fiscal and equity issues incited the Tunisian government to reduce energy subsidies. In 2012, the prices of gasoline, diesel and electricity increased by 7% [@albertin2014]. In 2014, energy subsidies to cement firms were reduced by half. In 2020, Tunisia has introduced an automatic monthly price adjustment mechanism for petrol and diesel sales, with the aim of eliminating fuel subsidies.
 
@@ -374,7 +374,7 @@ The [open source](https://github.com/fosem/ThreeME_V3-open) ThreeME model has be
 
 ThreeME combines several features [@callonnec2013 ; @callonnec2021] :
 
--   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig.X). Demand defines supply and in return, supply determines demand through the production factor incomes.
+-   ThreeME is a Computable General Equilibrium Model (CGEM), which takes into account the interactions and feedbacks between supply and demand (see Fig. 5). Demand defines supply and in return, supply determines demand through the production factor incomes.
 
 ![](Images/Architecture%20of%20a%20CGEM.jpg)
 
@@ -390,7 +390,7 @@ Fig.5 : Architecture of CGEM (source : @callonnec2013)
 
 ### ThreeMe model Tunisia : Adaptation for a little country in development
 
-ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. Indeed, the sectoral disaggregation was validated by Tunisian stakeholders. At the end, 21 sectors and 18 products were chosen (see Fig.X). The tax structure is based on the supply and use table (SUT) of the national accounts.
+ThreeME has already been adapted to Mexico by @landarivera2016 and to Indonesia by @reynes2017. The adaptation of ThreeME to Tunisia has been founded on consultation with Tunisian experts and other stakeholders. Indeed, the sectoral disaggregation was validated by Tunisian stakeholders. At the end, 21 sectors and 18 products were chosen (see Fig. 6). The tax structure is based on the supply and use table (SUT) of the national accounts.
 
 ![](Images/Sectoral%20disaggregation.jpg)
 
@@ -1471,9 +1471,7 @@ annotate_figure(figure,
 
 When working with an Integrated Assessment Model as is the case of ThreeME we should pay attention not to attach too much importance to precise figures but instead to keep the whole in perspective, to focus on trends rather than on specific values. Another thing to keep in mind is that the model works on the basis of several hypothesis that influence the results in one way or another.
 
-Taking these remarks into consideration, we will try to draw some conclusions from the data analysis that we have made. First, it can be deduced that the SNBC scenario is the one that is preferred since the mix of policies appears to have the most positive macroeconomic effects. Second, the redistribution of the revenues that come from the carbon tax and the fossil fuels subsidies removal does have a positive impact on the economy and on the environmental and a double dividend is observed. 
-j
-
+Taking these remarks into consideration, we will try to draw some conclusions from the data analysis that we have made. First, it can be deduced that the SNBC scenario is the one that is preferred since the mix of policies appears to have the most positive macroeconomic effects. Second, the redistribution of the revenues that come from the carbon tax and the fossil fuels subsidies removal does have a positive impact on the economy and on the environmental and a double dividend is observed. j
 
 Amelioration du cadre statistique : pb du secteur informel non pris en compte par la comptabilité nationale
 
