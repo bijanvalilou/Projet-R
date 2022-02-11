@@ -3,6 +3,9 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  word_document:
+    toc: yes
+    toc_depth: '5'
   html_document:
     toc: yes
     toc_depth: 5
@@ -14,9 +17,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
-  word_document:
-    toc: yes
-    toc_depth: '5'
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country
   in development : the case of Tunisia'
 header-includes:
@@ -523,40 +523,6 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-In order to have a deeper comprehension of the impact of tax recycling we will analyse further economic indicators that account for
-
-```{r, echo=FALSE}
-
-tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
-
-Table_Macro_CT <- S1_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
-Table_Macro_CT <- t(Table_Macro_CT)
-Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
-row.names(Table_Macro_CT) <- tablename
-
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
-row_spec(0, bold = T)  %>% 
-column_spec(1, width = "6cm")
-```
-
-Tableau Taxe avec redistribution
-
-```{r, echo=FALSE}
-
-tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
-
-Table_Macro_CT <- S2_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
-Table_Macro_CT <- t(Table_Macro_CT)
-Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
-row.names(Table_Macro_CT) <- tablename
-
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
-row_spec(0, bold = T)  %>% 
-column_spec(1, width = "6cm")
-```
-
 ### Fossil fuels subsidies removal with and without redistribution
 
 If we do the same analyse on the economic indicators for the scenarios subsidies removal with and without redistribution, we notice that in general lines trends are similar.
@@ -605,6 +571,40 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
 
+```
+
+Tableau Taxe sans redistribution
+
+```{r, echo=FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_CT <- S1_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_CT <- t(Table_Macro_CT)
+Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
+row.names(Table_Macro_CT) <- tablename
+
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
+```
+
+Tableau Taxe avec redistribution
+
+```{r, echo=FALSE}
+
+tablename <- c("GDP in volume","Household consumption","Investment","Exports","Imports","Household disposable income","Household consumption price index","production price index","Added value price index","Intermediate consumption price index","Export price index","Import price index","Gross nominal wage","Real cost of labor","Wage employment rate (in thousands)","Unemployment rate (in point)","Trade balance (in point of GDP)","Public budget balance (in points of GDP)","Public debt (in points of GDP)", "CO2 emissions")
+
+Table_Macro_CT <- S2_Macro[c("2021","2025","2030","2035","2040","2045","2050"),1:20]
+Table_Macro_CT <- t(Table_Macro_CT)
+Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
+row.names(Table_Macro_CT) <- tablename
+
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario in percent deviation to Baseline") %>% 
+kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
+row_spec(0, bold = T)  %>% 
+column_spec(1, width = "6cm")
 ```
 
 Tableau subvention sans redistribution
