@@ -657,6 +657,8 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 ```
 
+After the analyses we made, we can conclude that in general terms scenarios with redistribution produce positive macroeconomic effects in the Tunisian economy. This is the reason why from now on we will only take in consideration the scenarios with redistribution and put aside the scenarios without redistribution.
+
 ## Carbon tax
 
 As the carbon tax before 2030 stays at a moderate level, the impacts of this policy are therefore limited, while the significant effects are observed during the later period from 2030 to 2050 when a much stronger tax carbon is implemented. The macroeconomic impacts are summarized in table 1, the results are expressed as percentage deviation from Baseline scenario.
