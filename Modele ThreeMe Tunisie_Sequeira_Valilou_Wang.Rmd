@@ -3,6 +3,9 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  html_document:
+    toc: yes
+    toc_depth: 5
   pdf_document:
     citation_package: biblatex
     toc: yes
@@ -11,9 +14,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
-  html_document:
-    toc: yes
-    toc_depth: 5
   word_document:
     toc: yes
     toc_depth: '5'
@@ -1469,7 +1469,11 @@ annotate_figure(figure,
 
 # Conclusion
 
-When working with an Integrated Assessment Model as is the case of ThreeME we should pay attention not to attach too much importance to precise figures but instead to keep the whole in perspective, to focus on trends rather than on specific values. Another thing to keep in mind is that the model works on the basis of hypothesis and that this hypothesis influence in one way or another the
+When working with an Integrated Assessment Model as is the case of ThreeME we should pay attention not to attach too much importance to precise figures but instead to keep the whole in perspective, to focus on trends rather than on specific values. Another thing to keep in mind is that the model works on the basis of several hypothesis that influence the results in one way or another.
+
+Taking these remarks into consideration, we will try to draw some conclusions from the data analysis that we have made. First, it can be deduced that the SNBC scenario is the one that is preferred since the mix of policies appears to have the most positive macroeconomic effects. Second, the redistribution of the revenues that come from the carbon tax and the fossil fuels subsidies removal does have a positive impact on the economy and on the environmental and a double dividend is observed. 
+
+
 
 Amelioration du cadre statistique : pb du secteur informel non pris en compte par la comptabilité nationale
 
