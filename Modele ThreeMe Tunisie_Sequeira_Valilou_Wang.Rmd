@@ -3,9 +3,6 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
-  html_document: 
-    toc: yes
-    toc_depth: 5
   pdf_document: 
     citation_package: biblatex
     toc: yes
@@ -14,6 +11,9 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
+  html_document: 
+    toc: yes
+    toc_depth: 5
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -431,7 +431,18 @@ ggplot() +
 
 ### Data structure
 
-All the indicators used in the analysis are in exact hat algebra, meaning the proportional variation to Baseline scenario. time scale of data key indicator: two dimensions economy and environment.
+The analysed data are derived from outputs of model ThreeME Tunisia. All
+the indicators are simulated from 2015 to 2050, generating a database
+with time series. The indicators used in the analysis if not
+exceptionally mentioned are in percentage relative form, meaning the
+proportional variation to Baseline scenario:
+
+$$ X = \frac{X_{Shock}}{X_{Baseline}} \times 100\% \tag{1}$$ where:
+
+-   $X$ is the indicator used for analysis;
+-   $X_{Shock}$ is the model output with different policy scenarios;
+-   $X_{Baseline}$ is the model output with baseline scenario;
+
 
 ### Kaya identity
 
@@ -959,7 +970,7 @@ annotate_figure(figure,
 
 ```
 
-CO2 emissions decrease drastically in the short and medium term, before converging to the emission levels of the Baseline scenario. The extension of Kaya's identity is used to break down the decline in emissions. Since the electricity mix is exogenous to the ThreeMe model and the part of electricty in total final energy consumption is stable, the carbon intensity does not contribute much to the decrease in emissions as shown in the fig. X. It is the decrease in energy intensity (-23% in 2025, -27% in 2030 and -12% in 2050 compared to the Baseline scenario) that contributes most to the decrease in emissions. If we break down the contribution of energy intensity to the changes in emissions by sector (Fig. X), we notice that the energy intensity of the transport sector does not change compared to the baseline scenario. The two sectors with the highest contribution of energy intensity to emission reductions are the electricity sector (-17% in 2025, -18% in 2030 and -9% in 2050 and compared to the Baseline scenario) and the industry and agriculture sector (-6% in 2025, -7% in 2030 and -3% in 2050 compared to the Baseline scenario).
+CO2 emissions decrease drastically in the short and medium term, before converging to the emission levels of the Baseline scenario. The extension of Kaya identity is used to break down the decline in emissions. Since the electricity mix is exogenous to the ThreeMe model and the part of electricty in total final energy consumption is stable, the carbon intensity does not contribute much to the decrease in emissions as shown in the fig. X. It is the decrease in energy intensity (-23% in 2025, -27% in 2030 and -12% in 2050 compared to the Baseline scenario) that contributes most to the decrease in emissions. If we break down the contribution of energy intensity to the changes in emissions by sector (Fig. X), we notice that the energy intensity of the transport sector does not change compared to the baseline scenario. The two sectors with the highest contribution of energy intensity to emission reductions are the electricity sector (-17% in 2025, -18% in 2030 and -9% in 2050 and compared to the Baseline scenario) and the industry and agriculture sector (-6% in 2025, -7% in 2030 and -3% in 2050 compared to the Baseline scenario).
 
 ```{r, echo = FALSE, fig.align='center'}
 
@@ -1017,7 +1028,7 @@ geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_ind_2"], group = 1, color = "In
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-We analyse the indices by energy for households, as we have data on consumer prices (see Fig. X). The price of fuels for other use increases by 207% in 2030 and the deviation from the Baseline scenario narrows to +67% in 2050. The decrease in energy consumption seen above is a reaction to rising prices. We use a simple formula for the short-term price elasticity of energy demand $E_{E/P}$. The latter is the ratio of the rate of change in demand and the rate of change in price, with $D_S$ the energy consumption with shock, $D_B$ the energy consumption in the Baseline scenario, $P_S$ the energy price with shock and $D_B$ the energy price in the Baseline scenario. $$ E_{E/P} \, = \,  \frac{\frac{D_S - D_B}{D_B}}{\frac{P_S - P_B}{P_B}} $$
+We analyse the energy indices for households, as we have data on consumer prices (see Fig. X). The price of fuels for other use increases by 207% in 2030, but the deviation from the Baseline scenario narrows to +67% in 2050. The decrease in energy consumption seen above is a reaction to rising prices. We use a simple formula for the short-term price elasticity of energy demand $E_{E/P}$. The latter is the ratio of the rate of change in demand and the rate of change in price, with $D_S$ the energy consumption with shock, $D_B$ the energy consumption in the Baseline scenario, $P_S$ the energy price with shock and $D_B$ the energy price in the Baseline scenario. $$ E_{E/P} \, = \,  \frac{\frac{D_S - D_B}{D_B}}{\frac{P_S - P_B}{P_B}} $$
 
 As we saw in the section "Importance of redistribution", the energy subsidies removal has a positive impact on households' disposable income, which is small in the short and medium term. In the long term, households' disposable income increases by 0.68% in 2050 compared to the Baseline scenario. A linear regression confirms the existence of a positive income elasticity, but weak compared to the price elasticity. We therefore neglect the income elasticity of energy demand. The price elasticity of demand is equal to -0.54 in 2021, to -0.33 in 2030 and to -0.44 in 2050. The demand for fuel for other purposes becomes increasingly rigid in the medium term, before becoming relatively more elastic in the long term.
 
@@ -1072,7 +1083,7 @@ annotate_figure(figure,
                top = text_grob("Evolution of energy indices in deviation from Baseline (%)", face = "bold", size = 14))
 ```
 
-In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease corresponds to the capital use adjustment channel $$@finn2000 ; @gamtessa2018$$. Companies respond to high energy costs by selecting the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. X). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
+In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease corresponds to the capital use adjustment channel [@finn2000 ; @gamtessa2018a ]. Companies respond to high energy costs by selecting the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. X). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
