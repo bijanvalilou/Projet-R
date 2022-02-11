@@ -767,7 +767,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-Fig.x shows how energy consumption varies with the carbon tax, which can be explained by improvement of energy intensity. As what we discussed above, we can find more and more diminished energy demand for all the economic sectors and for household. And one more time, we observe the inertia for transportation and services. Even though there is not noticeable amelioration of energy intensity for energy transformation, the overall shrinkage of the sector explains the energy demand profile.
+Fig. 22 shows how energy consumption varies with the carbon tax, which can be explained by improvement of energy intensity. As what we discussed above, we can find more and more diminished energy demand for all the economic sectors and for household. And one more time, we observe the inertia for transportation and services. Even though there is not noticeable amelioration of energy intensity for energy transformation, the overall shrinkage of the sector explains the energy demand profile.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z <- c(S2[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S2[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S2[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S2[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S2[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S2[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
@@ -804,7 +804,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-As the carbon tax induces the production of green electricity (with less pollution per unit of energy production), the energy consumers then have a more environmental friendly alternative other than fuel. Even though maybe they are not intended to care about the climate change, using this alternative enables them to cut back their costs. Therefore, we see the rapid shifting from fossil fuel to electricity for industry & agriculture and the household, and reaching nearly a half of their energy consumption until 2050 like depicted in Fig.X to X. For industry & agriculture, electricity mainly offsets a part of natural gas demand, which hints the electrification of heating unit for instance. As for household, the wild spread of electrical or hybrid cars reduces the domand for fossil fuel.
+As the carbon tax induces the production of green electricity (with less pollution per unit of energy production), the energy consumers then have a more environmental friendly alternative other than fuel. Even though maybe they are not intended to care about the climate change, using this alternative enables them to cut back their costs. Therefore, we see the rapid shifting from fossil fuel to electricity for industry & agriculture and the household, and reaching nearly a half of their energy consumption until 2050 like depicted in Fig.X to X. For industry & agriculture, electricity mainly offsets a part of natural gas demand, which hints the electrification of heating unit for instance. As for household, the wild spread of electrical or hybrid cars reduces the demand for fossil fuel.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z_1 <- c(
@@ -1473,12 +1473,12 @@ annotate_figure(figure,
 
 When working with an Integrated Assessment Model as is the case of ThreeME we should pay attention not to attach too much importance to precise figures but instead to keep the whole in perspective, to focus on trends rather than on specific values. Another thing to keep in mind is that the model works on the basis of several hypothesis that influence the results in one way or another.
 
-Taking these remarks into consideration, we will try to draw some conclusions from the data analysis that we have made. First, it can be deduced that the SNBC scenario is the one that is preferred since the mix of policies appears to have the most positive macroeconomic effects. Second, the redistribution of the revenues that come from the carbon tax and the fossil fuels subsidies removal does have a positive impact on the economy and on the environmental and a double dividend is observed. 
- 
+Taking these remarks into consideration, we will try to draw some conclusions from the data analysis that we have made. First, it can be deduced that the SNBC scenario is the one that is preferred since the mix of policies appears to have the most positive macroeconomic effects. Second, the redistribution of the revenues that come from the carbon tax and the fossil fuels subsidies removal does have a positive impact on the economy and on the environmental and a double dividend is observed.
+
 Maybe one of the strongest hypothesis of the model is that it is a Neo-Keynesian one. This imply that prices and quantities do not adjust instantaneously but instead, they adjust slowly. Unlike Walrasian's models, Neo-Keynesian's models do not assume full utilization of production factors then giving rise to unemployment and to spare production capacities. The slow adjustments between capital and labor lead to a long term optimal relation between the level of production factors and the level of production, and this promote a positive multiplier effect of an increase in public spending (OFCE). The eviction effect is then limited and the double dividend is favored.
 
 There is another point that should be highlighted, this time about the statistical framework. The data concerning the Tunisian economy comes from the system of national accounts and then the informal sectors of the economy are not taken into account. This can distort results since informal sectors are important in many African countries.
 
-Last but not least, social and political acceptability of environmental policies are not taken into account in the model. 
+Last but not least, social and political acceptability of environmental policies are not taken into account in the model.
 
 # Bibliography
