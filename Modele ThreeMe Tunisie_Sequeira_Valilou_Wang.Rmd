@@ -1116,7 +1116,7 @@ plt2
 
 ## Renewable energy scenario
 
-In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains.
+In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.36 and 38). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -1133,7 +1133,7 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 ```
 
-When it comes to the environmental sphere ( seeing Fig.x ), electricity sector is the only one with negative impact on emissions profile, it compensates the positive impacts arose from all other sectors, resulting in a emissions reduction up to 29.24% by the end of 2050. Fig.x depicts the evolution of different driving forces to emissions, where we find such a emissions reduction is totally thanks to the amelioration of energy intensity while economic structure and carbon intensity contribute in another way to CO2 emissions.
+When it comes to the environmental sphere ( seeing Fig.36 ), electricity sector is the only one with negative impact on emissions profile, it compensates the positive impacts arose from all other sectors, resulting in a emissions reduction up to 29.24% by the end of 2050. Fig.37 depicts the evolution of different driving forces to emissions, where we find such a emissions reduction is totally thanks to the amelioration of energy intensity while economic structure and carbon intensity contribute in another way to CO2 emissions.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -1145,7 +1145,7 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"trsf"], group = 1, color = "Energy Transformation")) +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"ele"], group = 1, color = "Electricity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.36 Multiplicative contribution for overall emissions variation by different sectors \n Renewable Energy") +
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.36 Multiplicative contribution for overall emissions \n variation by different sectors for Renewable Energy scenario") +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1165,7 +1165,7 @@ ggplot() +
 
 ```
 
-The renewable energies policy prompts the rapid development of electricity sector, but at the same time constrains that of energy transformation sector as shown in the Fig.x. Such a policy will give rise to a supply-side structural revolution of energy sector in Tunisia. More and more investment will be incited into green energy exploitation, then reduce the cost to exploit renewable energies, making it increasingly profitable and engendering a growing share of green electricity in the grid. On the other hand, the fossil fuels lose its competitiveness compared to renewable electricity due to the shrinkage of innovation (seeing Fig.x).
+The renewable energies policy prompts the rapid development of electricity sector, but at the same time constrains that of energy transformation sector as shown in the Fig.38. Such a policy will give rise to a supply-side structural revolution of energy sector in Tunisia. More and more investment will be incited into green energy exploitation, then reduce the cost to exploit renewable energies, making it increasingly profitable and engendering a growing share of green electricity in the grid. On the other hand, the fossil fuels lose its competitiveness compared to renewable electricity due to the shrinkage of innovation (seeing Fig.39).
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -1176,7 +1176,7 @@ ggplot() +
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S_ser"], group = 1, color = "Services")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S_trsf"], group = 1, color = "Energy Transformation")) + 
   geom_line( aes(x = Det[[5]][,"year"],y = Det[[5]][,"S_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.38 Additive contribution of economy structure for overall emissions variation \n Renewable Energy") + 
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.38 Multiplicative contribution of economy structure \n for overall emissions variation of Renewable Energy scenario") + 
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
@@ -1196,7 +1196,7 @@ ggplot() +
 
 ```
 
-In fact, the expanding investment not only cuts back the cost of exploitation, but also boosts the energy efficiency in electricity sector. We notice from Fig.x that electricity is the only sector where there is a reduction of energy intensity. This is quite intuitive for the emerging renewable energies replace the fossil fuels in electricity mix, meaning a stronger independence to fossil fuels, thus less emissions during electricity generation.
+In fact, the expanding investment not only cuts back the cost of exploitation, but also boosts the energy efficiency in electricity sector. We notice from Fig.40 that electricity is the only sector where there is a reduction of energy intensity. This is quite intuitive for the emerging renewable energies replace the fossil fuels in electricity mix, meaning a stronger independence to fossil fuels, thus less emissions during electricity generation.
 
 As discussed above that the electricity is the only sector who is impacted by this policy, the penetration of renewable energies could seldom influence other sectors. We observe then a rebound effect for certain sectors. Apparently the renewable energy does not induce the innovation oriented to improve energy efficiency, and on the other hand, the fact knowing that electricity is a much more environmental friendly energy, makes them somehow indifferent to consume more or less energies. That is to say, the penetration just provides an alternative with less environmental impacts, rather than intrinsically resolves the problem meaning a transition from energy-intensive to energy-efficient production. Thus, in terms of sustainable development, the renewable energies policy should better cooperate with other economic levers in order to guarantee its efficiency in the longer term.
 
