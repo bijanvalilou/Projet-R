@@ -895,7 +895,7 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 In 2024, there is no more energy subsidy, including for electricity. In contrast to the carbon tax, the long-term effects of a short shock on energy prices can be observed. The energy subsidies removal with redistribution has a positive impact on Tunisian GDP in the short and medium term (+0.56% in 2025 and +0.32%), before entering a phase of diminishing marginal effect (+0.06% in 2040 and -0.03% in 2050). The policy reduces public debt. Thanks to the redistribution, the household disposable income doesn't decrease, but raises. The main macroeconomic impacts of energy subsidies removal with redistribution are discussed in the section "Importance of redistribution". 
 
 
-The removal of energy subsidies has little impact on the split in final consumption between fossil fuels and electricity. The share of electricity remains relatively stable (29% of final consumption in 2050 in the scenario with shock) compared to the reference scenario (30% of final consumption in 2050) as shown in Figure X. Nevertheless, the share between transport fuels, fuels for other uses and gas is modified by the policy. The share of gas and transport fuels (respectively 26% and 29% of final energy consumption) increases compared to the baseline scenario (respectively 24% and 26% of final energy consumption). The share of fuel dedicated to other uses decreases from 21% of final consumption to 16% in the scenario with removal of subsidies. 
+The removal of energy subsidies has little impact on the split in final consumption between fossil fuels and electricity. The share of electricity remains relatively stable (29% of final consumption in 2050 in the scenario with shock) compared to the Baseline scenario (30% of final consumption in 2050) as shown in Figure X. Nevertheless, the share between transport fuels, fuels for other uses and gas is modified by the policy. The share of gas and transport fuels (respectively 26% and 29% of final energy consumption) increases compared to the baseline scenario (respectively 24% and 26% of final energy consumption). The share of fuel dedicated to other uses decreases from 21% of final consumption to 16% in the scenario with removal of subsidies. 
 
 
 
@@ -957,7 +957,7 @@ annotate_figure(figure,
 
 ```
 
-CO2 emissions decrease drastically in the short and medium term, before converging to the emission levels of the reference scenario. The extension of Kaya's identity is used to break down the decline in emissions. Since the electricity mix is exogenous to the ThreeMe model and the part of electricty in total final energy consumption is stable, the improvement in carbon intensity does not contribute much to the decrease in emissions as shown in the fig. X. It is the decrease in energy intensity (-23% in 2025, -27% in 2030 and -12% in 2050 compared to the Baseline scenario) that contributes most to the decrease in emissions. If we break down the contribution of energy intensity to the changes in emissions by sector (Fig. X), we notice that the energy intensity of the transport sector does not change compared to the baseline scenario. The two sectors with the highest contribution of energy intensity to emission reductions are the electricity sector (-17% in 2025, -18% in 2030 and -9% in 2050 and compared to the Baseline scenario) and the industry and agriculture sector (-6% in 2025, -7% in 2030 and -3% in 2050 compared to the Baseline scenario). 
+CO2 emissions decrease drastically in the short and medium term, before converging to the emission levels of the Baseline scenario. The extension of Kaya's identity is used to break down the decline in emissions. Since the electricity mix is exogenous to the ThreeMe model and the part of electricty in total final energy consumption is stable, the improvement in carbon intensity does not contribute much to the decrease in emissions as shown in the fig. X. It is the decrease in energy intensity (-23% in 2025, -27% in 2030 and -12% in 2050 compared to the Baseline scenario) that contributes most to the decrease in emissions. If we break down the contribution of energy intensity to the changes in emissions by sector (Fig. X), we notice that the energy intensity of the transport sector does not change compared to the baseline scenario. The two sectors with the highest contribution of energy intensity to emission reductions are the electricity sector (-17% in 2025, -18% in 2030 and -9% in 2050 and compared to the Baseline scenario) and the industry and agriculture sector (-6% in 2025, -7% in 2030 and -3% in 2050 compared to the Baseline scenario). 
 
 
 
@@ -1022,14 +1022,14 @@ geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_ind_2"], group = 1, color = "In
 We analyse the indices by energy for households, as we have data on consumer prices (see Fig. X). The price of fuels for other use increases by 207% in 2030 and the deviation from the Baseline scenario narrows to +67% in 2050. The decrease in energy consumption seen above is a reaction to rising prices. We use a simple formula for the short-term price elasticity of energy demand $E_{E/P}$. The latter is ratio of the rate of change in demand and the rate of change in price, with $D_S$ the energy consumption with shock, $D_B$ the energy consumption in the Baseline scenario, $P_S$ the energy price with shock and $D_B$ the energy price in the Baseline scenario. 
 $$ E_{E/P} \, = \,  \frac{\frac{D_S - D_B}{D_B}}{\frac{P_S - P_B}{P_B}} $$
 
-As we saw in the section "Importance of redistribution", the energy subsidies removal has a positive impact on households' disposable income, which is small in the short and medium term. In the long term, income increases by 0.68% in 2050 compared to the reference scenario. A linear regression confirms the existence of a positive income elasticity, but weak compared to the price elasticity. We therefore neglect the income elasticity of energy demand.
+As we saw in the section "Importance of redistribution", the energy subsidies removal has a positive impact on households' disposable income, which is small in the short and medium term. In the long term, income increases by 0.68% in 2050 compared to the Baseline scenario. A linear regression confirms the existence of a positive income elasticity, but weak compared to the price elasticity. We therefore neglect the income elasticity of energy demand. The price elasticity of demand is equal to -0.54 in 2021, to -0.33 in 2030 and to -0.44 in 2050. The demand for fuel for other purposes becomes increasingly rigid in the medium term, before becoming relatively more elastic in the long term.
 
 ```{r echo=FALSE}
 x= (SubvavecRedis[,"pch_cfuh_2"]/SubvavecRedis[,"pch_cfuh_0"]-1)*100
 table <- cbind(Sc4[,"year"], Sc4[,"ch_toe_cfuh_2"]/x)
 colnames(table) <- c("Year", "Price elasticity")
 table <- table[c(7, 11, 16, 21, 26, 31, 36),]
-
+table <- round(table, digits=2)
 
 kable(table, booktabs = T, linesep = "", caption = "Price elasticity of demand for fuel dedicated to other use",)%>%
 kable_styling(latex_options = "hold_position", full_width = F,font_size = 7) %>% 
@@ -1037,6 +1037,84 @@ row_spec(0, bold = T)  %>%
 column_spec(1, width = "6cm")
 
 ```
+
+
+```{r}
+z= (SubvavecRedis[,"pch_cfut_2"]/SubvavecRedis[,"pch_cfut_0"]-1)*100
+x= (SubvavecRedis[,"pch_cfuh_2"]/SubvavecRedis[,"pch_cfuh_0"]-1)*100
+w= (SubvavecRedis[,"pch_cgas_2"]/SubvavecRedis[,"pch_cgas_0"]-1)*100
+e= (SubvavecRedis[,"pch_cele_2"]/SubvavecRedis[,"pch_cele_0"]-1)*100
+
+
+
+Fig.1 <- ggplot() + 
+  geom_line( aes(x = Sc4[,"year"],y = z, group = 1, color = "Fuels for transportation")) + 
+  geom_line( aes(x = Sc4[,"year"],y = x, group = 1, color = "Fuels for other use")) + 
+  geom_line( aes(x = Sc4[,"year"],y = w, group = 1, color = "Natural gas")) + 
+  geom_line( aes(x = Sc4[,"year"],y = e, group = 1, color = "Electricity")) + 
+  labs(x = "Year", y = "Price (%)", title = "Fig.x Household energy prices") +
+    theme(axis.title=element_text(size=9),axis.text=element_text(size=6), title = element_text(size=8), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+
+
+
+Fig.2 <- ggplot() + 
+  geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cfut_2"], group = 1, color = "Fuels for transportation")) + 
+    geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cfuh_2"], group = 1, color = "Fuels for other use")) + 
+  geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cgas_2"], group = 1, color = "Natural gas")) + 
+  geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ch_toe_cele_2"], group = 1, color = "Electricity")) + 
+  labs(x = "Year", y = "Price (%)", title = "Fig.x Household energy consumption") +
+    theme(axis.title=element_text(size=9),title = element_text(size=8), axis.text=element_text(size=6), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+figure <- ggarrange(Fig.1, Fig.2, nrow = 1, common.legend = T, legend = "bottom")
+
+annotate_figure(figure,
+               top = text_grob("Evolution of energy indices in deviation from Baseline (%)", face = "bold", size = 14))
+```
+
+
+In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease does not correspond to the capital use adjustment channel [@finn2000 ; @gamtessa2018]. Companies respond to high energy costs by selectively using the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. X). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
+
+
+```{r, echo = FALSE}
+
+
+BROWN <- "#AD8C97"
+BROWN_DARKER <- "#7d3a46"
+GREEN <- "#2FC1D3"
+BLUE <- "#076FA1"
+GREY <- "#C7C9CB"
+GREY_DARKER <- "#5C5B5D"
+RED <- "#E3120B"
+
+
+Sectors <- c("Industry and agriculture","Transports","Services","Energy transformation","Electricity")
+
+stacked_data <- data.frame(
+  year = rep(S6[,"year"], times = 5),
+  percent = c(Sc4[,"ia_ind_2"],Sc4[,"ia_trsp_2"],Sc4[,"ia_ser_2"],Sc4[,"ia_trsf_2"],Sc4[,"ia_ele_2"]),
+  Sectors = factor(rep(Sectors, each = 36), levels = rev(Sectors))
+)
+
+
+
+plt2 <- ggplot(stacked_data) +
+  # color = "white" indicates the color of the lines between the areas
+  geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
+  scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
+  labs(x = "year", y = "Investment (in %)", title = "Fig. X Change in investment by sector \nin deviation from the baseline scenario. \nEnergy subsidy removal scenario with redistribution.") + 
+      theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+guides(fill=guide_legend(title="Sectors"))
+
+plt2
+
+```
+
 
 ## Renewable energy scenario
 
