@@ -1214,10 +1214,9 @@ ggplot() +
 ```
 
 ## National Low-Carbon Strategy scenario
+The National Low-Carbon strategy is a mix of previous policies: carbon tax with redistribution, energy subsidies removal with redistribution and development of renewable energy. As shown in the table X, the impact of the policy is positive on GDP (+4.5% in 2050) and strongly negative on CO2 emissions (-66% in 2050) compared to the Baseline scenario. The policy mix makes it possible to combine the "explosive" nature of the energy subsidies removal and the renewable energy scenario with the gradual rise of the carbon tax (see fig.X). In 2025, the increase in GDP compared to the Baseline scenario is +1.07% against +0.1% for the scenario with carbon tax, +0.56% for the scenario with removal of subsidies and +0.5% for the scenario with renewable energy. In the short term, the effect of the policy mix is additive for the GDP. In 2050, the increase in GDP compared to the Baseline scenario is +4.42% compared to +1.93% for the scenario with carbon tax, -0.02% for the scenario with removal of subsidies and +2.96% for the scenario with renewable energy. In the long run, the effect of the policy mix is less than additive. 
 
-::: {align="center"}
-Table.X :Macroeconomic impacts of Nation Low-Carbon Strategy scenario in % deviation to Baseline
-:::
+
 
 ```{r, echo=FALSE}
 
@@ -1228,129 +1227,200 @@ Table_Macro_SNBC <- t(Table_Macro_SNBC)
 Table_Macro_ENR <- round(Table_Macro_SNBC,digits = 2)
 row.names(Table_Macro_SNBC) <- tablename
 
+
+Table_Macro_SNBC <- Table_Macro_SNBC[-c(8:13,15 ),]
+Table_Macro_SNBC <- round(Table_Macro_SNBC, digits=2)
+
 kable(Table_Macro_SNBC, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Nation Low-Carbon Strategy scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+kable_styling(latex_options = "hold_position", full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
 ```
 
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
+```{r}
+get_legend<-function(myggplot){
+  tmp <- ggplot_gtable(ggplot_build(myggplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)
+}
 
-ggplot() + 
-  geom_line( aes(x = Det[[6]][,"year"],y = S6[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
+plot1 <- ggplot() + 
+  geom_line( aes(x = Sc6[,"year"],y = S6_Macro[,"PIB"], group = 1, color = "National Low Cabron strategy"), size=1.5) + 
+  geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"PIB"], group = 1, color = "Carbon tax with redistribution")) + 
+ geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"PIB"], group = 1, color = "Energy subsidies removal with redistribution")) + 
+    geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"PIB"], group = 1, color = "Renewable energy")) +
+  labs(x = "Year", y = " GDP (%)", title = "Fig. X GDP") + 
+    theme(axis.text=element_text(size=6),legend.text=element_text(size=7),axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+plot3 <- ggplot() + 
+  geom_line( aes(x = Sc6[,"year"],y = S6_Macro[,"Taux.de.chômage"], group = 1, color = "SNBC"), size=1.5) + 
+  geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Taux.de.chômage"], group = 1, color = "Taxe carbone")) + 
+ geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Taux.de.chômage"], group = 1, color = "Levée de \nsubventions")) + 
+    geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Taux.de.chômage"], group = 1, color = "ENR")) +
+  labs(x = "Year", y = "Rate of unemployment (%)", title = "Fig. X  Rate of unemployment") + 
+    theme(axis.title=element_text(size=9),axis.text=element_text(size=6),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+plot2 <- ggplot() + 
+  geom_line( aes(x = Sc6[,"year"],y = S6_Macro[,"Investissement"], group = 1, color = "SNBC"), size=1.5) + 
+  geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Investissement"], group = 1, color = "Taxe carbone")) + 
+ geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Investissement"], group = 1, color = "Levée de \nsubventions")) + 
+    geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Investissement"], group = 1, color = "ENR")) +
+  labs(x = "Year", y = "Investment (%)", title = "Fig. X Investment") + 
+    theme(axis.title=element_text(size=9),axis.text=element_text(size=6), title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+plot4 <- ggplot() + 
+  geom_line( aes(x = Sc4[,"year"],y = S6_Macro[,"Emissions.CO2"], group = 1, color = "SNBC"), size=1.5) + 
+  geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Emissions.CO2"], group = 1, color = "Taxe carbone avec redistribution")) + 
+    geom_line( aes(x = Sc4[,"year"],y = S5_Macro[,"Emissions.CO2"], group = 1, color = "ENR")) + 
+      geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Emissions.CO2"], group = 1, color = "Levée des subventions \nénergétiques avec redistribution")) + 
+  labs(x = "Année", y = " Co2 (%)", title = "Fig.x CO2 Emissions (%)") + 
+    theme(axis.title=element_text(size=9),axis.text=element_text(size=6),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+legend <- get_legend(plot1)
+plot1 <- plot1 + theme(legend.position="none")
+plot2 <- plot2 + theme(legend.position="none")
+plot3 <- plot3 + theme(legend.position="none")
+plot4 <- plot4 + theme(legend.position="none")
+
+figure <- ggarrange(plot1, plot2, plot3, plot4, legend)
+annotate_figure(figure, top = text_grob("Impacts by scenario in deviation to Baseline scenario (%)", face = "bold", size = 14))
+```
+Figure X shows us the extended Kaya decomposition. The energy intensity drops by 85% in 2050 compared to the baseline scenario. As shown in Figure X, the electricity sector contributes most to this decrease. The combined effect of the carbon tax, the removal of subsidies and the development of renewable energies has a strong impact on energy use in the electricity sector. 
+
+```{r, echo = FALSE}
+
+
+get_legend<-function(myggplot){
+  tmp <- ggplot_gtable(ggplot_build(myggplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)
+}
+
+plt1 <- ggplot() + 
+  geom_line( aes(x = Det[[6]][,"year"],y = S4[,"ems_ci_co2_2"]/Baseline[,"ems_ci_co2_0"]*100 - 100, group = 1, color = "Total reduction")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"V"], group = 1, color = "Economic activities")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"S"], group = 1, color = "Economy structure")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E"], group = 1, color = "Energy intensity")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n SNBC") +
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution \n of all drivers for overall emissions variation") +
+    theme(axis.title=element_text(size=6), axis.text=element_text(size=6),legend.text=element_text(size=6),title = element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5), legend.key.size = unit(0.4, "cm"))+
   scale_x_continuous(breaks=seq(2015,2050,5))
+
+
+
+plt2 <- ggplot() + 
+  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E"], group = 1, color = "Total effect")) + 
+  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
+  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_trsp"], group = 1, color = "Transportation")) + 
+  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_ser"], group = 1, color = "Services")) + 
+  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
+  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E_ele"], group = 1, color = "Electricity")) +
+  labs(x = "year", y = "Index LMDI in % \n emission deviation to Baseline", title = "Fig.x Multiplicative contribution of energy intensity \n by sector for overall emissions") + 
+    theme(axis.title=element_text(size=6), axis.text=element_text(size=6),legend.text=element_text(size=6),title = element_text(size=7), plot.title = element_text(hjust = 0.5, vjust = 0.5), legend.key.size = unit(0.35, "cm")) +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+
+legend0 <- c("Removal")
+legend1 <- get_legend(plt1)
+legend2 <- get_legend(plt2)
+plt1 <- plt1 + theme(legend.position="none")
+plt2 <- plt2 + theme(legend.position="none")
+
+figure <- ggarrange(plt1, plt2, legend1, legend2, ncol=2, nrow = 2, heights = c(1.3, 0.6))
+annotate_figure(figure,
+               top = text_grob("Kaya identities for National Low Carbon strategy (%)", face = "bold", size = 14))
+```
+The decrease in energy intensity in the electricity sector, via the investment channel, corresponds to a strong improvement in energy efficiency. 
+
+
+```{r, echo = FALSE}
+
+
+BROWN <- "#AD8C97"
+BROWN_DARKER <- "#7d3a46"
+GREEN <- "#2FC1D3"
+BLUE <- "#076FA1"
+GREY <- "#C7C9CB"
+GREY_DARKER <- "#5C5B5D"
+RED <- "#E3120B"
+
+
+Sectors <- c("Industry and agriculture","Transports","Services","Energy transformation","Electricity")
+
+stacked_data <- data.frame(
+  year = rep(S6[,"year"], times = 5),
+  percent = c(Sc6[,"ia_ind_2"],Sc6[,"ia_trsp_2"],Sc6[,"ia_ser_2"],Sc6[,"ia_trsf_2"],Sc6[,"ia_ele_2"]),
+  Sectors = factor(rep(Sectors, each = 36), levels = rev(Sectors))
+)
+
+
+
+plt2 <- ggplot(stacked_data) +
+  # color = "white" indicates the color of the lines between the areas
+  geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
+  scale_fill_manual(values = c(GREY, BROWN, GREEN, BLUE, BROWN_DARKER))+
+  labs(x = "year", y = "Investment (in %)", title = "Fig. X Change in investment by sector \nin deviation from the baseline scenario. \nNational Low Carbon strategy") + 
+      theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+guides(fill=guide_legend(title="Sectors"))
+
+plt1
 
 ```
 
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
+
+The national low carbon strategy creates winners and losers. The electricity sector is a major beneficiary of the policy mix, while the energy transformation sector experiences a sharp decline in its value added (see figure X). 
+
+```{r}
+
+BROWN <- "#AD8C97"
+BROWN_DARKER <- "#7d3a46"
+GREEN <- "#2FC1D3"
+BLUE <- "#076FA1"
+GREY <- "#C7C9CB"
+GREY_DARKER <- "#5C5B5D"
+RED <- "#E3120B"
+  
+  
+  Sectors <- c("Industry & agriculture","Transportation","Services","Energy Transformation","Electricity")
+
+stacked_data <- data.frame(
+  year = rep(S6[,"year"], times = 5),
+  percent = c(Sc6[,"va_ind_2"],Sc6[,"va_trsp_2"],Sc6[,"va_ser_2"],Sc6[,"va_trsf_2"],Sc6[,"va_ele_2"]),
+  Sectors = factor(rep(Sectors, each = 36), levels = rev(Sectors))
+)
 
 
-z <- c(Dif[[6]][,"V"],Dif[[6]][,"S"],Dif[[6]][,"E"],Dif[[6]][,"I"])
-x <- rep(Dif[[6]][,"year"], time = 4)
-Legend <- rep(c("Ecnonomic activities","Economy structure","Energy intensity","Carbon intensity"), each = 36)
-
-  ggplot() + 
-  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
-  guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "CO2 emissions \n in Kt CO2 difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation \n SNBC") +
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-rm(z,x,Legend)
-
+plt1 <- ggplot(stacked_data) +
+  # color = "white" indicates the color of the lines between the areas
+  geom_area(aes(year, percent, fill = fct_reorder(Sectors, abs(percent),.desc = TRUE)), position = 'identity', color = "white") +
+  scale_fill_manual(values = c(BROWN, GREEN, BLUE, BROWN_DARKER, RED))+
+  labs(x = "year", y = "Added value \n variation in % to Baseline", title = "Fig.x Added value variation with regard to Baseline scenario") + 
+      theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+  guides(fill=guide_legend(title="Sectors"))
+plt1
 ```
 
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
-z <- c(Dif[[6]][,"V"],Dif[[6]][,"ind"],Dif[[6]][,"trsp"],Dif[[6]][,"ser"],Dif[[5]][,"trsf"],Dif[[6]][,"ele"])
-x <- rep(Dif[[6]][,"year"], time = 6)
-Legend <- rep(c("Economic activities","Industry & Agriculture","Transportation","Services","Energy Transformation","Electricity"), each = 36)
 
-  ggplot() + 
-  geom_bar( aes(x = x, y = z, fill = Legend, group = 1), stat = 'identity', position = 'stack') + 
-  guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "CO2 emissions \n in Kt CO2 difference to Baseline ", title = "Fig.x Additive contribution for overall emissions variation by different sectors \n SNBC") +
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
+Figure X shows that electricity increases from 19% of final energy consumption in Tunisia in 2050 to 30% in 2050. 
 
-rm(z,x,Legend)
+```{r, echo = FALSE}
 
-```
+tot <- S6[,"ci_toe_ind_2"]+S6[,"ci_toe_trsp_2"]+S6[,"ci_toe_ser_2"]+S6[,"ch_toe_2"]
 
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
-
-ggplot() + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S"], group = 1, color = "Total effect")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S_ind"], group = 1, color = "Industry & Agriculture")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S_trsp"], group = 1, color = "Transportation")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S_ser"], group = 1, color = "Services")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S_trsf"], group = 1, color = "Energy Transformation")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"S_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Additive contribution of economy structure for overall emissions variation \n SNBC") + 
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-```
-
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
-ggplot() + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E"], group = 1, color = "Total effect")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E_ind"], group = 1, color = "Industry & Agriculture")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E_trsp"], group = 1, color = "Transportation")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E_ser"], group = 1, color = "Services")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E_trsf"], group = 1, color = "Energy Transformation")) + 
-  geom_line( aes(x = Det[[5]][,"year"],y = Det[[6]][,"E_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of energy intensity for overall emissions \n SNBC") + 
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-```
-
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
-#energy consumption
-z <- c(S6[,"ci_toe_ind_2"]-Baseline[,"ci_toe_ind_0"],S6[,"ci_toe_trsp_2"]-Baseline[,"ci_toe_trsp_0"],S6[,"ci_toe_ser_2"]-Baseline[,"ci_toe_ser_0"],S6[,"ci_toe_trsf_2"]-Baseline[,"ci_toe_trsf_0"],S6[,"ci_toe_ele_2"]-Baseline[,"ci_toe_ele_0"],S6[,"ch_toe_2"]-Baseline[,"ch_toe_0"])
-x <- rep(S6[,"year"], times = 6)
-Legend <- rep(c("Industry & agriculture","Transportation","Services","Energy transformation","Electricity","Household"), each = 36)
-
-ggplot(
-  mapping = aes(
-               x = x, 
-               y = z, 
-               fill = Legend,
-               group = 1)
-               ) + 
-  geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Energy consumption \n in tep difference to Baseline ", title = "Fig.X Evolution of energy comsuption by different sectors, \nthe difference with respect to Baseline scenario") + 
-  theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-
-rm(z,x,Legend)
-```
-
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
-ggplot() + 
-  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I"], group = 1, color = "Total effect")) + 
-  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I_ind"], group = 1, color = "Industry & Agriculture")) + 
-  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I_trsp"], group = 1, color = "Transportation")) + 
-  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I_ser"], group = 1, color = "Services")) + 
-  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I_trsf"], group = 1, color = "Energy Transformation")) + 
-  geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I_ele"], group = 1, color = "Electricity")) +
-  labs(x = "year", y = "Index LMDI \n in % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution of carbon intensity for overall emissions \n SNBC") + 
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
-```
-
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 z_1 <- c(
-       S6[,"ci_toe_cfut_ind_2"]/S6[,"ci_toe_ind_2"],
-       S6[,"ci_toe_cfuh_ind_2"]/S6[,"ci_toe_ind_2"],
-       S6[,"ci_toe_cgas_ind_2"]/S6[,"ci_toe_ind_2"],
-       S6[,"ci_toe_cele_ind_2"]/S6[,"ci_toe_ind_2"])
+       (S6[,"ci_toe_cfut_ind_2"]+S6[,"ci_toe_cfut_ser_2"]+S6[,"ci_toe_cfut_trsp_2"]+ S6[,"ch_toe_cfut_2"])/tot,
+       (S6[,"ci_toe_cfuh_ind_2"]+S6[,"ci_toe_cfuh_ser_2"]+S6[,"ci_toe_cfuh_trsp_2"]+ S6[,"ch_toe_cfuh_2"])/tot,
+      (S6[,"ci_toe_cgas_ind_2"]+S6[,"ci_toe_cgas_ser_2"]+S6[,"ci_toe_cgas_trsp_2"]+ S6[,"ch_toe_cgas_2"])/tot,
+       (S6[,"ci_toe_cele_ind_2"]+S6[,"ci_toe_cele_ser_2"]+S6[,"ci_toe_cele_trsp_2"]+ S6[,"ch_toe_cele_2"])/tot)
 x_1 <- rep(Baseline[,"year"], times = 4)
 Legend <- rep(c("Fuels for transportation","Fuels for other use","Natural gas","Electricity"), each = 36)
 
@@ -1363,15 +1433,19 @@ Fig.1 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of Industry & Agriculture for SNBC scenario") + 
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
+  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.x National Low Carbon strategy") + 
+    theme(axis.title=element_text(size=7),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+scale_y_continuous(labels = scales::percent_format(accuracy = 1))
+
+tot2 <- Baseline[,"ci_toe_ind_0"]+Baseline[,"ci_toe_trsp_0"]+Baseline[,"ci_toe_ser_0"]+Baseline[,"ch_toe_0"]
+
 
 z_2 <- c(
-       Baseline[,"ci_toe_cfut_ind_0"]/Baseline[,"ci_toe_ind_0"],
-       Baseline[,"ci_toe_cfuh_ind_0"]/Baseline[,"ci_toe_ind_0"],
-       Baseline[,"ci_toe_cgas_ind_0"]/Baseline[,"ci_toe_ind_0"],
-       Baseline[,"ci_toe_cele_ind_0"]/Baseline[,"ci_toe_ind_0"])
+       (Baseline[,"ci_toe_cfut_ind_0"]+Baseline[,"ci_toe_cfut_ser_0"]+Baseline[,"ci_toe_cfut_trsp_0"]+ Baseline[,"ch_toe_cfut_0"])/tot2,
+       (Baseline[,"ci_toe_cfuh_ind_0"]+Baseline[,"ci_toe_cfuh_ser_0"]+Baseline[,"ci_toe_cfuh_trsp_0"]+ Baseline[,"ch_toe_cfuh_0"])/tot2,
+      (Baseline[,"ci_toe_cgas_ind_0"]+Baseline[,"ci_toe_cgas_ser_0"]+Baseline[,"ci_toe_cgas_trsp_0"]+ Baseline[,"ch_toe_cgas_0"])/tot2,
+       (Baseline[,"ci_toe_cele_ind_0"]+Baseline[,"ci_toe_cele_ser_0"]+Baseline[,"ci_toe_cele_trsp_0"]+ Baseline[,"ch_toe_cele_0"])/tot2)
 x_2 <- rep(Baseline[,"year"], times = 4)
 Legend <- rep(c("Fuels for transportation","Fuels for other use","Natural gas","Electricity"), each = 36)
 
@@ -1384,11 +1458,15 @@ Fig.2 <-
                 group = 1)
   ) + 
   geom_bar(stat = 'identity', position = 'stack') + guides(fill = guide_legend(reverse = TRUE)) + 
-  labs(x = "year", y = "Share of energy consumption", title = "Fig.x Energy mix of Industry & Agriculture for Baseline scenario") + 
-    theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
-  scale_x_continuous(breaks=seq(2015,2050,5))
+  labs(x = "year", y = "Share of energy consumption (%)", title = "Fig.X  Baseline scenario") + 
+    theme(axis.title=element_text(size=7),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
+  scale_x_continuous(breaks=seq(2015,2050,5))+
+scale_y_continuous(labels = scales::percent_format(accuracy = 1))
 
-ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
+figure <- ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
+
+annotate_figure(figure,
+               top = text_grob("Share of total final energy consumption by energy", face = "bold", size = 14))
 
 ```
 
