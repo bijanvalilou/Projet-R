@@ -1103,10 +1103,6 @@ plt2
 
 ## Renewable energy scenario
 
-::: {align="center"}
-Table.X :Macroeconomic impacts of Energy subsidies removal scenario in % deviation to Baseline
-:::
-
 In this section, we are interested in the impacts of renewable energy penetration into electricity mix. The main macroeconomic indicators are presented in the table below. Differently from carbon tax and energy subsidies, the penetration of renewable energy does not perturb prices in the market. The increasing GPD ( +2.96% on 2050 with respect to baseline ) is mainly derived from prosperity of electricity generation sector, where the relative variation to baseline scenario is up to +478.7% by the horizon 2050. The rapid development of electricity sector brings also the abundance of working opportunities ( +103k on 2050 with respect to baseline ), arising then the household disposable income to 3.47% compared with null policy scenario. In fact, the electricity is the only sector which is significantly touched by this policy in terms of either economy or energy (Fig.x and x). As there is no other economic levers to incite energetic transition, the boom of economy can be understood as the growing productivity with much less energetic constrains.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
