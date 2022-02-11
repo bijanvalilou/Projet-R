@@ -496,9 +496,9 @@ We first analyse the redistribution of the carbon tax. The figure below shows th
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
-  geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Tax_SansDis")) + 
-  geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Tax_AvecDis")) + 
-  labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
+  geom_line( data = Sc1, aes(x = year,y = gdp_2, group = 1, color = "Carbon tax without redistribution")) + 
+  geom_line( data = Sc2, aes(x = year,y = gdp_2, group = 1, color = "Carbon tax with redistribution")) + 
+  labs(y = "GDP variation (%)", title = "GDP in volume. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -507,9 +507,9 @@ If we analyse employment variations, we can see that the redistribution operates
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
-  geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Taxe sans redistribution")) + 
-  geom_line( data = Sc2, aes(x = year,y = f_l_2, group = 1, color = "Tax avec redistribution")) + 
-  labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
+  geom_line( data = Sc1, aes(x = year,y = f_l_2, group = 1, color = "Carbon tax without redistribution")) + 
+  geom_line( data = Sc2, aes(x = year,y = f_l_2, group = 1, color = "Carbon tax with redistribution")) + 
+  labs(y = "Employment variation (%)", title = "Employment. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -517,9 +517,9 @@ Regarding CO2 emissions, it is noted that there is not a great difference in the
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
-  geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_SansDis")) + 
-  geom_line( data = Sc2, aes(x = year,y = ems_co2_2, group = 1, color = "Tax_AvecDis")) + 
-  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
+  geom_line( data = Sc1, aes(x = year,y = ems_co2_2, group = 1, color = "Carbon tax without redistribution")) + 
+  geom_line( data = Sc2, aes(x = year,y = ems_co2_2, group = 1, color = "Carbon tax with redistribution")) + 
+  labs(y = "CO2 emissions variation (%)", title = "CO2 emissions. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -538,7 +538,7 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario without redistribution in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of carbon tax scenario without redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
@@ -553,7 +553,7 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Carbon tax scenario with redistribution in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of carbon tax scenario with redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
@@ -567,9 +567,9 @@ In the case of GDP variation for the scenario with redistribution, we can see in
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
-  geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Sub_SansDis")) + 
-  geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Sub_AvecDis")) + 
-  labs(y = "Variation de PIB en %", title = "PIB en volume. Ecart au scénario de référence") +
+  geom_line( data = Sc3, aes(x = year,y = gdp_2, group = 1, color = "Subsidies removal without redistribution")) + 
+  geom_line( data = Sc4, aes(x = year,y = gdp_2, group = 1, color = "Subsidies removal with redistribution")) + 
+  labs(y = "GDP variation (%)", title = "GDP in volume. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -578,9 +578,9 @@ As regards employment, the scenario with redistribution presents a positive vari
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
-  geom_line( data = Sc3, aes(x = year,y = f_l_2, group = 1, color = "Sub sans redistribution")) + 
-  geom_line( data = Sc4, aes(x = year,y = f_l_2, group = 1, color = "Sub avec redistribution")) + 
-  labs(y = "Variation de l'emploi en %", title = "Emploi. Ecart au scénario de référence") +
+  geom_line( data = Sc3, aes(x = year,y = f_l_2, group = 1, color = "Subsidies removal without redistribution")) + 
+  geom_line( data = Sc4, aes(x = year,y = f_l_2, group = 1, color = "Subsidies removal with redistribution")) + 
+  labs(y = "Employment variation (%)", title = "Employment. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -588,9 +588,9 @@ There are no marked differencies in emissions variation in relation with the bas
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
-  geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_SansDis")) + 
-  geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_AvecDis")) + 
-  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
+  geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Subsidies removal without redistribution")) + 
+  geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Subsidies removal with redistribution")) + 
+  labs(y = "CO2 emissions variation (%)", title = "CO2 emissions. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
@@ -599,11 +599,11 @@ If we observe the variation in the gross salary, we can notice that in the case 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
 ggplot() + 
-  geom_line( data = S1_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Taxe_SansRedis")) + 
-  geom_line( data = S2_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Taxe_AvecRedis")) + 
-  geom_line( data = S3_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subvention_SansRedis")) + 
-  geom_line( data = S4_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subvention_AvecRedis")) +
-  labs(y = "Salaire nominal brut (%)", title = "Salaire nominal brut. Écart au scénario de référence en pourcentage") +
+  geom_line( data = S1_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Carbon tax without redistribution")) + 
+  geom_line( data = S2_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Carbon tax with redistribution")) + 
+  geom_line( data = S3_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subsidies removal without redistribution")) + 
+  geom_line( data = S4_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subsidies removal with redistribution")) +
+  labs(y = "Gross nominal wage (%)", title = "Gross nominal wage. Variation in relation to the baseline") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
 
