@@ -533,7 +533,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-chomage :
+As regards employment, the scenario with redistribution presents a positive variation in relation to the baseline for the period 2020-2030, and then a negative one between 2030 and 2045. This variation is in absolute terms always below 0.5%. If we consider the scenario without redistribution we observe a negative variation that goes beyond -2.5% around 2030.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
