@@ -1024,15 +1024,15 @@ $$ E_{E/P} \, = \,  \frac{\frac{D_S - D_B}{D_B}}{\frac{P_S - P_B}{P_B}} $$
 
 As we saw in the section "Importance of redistribution", the energy subsidies removal has a positive impact on households' disposable income, which is small in the short and medium term. In the long term, income increases by 0.68% in 2050 compared to the reference scenario. A linear regression confirms the existence of a positive income elasticity, but weak compared to the price elasticity. We therefore neglect the income elasticity of energy demand.
 
-```{r, echo=FALSE}
+```{r echo=FALSE}
 x= (SubvavecRedis[,"pch_cfuh_2"]/SubvavecRedis[,"pch_cfuh_0"]-1)*100
 table <- cbind(Sc4[,"year"], Sc4[,"ch_toe_cfuh_2"]/x)
 colnames(table) <- c("Year", "Price elasticity")
 table <- table[c(7, 11, 16, 21, 26, 31, 36),]
 
 
-kbl(table, booktabs = T, linesep = "", caption = "Price elasticity of demand for fuel dedicated to other use")%>%
-kable_styling(latex_options = "striped", full_width = F,font_size = 7) %>% 
+kable(table, booktabs = T, linesep = "", caption = "Price elasticity of demand for fuel dedicated to other use",)%>%
+kable_styling(latex_options = "hold_position", full_width = F,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
 
@@ -1056,7 +1056,7 @@ Table_Macro_ENR <- round(Table_Macro_ENR,digits = 2)
 row.names(Table_Macro_ENR) <- tablename
 
 kable(Table_Macro_ENR, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Renewable energy scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
+kable_styling(latex_options = "hold_position", full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
 ```
