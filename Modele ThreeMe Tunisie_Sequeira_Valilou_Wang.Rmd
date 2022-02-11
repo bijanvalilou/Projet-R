@@ -304,11 +304,11 @@ Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (s
 
 ### Carbon tax
 
-After some reversals over the past twenty years, carbon pricing is reemerging. Since 2016, many new carbon-pricing initiatives have been implemented, with several countries considering implementing carbon pricing in the years ahead, after having signed the Paris Agreement [@klenert2018]. The level of the carbon price retained, i.e. the rate of the tax, corresponds in someway to the value that society places on the protection of the environment from the consequences of a rise in temperature [@deperthuis2010].
-
 When considering the externality associated with the release of CO2 from combustion, we observe that there is a marginal social cost that exceeds marginal private cost. The difference between this two costs reflects the marginal external cost of damage [@goulder2013]. Carbon tax is the instrument that comes reflect marginal external damage. The advantage of using a tax system to price environmental harm is to send a clear price signal to guide economic entities spontaneously to reduce their level of pollution until their marginal cost of depollution equals the tax, as pointed by @deperthuis2010 .
 
-In a competitive market, this will cause private costs to rise and this will cause an issue of acceptability.
+After some reversals over the past twenty years, carbon pricing is reemerging. Since 2016, many new carbon-pricing initiatives have been implemented, with several countries considering implementing carbon pricing in the years ahead, after having signed the Paris Agreement [@klenert2018]. The level of the carbon price retained, i.e. the rate of the tax, corresponds in someway to the value that society places on the protection of the environment from the consequences of a rise in temperature [@deperthuis2010].
+
+In a competitive market, the introduction of a carbon tax will cause private costs to rise and in consequence its implementation encounters considerable resistance. It is then desirable to accompany carbon taxes with some mechanism that enhance its acceptability.
 
 ### Energy subsidy
 
@@ -338,15 +338,17 @@ Reducing energy subsidies may improve economic welfare and reduce emissions [@al
 Fig.X : Energy subsidies and energy intensities by country in 2017 (data : SDG indicators for United Nations Economic Commission for Europe)
 :::
 
-### Carbon tax revenue recycling [and double dividend]{.ul}
+### Carbon tax revenue recycling and double dividend
 
-Tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument [@goulder]. There are many ways in which this redistribution can operate. Most of the times, the redistribution is presented as a lump-sum transfer to households and firms, or as a reduction in taxes that introduce a deformation into the economy as it is the case of labor taxes. @klenert2018 findings suggest that lump-sum transfers are more stable over time, particularly in countries that are stuck in issues of economic inequality, political distrust and polarization.
+Tax redistribution is the mechanism that allows the government to return to the private economy the revenues that are produced by the instrument [@goulder]. There are many ways in which this redistribution can operate. Most of the times, redistribution is presented as a lump-sum transfer to households and firms, or as a reduction in taxes that introduce a deformation into the economy as it is the case of labor taxes. @klenert2018 findings suggest that lump-sum transfers are more stable over time, particularly in countries that are stuck in issues of economic inequality, political distrust and polarization. In fact, there are no generalities regarding the way the revenues are recycled. Some authors give general lines in order to help decision and a clear example is the diagram tree below.
 
 <div>
 
-Fig.X : Decision-tree diagram for carbon revenue recycling (Source : @klenert2018 )
+Fig.X : Decision-tree diagram for carbon revenue recycling (Source : @klenert2018 )![](Images/TreeDiagram.JPG "Decision-tree diagram for carbon revenue recycling (Source : @klenert2018 )")
 
 </div>
+
+The choice of the type of redistribution has a important role in determining the existence or absence of a double dividend and its importance. However, there are other leverages that are also important, such as the ease with which economic agents can substitute goods, the degree of exposure to foreign competition and the type of representation of the wage equation (the latter has an important role in a Neo-Keynesian framework, which is the case of the ThreeME model).
 
 # Methodology
 
@@ -991,9 +993,7 @@ legend2 <- get_legend(plt2)
 plt1 <- plt1 + theme(legend.position="none")
 plt2 <- plt2 + theme(legend.position="none")
 
-figure <- ggarrange(plt1, plt2, legend1, legend2, ncol=2, nrow = 2, heights = c(1.3, 0.6))
-annotate_figure(figure,
-               top = text_grob("Kaya identities for energy subsidies removal scenario with redistribution (%)", face = "bold", size = 14))
+grid.arrange(plt1, plt2, legend1, legend2, ncol=2, nrow = 2, heights = c(1.3, 0.6), top = "Kaya identities for energy subsidies removal scenario with redistribution")
 ```
 
 The decrease in energy intensity is confirmed by the decrease in energy consumption (see Fig. X). Indeed, households and all sectors see their consumption decrease (-19% for households, -18% for the electricity sector, -16% for the energy transformation sector and -14% for industry and agriculture in 2025 compared to the Baseline scenario). Only the consumption of the transport sector is relatively rigid, which means that in this sector, the potential for energy efficiency improvements or capital use changes is relatively lower.
@@ -1215,7 +1215,7 @@ Table_Macro_ENR <- round(Table_Macro_SNBC,digits = 2)
 row.names(Table_Macro_SNBC) <- tablename
 
 kable(Table_Macro_SNBC, booktabs = T, linesep = "", caption = "Macroeconomic impacts of Nation Low-Carbon Strategy scenario in percent deviation to Baseline") %>% 
-kable_styling(latex_options = "hold_position", full_width = T,font_size = 7) %>% 
+kable_styling(latex_options = "striped", full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
 ```
@@ -1228,7 +1228,7 @@ ggplot() +
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"S"], group = 1, color = "Economy structure")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"E"], group = 1, color = "Energy intensity")) + 
   geom_line( aes(x = Det[[6]][,"year"],y = Det[[6]][,"I"], group = 1, color = "Carbon intensity")) + 
-  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n National Low-Carbon Strategy") +
+  labs(x = "year", y = "Index LMDI \nin % deviation of emission to Baseline", title = "Fig.x Multiplicative contribution for overall emissions variation \n SNBC") +
     theme(axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
