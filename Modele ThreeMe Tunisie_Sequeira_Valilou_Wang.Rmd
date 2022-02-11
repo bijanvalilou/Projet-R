@@ -344,7 +344,13 @@ Tax redistribution is the mechanism that allows the government to return to the 
 
 <div>
 
-Fig.X : Decision-tree diagram for carbon revenue recycling (Source : @klenert2018 )![](Images/TreeDiagram.JPG "Decision-tree diagram for carbon revenue recycling (Source : @klenert2018 )")
+![](Images/TreeDiagram.JPG "Decision-tree diagram for carbon revenue recycling (Source : @klenert2018 )")
+
+<div>
+
+Fig.X : Decision-tree diagram for carbon revenue recycling. Source : @klenert2018 .
+
+</div>
 
 </div>
 
