@@ -431,7 +431,18 @@ ggplot() +
 
 ### Data structure
 
-All the indicators used in the analysis are in exact hat algebra, meaning the proportional variation to Baseline scenario. time scale of data key indicator: two dimensions economy and environment.
+The analysed data are derived from outputs of model ThreeME Tunisia. All
+the indicators are simulated from 2015 to 2050, generating a database
+with time series. The indicators used in the analysis if not
+exceptionally mentioned are in percentage relative form, meaning the
+proportional variation to Baseline scenario:
+
+$$ X = \frac{X_{Shock}}{X_{Baseline}} \times 100\% \tag{1}$$ where:
+
+-   $X$ is the indicator used for analysis;
+-   $X_{Shock}$ is the model output with different policy scenarios;
+-   $X_{Baseline}$ is the model output with baseline scenario;
+
 
 ### Kaya identity
 
