@@ -3,6 +3,9 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  html_document: 
+    toc: yes
+    toc_depth: 5
   pdf_document: 
     citation_package: biblatex
     toc: yes
@@ -11,9 +14,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
-  html_document: 
-    toc: yes
-    toc_depth: 5
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -478,9 +478,11 @@ In this section we will analyse the results obtained for the different scenarios
 
 ## Importance of redistribution
 
-In this section we will analyse the influence of the redistribution of both the carbon tax and the removed energy subsidies. We will observe the impact of the redistribution on the economical and environmental aspects. We will focus on GDP and unemployment variations when it comes to the economical aspect and we will analyse the evolution of CO2 emissions for the environmental aspect.
+In this section we will analyse the influence of the redistribution of both the carbon tax and the removed energy subsidies. We will observe the impact of the redistribution on both the economical and on the environmental aspect. We will focus on GDP and employment variations among other indicators when it comes to the economical aspect and we will analyse the evolution of CO2 emissions for the environmental aspect.
 
-Firstly, we analyse the redistribution of the carbon tax. The figure below show the variation in GDP in relation to the baseline for both scenarios carbon tax with and without redistribution. We observe that the scenario with redistribution shows a marked increase in GDP while the scenario without redistribution
+### Carbon tax with and without redistribution
+
+Firstly, we analyse the redistribution of the carbon tax. The figure below show the variation in GDP in relation to the baseline for both scenarios carbon tax with and without redistribution. We observe that the scenario with redistribution shows a marked increase in GDP since 2030 while the GDP decreases for the scenario without redistribution.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
@@ -490,7 +492,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-Then when we analyse the *level of employment* we can see that the redistribution operates an increase on it in relation to the baseline, when the scenario of a carbon tax without redistribution produce a decrease in the level of employment. That is consistent with the fact that the
+If we analyse employment variations, we can see that the redistribution operates an increase on it in relation to the baseline. In the scenario without redistribution there is a decrease in the level of employment in comparison with the baseline.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -501,7 +503,7 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-emissions
+Regarding CO2 emissions, it is noted that there is no a great difference in the variation between the scenarios carbon tax with and without redistribution. However, we can notice that the reduction in emissions compared to the be baseline is slightly larger in the case that there is no redistribution, and this seems consistent with the economic recession observed before.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() + 
@@ -510,6 +512,8 @@ ggplot() +
   labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
+
+### Fossil fuels subsidies removal with and without redistribution
 
 PIB
 
@@ -1066,7 +1070,7 @@ annotate_figure(figure,
                top = text_grob("Evolution of energy indices in deviation from Baseline (%)", face = "bold", size = 14))
 ```
 
-In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease corresponds to the capital use adjustment channel \[@finn2000 ; @gamtessa2018\]. Companies respond to high energy costs by selecting the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. X). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
+In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease corresponds to the capital use adjustment channel $$@finn2000 ; @gamtessa2018$$. Companies respond to high energy costs by selecting the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. X). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
