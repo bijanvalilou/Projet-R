@@ -22,7 +22,7 @@ subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little co
 header-includes:
 - \usepackage{fancyhdr}
 - \pagestyle{fancy}
-- \fancyfoot[CO,CE]{Modèle ThreeMe Tunisie}
+- \fancyfoot[CO,CE]{Model ThreeMe Tunisia}
 - \fancyfoot[LE,RO]{\thepage}
 bibliography: references.bib
 ---
@@ -291,6 +291,10 @@ The welfare system is based on non-targeted subsidies. According to @albertin201
 
 After the revolution, fiscal and equity issues incited the Tunisian government to reduce energy subsidies. In 2012, the prices of gasoline, diesel and electricity increased by 7% [@albertin2014]. In 2014, energy subsidies to cement firms were reduced by half. In 2020, Tunisia has introduced an automatic monthly price adjustment mechanism for petrol and diesel sales, with the aim of eliminating fuel subsidies.
 
+In its Nationally Determined Contribution, Tunisia commits to reducing its carbon intensity by 41% in 2030 compared to the base year 2010. In order to reach this objective, Tunisia has a range of policies to implement: carbon tax, lifting of subsidies and development of renewable energies. With the the ThreeMe Tunisia model, we intend to answer the following question : **what are the macroeconomic, technological and environmental repercussions of the policies? And whether they should be implemented separately or together ?**
+
+After a literature review (II), the methodology based on the combination of scenarios, the ThreeMe Tunisia model and the extended Kaya identity is presented (III). The outputs per scenario of the ThreeMe Tunisia model are analysed, notably thanks to the extended Kaya identity (IV).
+
 ![](Images/Composition%20of%20fuel%20subsidies%20by%20product.jpg)
 
 ::: {align="center"}
@@ -302,10 +306,6 @@ Fig.1 : Composition of fuel subsidies product (source : @tunisia2020)
 ::: {align="center"}
 Fig.2 : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (source : @tunisia2020)
 :::
-
-In its Nationally Determined Contribution, Tunisia commits to reducing its carbon intensity by 41% in 2030 compared to the base year 2010. In order to reach this objective, Tunisia has a range of policies to implement: carbon tax, lifting of subsidies and development of renewable energies. With the the ThreeMe Tunisia model, we intend to answer the following question : **what are the macroeconomic, technological and environmental repercussions of the policies? And whether they should be implemented separately or together ?**
-
-After a literature review (II), the methodology based on the combination of scenarios, the ThreeMe Tunisia model and the extended Kaya identity is presented (III). The outputs per scenario of the ThreeMe Tunisia model are analysed, notably thanks to the extended Kaya identity (IV).
 
 # Literature review in climate policy
 
