@@ -1024,7 +1024,7 @@ geom_line( aes(x = Sc4[,"year"],y = Sc4[,"ci_toe_ind_2"], group = 1, color = "In
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
-We analyse the energy indices for households, as we have data on consumer prices (see Fig. X). The price of fuels for other use increases by 207% in 2030, but the deviation from the Baseline scenario narrows to +67% in 2050. The decrease in energy consumption seen above is a reaction to rising prices. We use a simple formula for the short-term price elasticity of energy demand $E_{E/P}$. The latter is the ratio of the rate of change in demand and the rate of change in price, with $D_S$ the energy consumption with shock, $D_B$ the energy consumption in the Baseline scenario, $P_S$ the energy price with shock and $D_B$ the energy price in the Baseline scenario. $$ E_{E/P} \, = \,  \frac{\frac{D_S - D_B}{D_B}}{\frac{P_S - P_B}{P_B}} $$
+We analyse the energy indices for households, as we have data on consumer prices (see Fig. 33). The price of fuels for other use increases by 207% in 2030, but the deviation from the Baseline scenario narrows to +67% in 2050. The decrease in energy consumption seen above is a reaction to rising prices. We use a simple formula for the short-term price elasticity of energy demand $E_{E/P}$. The latter is the ratio of the rate of change in demand and the rate of change in price, with $D_S$ the energy consumption with shock, $D_B$ the energy consumption in the Baseline scenario, $P_S$ the energy price with shock and $D_B$ the energy price in the Baseline scenario. $$ E_{E/P} \, = \,  \frac{\frac{D_S - D_B}{D_B}}{\frac{P_S - P_B}{P_B}} $$
 
 As we saw in the section "Importance of redistribution", the energy subsidies removal has a positive impact on households' disposable income, which is small in the short and medium term. In the long term, households' disposable income increases by 0.68% in 2050 compared to the Baseline scenario. A linear regression confirms the existence of a positive income elasticity, but weak compared to the price elasticity. We therefore neglect the income elasticity of energy demand. The price elasticity of demand is equal to -0.54 in 2021, to -0.33 in 2030 and to -0.44 in 2050. The demand for fuel for other purposes becomes increasingly rigid in the medium term, before becoming relatively more elastic in the long term.
 
@@ -1077,7 +1077,7 @@ annotate_figure(figure,
                top = text_grob("Evolution of energy indices in deviation from Baseline (%)", face = "bold", size = 14))
 ```
 
-In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease corresponds to the capital use adjustment channel \[@finn2000 ; @gamtessa2018a \]. Companies respond to high energy costs by selecting the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. X). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
+In the short and medium term, rising energy prices lead to a relative decrease in energy intensity and in the price elasticity of energy demand. On the one hand, some of this decrease corresponds to the capital use adjustment channel \[@finn2000 ; @gamtessa2018a \]. Companies respond to high energy costs by selecting the most energy-efficient capital available, resulting in reduced energy consumption and underutilisation of capital. On the other hand, in the long run, some of the decrease in energy intensity corresponds to additional investment and energy efficiency improvement. This reaction implies an increase in capital productivity. Indeed, investment in industry and agriculture is always higher than in the baseline scenario (+6.6% in 2050, see fig. 35). In the long run, the interaction between these different channels leads to a convergence of post-shock energy consumption towards the levels of the Baseline scenario. This long-term increase in energy consumption is explained either by the readjustment of capital use or by a direct rebound effect.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
@@ -1253,7 +1253,7 @@ plot1 <- ggplot() +
     theme(axis.text=element_text(size=6),legend.text=element_text(size=7),axis.title=element_text(size=9),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
-plot3 <- ggplot() + 
+plot2 <- ggplot() + 
   geom_line( aes(x = Sc6[,"year"],y = S6_Macro[,"Taux.de.chômage"], group = 1, color = "SNBC"), size=1.5) + 
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Taux.de.chômage"], group = 1, color = "Taxe carbone")) + 
  geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Taux.de.chômage"], group = 1, color = "Levée de \nsubventions")) + 
@@ -1262,7 +1262,7 @@ plot3 <- ggplot() +
     theme(axis.title=element_text(size=9),axis.text=element_text(size=6),title = element_text(size=9), plot.title = element_text(hjust = 0.5, vjust = 0.5)) +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
-plot2 <- ggplot() + 
+plot3 <- ggplot() + 
   geom_line( aes(x = Sc6[,"year"],y = S6_Macro[,"Investissement"], group = 1, color = "SNBC"), size=1.5) + 
   geom_line( aes(x = Sc4[,"year"],y = S2_Macro[,"Investissement"], group = 1, color = "Taxe carbone")) + 
  geom_line( aes(x = Sc4[,"year"],y = S4_Macro[,"Investissement"], group = 1, color = "Levée de \nsubventions")) + 
@@ -1370,7 +1370,7 @@ plt2 <- ggplot(stacked_data) +
   scale_x_continuous(breaks=seq(2015,2050,5))+
 guides(fill=guide_legend(title="Sectors"))
 
-plt1
+plt2
 
 ```
 
@@ -1407,7 +1407,7 @@ plt1 <- ggplot(stacked_data) +
 plt1
 ```
 
-Figure X shows that electricity increases from 19% of final energy consumption in Tunisia in 2050 to 30% in 2050.
+Figure 49 shows that electricity increases from 19% of final energy consumption in Tunisia in 2050 to 30% in 2050.
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 
