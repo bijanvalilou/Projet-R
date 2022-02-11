@@ -304,7 +304,9 @@ Fig.X : Energy subsidies received by welfare quintile, 2015/16 (TND millions) (s
 
 ### Carbon tax
 
-When considering the externality associated with the release of CO2 from combustion, we observe that there is a marginal social cost that exceeds marginal private cost. The difference between this two costs reflects the marginal external cost of damage [@goulder2013]. Carbon tax is the instrument that comes reflect marginal external damage. The advantage of using a tax system to price environmental harm is to send a clear price signal to guide economic entities spontaneously to reduce their level of pollution until their marginal cost of depollution equals the tax, as pointed by @deperthuis2010 .
+In general, the presence of an environmental externality suggests that there is a marginal social cost that exceeds the marginal private cost. In the absence of regulation, the difference between this two costs (the marginal external cost of damage) is not covered by the polluter. Consider the particular case of the externalities associated with the release of CO2 in the atmosphere. The carbon tax is the tax that comes reflect that marginal external damage.
+
+The advantage of using a tax system to price environmental harm is to send a clear price signal to guide economic entities spontaneously to reduce their level of pollution, until their marginal cost of depollution equals the tax [@deperthuis2010] .
 
 After some reversals over the past twenty years, carbon pricing is reemerging. Since 2016, many new carbon-pricing initiatives have been implemented, with several countries considering implementing carbon pricing in the years ahead, after having signed the Paris Agreement [@klenert2018]. The level of the carbon price retained, i.e. the rate of the tax, corresponds in someway to the value that society places on the protection of the environment from the consequences of a rise in temperature [@deperthuis2010].
 
