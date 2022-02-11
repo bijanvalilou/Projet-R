@@ -544,6 +544,16 @@ ggplot() +
   scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
+There are no marked differencies in emissions variation in relation with the baseline between the two scenarios (fossil fuels subsidies removal with and without redistribution). The variation in emissions goes beyond 25% for the scenario without redistribution while it remains below 25% for the scenario with redistribution. As in the case of the carbon tax, the economic recession could explain this difference.
+
+```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
+ggplot() + 
+  geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_SansDis")) + 
+  geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_AvecDis")) + 
+  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
+  scale_x_continuous(breaks=seq(2015,2050,5))
+```
+
 Il peut être intéressant de faire un commentaire sur le salaire brut
 
 ```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
@@ -552,23 +562,11 @@ ggplot() +
   geom_line( data = S1_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Taxe_SansRedis")) + 
   geom_line( data = S2_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Taxe_AvecRedis")) + 
   geom_line( data = S3_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subvention_SansRedis")) + 
-  geom_line( data = S4_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subvention_AvecRedis")) + 
-  geom_line( data = S5_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "ENR")) + 
-  geom_line( data = S6_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "SNBC")) +
+  geom_line( data = S4_Macro, aes(x = year,y = Salaire.nominal.brut, group = 1, color = "Subvention_AvecRedis")) +
   labs(y = "Salaire nominal brut (%)", title = "Salaire nominal brut. Écart au scénario de référence en pourcentage") +
   scale_x_continuous(breaks=seq(2015,2050,5))
 
 
-```
-
-émissions :
-
-```{r, echo = FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
-ggplot() + 
-  geom_line( data = Sc3, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_SansDis")) + 
-  geom_line( data = Sc4, aes(x = year,y = ems_co2_2, group = 1, color = "Sub_AvecDis")) + 
-  labs(y = "Variation d'émission en %", title = "Evolution de variation d'émission") +
-  scale_x_continuous(breaks=seq(2015,2050,5))
 ```
 
 Tableau Taxe sans redistribution
