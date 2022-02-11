@@ -1022,9 +1022,7 @@ table <- round(table, digits=2)
 
 kable(table, booktabs = T, linesep = "", caption = "Price elasticity of demand for fuel dedicated to other use",)%>%
 kable_styling(latex_options = "hold_position", full_width = F,font_size = 7) %>% 
-row_spec(0, bold = T)  %>% 
-column_spec(1, width = "6cm")
-
+row_spec(0, bold = T)
 ```
 
 ```{r echo=FALSE,out.width = '70%', out.height = '70%', fig.align='center'}
