@@ -3,6 +3,9 @@ title: "Model ThreeMe Tunisia"
 author: "Lucia SEQUEIRA - Bijan VALILOU - Jin WANG"
 date: "January 2022"
 output:
+  html_document: 
+    toc: yes
+    toc_depth: 5
   pdf_document: 
     citation_package: biblatex
     toc: yes
@@ -11,9 +14,6 @@ output:
     highlight: tango
     latex_engine: lualatex
     fig_caption: yes
-  html_document: 
-    toc: yes
-    toc_depth: 5
 subtitle: 'Macroeconomic impacts of National Low-Carbon Strategy for a little country in development : the case of Tunisia'
 header-includes:
 - \usepackage{fancyhdr}
@@ -431,18 +431,13 @@ ggplot() +
 
 ### Data structure
 
-The analysed data are derived from outputs of model ThreeME Tunisia. All
-the indicators are simulated from 2015 to 2050, generating a database
-with time series. The indicators used in the analysis if not
-exceptionally mentioned are in percentage relative form, meaning the
-proportional variation to Baseline scenario:
+The analysed data are derived from outputs of model ThreeME Tunisia. All the indicators are simulated from 2015 to 2050, generating a database with time series. The indicators used in the analysis if not exceptionally mentioned are in percentage relative form, meaning the proportional variation to Baseline scenario:
 
 $$ X = \frac{X_{Shock}}{X_{Baseline}} \times 100\% \tag{1}$$ where:
 
 -   $X$ is the indicator used for analysis;
 -   $X_{Shock}$ is the model output with different policy scenarios;
 -   $X_{Baseline}$ is the model output with baseline scenario;
-
 
 ### Kaya identity
 
