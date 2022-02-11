@@ -1394,8 +1394,6 @@ ggarrange(Fig.1, Fig.2, ncol = 1, common.legend = T, legend = "right")
 
 # Conclusion
 
-## L'amélioration du cadre statistique
-
-OUverture : pb du secteur informel non pris en compte par la comptabilité nationale
+Amelioration du cadre statistique : pb du secteur informel non pris en compte par la comptabilité nationale
 
 # Bibliography
