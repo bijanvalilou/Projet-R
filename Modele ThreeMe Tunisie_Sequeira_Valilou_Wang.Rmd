@@ -991,7 +991,7 @@ legend2 <- get_legend(plt2)
 plt1 <- plt1 + theme(legend.position="none")
 plt2 <- plt2 + theme(legend.position="none")
 
-figure <- grid.arrange(plt1, plt2, legend1, legend2, ncol=2, nrow = 2, heights = c(1.3, 0.6))
+figure <- ggarrange(plt1, plt2, legend1, legend2, ncol=2, nrow = 2, heights = c(1.3, 0.6))
 annotate_figure(figure,
                top = text_grob("Kaya identities for energy subsidies removal scenario with redistribution (%)", face = "bold", size = 14))
 ```
