@@ -5,7 +5,7 @@ date: "February 2022"
 output:
   pdf_document:
     citation_package: biblatex
-    toc: yes
+    toc: no
     number_sections: yes
     toc_depth: 4
     highlight: tango
@@ -27,6 +27,8 @@ header-includes:
 bibliography: references.bib
 ---
 
+\newpage
+\tableofcontents
 \newpage
 
 ```{r, echo = FALSE, tidy = TRUE, include = FALSE}
