@@ -1477,4 +1477,6 @@ Maybe one of the strongest hypothesis of the model is that it is a Neo-Keynesian
 
 There is another point that should be highlighted, this time about the statistical framework. The data concerning the Tunisian economy comes from the system of national accounts and then the informal sectors of the economy are not taken into account. This can distort results since informal sectors are important in many African countries.
 
+Last but not least, social and political acceptability of environmental policies are not taken into account in the model. 
+
 # Bibliography
