@@ -27,6 +27,8 @@ header-includes:
 bibliography: references.bib
 ---
 
+\newpage
+
 ```{r, echo = FALSE, tidy = TRUE, include = FALSE}
 
 # Importer des packages
