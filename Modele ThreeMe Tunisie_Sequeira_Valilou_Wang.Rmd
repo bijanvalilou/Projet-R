@@ -997,7 +997,7 @@ plt2 <- plt2 + theme(legend.position="none")
 grid.arrange(plt1, plt2, legend1, legend2, ncol=2, nrow = 2, heights = c(1.3, 0.6), top = "Kaya identities for energy subsidies removal scenario with redistribution")
 ```
 
-The decrease in energy intensity is confirmed by the decrease in energy consumption (see Fig. X). Indeed, households and all sectors see their consumption decrease (-19% for households, -18% for the electricity sector, -16% for the energy transformation sector and -14% for industry and agriculture in 2025 compared to the Baseline scenario). Only the consumption of the transport sector is relatively rigid, which means that in this sector the potential for energy efficiency improvements or capital use changes is relatively lower.
+The decrease in energy intensity is confirmed by the decrease in energy consumption (see Fig. X). Indeed, households and all sectors see their consumption decrease (-19% for households, -18% for the electricity sector, -16% for the energy transformation sector and -14% for industry and agriculture in 2025 compared to the Baseline scenario). Only the consumption of the transport sector is relatively rigid, which means that in this sector, the potential for energy efficiency improvements or capital use changes is relatively lower.
 
 ```{r echo=FALSE, out.width = '70%', out.height = '70%', fig.align='center'}
 ggplot() +
