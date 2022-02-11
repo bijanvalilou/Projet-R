@@ -651,7 +651,7 @@ Table_Macro_CT <- t(Table_Macro_CT)
 Table_Macro_CT <- round(Table_Macro_CT,digits = 2)
 row.names(Table_Macro_CT) <- tablename
 
-kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of fossil fuels subsidies removal scenario without redistribution in percent deviation to Baseline") %>% 
+kable(Table_Macro_CT, booktabs = T, linesep = "", caption = "Macroeconomic impacts of fossil fuels subsidies removal scenario with redistribution in percent deviation to Baseline") %>% 
 kable_styling(latex_options = c("striped","hold_position"), full_width = T,font_size = 7) %>% 
 row_spec(0, bold = T)  %>% 
 column_spec(1, width = "6cm")
